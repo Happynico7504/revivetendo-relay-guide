@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revivetendo Relay Network — Setup Guide</title>
-  <meta name="description" content="Simple, step-by-step setup guide for Revivetendo Relay Network Wii U Chat and Juxtaposition servers.">
+  <title>Revivetendo Relay Network — Home</title>
+  <meta name="description" content="Welcome to the Revivetendo Relay Network. Bringing online video calling and custom Miiverse communities back to homebrewed Wii U consoles.">
+  <link rel="icon" type="image/png" href="images/revivetendo_icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
@@ -14,15 +15,17 @@
   <!-- Top Navigation -->
   <header class="navbar">
     <div class="nav-container">
-      <a href="#" class="brand">
+      <a href="index.html" class="brand">
+        <img src="images/revivetendo_icon.png" alt="Revivetendo Icon" class="brand-icon">
         <span class="brand-title">Revivetendo Relay Network</span>
-        <span class="brand-subtitle">Setup Guide</span>
       </a>
 
       <nav class="nav-links">
-        <a href="#install-guide" class="nav-link">Guide</a>
-        <a href="#juxtaposition" class="nav-link">Juxtaposition</a>
-        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="guide.html" class="nav-link">Guide</a>
+        <a href="guide.html#juxtaposition" class="nav-link">Juxtaposition</a>
+        <a href="guide.html#faq" class="nav-link">FAQ</a>
+        <a href="https://discord.gg/hbrHNpaX47" target="_blank" rel="noopener noreferrer" class="nav-link">Discord</a>
       </nav>
     </div>
   </header>
@@ -30,242 +33,76 @@
   <!-- Main Content -->
   <main class="main-content">
     <div class="container">
-      <!-- Page Header -->
-      <header class="page-header">
-        <h1>Revivetendo Relay Network — Setup Guide</h1>
-        <p class="page-description">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <img src="images/greetings_mii.png" alt="Greetings Mii" class="mii-overlap-hero stagger-in" style="--stagger-order: 2;">
+        <img src="images/revivetendo_icon.png" alt="Revivetendo Icon" class="hero-icon">
+        
+        <h1 class="animated-title">
+          <span class="word" style="--animation-order: 1;">Revivetendo</span>
+          <span class="word" style="--animation-order: 2;">Relay</span>
+          <span class="word" style="--animation-order: 3;">Network</span>
+        </h1>
+
+        <p class="hero-description stagger-in" style="--stagger-order: 0;">
           Set up Revivetendo's custom Pretendo relay on your homebrewed Wii U. This enables online video calling on Wii U Chat and access to Revivetendo's Juxt communities.
         </p>
-      </header>
 
-      <!-- Step-by-Step Installation Guide -->
-      <section class="guide-section" id="install-guide">
-        <h2>Installation Steps</h2>
-        <p class="section-lead">Follow these four steps to connect your console to the relay.</p>
-
-        <div class="steps-list">
-          <!-- Step 1 -->
-          <article class="step-card">
-            <div class="step-number">Step 1</div>
-            <div class="step-content">
-              <h3>Check Your Homebrew Setup</h3>
-              <p>Your Wii U must be running the <strong>Aroma Homebrew Environment</strong> with <strong>Coldboot</strong> enabled.</p>
-              
-              <div class="info-box">
-                <h4>Why Coldboot is Required</h4>
-                <p>Coldboot starts Inkay when the console powers on so SpotPass services can connect properly. Older methods like Tiramisu or Haxchi are not supported.</p>
-              </div>
-
-              <div class="requirements-list">
-                <h4>Prerequisites</h4>
-                <ul>
-                  <li>Wii U running Aroma with Coldboot enabled.</li>
-                  <li>SD card reader or FTP connection to your console.</li>
-                  <li>Pretendo Network ID (PNID).</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <!-- Step 2 -->
-          <article class="step-card">
-            <div class="step-number">Step 2</div>
-            <div class="step-content">
-              <h3>Download Inkay Switcher</h3>
-              <p>Download the Inkay Switcher application to switch between server relays on your console.</p>
-
-              <div class="action-box">
-                <div>
-                  <h4>Inkay Switcher (.wuhb)</h4>
-                  <p class="text-muted">Wii U Aroma Application</p>
-                </div>
-                <a href="https://github.com/Happynico7504/Inkay-Switcher/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                  Download Release (.wuhb)
-                </a>
-              </div>
-
-              <div class="guide-image-container">
-                <img src="images/github_what_to_download.png" alt="GitHub release showing revivetendo_installer.wuhb asset to download" class="guide-image">
-                <span class="image-caption">Download revivetendo_installer.wuhb from the Assets section on GitHub.</span>
-              </div>
-
-              <h4>SD Card Placement</h4>
-              <p>Copy <code>revivetendo_installer.wuhb</code> into the <code>/wiiu/apps/</code> directory on your SD card:</p>
-              
-              <div class="code-block">
-                <div class="code-header">
-                  <span>Directory Path</span>
-                  <button class="btn-copy" onclick="copyText('sd:/wiiu/apps/revivetendo_installer.wuhb', this)">Copy Path</button>
-                </div>
-                <pre><code>sd:/wiiu/apps/revivetendo_installer.wuhb</code></pre>
-              </div>
-
-              <p class="step-note">When you put the SD card back and start your Wii U, the Revivetendo Installer icon will appear on your HOME Menu.</p>
-
-              <div class="guide-image-container">
-                <img src="images/revivetendo_installer_on_home_menu.jpg" alt="Revivetendo Installer on Wii U HOME Menu" class="guide-image">
-                <span class="image-caption">Revivetendo Installer application tile (Rv Installer) on your Wii U HOME Menu.</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Step 3 -->
-          <article class="step-card">
-            <div class="step-number">Step 3</div>
-            <div class="step-content">
-              <h3>Install the Custom Relay</h3>
-              <p>Configure your console to route Wii U Chat to Nico's server.</p>
-
-              <ol class="ordered-instructions">
-                <li>
-                  <strong>Open Inkay Switcher:</strong> Launch Revivetendo Installer from your Wii U HOME Menu.
-                </li>
-                <li>
-                  <strong>Select Custom Relay:</strong> Choose <strong>Nico Christmann</strong>. (To return to standard Pretendo later, select <strong>Juxtaposition</strong> instead).
-                  <div class="guide-image-container">
-                    <img src="images/revivetendo_wuhb_ui.png" alt="Selecting Nico Christmann inside Inkay Switcher" class="guide-image">
-                    <span class="image-caption">Select "Nico Christmann" from the switcher menu.</span>
-                  </div>
-                </li>
-                <li>
-                  <strong>Install and Reboot:</strong> Select your environment, press <span class="controller-btn btn-round" title="Button A">A</span> to install, then press <span class="controller-btn btn-round" title="Button B">B</span> to reboot.
-                  <div class="guide-image-container">
-                    <img src="images/installed_inkay_press_b_to_restart.jpg" alt="Installed Inkay Press B to Restart" class="guide-image">
-                    <span class="image-caption">Confirmation prompt shown before rebooting.</span>
-                  </div>
-                </li>
-              </ol>
-
-              <div class="info-box">
-                <h4>Verification Check</h4>
-                <p>After rebooting, check the top-left banner on the HOME Menu. It should say: <strong>Using Pretendo Network (Nico Christmann)</strong>.</p>
-              </div>
-
-              <div class="info-box">
-                <h4>In-Game Plugin Menu</h4>
-                <p>
-                  Open the Plugin Menu anywhere on your Wii U by pressing 
-                  <span class="controller-btn btn-shoulder" title="L Button">L</span> + 
-                  <span class="controller-btn btn-dpad" title="D-Pad Down">
-                    <svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 4v16m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-                  </span> + 
-                  <span class="controller-btn btn-round" title="Minus Button">-</span> 
-                  or 
-                  <span class="controller-btn btn-pill" title="START Button">START</span>. 
-                  Select <strong>Inkay (Nico Christmann)</strong> to manage connection settings or reset your WaraWara Plaza.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Step 4 -->
-          <article class="step-card">
-            <div class="step-number">Step 4</div>
-            <div class="step-content">
-              <h3>Verify & Get Approved on Wii U Chat</h3>
-              <p>Wii U Chat requires quick manual approval to whitelist your PNID.</p>
-
-              <ol class="ordered-instructions">
-                <li>
-                  <strong>Launch Wii U Chat:</strong> Open Wii U Chat from the HOME Menu while running the custom relay.
-                </li>
-                <li>
-                  <strong>Send Handshake:</strong> Connecting sends your PNID to the pending queue for verification.
-                </li>
-                <li>
-                  <strong>Start Calling:</strong> Once approved by an admin, your account is whitelisted and calling will work permanently.
-                </li>
-              </ol>
-
-              <div class="info-box">
-                <h4>Check Approval Status</h4>
-                <p>Check your approval status or ask for verification in the <a href="https://discord.gg/hbrHNpaX47" target="_blank" rel="noopener noreferrer">Revivetendo Discord server</a>.</p>
-              </div>
-            </div>
-          </article>
+        <div class="hero-buttons stagger-in" style="--stagger-order: 1;">
+          <a href="guide.html" class="btn btn-primary">
+            Setup Guide
+          </a>
+          <a href="https://olv-web.nicochristmann.net/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            Launch Revivetendo Juxt
+          </a>
+          <a href="https://discord.gg/hbrHNpaX47" target="_blank" rel="noopener noreferrer" class="btn btn-discord">
+            Join Discord Server
+          </a>
         </div>
       </section>
 
-      <!-- Juxtaposition Showcase Section -->
-      <section class="content-section" id="juxtaposition">
-        <h2>Juxtaposition Miiverse</h2>
-        <p class="section-lead">Nico Christmann also hosts custom instances of Juxtaposition for Miiverse communities.</p>
+      <!-- Key Features Grid -->
+      <section class="content-section">
+        <div class="stagger-in" style="--stagger-order: 3;">
+          <h2>What is Revivetendo?</h2>
+          <p class="section-lead">A dedicated, community-driven relay server network built for Aroma homebrew.</p>
+        </div>
 
         <div class="feature-grid">
-          <div class="feature-card">
-            <h3>Web Access</h3>
-            <p>Browse handwritten posts, screenshots, and game communities directly from any browser.</p>
-            <div style="margin-top: 1.25rem;">
-              <a href="https://olv-web.nicochristmann.net/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Launch Juxtaposition Web</a>
-            </div>
+          <div class="feature-card has-mii stagger-in" style="--stagger-order: 4;">
+            <img src="images/one_hand_on_the_back_mii.png" alt="Greeting Mii" class="mii-card-corner">
+            <h3>Wii U Chat Reborn</h3>
+            <p>Make live video calls on your GamePad screen with full camera and mic support.</p>
           </div>
 
-          <div class="feature-card">
-            <h3>WaraWara Plaza</h3>
-            <p>Mii avatars, drawings, and popular posts load on your TV screen automatically when booting Aroma.</p>
+          <div class="feature-card has-mii stagger-in" style="--stagger-order: 5;">
+            <img src="images/thinking_mii.png" alt="Thinking Mii" class="mii-card-corner">
+            <h3>Custom Juxtaposition</h3>
+            <p>Explore dedicated Miiverse communities. Share posts, drawings, and screenshots directly from your console.</p>
           </div>
 
-          <div class="feature-card">
-            <h3>Separate Accounts</h3>
-            <p>Your posts, communities, and followers on Juxt and Nico Christmann's servers remain separate across platforms.</p>
+          <div class="feature-card has-mii stagger-in" style="--stagger-order: 6;">
+            <img src="images/happy_mii.png" alt="Happy Mii" class="mii-card-corner">
+            <h3>Seamless Switching</h3>
+            <p>Switch between official Pretendo Network and Revivetendo servers anytime from the Inkay menu.</p>
           </div>
         </div>
       </section>
 
-      <!-- FAQ Section -->
-      <section class="content-section" id="faq">
-        <h2>Frequently Asked Questions</h2>
-        <p class="section-lead">Quick answers to common questions about the relay.</p>
-
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Why do I need to open Wii U Chat to get approved?</span>
-              <span class="faq-indicator">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Opening Wii U Chat sends your PNID to the server. This adds your ID to the pending list so an admin can approve your account.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>What happens to my other online games?</span>
-              <span class="faq-indicator">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Games that aren't relayed pass directly through to official Pretendo (pretendo.network). You don't need to switch plugins to play normal Pretendo games.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>How do I refresh WaraWara Plaza?</span>
-              <span class="faq-indicator">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Open the Plugin Menu (<span class="controller-btn btn-shoulder">L</span> + <span class="controller-btn btn-dpad"><svg viewBox="0 0 24 24" width="12" height="12"><path d="M12 4v16m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span> + <span class="controller-btn btn-round">-</span> or <span class="controller-btn btn-pill">START</span>), select <strong>Inkay (Nico Christmann)</strong>, and choose <strong>Reset WaraWara Plaza</strong>.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Can I switch plugins frequently?</span>
-              <span class="faq-indicator">+</span>
-            </button>
-            <div class="faq-answer">
-              <p>Yes. However, downloading official Pretendo from GitHub too often in a short time can trigger a temporary GitHub rate limit. Downloading Nico's custom build does not have rate limits.</p>
-            </div>
-          </div>
+      <!-- Quick Start Banner -->
+      <section class="quick-start-banner stagger-in" style="--stagger-order: 7;">
+        <h2>Ready to Connect Your Wii U?</h2>
+        <p>Our four-step installation guide will walk you through preparing your SD card, installing the switcher plugin, and verifying your connection.</p>
+        <div class="hero-buttons">
+          <a href="guide.html" class="btn btn-primary">Setup Guide</a>
+          <a href="https://discord.gg/hbrHNpaX47" target="_blank" rel="noopener noreferrer" class="btn btn-discord">Join Discord Server</a>
         </div>
       </section>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer stagger-in" style="--stagger-order: 8;">
     <div class="container footer-content">
       <p>&copy; 2026 Revivetendo Relay Network Documentation. For open-source homebrew development.</p>
     </div>
