@@ -317,7 +317,10 @@ a:hover {
 a.btn,
 .feature-card a.btn,
 .action-box a.btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   padding: 0.65rem 1.3rem;
   border-radius: 6px;
   font-family: var(--font-main);
@@ -329,6 +332,11 @@ a.btn,
   background-color: var(--accent-cyan);
   color: #ffffff !important;
   transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.lucide {
+  flex-shrink: 0;
+  vertical-align: middle;
 }
 
 .btn:hover,
