@@ -33,7 +33,7 @@ function copyText(text, btnElement) {
   if (!navigator.clipboard) return;
   navigator.clipboard.writeText(text).then(() => {
     const originalText = btnElement.textContent;
-    btnElement.textContent = 'Copied!';
+    btnElement.textContent = '已复制！';
     btnElement.style.backgroundColor = '#059669';
     btnElement.style.color = '#ffffff';
     setTimeout(() => {
@@ -83,9 +83,9 @@ function switchGuideTab(consoleId) {
 
   // Update content sections
   document.querySelectorAll('.guide-tab-content').forEach((section) => {
-    section.style.display = 'none';
+    section.style.display = '无';
   });
-  const activeSection = document.getElementById(`guide-${consoleId}`);
+  const activeSection = document.getElementById(`指南${consoleId}`);
   if (activeSection) {
     activeSection.style.display = 'block';
   }
