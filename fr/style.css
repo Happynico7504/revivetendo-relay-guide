@@ -1,27 +1,27 @@
 /* ==========================================================================
-   Réseau de relais Revivetendo – Nettoyer le système de conception CSS solide
+   Revivetendo Relay Network — Clean Solid CSS Design System
    ========================================================================== */
 
 :root {
-  /* Palette de couleurs solides - Sans dégradés ou clignotants */
+  /* Solid Color Palette - No Gradients or Glows */
   --bg-primary: #0f1117;
-  --bg-secondaire: #161821;
-  --bg-tertiaire: #1e202b;
+  --bg-secondary: #161821;
+  --bg-tertiary: #1e202b;
   --bg-card: #181a24;
   --border-color: #2a2d3d;
   --border-hover: #3d4259;
 
   --text-main: #f1f5f9;
-  --text-muet : #94a3b8;
+  --text-muted: #94a3b8;
   --text-dim: #64748b;
 
-  --accent-cyan : #0284c7;
+  --accent-cyan: #0284c7;
   --accent-cyan-hover: #0369a1;
   --accent-light: #38bdf8;
-  --accent-violet : #7c3ad;
+  --accent-purple: #7c3aed;
   --accent-green: #059669;
 
-  /* Typographie propre */
+  /* Clean Typography */
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
@@ -29,121 +29,121 @@
 
 * {
   box-sizing: border-box;
-  marge : 0;
+  margin: 0;
   padding: 0;
 }
 
 html {
-  comportement du défilement : lisse ;
+  scroll-behavior: smooth;
   font-family: var(--font-body);
   background-color: var(--bg-primary);
   color: var(--text-main);
 }
 
-corps {
-  hauteur-ligne : 1,6;
+body {
+  line-height: 1.6;
 }
 
 .container {
   max-width: 980px;
-  marge : 0 auto;
+  margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* Liens - Cyan à contraste élevé */
-une {
+/* Links - High Contrast Bright Cyan */
+a {
   color: var(--accent-light);
-  text-decoration: souligné;
+  text-decoration: underline;
   text-underline-offset: 3px;
-  transition : facilité de la couleur de 0,15s ;
+  transition: color 0.15s ease;
 }
 
 a:hover {
-  couleur: #7dd3fc;
+  color: #7dd3fc;
 }
 
 /* Navigation */
 .navbar {
-  position: stick;
-  haut: 0;
+  position: sticky;
+  top: 0;
   z-index: 100;
   background-color: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
 }
 
 .nav-container {
-  affichage: flex;
+  display: flex;
   align-items: center;
-  justify-content: espace-entre;
-  hauteur: 64px;
+  justify-content: space-between;
+  height: 64px;
   max-width: 980px;
-  marge : 0 auto;
+  margin: 0 auto;
   padding: 0 1.5rem;
 }
 
 .brand {
-  affichage: flex;
+  display: flex;
   align-items: center;
   gap: 0.75rem;
-  text-decoration: aucun !important;
+  text-decoration: none !important;
 }
 
-icône .brand-{
+.brand-icon {
   width: 34px;
-  hauteur: 34px;
-  rayon de bordure : 8px ;
-  objet-fit: contenu;
+  height: 34px;
+  border-radius: 8px;
+  object-fit: contain;
 }
 
 .brand-title {
   font-family: var(--font-main);
-  poids-police : 700;
+  font-weight: 700;
   font-size: 1.15rem;
   color: var(--text-main);
 }
 
 .nav-links {
-  affichage: flex;
+  display: flex;
   gap: 2rem;
 }
 
 .nav-link {
-  color: var(--text-muet);
-  text-decoration: aucun !important;
+  color: var(--text-muted);
+  text-decoration: none !important;
   font-size: 0.95rem;
-  poids-police : 500;
-  transition : facilité de la couleur de 0,15s ;
+  font-weight: 500;
+  transition: color 0.15s ease;
 }
 
 .nav-link:hover {
   color: var(--text-main);
 }
 
-/* En-tête de page */
-En-tête de page {
+/* Page Header */
+.page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 3rem;
 }
 
-En-tête de page h1 {
+.page-header h1 {
   font-family: var(--font-main);
   font-size: 2.3rem;
-  poids-police : 700;
+  font-weight: 700;
   color: var(--text-main);
   margin-bottom: 0.8rem;
 }
 
-Description de la page {
+.page-description {
   font-size: 1.05rem;
-  color: var(--text-muet);
-  largeur max : 780px ;
-  hauteur-ligne : 1,65;
+  color: var(--text-muted);
+  max-width: 780px;
+  line-height: 1.65;
 }
 
-/* Styles partagés de section */
-.guide, section
-Section .content-{
+/* Section Shared Styles */
+.guide-section,
+.content-section {
   margin-bottom: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
@@ -153,29 +153,29 @@ Section .content-{
 .content-section h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
-  poids-police : 700;
+  font-weight: 700;
   color: var(--text-main);
   margin-bottom: 0.4rem;
 }
 
 .section-lead {
   font-size: 1rem;
-  color: var(--text-muet);
+  color: var(--text-muted);
   margin-bottom: 2rem;
 }
 
 /* Step Cards */
 .steps-list {
-  affichage: flex;
-  direction flexion : colonne;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
 .step-card {
-  affichage: grille;
+  display: grid;
   grid-template-columns: 85px 1fr;
   gap: 1.8rem;
-  couleur-arrière-plan : var(--bg-card);
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
@@ -186,17 +186,17 @@ Section .content-{
 .step-number {
   font-family: var(--font-main);
   font-size: 1.05rem;
-  poids-police : 700;
+  font-weight: 700;
   color: var(--accent-light);
-  text-transform: majuscule;
-  espacement des lettres : 0,05em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   padding-top: 0.1rem;
 }
 
-Contenu .step-h3 {
+.step-content h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
-  poids-police : 700;
+  font-weight: 700;
   color: var(--text-main);
   margin-bottom: 0.6rem;
 }
@@ -208,53 +208,53 @@ Contenu .step-h3 {
 }
 
 .step-note {
-  taille de la fonte: 0.9rem !important;
+  font-size: 0.9rem !important;
   color: var(--text-muted) !important;
-  margin-top: 1 rem;
+  margin-top: 1rem;
   margin-bottom: 0 !important;
 }
 
-/* Images de référence du guide - Rapport d'aspect naturel, pas de zones noires */
+/* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
 .guide-image-container {
-  marge : 1,5rem 0 ;
+  margin: 1.5rem 0;
   width: 100%;
 }
 
 .guide-image {
   width: 100%;
   max-width: 580px;
-  hauteur: auto;
-  affichage: bloc;
+  height: auto;
+  display: block;
   border: 1px solid var(--border-color);
-  rayon de bordure : 8px ;
-  ombre-bois: 0 4px 14px rgba(0, 0, 0, 0, 0.35);
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
-.image-légende {
+.image-caption {
   font-size: 0.82rem;
   color: var(--text-dim);
-  margin-top : 0,5 m ;
-  affichage: bloc;
+  margin-top: 0.5rem;
+  display: block;
 }
 
-/* Nettoyer les boîtes à l'intérieur des étapes */
+/* Clean Boxes inside steps */
 .info-box {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  rayon de bordure : 8px ;
+  border-radius: 8px;
   padding: 1.25rem 1.4rem;
   margin-bottom: 1.5rem;
 }
 
 .info-box h4 {
   font-size: 0.95rem;
-  poids-police : 700;
+  font-weight: 700;
   color: var(--text-main);
   margin-bottom: 0.4rem;
 }
 
 .info-box p {
-  taille de la police : 0.92rem !important;
+  font-size: 0.92rem !important;
   color: var(--text-muted) !important;
   margin: 0 !important;
 }
@@ -262,22 +262,22 @@ Contenu .step-h3 {
 .requirements-list {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  rayon de bordure : 8px ;
+  border-radius: 8px;
   padding: 1.25rem 1.4rem;
 }
 
 .requirements-list h4 {
   font-size: 0.95rem;
-  poids-police : 700;
+  font-weight: 700;
   color: var(--text-main);
   margin-bottom: 0.6rem;
 }
 
 .requirements-list ul {
   list-style-type: disc;
-  marge-gauche : 1,25m ;
-  affichage: flex;
-  direction flexion : colonne;
+  margin-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
@@ -290,53 +290,53 @@ Contenu .step-h3 {
 .action-box {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  rayon de bordure : 8px ;
+  border-radius: 8px;
   padding: 1.25rem 1.4rem;
-  affichage: flex;
+  display: flex;
   align-items: center;
-  justify-content: espace-entre;
+  justify-content: space-between;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
-  Coupe-flex: écharpe;
+  flex-wrap: wrap;
 }
 
 .action-box h4 {
   font-size: 1.05rem;
   color: var(--text-main);
-  poids-police : 700;
+  font-weight: 700;
   margin-bottom: 0.15rem;
 }
 
-.text-muet {
-  color: var(--text-muet);
+.text-muted {
+  color: var(--text-muted);
   font-size: 0.85rem;
 }
 
-/* Boutons - Texte blanc pur sur fond Cyan */
+/* Buttons - Pure White Text on Cyan Background */
 .btn,
 a.btn,
 .feature-card a.btn,
 .action-box a.btn {
   display: inline-flex;
   align-items: center;
-  justify-content: centre;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.65rem 1.3rem;
-  rayon bordure: 6px;
+  border-radius: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  text-decoration: aucun !important;
-  bordure: aucun;
-  curseur: pointeur;
+  text-decoration: none !important;
+  border: none;
+  cursor: pointer;
   background-color: var(--accent-cyan);
-  color: #ffffffff !important;
-  transition : la couleur de fond 0.15s est facile, la couleur de bordure 0.15s facilement;
+  color: #ffffff !important;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .lucide {
   flex-shrink: 0;
-  alignement vertical: milieu;
+  vertical-align: middle;
 }
 
 .btn:hover,
@@ -344,146 +344,146 @@ a.btn:hover,
 .feature-card a.btn:hover,
 .action-box a.btn:hover {
   background-color: var(--accent-cyan-hover);
-  color: #ffffffff !important;
+  color: #ffffff !important;
 }
 
-.btn-secondaire,
-a.btn-secondaire {
+.btn-secondary,
+a.btn-secondary {
   background-color: var(--bg-tertiary) !important;
   border: 1px solid var(--border-color) !important;
   color: var(--text-main) !important;
 }
 
-.btn-secondaire:hover,
+.btn-secondary:hover,
 a.btn-secondary:hover {
   background-color: #262938 !important;
   border-color: var(--border-hover) !important;
-  color: #ffffffff !important;
+  color: #ffffff !important;
 }
 
 .btn-discord,
-discord a.btn-{
+a.btn-discord {
   background-color: #5865f2 !important;
-  color: #ffffffff !important;
+  color: #ffffff !important;
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
   background-color: #4752c4 !important;
-  color: #ffffffff !important;
+  color: #ffffff !important;
 }
 
-/* Page d'accueil Section de héros */
+/* Landing Page Hero Section */
 .hero-section {
   padding: 5rem 0 3rem;
-  border-bottom: aucun !important;
+  border-bottom: none !important;
   margin-bottom: 3rem;
   text-align: center;
   position: relative;
-  débordement : visible !important;
+  overflow: visible !important;
 }
 
 .hero-icon {
-  largeur: 90px;
-  hauteur: 90px;
+  width: 90px;
+  height: 90px;
   border-radius: 22px;
-  marge : 0 auto 1.5m ;
-  affichage: bloc;
-  ombre-bois: 0 8px 24px rgba(0, 0, 0, 0, 0.4);
+  margin: 0 auto 1.5rem;
+  display: block;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Animation : Lâchez un par un du haut SANS fondu (l'opacité reste 100%) */
+/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
 @keyframes dropFromTop {
   0% {
     transform: translateY(-45px);
-    visibilité: cachée;
+    visibility: hidden;
   }
   1% {
-    visibilité: visible;
+    visibility: visible;
   }
   100% {
     transform: translateY(0);
-    visibilité: visible;
+    visibility: visible;
   }
 }
 
-.animé-titre {
+.animated-title {
   display: inline-flex;
   gap: 0.3em;
-  Coupe-flex: écharpe;
-  justify-content: centre;
+  flex-wrap: wrap;
+  justify-content: center;
   font-family: var(--font-main);
   font-size: 3.2rem;
-  poids-police : 700;
+  font-weight: 700;
   color: var(--text-main);
   margin-bottom: 1.1rem;
-  espacement des lettres : -0,02em;
+  letter-spacing: -0.02em;
 }
 
 .animated-title .word {
   display: inline-block;
-  visibilité: cachée;
-  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) avant ;
-  temps-animation: calc(var(--animation-order) * 0.25s);
+  visibility: hidden;
+  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
+  animation-delay: calc(var(--animation-order) * 0.25s);
 }
 
-/* Entrée échelonnée pour tout le contenu apparaissant APRÈS mot drop complète (~1.08s) */
+/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacité: 0;
+    opacity: 0;
     transform: translateY(22px);
-    visibilité: cachée;
+    visibility: hidden;
   }
   1% {
-    visibilité: visible;
+    visibility: visible;
   }
   100% {
-    opacité: 1;
+    opacity: 1;
     transform: translateY(0);
-    visibilité: visible;
+    visibility: visible;
   }
 }
 
 .stagger-in {
-  opacité: 0;
-  visibilité: cachée;
-  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) en avant ;
-  temps-animation: 1.08s;
+  opacity: 0;
+  visibility: hidden;
+  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 1.08s;
 }
 
-description du .hero-{
+.hero-description {
   font-size: 1.2rem;
-  color: var(--text-muet);
+  color: var(--text-muted);
   max-width: 680px;
-  marge : 0 auto 2,5 m ;
-  hauteur-ligne : 1,65;
+  margin: 0 auto 2.5rem;
+  line-height: 1.65;
 }
 
 .hero-buttons {
-  affichage: flex;
+  display: flex;
   gap: 1.25rem;
-  justify-content: centre;
-  Coupe-flex: écharpe;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* Caractères Mii Placés dans les zones de boîtes vides et de fenêtres hors limites */
-.content-section
-.feature-grille,
+/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
+.content-section,
+.feature-grid,
 .feature-card,
 .step-card,
 .info-box,
 .requirements-list {
   position: relative;
-  débordement : visible !important;
+  overflow: visible !important;
 }
 
-/* Cartes de fonctionnalités avec Miis d'angle extérieur : réserver 90px padding droit sur le titre BOTH et paragraphe ainsi le texte enveloppe proprement et zéro mots sont bloqués */
-feature-card.has-mii {
+/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
+.feature-card.has-mii {
   position: relative;
-  débordement : visible !important;
+  overflow: visible !important;
 }
 
-La carte de fonctionnalité.a mii h3,
+.feature-card.has-mii h3,
 .feature-card.has-mii p {
   padding-right: 90px;
 }
@@ -492,45 +492,45 @@ La carte de fonctionnalité.a mii h3,
   margin-bottom: 0.85rem;
 }
 
-.mii-carte-coin {
-  position : absolue;
+.mii-card-corner {
+  position: absolute;
   right: -24px;
   top: -42px;
-  hauteur: 165px;
+  height: 165px;
   width: auto;
   z-index: 10;
-  filtre: ombre-drop-shadow(0 10px 24px rgba(0, 0, 0, 0, 0.65));
-  pointer-événements : aucun ;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
+  pointer-events: none;
 }
 
-.mii-card-coin-lounge{
-  position : absolue;
-  à droite : -18px;
+.mii-card-corner-lounging {
+  position: absolute;
+  right: -18px;
   top: -50px;
-  hauteur: 140px;
+  height: 140px;
   width: auto;
   z-index: 10;
-  filtre: ombre-drop-shadow(0 10px 24px rgba(0, 0, 0, 0, 0.65));
-  pointer-événements : aucun ;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
+  pointer-events: none;
 }
 
-/* Section de héros en bas à droite chevauchant Mii */
-Héros de chevauchement de .mii {
-  position : absolue;
+/* Hero section bottom-right overlapping Mii */
+.mii-overlap-hero {
+  position: absolute;
   right: -25px;
-  bas: -45px;
-  hauteur: 260px;
+  bottom: -45px;
+  height: 260px;
   width: auto;
   z-index: 10;
-  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0, 0.7));
+  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
   transform: rotate(4deg);
-  pointer-événements : aucun ;
+  pointer-events: none;
 }
 
 @media (max-width: 900px) {
-  Héros de chevauchement de .mii {
-    hauteur: 180px;
-    à droite : -10px;
+  .mii-overlap-hero {
+    height: 180px;
+    right: -10px;
     bottom: -30px;
   }
 }
@@ -539,17 +539,17 @@ Héros de chevauchement de .mii {
   .feature-card.has-mii h3 {
     padding-right: 0;
   }
-  .mii-carte-coin,
-  Héros de chevauchement de .mii {
-    affichage: aucun;
+  .mii-card-corner,
+  .mii-overlap-hero {
+    display: none;
   }
 }
 
-/* Bannière de démarrage rapide */
+/* Quick Start Banner */
 .quick-start-banner {
-  couleur-arrière-plan : var(--bg-card);
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  rayon bordure: 12px;
+  border-radius: 12px;
   padding: 3rem 2rem;
   text-align: center;
   margin-bottom: 4rem;
@@ -560,25 +560,25 @@ Héros de chevauchement de .mii {
 .quick-start-banner h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
-  poids-police : 700;
+  font-weight: 700;
   color: var(--text-main);
   margin-bottom: 0.75rem;
 }
 
 .quick-start-banner p {
-  color: var(--text-muet);
+  color: var(--text-muted);
   font-size: 1.05rem;
   margin-bottom: 1.75rem;
   max-width: 580px;
-  margin-gauche: auto;
-  marge-droite: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Bloc de code / Arborescence de répertoires */
+/* Code block / Directory tree */
 .code-block {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  rayon de bordure : 8px ;
+  border-radius: 8px;
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
@@ -586,23 +586,23 @@ Héros de chevauchement de .mii {
 .code-header {
   background-color: var(--bg-secondary);
   padding: 0.55rem 1.2rem;
-  affichage: flex;
-  justify-content: espace-entre;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   font-size: 0.82rem;
-  color: var(--text-muet);
+  color: var(--text-muted);
   border-bottom: 1px solid var(--border-color);
 }
 
-Copie .btn-{
+.btn-copy {
   background-color: var(--border-color);
-  bordure: aucun;
+  border: none;
   color: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  curseur: pointeur;
+  cursor: pointer;
 }
 
 .btn-copy:hover {
@@ -613,162 +613,162 @@ Copie .btn-{
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  hauteur-ligne : 1,5;
+  line-height: 1.5;
   color: var(--text-main);
   overflow-x: auto;
 }
 
-/* Instructions commandées */
-Instructions commandées {
-  margin-gauche: 1,4ème;
-  affichage: flex;
-  direction flexion : colonne;
+/* Ordered instructions */
+.ordered-instructions {
+  margin-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
   gap: 0.85rem;
   margin-bottom: 1.5rem;
 }
 
-Instructions commandées li {
+.ordered-instructions li {
   font-size: 0.95rem;
   color: var(--text-main);
   padding-left: 0.3rem;
 }
 
-/* Tokens du bouton physique du contrôleur */
+/* Controller Physical Button Tokens */
 .controller-btn {
   display: inline-flex;
   align-items: center;
-  justify-content: centre;
+  justify-content: center;
   font-family: var(--font-main);
-  poids-police : 700;
-  couleur: #f8fafc;
+  font-weight: 700;
+  color: #f8fafc;
   background-color: #334155;
-  bordure: 1 px solide #64748b;
-  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0, 0.3);
-  utilisateur-sélectionné: aucun;
-  alignement vertical: milieu;
-  hauteur-ligne : 1;
+  border: 1px solid #64748b;
+  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  vertical-align: middle;
+  line-height: 1;
   margin: 0 0.15rem;
 }
 
 .controller-btn.btn-round {
   width: 24px;
-  hauteur: 24px;
+  height: 24px;
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-shoulder {
-  remplissage : 0 0.55rem;
-  hauteur: 24px;
-  rayon bordure: 6px;
+  padding: 0 0.55rem;
+  height: 24px;
+  border-radius: 6px;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-pill {
-  remplissage : 0 0.65rem;
-  hauteur: 24px;
-  rayon bordure: 12px;
+  padding: 0 0.65rem;
+  height: 24px;
+  border-radius: 12px;
   font-size: 0.74rem;
-  espacement des lettres : 0,04em;
+  letter-spacing: 0.04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  hauteur: 24px;
+  height: 24px;
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  affichage: bloc;
+  display: block;
 }
 
-/* Grille de fonctionnalités */
+/* Feature Grid */
 .feature-grid {
-  affichage: grille;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
 .feature-card {
-  couleur-arrière-plan : var(--bg-card);
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  rayon de bordure : 8px ;
+  border-radius: 8px;
   padding: 1.6rem;
 }
 
 .feature-card h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
-  poids-police : 700;
+  font-weight: 700;
   color: var(--text-main);
   margin-bottom: 0.5rem;
 }
 
 .feature-card p {
-  color: var(--text-muet);
+  color: var(--text-muted);
   font-size: 0.92rem;
-  hauteur-ligne : 1,6;
+  line-height: 1.6;
 }
 
-.feature-card {
+.feature-card a {
   color: var(--accent-light);
 }
 
 .feature-card a:hover {
-  text-decoration: souligné;
+  text-decoration: underline;
 }
 
-/* Liste de FAQ */
+/* FAQ List */
 .faq-list {
-  affichage: flex;
-  direction flexion : colonne;
+  display: flex;
+  flex-direction: column;
   gap: 0.85rem;
 }
 
 .faq-item {
-  couleur-arrière-plan : var(--bg-card);
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  rayon de bordure : 8px ;
+  border-radius: 8px;
   overflow: hidden;
 }
 
 .faq-question {
   width: 100%;
-  arrière-plan-color: transparent;
-  bordure: aucun;
+  background-color: transparent;
+  border: none;
   padding: 1.15rem 1.4rem;
-  affichage: flex;
-  justify-content: espace-entre;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  text-align: gauche;
+  text-align: left;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-main);
-  curseur: pointeur;
+  cursor: pointer;
 }
 
-.faq-indicateur {
+.faq-indicator {
   font-size: 1.25rem;
-  poids-police : 400;
+  font-weight: 400;
   color: var(--accent-light);
 }
 
-.faq-réponse {
-  hauteur-max : 0;
+.faq-answer {
+  max-height: 0;
   overflow: hidden;
-  transition : taille max 0,25s facile;
+  transition: max-height 0.25s ease;
 }
 
-.faq-réponse p {
+.faq-answer p {
   padding: 0 1.4rem 1.3rem;
-  color: var(--text-muet);
+  color: var(--text-muted);
   font-size: 0.92rem;
-  hauteur-ligne : 1,65;
+  line-height: 1.65;
 }
 
-/* Pied de page */
+/* Footer */
 .footer {
   padding: 2.2rem 0;
   background-color: var(--bg-secondary);
@@ -793,46 +793,46 @@ Instructions commandées li {
   }
 
   .nav-links {
-    affichage: aucun;
+    display: none;
   }
 
-  En-tête de page h1,
+  .page-header h1,
   .hero-section h1,
-  .animé-titre {
+  .animated-title {
     font-size: 2.2rem;
   }
 }
 
-/* Support du Mode Lumière */
+/* Light Mode Support */
 @media (prefers-color-scheme: light) {
   :root {
     --bg-primary: #f8fafc;
-    --bg-secondaire: #f1f5f9;
-    --bg-tertiaire: #e2e8f0;
+    --bg-secondary: #f1f5f9;
+    --bg-tertiary: #e2e8f0;
     --bg-card: #ffffff;
     --border-color: #cbd5e1;
     --border-hover: #94a3b8;
 
     --text-main: #0f172a;
-    --text-muet : #334155;
+    --text-muted: #334155;
     --text-dim: #64748b;
   }
   
-  /* Ajuster les ombres pour le mode lumière */
+  /* Adjust shadows for light mode */
   .guide-image,
-  .hero-icône,
+  .hero-icon,
   .discord-ui-mockup {
-    ombre-bois: aucun;
+    box-shadow: none;
   }
 
-  .mii-carte-coin,
-  .mii-carte-coin-lounge,
-  Héros de chevauchement de .mii {
-    filtre: aucun;
+  .mii-card-corner,
+  .mii-card-corner-lounging,
+  .mii-overlap-hero {
+    filter: none;
   }
 
   .controller-btn {
-    ombre-box: 0 2px 0 #0f172a;
+    box-shadow: 0 2px 0 #0f172a;
   }
 }
 
@@ -842,7 +842,7 @@ Instructions commandées li {
 }
 
 .discord-ui-layout {
-  affichage: flex;
+  display: flex;
   align-items: center;
   gap: 3rem;
 }
@@ -859,56 +859,56 @@ Instructions commandées li {
 .discord-ui-text .btn-fullwidth {
   display: inline-flex;
   width: auto;
-  margin-top: 1 rem;
+  margin-top: 1rem;
 }
 
 .discord-ui-mockup {
   flex: 1;
   background-color: #313338;
-  rayon de bordure : 8px ;
+  border-radius: 8px;
   overflow: hidden;
-  bordure: 1 px solide #1e1f22;
-  ombre-bois: 0 8px 24px rgba(0, 0, 0, 0, 0.4);
+  border: 1px solid #1e1f22;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   font-family: var(--font-body);
-  couleur : #dbdee1;
+  color: #dbdee1;
   min-width: 350px;
 }
 
 .discord-ui-header {
   background-color: #2b2d31;
-  remplissage : 12px 16px;
+  padding: 12px 16px;
   font-weight: 600;
-  border-bottom: 1px solide #1e1f22;
-  affichage: flex;
+  border-bottom: 1px solid #1e1f22;
+  display: flex;
   align-items: center;
   gap: 8px;
-  couleur: #f2f3f5;
+  color: #f2f3f5;
 }
 
 .discord-ui-header .hashtag {
-  couleur : #80848e;
+  color: #80848e;
   font-size: 1.2rem;
 }
 
 .discord-ui-messages {
   padding: 16px;
-  affichage: flex;
-  direction flexion : colonne;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
 .discord-msg {
-  affichage: flex;
+  display: flex;
   gap: 16px;
-  opacité: 0;
+  opacity: 0;
   transform: translateY(10px);
 }
 
 .discord-avatar {
-  largeur: 40px;
-  hauteur: 40px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  objet-fit: couverture;
+  object-fit: cover;
   background-color: #2b2d31;
 }
 
@@ -917,84 +917,84 @@ Instructions commandées li {
 }
 
 .discord-msg-header {
-  affichage: flex;
-  alig-items: ligne de base;
+  display: flex;
+  align-items: baseline;
   gap: 8px;
   margin-bottom: 4px;
 }
 
 .discord-user {
-  poids-police : 500;
-  couleur: #f2f3f5;
+  font-weight: 500;
+  color: #f2f3f5;
 }
 
 .discord-user.admin-user {
-  color: #eb459e; /* Couleur du rôle rose */
+  color: #eb459e; /* Pink role color */
 }
 
 .discord-time {
   font-size: 0.75rem;
-  couleur: #949ba4;
+  color: #949ba4;
 }
 
 .discord-msg p {
-  couleur : #dbdee1;
+  color: #dbdee1;
   font-size: 0.95rem;
-  hauteur-ligne : 1,4;
-  marge : 0;
+  line-height: 1.4;
+  margin: 0;
 }
 
-/* Animations pour Discord Mockup */
-.start-anim .msg-anim-1 { animation: popIn 0.4s facilitent les avances de 0.2; }
-.start-anim .msg-anim-2 { animation: popIn 0.4s facilite les avances 1.4; }
-.start-anim .msg-anim-3 { animation: popIn 0.4s facilite les avances 2.6; }
+/* Animations for Discord Mockup */
+.start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
+.start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
+.start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
 
 @keyframes popIn {
-  à {
-    opacité: 1;
+  to {
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Grille de mods */
+/* Mods Grid */
 .mods-grid {
-  affichage: grille;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .mod-card {
-  couleur-arrière-plan : var(--bg-card);
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  rayon de bordure : 8px ;
+  border-radius: 8px;
   padding: 2rem 1rem;
   text-align: center;
-  transition : toutes les 0,2 s sont faciles ;
-  affichage: flex;
-  direction flexion : colonne;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 0.75rem;
 }
 
 .mod-avatar {
-  largeur: 80px;
-  hauteur: 80px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: var(--bg-tertiary);
-  affichage: flex;
+  display: flex;
   align-items: center;
-  justify-content: centre;
+  justify-content: center;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--text-muet);
+  color: var(--text-muted);
   overflow: hidden;
 }
 
 .mod-avatar img {
   width: 100%;
-  hauteur: 100%;
-  objet-fit: couverture;
+  height: 100%;
+  object-fit: cover;
 }
 
 .mod-name {
@@ -1008,20 +1008,20 @@ Instructions commandées li {
   color: var(--text-dim);
 }
 
-/* Carrousel Juxtaposition */
-.juxt-carrousel-wrapper {
+/* Juxtaposition Carousel */
+.juxt-carousel-wrapper {
   overflow: hidden;
   position: relative;
   width: 100%;
   margin-top: 2rem;
-  image masque: gradient linéaire (à droite, transparent, noir 10%, noir 90%, transparent);
-  -webkit-mask-image: gradient linéaire (à droite, transparent, noir 10%, noir 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .juxt-carousel {
-  affichage: flex;
+  display: flex;
   width: fit-content;
-  animation: scrollCarousel 20s linéaire infini;
+  animation: scrollCarousel 20s linear infinite;
   gap: 1.5rem;
 }
 
@@ -1030,28 +1030,28 @@ Instructions commandées li {
 }
 
 .juxt-post {
-  couleur-arrière-plan : var(--bg-card);
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  rayon bordure: 12px;
+  border-radius: 12px;
   padding: 1.25rem;
-  largeur: 320px;
+  width: 320px;
   flex-shrink: 0;
-  affichage: flex;
-  Orientation flexique: ligne;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
-  text-align: gauche;
+  text-align: left;
 }
 
 .juxt-post img {
   width: 64px;
-  hauteur: 64px;
-  rayon de bordure : 8px ;
-  objet-fit: couverture;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
-Contenu .juxt-fort {
-  affichage: bloc;
+.juxt-content strong {
+  display: block;
   font-size: 1.1rem;
   color: var(--accent-cyan);
   margin-bottom: 0.5rem;
@@ -1059,17 +1059,17 @@ Contenu .juxt-fort {
 
 .juxt-content p {
   font-size: 0.95rem;
-  marge : 0;
+  margin: 0;
 }
 
 @keyframes scrollCarousel {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - 0,75rem)); }
+  100% { transform: translateX(calc(-50% - 0.75rem)); }
 }
 
 @media (max-width: 900px) {
   .discord-ui-layout {
-    direction flexion : colonne;
+    flex-direction: column;
   }
   .discord-ui-mockup {
     width: 100%;
