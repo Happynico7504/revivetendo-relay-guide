@@ -3,10 +3,10 @@
    ========================================================================== */
 
 :root {
-  /* Tavolozza colore solido - Nessun gradiente o bagliore */
+  /* Solid Color Palette - No Gradients or Glows */
   --bg-primary: #0f1117;
-  --bg-secondario: #161821;
-  --bg-terziario: #1e202b;
+  --bg-secondary: #161821;
+  --bg-tertiary: #1e202b;
   --bg-card: #181a24;
   --border-color: #2a2d3d;
   --border-hover: #3d4259;
@@ -18,10 +18,10 @@
   --accent-cyan: #0284c7;
   --accent-cyan-hover: #0369a1;
   --accent-light: #38bdf8;
-  --accent-viola: #7c3aed;
+  --accent-purple: #7c3aed;
   --accent-green: #059669;
 
-  /* Tipografia Pulita */
+  /* Clean Typography */
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
@@ -29,19 +29,19 @@
 
 * {
   box-sizing: border-box;
-  margine: 0;
+  margin: 0;
   padding: 0;
 }
 
 html {
-  scroll-behavior: liscio;
+  scroll-behavior: smooth;
   font-family: var(--font-body);
   background-color: var(--bg-primary);
   color: var(--text-main);
 }
 
 body {
-  altezza linea: 1,6;
+  line-height: 1.6;
 }
 
 .container {
@@ -50,12 +50,12 @@ body {
   padding: 0 1.5rem;
 }
 
-/* Collegamenti - Ciano Luminoso Ad Alto Contrasto */
+/* Links - High Contrast Bright Cyan */
 a {
   color: var(--accent-light);
-  text-decoration: sottolineato;
+  text-decoration: underline;
   text-underline-offset: 3px;
-  transizione: colore 0.15s facilità;
+  transition: color 0.15s ease;
 }
 
 a:hover {
@@ -64,7 +64,7 @@ a:hover {
 
 /* Navigation */
 .navbar {
-  posizione: appiccicoso;
+  position: sticky;
   top: 0;
   z-index: 100;
   background-color: var(--bg-secondary);
@@ -73,9 +73,9 @@ a:hover {
 
 .nav-container {
   display: flex;
-  elementi di allineamento: centro;
-  giustifica-contenuto: spazio-tra;
-  altezza: 64px;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
   max-width: 980px;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -83,16 +83,16 @@ a:hover {
 
 .brand {
   display: flex;
-  elementi di allineamento: centro;
+  align-items: center;
   gap: 0.75rem;
   text-decoration: none !important;
 }
 
 .brand-icon {
   width: 34px;
-  altezza: 34px;
+  height: 34px;
   border-radius: 8px;
-  object-fit: contiene;
+  object-fit: contain;
 }
 
 .brand-title {
@@ -112,14 +112,14 @@ a:hover {
   text-decoration: none !important;
   font-size: 0.95rem;
   font-weight: 500;
-  transizione: colore 0.15s facilità;
+  transition: color 0.15s ease;
 }
 
 .nav-link:hover {
   color: var(--text-main);
 }
 
-/* Intestazione Della Pagina */
+/* Page Header */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
@@ -131,17 +131,17 @@ a:hover {
   font-size: 2.3rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0,8rem;
+  margin-bottom: 0.8rem;
 }
 
 .page-description {
   font-size: 1.05rem;
   color: var(--text-muted);
   max-width: 780px;
-  altezza-linea: 1,65;
+  line-height: 1.65;
 }
 
-/* Stili Condivisi Sezione */
+/* Section Shared Styles */
 .guide-section,
 .content-section {
   margin-bottom: 4rem;
@@ -155,7 +155,7 @@ a:hover {
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0,4rem;
+  margin-bottom: 0.4rem;
 }
 
 .section-lead {
@@ -164,7 +164,7 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-/* Biglietti Step */
+/* Step Cards */
 .steps-list {
   display: flex;
   flex-direction: column;
@@ -179,7 +179,7 @@ a:hover {
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  posizione: relativo;
+  position: relative;
   overflow: hidden;
 }
 
@@ -188,8 +188,8 @@ a:hover {
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--accent-light);
-  text-transform: maiuscolo;
-  spaziatura letter: 0.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   padding-top: 0.1rem;
 }
 
@@ -198,7 +198,7 @@ a:hover {
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0,6rem;
+  margin-bottom: 0.6rem;
 }
 
 .step-content p {
@@ -211,20 +211,20 @@ a:hover {
   font-size: 0.9rem !important;
   color: var(--text-muted) !important;
   margin-top: 1rem;
-  margin-bottom: 0 !importante;
+  margin-bottom: 0 !important;
 }
 
 /* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
 .guide-image-container {
-  margine: 1,5rem 0;
+  margin: 1.5rem 0;
   width: 100%;
 }
 
 .guide-image {
   width: 100%;
   max-width: 580px;
-  altezza: auto;
-  display: blocco;
+  height: auto;
+  display: block;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
@@ -234,10 +234,10 @@ a:hover {
   font-size: 0.82rem;
   color: var(--text-dim);
   margin-top: 0.5rem;
-  display: blocco;
+  display: block;
 }
 
-/* Pulisci le caselle all'interno dei passi */
+/* Clean Boxes inside steps */
 .info-box {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
@@ -250,13 +250,13 @@ a:hover {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0,4rem;
+  margin-bottom: 0.4rem;
 }
 
 .info-box p {
   font-size: 0.92rem !important;
   color: var(--text-muted) !important;
-  margine: 0 !importante;
+  margin: 0 !important;
 }
 
 .requirements-list {
@@ -270,11 +270,11 @@ a:hover {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0,6rem;
+  margin-bottom: 0.6rem;
 }
 
 .requirements-list ul {
-  list-style-type: disco;
+  list-style-type: disc;
   margin-left: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -286,15 +286,15 @@ a:hover {
   color: var(--text-main);
 }
 
-/* Casella D'Azione */
+/* Action Box */
 .action-box {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.25rem 1.4rem;
   display: flex;
-  elementi di allineamento: centro;
-  giustifica-contenuto: spazio-tra;
+  align-items: center;
+  justify-content: space-between;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
@@ -304,7 +304,7 @@ a:hover {
   font-size: 1.05rem;
   color: var(--text-main);
   font-weight: 700;
-  margin-bottom: 0,15rem;
+  margin-bottom: 0.15rem;
 }
 
 .text-muted {
@@ -312,31 +312,31 @@ a:hover {
   font-size: 0.85rem;
 }
 
-/* Pulsanti - Testo bianco puro su sfondo ciano */
+/* Buttons - Pure White Text on Cyan Background */
 .btn,
 a.btn,
 .feature-card a.btn,
 .action-box a.btn {
   display: inline-flex;
-  elementi di allineamento: centro;
-  giustifica-contenuto: centro;
+  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  imbottitura: 0,65rem 1,3rem;
+  padding: 0.65rem 1.3rem;
   border-radius: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
   text-decoration: none !important;
-  frontiera: nessuna;
-  puntatore: puntatore;
+  border: none;
+  cursor: pointer;
   background-color: var(--accent-cyan);
-  color: #ffffff !importante;
-  transizione: sfondo-colore 0.15s facilità, bordo-colore 0.15s facilità;
+  color: #ffffff !important;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .lucide {
   flex-shrink: 0;
-  vertical-align: medio;
+  vertical-align: middle;
 }
 
 .btn:hover,
@@ -344,66 +344,66 @@ a.btn:hover,
 .feature-card a.btn:hover,
 .action-box a.btn:hover {
   background-color: var(--accent-cyan-hover);
-  color: #ffffff !importante;
+  color: #ffffff !important;
 }
 
-.btn-secondario,
+.btn-secondary,
 a.btn-secondary {
   background-color: var(--bg-tertiary) !important;
   border: 1px solid var(--border-color) !important;
   color: var(--text-main) !important;
 }
 
-.btn-secondario:hover,
+.btn-secondary:hover,
 a.btn-secondary:hover {
   background-color: #262938 !important;
   border-color: var(--border-hover) !important;
-  color: #ffffff !importante;
+  color: #ffffff !important;
 }
 
 .btn-discord,
 a.btn-discord {
   background-color: #5865f2 !important;
-  color: #ffffff !importante;
+  color: #ffffff !important;
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
   background-color: #4752c4 !important;
-  color: #ffffff !importante;
+  color: #ffffff !important;
 }
 
-/* Sezione Eroe Della Pagina Di Atterraggio */
+/* Landing Page Hero Section */
 .hero-section {
   padding: 5rem 0 3rem;
-  border-bottom: nessuno!importante;
+  border-bottom: none !important;
   margin-bottom: 3rem;
   text-align: center;
-  posizione: relativo;
-  trabocco: visibile !importante;
+  position: relative;
+  overflow: visible !important;
 }
 
 .hero-icon {
-  larghezza: 90px;
-  altezza: 90px;
+  width: 90px;
+  height: 90px;
   border-radius: 22px;
   margin: 0 auto 1.5rem;
-  display: blocco;
+  display: block;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Animazione: Lasciati cadere uno per uno dall'alto SENZA dissolvenza (l'opacità rimane 100%) */
+/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
 @keyframes dropFromTop {
   0% {
     transform: translateY(-45px);
-    visibilità: nascosta;
+    visibility: hidden;
   }
   1% {
-    visibilità: visibile;
+    visibility: visible;
   }
   100% {
     transform: translateY(0);
-    visibilità: visibile;
+    visibility: visible;
   }
 }
 
@@ -411,7 +411,7 @@ a.btn-discord:hover {
   display: inline-flex;
   gap: 0.3em;
   flex-wrap: wrap;
-  giustifica-contenuto: centro;
+  justify-content: center;
   font-family: var(--font-main);
   font-size: 3.2rem;
   font-weight: 700;
@@ -422,32 +422,32 @@ a.btn-discord:hover {
 
 .animated-title .word {
   display: inline-block;
-  visibilità: nascosta;
-  animazione: dropDaTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
+  visibility: hidden;
+  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
   animation-delay: calc(var(--animation-order) * 0.25s);
 }
 
-/* Ingresso scaglionato per tutti i contenuti che compaiono dopo la caduta di parole del titolo (~1.08s) */
+/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacità: 0;
+    opacity: 0;
     transform: translateY(22px);
-    visibilità: nascosta;
+    visibility: hidden;
   }
   1% {
-    visibilità: visibile;
+    visibility: visible;
   }
   100% {
-    opacità: 1;
+    opacity: 1;
     transform: translateY(0);
-    visibilità: visibile;
+    visibility: visible;
   }
 }
 
 .stagger-in {
-  opacità: 0;
-  visibilità: nascosta;
-  animazione: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+  visibility: hidden;
+  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   animation-delay: 1.08s;
 }
 
@@ -456,31 +456,31 @@ a.btn-discord:hover {
   color: var(--text-muted);
   max-width: 680px;
   margin: 0 auto 2.5rem;
-  altezza-linea: 1,65;
+  line-height: 1.65;
 }
 
 .hero-buttons {
   display: flex;
   gap: 1.25rem;
-  giustifica-contenuto: centro;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-/* Personaggi Mii Posizionati All'Interno Delle Aree Scatole Vuote E Popping Fuori Di Rimbalzi */
+/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
 .content-section,
 .feature-grid,
 .feature-card,
 .step-card,
 .info-box,
 .requirements-list {
-  posizione: relativo;
-  trabocco: visibile !importante;
+  position: relative;
+  overflow: visible !important;
 }
 
-/* Carte di caratteristiche con angolo esterno Miis: riserva 90px imbottitura destra sul titolo e paragrafo BOTH in modo che gli involucri di testo puliti e zero parole sono bloccati */
+/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
 .feature-card.has-mii {
-  posizione: relativo;
-  trabocco: visibile !importante;
+  position: relative;
+  overflow: visible !important;
 }
 
 .feature-card.has-mii h3,
@@ -489,48 +489,48 @@ a.btn-discord:hover {
 }
 
 .feature-card.has-mii h3 {
-  margin-bottom: 0,85rem;
+  margin-bottom: 0.85rem;
 }
 
 .mii-card-corner {
-  posizione: assoluto;
+  position: absolute;
   right: -24px;
   top: -42px;
-  altezza: 165px;
+  height: 165px;
   width: auto;
   z-index: 10;
-  filtro: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  eventi: nessuno;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
+  pointer-events: none;
 }
 
 .mii-card-corner-lounging {
-  posizione: assoluto;
-  destra: -18px;
+  position: absolute;
+  right: -18px;
   top: -50px;
-  altezza: 140px;
+  height: 140px;
   width: auto;
   z-index: 10;
-  filtro: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  eventi: nessuno;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
+  pointer-events: none;
 }
 
-/* Sezione eroe in basso a destra sovrapponendo Mii */
+/* Hero section bottom-right overlapping Mii */
 .mii-overlap-hero {
-  posizione: assoluto;
+  position: absolute;
   right: -25px;
-  inferiore: -45px;
-  altezza: 260px;
+  bottom: -45px;
+  height: 260px;
   width: auto;
   z-index: 10;
-  filtro: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
-  trasformazione: rotato(4deg);
-  eventi: nessuno;
+  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
+  transform: rotate(4deg);
+  pointer-events: none;
 }
 
 @media (max-width: 900px) {
   .mii-overlap-hero {
-    altezza: 180px;
-    destra: -10px;
+    height: 180px;
+    right: -10px;
     bottom: -30px;
   }
 }
@@ -541,11 +541,11 @@ a.btn-discord:hover {
   }
   .mii-card-corner,
   .mii-overlap-hero {
-    display: nessuno;
+    display: none;
   }
 }
 
-/* Banner Avvio Rapido */
+/* Quick Start Banner */
 .quick-start-banner {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -553,7 +553,7 @@ a.btn-discord:hover {
   padding: 3rem 2rem;
   text-align: center;
   margin-bottom: 4rem;
-  posizione: relativo;
+  position: relative;
   overflow: hidden;
 }
 
@@ -562,7 +562,7 @@ a.btn-discord:hover {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0,75rem;
+  margin-bottom: 0.75rem;
 }
 
 .quick-start-banner p {
@@ -574,7 +574,7 @@ a.btn-discord:hover {
   margin-right: auto;
 }
 
-/* Blocco codice / Albero directory */
+/* Code block / Directory tree */
 .code-block {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
@@ -587,8 +587,8 @@ a.btn-discord:hover {
   background-color: var(--bg-secondary);
   padding: 0.55rem 1.2rem;
   display: flex;
-  giustifica-contenuto: spazio-tra;
-  elementi di allineamento: centro;
+  justify-content: space-between;
+  align-items: center;
   font-size: 0.82rem;
   color: var(--text-muted);
   border-bottom: 1px solid var(--border-color);
@@ -596,13 +596,13 @@ a.btn-discord:hover {
 
 .btn-copy {
   background-color: var(--border-color);
-  frontiera: nessuna;
+  border: none;
   color: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  puntatore: puntatore;
+  cursor: pointer;
 }
 
 .btn-copy:hover {
@@ -613,12 +613,12 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  altezza linea: 1,5;
+  line-height: 1.5;
   color: var(--text-main);
   overflow-x: auto;
 }
 
-/* Istruzioni ordinate */
+/* Ordered instructions */
 .ordered-instructions {
   margin-left: 1.4rem;
   display: flex;
@@ -633,57 +633,57 @@ a.btn-discord:hover {
   padding-left: 0.3rem;
 }
 
-/* Token Del Pulsante Fisico Del Controllore */
+/* Controller Physical Button Tokens */
 .controller-btn {
   display: inline-flex;
-  elementi di allineamento: centro;
-  giustifica-contenuto: centro;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-main);
   font-weight: 700;
   color: #f8fafc;
   background-color: #334155;
   border: 1px solid #64748b;
   box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
-  user-select: nessuno;
-  vertical-align: medio;
-  altezza-linea: 1;
-  margine: 0 0,15rem;
+  user-select: none;
+  vertical-align: middle;
+  line-height: 1;
+  margin: 0 0.15rem;
 }
 
 .controller-btn.btn-round {
   width: 24px;
-  altezza: 24px;
+  height: 24px;
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-shoulder {
-  imbottitura: 0 0,55rem;
-  altezza: 24px;
+  padding: 0 0.55rem;
+  height: 24px;
   border-radius: 6px;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-pill {
-  imbottitura: 0 0,65rem;
-  altezza: 24px;
+  padding: 0 0.65rem;
+  height: 24px;
   border-radius: 12px;
   font-size: 0.74rem;
-  spaziatura letter: 0.04em;
+  letter-spacing: 0.04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  altezza: 24px;
+  height: 24px;
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  display: blocco;
+  display: block;
 }
 
-/* Griglia Caratteristica */
+/* Feature Grid */
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -708,7 +708,7 @@ a.btn-discord:hover {
 .feature-card p {
   color: var(--text-muted);
   font-size: 0.92rem;
-  altezza linea: 1,6;
+  line-height: 1.6;
 }
 
 .feature-card a {
@@ -716,10 +716,10 @@ a.btn-discord:hover {
 }
 
 .feature-card a:hover {
-  text-decoration: sottolineato;
+  text-decoration: underline;
 }
 
-/* Lista Domande Frequenti */
+/* FAQ List */
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -735,18 +735,18 @@ a.btn-discord:hover {
 
 .faq-question {
   width: 100%;
-  background-color: trasparente;
-  frontiera: nessuna;
+  background-color: transparent;
+  border: none;
   padding: 1.15rem 1.4rem;
   display: flex;
-  giustifica-contenuto: spazio-tra;
-  elementi di allineamento: centro;
+  justify-content: space-between;
+  align-items: center;
   text-align: left;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-main);
-  puntatore: puntatore;
+  cursor: pointer;
 }
 
 .faq-indicator {
@@ -756,16 +756,16 @@ a.btn-discord:hover {
 }
 
 .faq-answer {
-  max-altezza: 0;
+  max-height: 0;
   overflow: hidden;
-  transizione: massima altezza 0.25s facilità;
+  transition: max-height 0.25s ease;
 }
 
 .faq-answer p {
-  imbottitura: 0 1,4rem 1,3rem;
+  padding: 0 1.4rem 1.3rem;
   color: var(--text-muted);
   font-size: 0.92rem;
-  altezza-linea: 1,65;
+  line-height: 1.65;
 }
 
 /* Footer */
@@ -793,22 +793,22 @@ a.btn-discord:hover {
   }
 
   .nav-links {
-    display: nessuno;
+    display: none;
   }
 
   .page-header h1,
-  .eroe h1,
+  .hero-section h1,
   .animated-title {
     font-size: 2.2rem;
   }
 }
 
-/* Supporto Modalità Leggera */
+/* Light Mode Support */
 @media (prefers-color-scheme: light) {
   :root {
     --bg-primary: #f8fafc;
-    --bg-secondario: #f1f5f9;
-    --bg-terziario: #e2e8f0;
+    --bg-secondary: #f1f5f9;
+    --bg-tertiary: #e2e8f0;
     --bg-card: #ffffff;
     --border-color: #cbd5e1;
     --border-hover: #94a3b8;
@@ -818,17 +818,17 @@ a.btn-discord:hover {
     --text-dim: #64748b;
   }
   
-  /* Regola ombre per la modalità luce */
-  .guide-immagine,
-  .eroe-icona,
+  /* Adjust shadows for light mode */
+  .guide-image,
+  .hero-icon,
   .discord-ui-mockup {
-    box-shadow: nessuno;
+    box-shadow: none;
   }
 
   .mii-card-corner,
   .mii-card-corner-lounging,
   .mii-overlap-hero {
-    filtro: nessuno;
+    filter: none;
   }
 
   .controller-btn {
@@ -836,14 +836,14 @@ a.btn-discord:hover {
   }
 }
 
-/* Sezione Mockup UI Discord */
+/* Discord UI Mockup Section */
 .discord-ui-section {
   overflow: hidden;
 }
 
 .discord-ui-layout {
   display: flex;
-  elementi di allineamento: centro;
+  align-items: center;
   gap: 3rem;
 }
 
@@ -880,7 +880,7 @@ a.btn-discord:hover {
   font-weight: 600;
   border-bottom: 1px solid #1e1f22;
   display: flex;
-  elementi di allineamento: centro;
+  align-items: center;
   gap: 8px;
   color: #f2f3f5;
 }
@@ -900,15 +900,15 @@ a.btn-discord:hover {
 .discord-msg {
   display: flex;
   gap: 16px;
-  opacità: 0;
+  opacity: 0;
   transform: translateY(10px);
 }
 
 .discord-avatar {
   width: 40px;
-  altezza: 40px;
+  height: 40px;
   border-radius: 50%;
-  oggetto-idoneo: copertura;
+  object-fit: cover;
   background-color: #2b2d31;
 }
 
@@ -918,7 +918,7 @@ a.btn-discord:hover {
 
 .discord-msg-header {
   display: flex;
-  voci di allineamento: base;
+  align-items: baseline;
   gap: 8px;
   margin-bottom: 4px;
 }
@@ -929,7 +929,7 @@ a.btn-discord:hover {
 }
 
 .discord-user.admin-user {
-  color: #eb459e; /* Colore ruolo rosa */
+  color: #eb459e; /* Pink role color */
 }
 
 .discord-time {
@@ -940,23 +940,23 @@ a.btn-discord:hover {
 .discord-msg p {
   color: #dbdee1;
   font-size: 0.95rem;
-  altezza-linea: 1,4;
-  margine: 0;
+  line-height: 1.4;
+  margin: 0;
 }
 
-/* Animazioni per Discord Mockup */
+/* Animations for Discord Mockup */
 .start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
 .start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
 .start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
 
 @keyframes popIn {
   to {
-    opacità: 1;
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* Mods Griglia */
+/* Mods Grid */
 .mods-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -970,21 +970,21 @@ a.btn-discord:hover {
   border-radius: 8px;
   padding: 2rem 1rem;
   text-align: center;
-  transizione: tutta la facilità di 0.2s;
+  transition: all 0.2s ease;
   display: flex;
   flex-direction: column;
-  elementi di allineamento: centro;
+  align-items: center;
   gap: 0.75rem;
 }
 
 .mod-avatar {
-  larghezza: 80px;
-  altezza: 80px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: var(--bg-tertiary);
   display: flex;
-  elementi di allineamento: centro;
-  giustifica-contenuto: centro;
+  align-items: center;
+  justify-content: center;
   font-size: 2rem;
   font-weight: 600;
   color: var(--text-muted);
@@ -993,8 +993,8 @@ a.btn-discord:hover {
 
 .mod-avatar img {
   width: 100%;
-  altezza: 100%;
-  oggetto-idoneo: copertura;
+  height: 100%;
+  object-fit: cover;
 }
 
 .mod-name {
@@ -1011,22 +1011,22 @@ a.btn-discord:hover {
 /* Juxtaposition Carousel */
 .juxt-carousel-wrapper {
   overflow: hidden;
-  posizione: relativo;
+  position: relative;
   width: 100%;
   margin-top: 2rem;
-  maschera-immagine: linear-gradient(a destra, trasparente, nero 10%, nero 90%, trasparente);
-  -webkit-mask-image: linear-gradient(a destra, trasparente, nero 10%, nero 90%, trasparente);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .juxt-carousel {
   display: flex;
   width: fit-content;
-  animazione: scrollCarousel 20s infinito lineare;
+  animation: scrollCarousel 20s linear infinite;
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  animation-play-state: in pausa;
+  animation-play-state: paused;
 }
 
 .juxt-post {
@@ -1034,24 +1034,24 @@ a.btn-discord:hover {
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 1.25rem;
-  larghezza: 320px;
+  width: 320px;
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
-  elementi di allineamento: centro;
+  align-items: center;
   gap: 1rem;
   text-align: left;
 }
 
 .juxt-post img {
   width: 64px;
-  altezza: 64px;
+  height: 64px;
   border-radius: 8px;
-  oggetto-idoneo: copertura;
+  object-fit: cover;
 }
 
 .juxt-content strong {
-  display: blocco;
+  display: block;
   font-size: 1.1rem;
   color: var(--accent-cyan);
   margin-bottom: 0.5rem;
@@ -1059,7 +1059,7 @@ a.btn-discord:hover {
 
 .juxt-content p {
   font-size: 0.95rem;
-  margine: 0;
+  margin: 0;
 }
 
 @keyframes scrollCarousel {
