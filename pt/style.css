@@ -1,9 +1,9 @@
 /* ==========================================================================
-   Revivetendo Relay Network — Clean Solid CSS Design System
+   Revivetendo Relay Network — Sistema CSS de Design Limpo
    ========================================================================== */
 
 :root {
-  /* Solid Color Palette - No Gradients or Glows */
+  /* Paleta de cores sólidas - Sem gradientes ou brilhos */
   --bg-primary: #0f1117;
   --bg-secondary: #161821;
   --bg-tertiary: #1e202b;
@@ -12,16 +12,16 @@
   --border-hover: #3d4259;
 
   --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
+  --text-mudo: #94a3b8;
   --text-dim: #64748b;
 
-  --accent-cyan: #0284c7;
+  --accent-cian: #0284c7;
   --accent-cyan-hover: #0369a1;
-  --accent-light: #38bdf8;
-  --accent-purple: #7c3aed;
+  --acento-light: #38bdf8;
+  --acento-roxo: #7c3a;
   --accent-green: #059669;
 
-  /* Clean Typography */
+  /* Tipografia limpa */
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
@@ -29,70 +29,70 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
+  margem: 0;
   padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+  comportamento da rolagem: suave;
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
+  cor de background-color: var(--bg-primary);
   color: var(--text-main);
 }
 
-body {
-  line-height: 1.6;
+corpo {
+  altura-linha: 1.6;
 }
 
-.container {
-  max-width: 980px;
-  margin: 0 auto;
+.contêiner {
+  Largura max: 980px;
+  margem: 0 de autor;
   padding: 0 1.5rem;
 }
 
-/* Links - High Contrast Bright Cyan */
-a {
-  color: var(--accent-light);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease;
+/* Links - Alto Contraste Brilho Ciano */
+uma {
+  cor: var(--accent-light);
+  decoração de texto: sublinhado;
+  texto-sublinhado-offset: 3px;
+  transição: facilitar a cor 0.15s;
 }
 
 a:hover {
-  color: #7dd3fc;
+  cor: #7dd3fc;
 }
 
 /* Navigation */
 .navbar {
-  position: sticky;
-  top: 0;
+  posição: fixo;
+  topo: 0;
   z-index: 100;
-  background-color: var(--bg-secondary);
+  cor de background-color: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  max-width: 980px;
-  margin: 0 auto;
+.contêiner {
+  exibir: flexão;
+  Itens de alinhamento: centro;
+  justify-content: espaço-entre;
+  altura: 64px;
+  Largura max: 980px;
+  margem: 0 de autor;
   padding: 0 1.5rem;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
+.marca {
+  exibir: flexão;
+  Itens de alinhamento: centro;
   gap: 0.75rem;
-  text-decoration: none !important;
+  decoração de texto: nenhum !important;
 }
 
 .brand-icon {
   width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  object-fit: contain;
+  altura: 34px;
+  bordo-raio: 8px;
+  object-fit: contém;
 }
 
 .brand-title {
@@ -103,27 +103,27 @@ a:hover {
 }
 
 .nav-links {
-  display: flex;
+  exibir: flexão;
   gap: 2rem;
 }
 
 .nav-link {
   color: var(--text-muted);
-  text-decoration: none !important;
+  decoração de texto: nenhum !important;
   font-size: 0.95rem;
   font-weight: 500;
-  transition: color 0.15s ease;
+  transição: facilitar a cor 0.15s;
 }
 
 .nav-link:hover {
   color: var(--text-main);
 }
 
-/* Page Header */
+/* Cabeçalho da Página */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 3rem;
+  margem inferior: 3rem;
 }
 
 .page-header h1 {
@@ -131,55 +131,55 @@ a:hover {
   font-size: 2.3rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0.8rem;
+  margem inferior: 0.8rem;
 }
 
-.page-description {
+.página-descrição {
   font-size: 1.05rem;
   color: var(--text-muted);
-  max-width: 780px;
-  line-height: 1.65;
+  Largura max: 780px;
+  altura-linha: 1.65;
 }
 
-/* Section Shared Styles */
-.guide-section,
-.content-section {
-  margin-bottom: 4rem;
+/* Seção com estilos compartilhados */
+.seção-guia,
+.seção content-{
+  margem inferior: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
 }
 
-.guide-section h2,
-.content-section h2 {
+.turma-guia h2,
+.seção de conteúdo h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0.4rem;
+  margem inferior: 0.4rem;
 }
 
-.section-lead {
+.lead-section-lead {
   font-size: 1rem;
   color: var(--text-muted);
-  margin-bottom: 2rem;
+  margem inferior: 2rem;
 }
 
-/* Step Cards */
+/* Cartões de Etapa */
 .steps-list {
-  display: flex;
-  flex-direction: column;
+  exibir: flexão;
+  flex-direction: coluna;
   gap: 2rem;
 }
 
 .step-card {
-  display: grid;
-  grid-template-columns: 85px 1fr;
+  exibir: grade;
+  colunas-modelo: 85px 1fr;
   gap: 1.8rem;
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  position: relative;
+  posição: relativo;
   overflow: hidden;
 }
 
@@ -187,46 +187,46 @@ a:hover {
   font-family: var(--font-main);
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--accent-light);
-  text-transform: uppercase;
+  cor: var(--accent-light);
+  texto-transform: maiúsculas;
   letter-spacing: 0.05em;
   padding-top: 0.1rem;
 }
 
-.step-content h3 {
+.conteúdo-passo h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0.6rem;
+  margem inferior: 0.6rem;
 }
 
-.step-content p {
+.material-passo {
   color: var(--text-main);
   font-size: 0.98rem;
-  margin-bottom: 1.25rem;
+  margem inferior: 1.25rem;
 }
 
-.step-note {
+.step-nota {
   font-size: 0.9rem !important;
-  color: var(--text-muted) !important;
+  cor: var(--text-muted) !important;
   margin-top: 1rem;
   margin-bottom: 0 !important;
 }
 
-/* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
+/* Imagens de Referência de Guia - Proporção de Aspecto Natural, Sem Áreas Negras */
 .guide-image-container {
-  margin: 1.5rem 0;
+  margem: 1.5rem 0;
   width: 100%;
 }
 
-.guide-image {
+.guia-imagem {
   width: 100%;
-  max-width: 580px;
-  height: auto;
-  display: block;
+  Largura max: 580px;
+  altura: auto;
+  exibir: bloco;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  bordo-raio: 8px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
@@ -234,253 +234,253 @@ a:hover {
   font-size: 0.82rem;
   color: var(--text-dim);
   margin-top: 0.5rem;
-  display: block;
+  exibir: bloco;
 }
 
-/* Clean Boxes inside steps */
+/* Limpar caixas dentro dos passos */
 .info-box {
-  background-color: var(--bg-tertiary);
+  background-color: var(--bg-terciary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  bordo-raio: 8px;
   padding: 1.25rem 1.4rem;
-  margin-bottom: 1.5rem;
+  margem inferior: 1.5rem;
 }
 
 .info-box h4 {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0.4rem;
+  margem inferior: 0.4rem;
 }
 
 .info-box p {
   font-size: 0.92rem !important;
-  color: var(--text-muted) !important;
-  margin: 0 !important;
+  cor: var(--text-muted) !important;
+  margem: 0 !important;
 }
 
-.requirements-list {
-  background-color: var(--bg-tertiary);
+.requisitos-lista {
+  background-color: var(--bg-terciary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  bordo-raio: 8px;
   padding: 1.25rem 1.4rem;
 }
 
-.requirements-list h4 {
+.requisitos-lista h4 {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0.6rem;
+  margem inferior: 0.6rem;
 }
 
-.requirements-list ul {
-  list-style-type: disc;
-  margin-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
+.requerimentos-lista ul {
+  tipo-estilo: disc;
+  margem esquerda: 1.25rem;
+  exibir: flexão;
+  flex-direction: coluna;
   gap: 0.5rem;
 }
 
-.requirements-list li {
+.requerimentos-lista li {
   font-size: 0.92rem;
   color: var(--text-main);
 }
 
-/* Action Box */
-.action-box {
-  background-color: var(--bg-tertiary);
+/* Caixa de ação */
+.Caixa de ações {
+  background-color: var(--bg-terciary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  bordo-raio: 8px;
   padding: 1.25rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  exibir: flexão;
+  Itens de alinhamento: centro;
+  justify-content: espaço-entre;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+  margem inferior: 1.5rem;
+  flex-wrap: encapsular;
 }
 
-.action-box h4 {
+.ação-caixa h4 {
   font-size: 1.05rem;
   color: var(--text-main);
   font-weight: 700;
-  margin-bottom: 0.15rem;
+  margem inferior: 0.15rem;
 }
 
-.text-muted {
+.texto-silenciado {
   color: var(--text-muted);
   font-size: 0.85rem;
 }
 
-/* Buttons - Pure White Text on Cyan Background */
+/* Botões - Texto Branco Puro em Fundo Ciano */
 .btn,
 a.btn,
 .feature-card a.btn,
-.action-box a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.acção-caixa a.btn {
+  exibir: emline-flex;
+  Itens de alinhamento: centro;
+  justify-content: centro;
   gap: 0.5rem;
-  padding: 0.65rem 1.3rem;
-  border-radius: 6px;
+  preenchendo: 0.65rem 1.3rem;
+  bordo-raio: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  text-decoration: none !important;
-  border: none;
-  cursor: pointer;
+  decoração de texto: nenhum !important;
+  borda: nenhum;
+  cursor: ponteiro;
   background-color: var(--accent-cyan);
   color: #ffffff !important;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  transição: fácil cor de fundo 0.15s, facilidade 0.15s;
 }
 
-.lucide {
+.lúcido {
   flex-shrink: 0;
-  vertical-align: middle;
+  alinhar-vertical: meio;
 }
 
 .btn:hover,
 a.btn:hover,
-.feature-card a.btn:hover,
+cartão-do-recurso a.btn:hover,
 .action-box a.btn:hover {
   background-color: var(--accent-cyan-hover);
   color: #ffffff !important;
 }
 
-.btn-secondary,
-a.btn-secondary {
-  background-color: var(--bg-tertiary) !important;
+.btn-secundário,
+a.btn-secundário {
+  cor de background-color: var(--bg-tertiary) !important;
   border: 1px solid var(--border-color) !important;
   color: var(--text-main) !important;
 }
 
 .btn-secondary:hover,
 a.btn-secondary:hover {
-  background-color: #262938 !important;
+  cor de fundo: #262938 !important;
   border-color: var(--border-hover) !important;
   color: #ffffff !important;
 }
 
 .btn-discord,
 a.btn-discord {
-  background-color: #5865f2 !important;
+  cor de fundo: #5865f2 !important;
   color: #ffffff !important;
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
-  background-color: #4752c4 !important;
+  cor-de-fundo: #4752c4 !important;
   color: #ffffff !important;
 }
 
-/* Landing Page Hero Section */
-.hero-section {
+/* Seção de Herói da página inicial */
+.herói-seção {
   padding: 5rem 0 3rem;
-  border-bottom: none !important;
-  margin-bottom: 3rem;
+  bordo-inferior: nenhum !important;
+  margem inferior: 3rem;
   text-align: center;
-  position: relative;
-  overflow: visible !important;
+  posição: relativo;
+  overflow: visível !important;
 }
 
-.hero-icon {
-  width: 90px;
-  height: 90px;
+.ícone hero-{
+  largura: 90px;
+  altura: 90px;
   border-radius: 22px;
-  margin: 0 auto 1.5rem;
-  display: block;
+  margem: 0 auto 1.5rem;
+  exibir: bloco;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
+/* Animação: Solte um a um do topo SEM desvanecer (opacidade permanece 100%) */
 @keyframes dropFromTop {
   0% {
-    transform: translateY(-45px);
-    visibility: hidden;
+    transformar: translateY(-45px);
+    visibilidade: oculta;
   }
   1% {
-    visibility: visible;
+    visibilidade: visível;
   }
   100% {
-    transform: translateY(0);
-    visibility: visible;
+    transformar: translateY(0);
+    visibilidade: visível;
   }
 }
 
-.animated-title {
-  display: inline-flex;
+.animado-título {
+  exibir: emline-flex;
   gap: 0.3em;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: encapsular;
+  justify-content: centro;
   font-family: var(--font-main);
   font-size: 3.2rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 1.1rem;
+  margem inferior: 1.1rem;
   letter-spacing: -0.02em;
 }
 
 .animated-title .word {
-  display: inline-block;
-  visibility: hidden;
-  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
-  animation-delay: calc(var(--animation-order) * 0.25s);
+  exibir: bloco-embutido;
+  visibilidade: oculta;
+  animação: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) para frente;
+  atraso-animação: calc(var(--animation-order) * 0.25s);
 }
 
-/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
+/* Entrada Atordoada para todo o conteúdo que aparece na lista de palavras do título da AFTER completada (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacity: 0;
-    transform: translateY(22px);
-    visibility: hidden;
+    opacidade: 0;
+    transformar: translateY(22px);
+    visibilidade: oculta;
   }
   1% {
-    visibility: visible;
+    visibilidade: visível;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
+    opacidade: 1;
+    transformar: translateY(0);
+    visibilidade: visível;
   }
 }
 
 .stagger-in {
-  opacity: 0;
-  visibility: hidden;
-  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: 1.08s;
+  opacidade: 0;
+  visibilidade: oculta;
+  animação: staggerFadeUp 0,45s cubic-bezier(0.16, 1, 0.3, 1) para frente;
+  atraso-animação: 1.08;
 }
 
-.hero-description {
+.descrição-herótica {
   font-size: 1.2rem;
   color: var(--text-muted);
-  max-width: 680px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.65;
+  Largura max: 680px;
+  margem: 0 auto 2.5rem;
+  altura-linha: 1.65;
 }
 
-.hero-buttons {
-  display: flex;
+.botões hero-{
+  exibir: flexão;
   gap: 1.25rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: centro;
+  flex-wrap: encapsular;
 }
 
-/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
-.content-section,
-.feature-grid,
+/* Mii Caracteres Colocados dentro das áreas em branco e Popping Out-of-Bounds */
+.Seção-conteúdo,
+.grade-feature,
 .feature-card,
-.step-card,
+.cartão madril,
 .info-box,
-.requirements-list {
-  position: relative;
-  overflow: visible !important;
+.requisitos-lista {
+  posição: relativo;
+  overflow: visível !important;
 }
 
-/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
+/* Cartas de recursos com canto exterior Miis: reserva 90px espaço direito do valor no título e parágrafo do BOTH para que os textos sejam cortados de forma limpa e palavras zero sejam bloqueadas */
 .feature-card.has-mii {
-  position: relative;
-  overflow: visible !important;
+  posição: relativo;
+  overflow: visível !important;
 }
 
 .feature-card.has-mii h3,
@@ -489,106 +489,106 @@ a.btn-discord:hover {
 }
 
 .feature-card.has-mii h3 {
-  margin-bottom: 0.85rem;
+  margem inferior: 0.85rem;
 }
 
-.mii-card-corner {
-  position: absolute;
+.mii-cartão-canto {
+  posição: absoluta;
   right: -24px;
   top: -42px;
-  height: 165px;
+  altura: 165px;
   width: auto;
-  z-index: 10;
+  z-índice: 10;
   filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  pointer-eventos: nenhum;
 }
 
 .mii-card-corner-lounging {
-  position: absolute;
-  right: -18px;
+  posição: absoluta;
+  direita: -18px;
   top: -50px;
-  height: 140px;
+  altura: 140px;
   width: auto;
-  z-index: 10;
+  z-índice: 10;
   filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  pointer-eventos: nenhum;
 }
 
-/* Hero section bottom-right overlapping Mii */
-.mii-overlap-hero {
-  position: absolute;
+/* Campo de heróis no canto inferior direito sobreposto pelo Mi */
+.mii-sobreposição-herói {
+  posição: absoluta;
   right: -25px;
-  bottom: -45px;
-  height: 260px;
+  inferior: -45px;
+  altura: 260px;
   width: auto;
-  z-index: 10;
+  z-índice: 10;
   filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
-  transform: rotate(4deg);
-  pointer-events: none;
+  transformar: rotate(4deg);
+  pointer-eventos: nenhum;
 }
 
 @media (max-width: 900px) {
-  .mii-overlap-hero {
-    height: 180px;
-    right: -10px;
+  .mii-sobreposição-herói {
+    altura: 180px;
+    direita: -10px;
     bottom: -30px;
   }
 }
 
 @media (max-width: 600px) {
   .feature-card.has-mii h3 {
-    padding-right: 0;
+    preenchimento-direita: 0;
   }
   .mii-card-corner,
-  .mii-overlap-hero {
-    display: none;
+  .mii-sobreposição-herói {
+    exibir: nenhum;
   }
 }
 
-/* Quick Start Banner */
-.quick-start-banner {
+/* Banner de início rápido */
+.iniciar-banner {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  bordo-raio: 12px;
   padding: 3rem 2rem;
   text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
+  margem inferior: 4rem;
+  posição: relativo;
   overflow: hidden;
 }
 
-.quick-start-banner h2 {
+.iniciar-banner h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0.75rem;
+  margem inferior: 0.75rem;
 }
 
-.quick-start-banner p {
+.iniciar-banner {
   color: var(--text-muted);
   font-size: 1.05rem;
-  margin-bottom: 1.75rem;
-  max-width: 580px;
-  margin-left: auto;
-  margin-right: auto;
+  margem inferior: 1.75rem;
+  Largura max: 580px;
+  margin-esquerda: automático;
+  margem direita: automático;
 }
 
-/* Code block / Directory tree */
-.code-block {
-  background-color: var(--bg-tertiary);
+/* Bloco de código / árvore de diretório */
+.bloco de código {
+  background-color: var(--bg-terciary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  bordo-raio: 8px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margem inferior: 1.5rem;
 }
 
 .code-header {
-  background-color: var(--bg-secondary);
+  cor de background-color: var(--bg-secondary);
   padding: 0.55rem 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  exibir: flexão;
+  justify-content: espaço-entre;
+  Itens de alinhamento: centro;
   font-size: 0.82rem;
   color: var(--text-muted);
   border-bottom: 1px solid var(--border-color);
@@ -596,13 +596,13 @@ a.btn-discord:hover {
 
 .btn-copy {
   background-color: var(--border-color);
-  border: none;
+  borda: nenhum;
   color: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  cursor: pointer;
+  cursor: ponteiro;
 }
 
 .btn-copy:hover {
@@ -613,18 +613,18 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  line-height: 1.5;
+  altura-linha: 1.5;
   color: var(--text-main);
   overflow-x: auto;
 }
 
-/* Ordered instructions */
+/* Instruções ordenadas */
 .ordered-instructions {
-  margin-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
+  margem esquerda: 1.4rem;
+  exibir: flexão;
+  flex-direction: coluna;
   gap: 0.85rem;
-  margin-bottom: 1.5rem;
+  margem inferior: 1.5rem;
 }
 
 .ordered-instructions li {
@@ -633,158 +633,158 @@ a.btn-discord:hover {
   padding-left: 0.3rem;
 }
 
-/* Controller Physical Button Tokens */
+/* Tokens do Botão Físico */
 .controller-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  exibir: emline-flex;
+  Itens de alinhamento: centro;
+  justify-content: centro;
   font-family: var(--font-main);
   font-weight: 700;
-  color: #f8fafc;
-  background-color: #334155;
-  border: 1px solid #64748b;
+  cor: #f8fafc;
+  cor-de-fundo: #334155;
+  borda: 1px sólido em #64748b;
   box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
-  user-select: none;
-  vertical-align: middle;
-  line-height: 1;
-  margin: 0 0.15rem;
+  selecionar: nenhum;
+  alinhar-vertical: meio;
+  altura-linha: 1;
+  margem: 0 0.15rem;
 }
 
 .controller-btn.btn-round {
   width: 24px;
-  height: 24px;
+  altura: 24px;
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
-.controller-btn.btn-shoulder {
-  padding: 0 0.55rem;
-  height: 24px;
-  border-radius: 6px;
+.controller-btn.btn-ombro {
+  preenchendo: 0 0.55rem;
+  altura: 24px;
+  bordo-raio: 6px;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-pill {
-  padding: 0 0.65rem;
-  height: 24px;
-  border-radius: 12px;
+  preenchendo: 0 0.65rem;
+  altura: 24px;
+  bordo-raio: 12px;
   font-size: 0.74rem;
   letter-spacing: 0.04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  height: 24px;
+  altura: 24px;
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  display: block;
+  exibir: bloco;
 }
 
-/* Feature Grid */
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+/* Grade de Recursos */
+.grade-feature-grid {
+  exibir: grade;
+  grid-template-colunas: repetir(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
-.feature-card {
+.cartão-do-recurso {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  bordo-raio: 8px;
   padding: 1.6rem;
 }
 
-.feature-card h3 {
+.cartão-de recurso h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0.5rem;
+  margem inferior: 0.5rem;
 }
 
-.feature-card p {
+.cartão-de-funcionalidade {
   color: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.6;
+  altura-linha: 1.6;
 }
 
-.feature-card a {
-  color: var(--accent-light);
+.cartão-do-recurso uma {
+  cor: var(--accent-light);
 }
 
-.feature-card a:hover {
-  text-decoration: underline;
+.cartão-de recurso a:hover {
+  decoração de texto: sublinhado;
 }
 
-/* FAQ List */
-.faq-list {
-  display: flex;
-  flex-direction: column;
+/* Lista de FAQ */
+.lista de faq-{
+  exibir: flexão;
+  flex-direction: coluna;
   gap: 0.85rem;
 }
 
 .faq-item {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  bordo-raio: 8px;
   overflow: hidden;
 }
 
-.faq-question {
+.pergunta-faq-{
   width: 100%;
-  background-color: transparent;
-  border: none;
+  cor de fundo: transparente;
+  borda: nenhum;
   padding: 1.15rem 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
+  exibir: flexão;
+  justify-content: espaço-entre;
+  Itens de alinhamento: centro;
+  text-align: esquerda;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-main);
-  cursor: pointer;
+  cursor: ponteiro;
 }
 
-.faq-indicator {
+.indicador-padrão {
   font-size: 1.25rem;
   font-weight: 400;
-  color: var(--accent-light);
+  cor: var(--accent-light);
 }
 
-.faq-answer {
-  max-height: 0;
+.resposta faq-resposta {
+  altura-max: 0;
   overflow: hidden;
-  transition: max-height 0.25s ease;
+  transição: facilidades max-height 0.25s;
 }
 
-.faq-answer p {
-  padding: 0 1.4rem 1.3rem;
+.faq-resposta {
+  preenchendo: 0 1.4rem 1.3rem;
   color: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.65;
+  altura-linha: 1.65;
 }
 
-/* Footer */
-.footer {
+/* Rodapé */
+.rodapé {
   padding: 2.2rem 0;
-  background-color: var(--bg-secondary);
+  cor de background-color: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
 }
 
-.footer-content {
+.rodapé {
   text-align: center;
   color: var(--text-dim);
   font-size: 0.82rem;
 }
 
-/* Responsive */
+/* Responsivo */
 @media (max-width: 768px) {
   .step-card {
-    grid-template-columns: 1fr;
+    grid-template-colunas: 1fr;
     gap: 0.6rem;
   }
 
@@ -793,18 +793,18 @@ a.btn-discord:hover {
   }
 
   .nav-links {
-    display: none;
+    exibir: nenhum;
   }
 
   .page-header h1,
-  .hero-section h1,
-  .animated-title {
+  .hero-seção h1,
+  .animado-título {
     font-size: 2.2rem;
   }
 }
 
-/* Light Mode Support */
-@media (prefers-color-scheme: light) {
+/* Suporte em Modo Leve */
+@media (preferir cor-esquema: luz) {
   :root {
     --bg-primary: #f8fafc;
     --bg-secondary: #f1f5f9;
@@ -814,21 +814,21 @@ a.btn-discord:hover {
     --border-hover: #94a3b8;
 
     --text-main: #0f172a;
-    --text-muted: #334155;
+    --text-mudo: #334155;
     --text-dim: #64748b;
   }
   
-  /* Adjust shadows for light mode */
-  .guide-image,
-  .hero-icon,
+  /* Ajustar sombras para o modo de luz */
+  imagem .guide-imagem,
+  .ícone-her,
   .discord-ui-mockup {
-    box-shadow: none;
+    box-shadow: nenhum;
   }
 
   .mii-card-corner,
   .mii-card-corner-lounging,
-  .mii-overlap-hero {
-    filter: none;
+  .mii-sobreposição-herói {
+    filtro: nenhum;
   }
 
   .controller-btn {
@@ -836,130 +836,130 @@ a.btn-discord:hover {
   }
 }
 
-/* Discord UI Mockup Section */
-.discord-ui-section {
+/* Mesclagem de interface do Discord */
+.discord-ui-seção {
   overflow: hidden;
 }
 
 .discord-ui-layout {
-  display: flex;
-  align-items: center;
+  exibir: flexão;
+  Itens de alinhamento: centro;
   gap: 3rem;
 }
 
 .discord-ui-text {
-  flex: 1;
+  flexão: 1;
 }
 
 .discord-ui-text h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margem inferior: 1rem;
 }
 
 .discord-ui-text .btn-fullwidth {
-  display: inline-flex;
+  exibir: emline-flex;
   width: auto;
   margin-top: 1rem;
 }
 
 .discord-ui-mockup {
-  flex: 1;
-  background-color: #313338;
-  border-radius: 8px;
+  flexão: 1;
+  cor-de-fundo: #313338;
+  bordo-raio: 8px;
   overflow: hidden;
-  border: 1px solid #1e1f22;
+  borda: 1px sólido #1e1f22;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   font-family: var(--font-body);
-  color: #dbdee1;
+  cor: #dbdee1;
   min-width: 350px;
 }
 
 .discord-ui-header {
-  background-color: #2b2d31;
-  padding: 12px 16px;
+  cor de fundo: #2b2d31;
+  preenchendo: 12px 16px;
   font-weight: 600;
-  border-bottom: 1px solid #1e1f22;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #f2f3f5;
+  border-bottom: 1px sólido #1e1f22;
+  exibir: flexão;
+  Itens de alinhamento: centro;
+  lacunas: 8px;
+  cor: #f2f3f5;
 }
 
 .discord-ui-header .hashtag {
-  color: #80848e;
+  cor: #80848;
   font-size: 1.2rem;
 }
 
 .discord-ui-messages {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  exibir: flexão;
+  flex-direction: coluna;
   gap: 16px;
 }
 
 .discord-msg {
-  display: flex;
+  exibir: flexão;
   gap: 16px;
-  opacity: 0;
-  transform: translateY(10px);
+  opacidade: 0;
+  transformar: translateY(10px);
 }
 
 .discord-avatar {
-  width: 40px;
-  height: 40px;
+  largura: 40px;
+  altura: 40px;
   border-radius: 50%;
-  object-fit: cover;
-  background-color: #2b2d31;
+  objeto-equipado: capa;
+  cor de fundo: #2b2d31;
 }
 
 .discord-msg-content {
-  flex: 1;
+  flexão: 1;
 }
 
 .discord-msg-header {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin-bottom: 4px;
+  exibir: flexão;
+  Itens de alinhamento: base;
+  lacunas: 8px;
+  margem inferior: 4px;
 }
 
-.discord-user {
+.discord-usuário {
   font-weight: 500;
-  color: #f2f3f5;
+  cor: #f2f3f5;
 }
 
-.discord-user.admin-user {
-  color: #eb459e; /* Pink role color */
+.discord-usuário.admin-usuário {
+  cor: #eb459e; /* Cor da função Rosa */
 }
 
-.discord-time {
+.tempo do discord-time {
   font-size: 0.75rem;
-  color: #949ba4;
+  cor: #949ba4;
 }
 
 .discord-msg p {
-  color: #dbdee1;
+  cor: #dbdee1;
   font-size: 0.95rem;
-  line-height: 1.4;
-  margin: 0;
+  altura-linha: 1.4;
+  margem: 0;
 }
 
-/* Animations for Discord Mockup */
-.start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
-.start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
-.start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
+/* Animações para Mockup do Discord */
+.start-anim .msg-anim-1 { animation: popIn 0.4s facilita-se encaminhar 0.2s; }
+.start-anim .msg-anim-2 { animation: popIn 0.4s fácil passar 1.4s; }
+.start-anim .msg-anim-3 { animation: popIn 0.4s facilita-se encaminhar 2.6s; }
 
 @keyframes popIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  até {
+    opacidade: 1;
+    transformar: translateY(0);
   }
 }
 
-/* Mods Grid */
+/* Grade de Mods */
 .mods-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  exibir: grade;
+  grid-template-colunas: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
@@ -967,24 +967,24 @@ a.btn-discord:hover {
 .mod-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  bordo-raio: 8px;
   padding: 2rem 1rem;
   text-align: center;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  transição: todas as facilidades de 0.2s;
+  exibir: flexão;
+  flex-direction: coluna;
+  Itens de alinhamento: centro;
   gap: 0.75rem;
 }
 
 .mod-avatar {
-  width: 80px;
-  height: 80px;
+  largura: 80px;
+  altura: 80px;
   border-radius: 50%;
-  background-color: var(--bg-tertiary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--bg-terciary);
+  exibir: flexão;
+  Itens de alinhamento: centro;
+  justify-content: centro;
   font-size: 2rem;
   font-weight: 600;
   color: var(--text-muted);
@@ -993,8 +993,8 @@ a.btn-discord:hover {
 
 .mod-avatar img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  altura: 100%;
+  objeto-equipado: capa;
 }
 
 .mod-name {
@@ -1008,58 +1008,58 @@ a.btn-discord:hover {
   color: var(--text-dim);
 }
 
-/* Juxtaposition Carousel */
+/* Carrossel da Juxtaposição */
 .juxt-carousel-wrapper {
   overflow: hidden;
-  position: relative;
+  posição: relativo;
   width: 100%;
   margin-top: 2rem;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  Imagem-máscara: gradiente linear-(para a direita, transparente, preto 10%, preto 90%, transparente);
+  -webkit-mask-image: linear-gradient(para a direita, transparente, preto 10%, preto 90%, transparente);
 }
 
 .juxt-carousel {
-  display: flex;
+  exibir: flexão;
   width: fit-content;
-  animation: scrollCarousel 20s linear infinite;
+  animação: scrollCarousel 20s linear infinito;
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  animation-play-state: paused;
+  animação-play-state: pausada;
 }
 
 .juxt-post {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  bordo-raio: 12px;
   padding: 1.25rem;
-  width: 320px;
+  largura: 320px;
   flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  exibir: flexão;
+  flex-direção: linha;
+  Itens de alinhamento: centro;
   gap: 1rem;
-  text-align: left;
+  text-align: esquerda;
 }
 
-.juxt-post img {
+.img post {
   width: 64px;
-  height: 64px;
-  border-radius: 8px;
-  object-fit: cover;
+  altura: 64px;
+  bordo-raio: 8px;
+  objeto-equipado: capa;
 }
 
-.juxt-content strong {
-  display: block;
+.juxt-content forte {
+  exibir: bloco;
   font-size: 1.1rem;
-  color: var(--accent-cyan);
-  margin-bottom: 0.5rem;
+  cor: var(--accent-cyan);
+  margem inferior: 0.5rem;
 }
 
-.juxt-content p {
+.juxt-content {
   font-size: 0.95rem;
-  margin: 0;
+  margem: 0;
 }
 
 @keyframes scrollCarousel {
@@ -1069,13 +1069,13 @@ a.btn-discord:hover {
 
 @media (max-width: 900px) {
   .discord-ui-layout {
-    flex-direction: column;
+    flex-direction: coluna;
   }
   .discord-ui-mockup {
     width: 100%;
   }
 }
 
-.feature-logo {
-  margin-bottom: 1rem;
+.logótipo .feature-{
+  margem inferior: 1rem;
 }
