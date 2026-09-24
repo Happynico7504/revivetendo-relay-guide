@@ -3,59 +3,59 @@
    ========================================================================== */
 
 :root {
-  /* Solid Color Palette - No Gradients or Glows */
-  --bg-primary: #0f1117;
-  --bg-secondary: #161821;
-  --bg-tertiary: #1e202b;
-  --bg-card: #181a24;
-  --border-color: #2a2d3d;
+  /* Solide Kleur Palet - Geen straatkleuren of gloden */
+  --bg-primaire: #0f1117;
+  --bg-secundair: #161821;
+  --bg-tertisa: #1e202b;
+  --bg-kaart: #181a24;
+  --border-color: #2a2d3;
   --border-hover: #3d4259;
 
   --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
+  --tekst-gedempt: #94a3b8;
   --text-dim: #64748b;
 
-  --accent-cyan: #0284c7;
+  --accent-cyaan: #0284c7;
   --accent-cyan-hover: #0369a1;
   --accent-light: #38bdf8;
-  --accent-purple: #7c3aed;
-  --accent-green: #059669;
+  --accent-paars: #7c3a;
+  --accent-groen: #059669;
 
-  /* Clean Typography */
-  --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Schoongemaakte Typografie */
+  --font-main: 'Outfit', -apple-systeem, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-systeem, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
 
 * {
-  box-sizing: border-box;
+  partikelen: border-box;
   margin: 0;
   padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: soepel
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
+  achtergrondkleur: var(--bg-primary);
   color: var(--text-main);
 }
 
-body {
-  line-height: 1.6;
+lichaam {
+  lijn-hoogte: 1.6;
 }
 
 .container {
-  max-width: 980px;
+  max-breedte: 980px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* Links - High Contrast Bright Cyan */
-a {
+/* Links - Hoog contrast rechts cyaan */
+een {
   color: var(--accent-light);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease;
+  text-decoratie: onderstreping;
+  tekst-onderstreping-offset: 3px;
+  Overgang: kleur 0.15s makkelijk;
 }
 
 a:hover {
@@ -64,157 +64,157 @@ a:hover {
 
 /* Navigation */
 .navbar {
-  position: sticky;
-  top: 0;
+  positie: sticky;
+  boven: 0;
   z-index: 100;
-  background-color: var(--bg-secondary);
+  achtergrondkleur: var(--bg-seconde);
   border-bottom: 1px solid var(--border-color);
 }
 
 .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  max-width: 980px;
+  weergave: flex;
+  uitlijning items: centrum;
+  rechtmatigheid: ruimte-tussen;
+  hoogte: 64px;
+  max-breedte: 980px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
+  weergave: flex;
+  uitlijning items: centrum;
   gap: 0.75rem;
-  text-decoration: none !important;
+  text-decoration: geen !belangrijk;
 }
 
-.brand-icon {
+.brand-pictogram {
   width: 34px;
-  height: 34px;
+  hoogte: 34px;
   border-radius: 8px;
-  object-fit: contain;
+  object-pasvorm: bevatten;
 }
 
 .brand-title {
   font-family: var(--font-main);
-  font-weight: 700;
+  font-gewicht: 700;
   font-size: 1.15rem;
   color: var(--text-main);
 }
 
 .nav-links {
-  display: flex;
+  weergave: flex;
   gap: 2rem;
 }
 
 .nav-link {
-  color: var(--text-muted);
-  text-decoration: none !important;
+  color: var(--text-gedempt);
+  text-decoration: geen !belangrijk;
   font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.15s ease;
+  font-gewicht: 500;
+  Overgang: kleur 0.15s makkelijk;
 }
 
 .nav-link:hover {
   color: var(--text-main);
 }
 
-/* Page Header */
+/* Pagina Header */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 3rem;
+  margin-onder: 3rest;
 }
 
 .page-header h1 {
   font-family: var(--font-main);
   font-size: 2.3rem;
-  font-weight: 700;
+  font-gewicht: 700;
   color: var(--text-main);
-  margin-bottom: 0.8rem;
+  margin-onder: 0,8rest;
 }
 
 .page-description {
   font-size: 1.05rem;
-  color: var(--text-muted);
-  max-width: 780px;
-  line-height: 1.65;
+  color: var(--text-gedempt);
+  max-breedte: 780px;
+  lijn-hoogte: 1.65;
 }
 
-/* Section Shared Styles */
-.guide-section,
-.content-section {
-  margin-bottom: 4rem;
+/* Sectie Gedeelde stijlen */
+.guide-sectie,
+.content-sectie {
+  margin-onder: 4rest;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
 }
 
-.guide-section h2,
-.content-section h2 {
+.guide-sectie h2,
+.content-sectie h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
-  font-weight: 700;
+  font-gewicht: 700;
   color: var(--text-main);
-  margin-bottom: 0.4rem;
+  margin-onder: 0,4rest;
 }
 
 .section-lead {
   font-size: 1rem;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
+  color: var(--text-gedempt);
+  margin-onder: 2rest;
 }
 
-/* Step Cards */
-.steps-list {
-  display: flex;
-  flex-direction: column;
+/* Stapkaarten */
+.stappen-lijst {
+  weergave: flex;
+  flex-richting: kolom;
   gap: 2rem;
 }
 
 .step-card {
-  display: grid;
-  grid-template-columns: 85px 1fr;
+  weergave: raster;
+  grid-template-kolommen: 85px 1fr;
   gap: 1.8rem;
-  background-color: var(--bg-card);
+  achtergrondkleur: var(--bg-kaart);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  position: relative;
+  positie: relatief;
   overflow: hidden;
 }
 
-.step-number {
+.stapnummer {
   font-family: var(--font-main);
   font-size: 1.05rem;
-  font-weight: 700;
+  font-gewicht: 700;
   color: var(--accent-light);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  tekst-transform: hoofddoos;
+  letter-afstand: 0,05em;
   padding-top: 0.1rem;
 }
 
-.step-content h3 {
+.Stp-content h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
-  font-weight: 700;
+  font-gewicht: 700;
   color: var(--text-main);
-  margin-bottom: 0.6rem;
+  margin-onder: 0,6rest;
 }
 
-.step-content p {
+.Stp-content p {
   color: var(--text-main);
   font-size: 0.98rem;
-  margin-bottom: 1.25rem;
+  margin-onder: 1,25re;
 }
 
-.step-note {
+.Stp-note {
   font-size: 0.9rem !important;
-  color: var(--text-muted) !important;
-  margin-top: 1rem;
-  margin-bottom: 0 !important;
+  color: var(--text-gedempt) !important;
+  margin-top: 1rest;
+  margin-onder: 0 !important;
 }
 
-/* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
+/* Gids referentie afbeeldingen - Natuurlijke aspect verhouding, geen Zwarte Gebieden */
 .guide-image-container {
   margin: 1.5rem 0;
   width: 100%;
@@ -222,9 +222,9 @@ a:hover {
 
 .guide-image {
   width: 100%;
-  max-width: 580px;
-  height: auto;
-  display: block;
+  max-breedte: 580px;
+  hoogte: auto;
+  weergave: blok;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
@@ -233,254 +233,254 @@ a:hover {
 .image-caption {
   font-size: 0.82rem;
   color: var(--text-dim);
-  margin-top: 0.5rem;
-  display: block;
+  margin-top: 0,5rest;
+  weergave: blok;
 }
 
-/* Clean Boxes inside steps */
+/* Maak dozen schoon binnen stappen */
 .info-box {
-  background-color: var(--bg-tertiary);
+  achtergrondkleur: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.25rem 1.4rem;
-  margin-bottom: 1.5rem;
+  margin-onder: 1.5rest;
 }
 
 .info-box h4 {
   font-size: 0.95rem;
-  font-weight: 700;
+  font-gewicht: 700;
   color: var(--text-main);
-  margin-bottom: 0.4rem;
+  margin-onder: 0,4rest;
 }
 
 .info-box p {
   font-size: 0.92rem !important;
-  color: var(--text-muted) !important;
+  color: var(--text-gedempt) !important;
   margin: 0 !important;
 }
 
-.requirements-list {
-  background-color: var(--bg-tertiary);
+.requirements-lijst {
+  achtergrondkleur: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.25rem 1.4rem;
 }
 
-.requirements-list h4 {
+.requirements-lijst h4 {
   font-size: 0.95rem;
-  font-weight: 700;
+  font-gewicht: 700;
   color: var(--text-main);
-  margin-bottom: 0.6rem;
+  margin-onder: 0,6rest;
 }
 
-.requirements-list ul {
+.requirements-lijst ul {
   list-style-type: disc;
-  margin-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
+  margin-left: 1,25re;
+  weergave: flex;
+  flex-richting: kolom;
   gap: 0.5rem;
 }
 
-.requirements-list li {
+.requirements-lijst {
   font-size: 0.92rem;
   color: var(--text-main);
 }
 
-/* Action Box */
+/* Actie Box */
 .action-box {
-  background-color: var(--bg-tertiary);
+  achtergrondkleur: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.25rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  weergave: flex;
+  uitlijning items: centrum;
+  rechtmatigheid: ruimte-tussen;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-onder: 1.5rest;
   flex-wrap: wrap;
 }
 
 .action-box h4 {
   font-size: 1.05rem;
   color: var(--text-main);
-  font-weight: 700;
-  margin-bottom: 0.15rem;
+  font-gewicht: 700;
+  margin-onder: 0,15-rest;
 }
 
-.text-muted {
-  color: var(--text-muted);
+.text-gedempt {
+  color: var(--text-gedempt);
   font-size: 0.85rem;
 }
 
-/* Buttons - Pure White Text on Cyan Background */
+/* Knoppen - Pure Witte Tekst op Cyaan Achtergrond */
 .btn,
 a.btn,
 .feature-card a.btn,
 .action-box a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  weergave: inline-flex;
+  uitlijning items: centrum;
+  justitief-inhoud: centrum;
   gap: 0.5rem;
-  padding: 0.65rem 1.3rem;
+  opvulling: 0,65rem 1.3rem;
   border-radius: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  text-decoration: none !important;
-  border: none;
-  cursor: pointer;
-  background-color: var(--accent-cyan);
+  text-decoration: geen !belangrijk;
+  border: geen;
+  cursor: aanwijzer;
+  achtergrondkleur: var(--accent-cyaan);
   color: #ffffff !important;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  transitie: achtergrondkleur 0.15s ease, border-color 0.15s ease;
 }
 
 .lucide {
-  flex-shrink: 0;
-  vertical-align: middle;
+  flex-krimp: 0;
+  verticaal uitlijnen: middel;
 }
 
 .btn:hover,
 a.btn:hover,
 .feature-card a.btn:hover,
 .action-box a.btn:hover {
-  background-color: var(--accent-cyan-hover);
+  achtergrondkleur: var(--accent-cyaan-hover);
   color: #ffffff !important;
 }
 
-.btn-secondary,
-a.btn-secondary {
-  background-color: var(--bg-tertiary) !important;
+.btn-seconde,
+a.btn-secundaire {
+  achtergrondkleur: var(--bg-tertiary) !important;
   border: 1px solid var(--border-color) !important;
   color: var(--text-main) !important;
 }
 
-.btn-secondary:hover,
+.btn-tweedehands:hover,
 a.btn-secondary:hover {
-  background-color: #262938 !important;
+  achtergrondkleur: #262938 !important;
   border-color: var(--border-hover) !important;
   color: #ffffff !important;
 }
 
 .btn-discord,
 a.btn-discord {
-  background-color: #5865f2 !important;
+  achtergrondkleur: #5865f2 !important;
   color: #ffffff !important;
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
-  background-color: #4752c4 !important;
+  achtergrondkleur: #4752c4 !important;
   color: #ffffff !important;
 }
 
-/* Landing Page Hero Section */
-.hero-section {
+/* Landing Pagina Held Sectie */
+.hero-sectie {
   padding: 5rem 0 3rem;
-  border-bottom: none !important;
-  margin-bottom: 3rem;
+  border-bottom: geen !important;
+  margin-onder: 3rest;
   text-align: center;
-  position: relative;
-  overflow: visible !important;
+  positie: relatief;
+  overflow: zichtbaar !important;
 }
 
-.hero-icon {
-  width: 90px;
-  height: 90px;
+.hero-pictogram {
+  breedte: 90px;
+  hoogte: 90px;
   border-radius: 22px;
-  margin: 0 auto 1.5rem;
-  display: block;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  margin: 0 auto 1.5rest;
+  weergave: blok;
+  box-shadow: 0 8px 24px rgba(0, 0, 0.4);
 }
 
-/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
+/* Animatie: Laat één voor één vallen vanaf de top van het WITHOUT fade (ondoorzichtigheid blijft 100%) */
 @keyframes dropFromTop {
   0% {
     transform: translateY(-45px);
-    visibility: hidden;
+    zichtbaarheid: verborgen;
   }
   1% {
-    visibility: visible;
+    zichtbaarheid: zichtbaar; zichtbaar
   }
   100% {
     transform: translateY(0);
-    visibility: visible;
+    zichtbaarheid: zichtbaar; zichtbaar
   }
 }
 
 .animated-title {
-  display: inline-flex;
+  weergave: inline-flex;
   gap: 0.3em;
   flex-wrap: wrap;
-  justify-content: center;
+  justitief-inhoud: centrum;
   font-family: var(--font-main);
   font-size: 3.2rem;
-  font-weight: 700;
+  font-gewicht: 700;
   color: var(--text-main);
-  margin-bottom: 1.1rem;
-  letter-spacing: -0.02em;
+  margin-onder: 1.1rest;
+  letter-afstand: -0.02em;
 }
 
-.animated-title .word {
-  display: inline-block;
-  visibility: hidden;
-  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
-  animation-delay: calc(var(--animation-order) * 0.25s);
+.animated-titel .word {
+  weergave: inline-block;
+  zichtbaarheid: verborgen;
+  animatie: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) vooruit;
+  animatie-vertraging: calc(var(--animation-order) * 0.25s);
 }
 
-/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
+/* Staggered ingang zodat alle inhoud AFTER titel drop compleet wordt weergegeven (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacity: 0;
+    doorzichtigheid: 0;
     transform: translateY(22px);
-    visibility: hidden;
+    zichtbaarheid: verborgen;
   }
   1% {
-    visibility: visible;
+    zichtbaarheid: zichtbaar; zichtbaar
   }
   100% {
-    opacity: 1;
+    doorzichtigheid: 1;
     transform: translateY(0);
-    visibility: visible;
+    zichtbaarheid: zichtbaar; zichtbaar
   }
 }
 
-.stagger-in {
-  opacity: 0;
-  visibility: hidden;
-  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: 1.08s;
+.stag-in {
+  doorzichtigheid: 0;
+  zichtbaarheid: verborgen;
+  animatie: schuifFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) vooruit;
+  animatie-vertraging: 1.08;
 }
 
 .hero-description {
   font-size: 1.2rem;
-  color: var(--text-muted);
-  max-width: 680px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.65;
+  color: var(--text-gedempt);
+  max-breedte: 680px;
+  margin: 0 auto 2.5rest;
+  lijn-hoogte: 1.65;
 }
 
-.hero-buttons {
-  display: flex;
+.hero-knoppen {
+  weergave: flex;
   gap: 1.25rem;
-  justify-content: center;
+  justitief-inhoud: centrum;
   flex-wrap: wrap;
 }
 
-/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
-.content-section,
+/* Mii Karakters geplaatst in de Lege Box gebieden en het afsnijden van buitengrenzen */
+.content-sectie,
 .feature-grid,
-.feature-card,
-.step-card,
+.feature-card
+.Stapkaart,
 .info-box,
-.requirements-list {
-  position: relative;
-  overflow: visible !important;
+.requirements-lijst {
+  positie: relatief;
+  overflow: zichtbaar !important;
 }
 
-/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
+/* Feature cards met buitenste hoek Miis: reserveer 90px rechte opvulling op BOTH titel en alinea, dus tekstwraps schoon en nul woorden worden geblokkeerd */
 .feature-card.has-mii {
-  position: relative;
-  overflow: visible !important;
+  positie: relatief;
+  overflow: zichtbaar !important;
 }
 
 .feature-card.has-mii h3,
@@ -489,48 +489,48 @@ a.btn-discord:hover {
 }
 
 .feature-card.has-mii h3 {
-  margin-bottom: 0.85rem;
+  margin-onder: 0,85 rest;
 }
 
-.mii-card-corner {
-  position: absolute;
+.mii-kaart-hoek {
+  positie: absolute;
   right: -24px;
   top: -42px;
-  height: 165px;
+  hoogte: 165px;
   width: auto;
   z-index: 10;
   filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  pointer-evenementen: geen;
 }
 
-.mii-card-corner-lounging {
-  position: absolute;
-  right: -18px;
+.mii-kaart-hoek-lounging {
+  positie: absolute;
+  rechts -18px;
   top: -50px;
-  height: 140px;
+  hoogte: 140px;
   width: auto;
   z-index: 10;
   filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  pointer-evenementen: geen;
 }
 
-/* Hero section bottom-right overlapping Mii */
-.mii-overlap-hero {
-  position: absolute;
+/* Held sectie rechtsonder overlappende mii */
+.mii-overlap-held {
+  positie: absolute;
   right: -25px;
-  bottom: -45px;
-  height: 260px;
+  onder: -45px;
+  hoogte: 260px;
   width: auto;
   z-index: 10;
-  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 16px 36px rgba(0, 0, 0.0.7));
   transform: rotate(4deg);
-  pointer-events: none;
+  pointer-evenementen: geen;
 }
 
 @media (max-width: 900px) {
-  .mii-overlap-hero {
-    height: 180px;
-    right: -10px;
+  .mii-overlap-held {
+    hoogte: 180px;
+    rechts -10px;
     bottom: -30px;
   }
 }
@@ -539,70 +539,70 @@ a.btn-discord:hover {
   .feature-card.has-mii h3 {
     padding-right: 0;
   }
-  .mii-card-corner,
-  .mii-overlap-hero {
-    display: none;
+  .mii-kaart-hoek,
+  .mii-overlap-held {
+    weergave: ge; gege;
   }
 }
 
-/* Quick Start Banner */
+/* Snelle Start Banier */
 .quick-start-banner {
-  background-color: var(--bg-card);
+  achtergrondkleur: var(--bg-kaart);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 3rem 2rem;
   text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
+  margin-onder: 4rest;
+  positie: relatief;
   overflow: hidden;
 }
 
 .quick-start-banner h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
-  font-weight: 700;
+  font-gewicht: 700;
   color: var(--text-main);
-  margin-bottom: 0.75rem;
+  margin-onder: 0,75re;
 }
 
 .quick-start-banner p {
-  color: var(--text-muted);
+  color: var(--text-gedempt);
   font-size: 1.05rem;
-  margin-bottom: 1.75rem;
-  max-width: 580px;
+  margin-onder: 1,75re;
+  max-breedte: 580px;
   margin-left: auto;
-  margin-right: auto;
+  margin-recht: auto;
 }
 
-/* Code block / Directory tree */
+/* Code blok / Directory boom */
 .code-block {
-  background-color: var(--bg-tertiary);
+  achtergrondkleur: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margin-onder: 1.5rest;
 }
 
 .code-header {
-  background-color: var(--bg-secondary);
+  achtergrondkleur: var(--bg-seconde);
   padding: 0.55rem 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  weergave: flex;
+  rechtmatigheid: ruimte-tussen;
+  uitlijning items: centrum;
   font-size: 0.82rem;
-  color: var(--text-muted);
+  color: var(--text-gedempt);
   border-bottom: 1px solid var(--border-color);
 }
 
 .btn-copy {
-  background-color: var(--border-color);
-  border: none;
+  achtergrondkleur: var(--border-color);
+  border: geen;
   color: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  cursor: pointer;
+  cursor: aanwijzer;
 }
 
 .btn-copy:hover {
@@ -613,18 +613,18 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  line-height: 1.5;
+  lijn-hoogte: 1.5;
   color: var(--text-main);
   overflow-x: auto;
 }
 
-/* Ordered instructions */
+/* bestelde instructies */
 .ordered-instructions {
-  margin-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
+  margin-left: 1,4rest;
+  weergave: flex;
+  flex-richting: kolom;
   gap: 0.85rem;
-  margin-bottom: 1.5rem;
+  margin-onder: 1.5rest;
 }
 
 .ordered-instructions li {
@@ -633,65 +633,65 @@ a.btn-discord:hover {
   padding-left: 0.3rem;
 }
 
-/* Controller Physical Button Tokens */
+/* Controller fysieke knoptokens */
 .controller-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  weergave: inline-flex;
+  uitlijning items: centrum;
+  justitief-inhoud: centrum;
   font-family: var(--font-main);
-  font-weight: 700;
+  font-gewicht: 700;
   color: #f8fafc;
-  background-color: #334155;
+  achtergrondkleur: #334155;
   border: 1px solid #64748b;
-  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
-  user-select: none;
-  vertical-align: middle;
-  line-height: 1;
-  margin: 0 0.15rem;
+  box-schaduw: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
+  gebruiker-select: geen;
+  verticaal uitlijnen: middel;
+  lijn-hoogte: 1;
+  margin: 0 0,15rest;
 }
 
-.controller-btn.btn-round {
+.controller-btn.btn.btn-round {
   width: 24px;
-  height: 24px;
+  hoogte: 24px;
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
-.controller-btn.btn-shoulder {
-  padding: 0 0.55rem;
-  height: 24px;
+.controller-btn.btn.btn-shoulder {
+  opvulling: 0 0.55over;
+  hoogte: 24px;
   border-radius: 6px;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-pill {
-  padding: 0 0.65rem;
-  height: 24px;
+  opvulling: 0 0.65-overblijf;
+  hoogte: 24px;
   border-radius: 12px;
   font-size: 0.74rem;
-  letter-spacing: 0.04em;
+  letter-afstand: 0,04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  height: 24px;
+  hoogte: 24px;
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  display: block;
+  weergave: blok;
 }
 
-/* Feature Grid */
+/* Functie Grid */
 .feature-grid {
-  display: grid;
+  weergave: raster;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
 .feature-card {
-  background-color: var(--bg-card);
+  achtergrondkleur: var(--bg-kaart);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.6rem;
@@ -700,301 +700,301 @@ a.btn-discord:hover {
 .feature-card h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
-  font-weight: 700;
+  font-gewicht: 700;
   color: var(--text-main);
-  margin-bottom: 0.5rem;
+  margin-onder: 0,5rest;
 }
 
 .feature-card p {
-  color: var(--text-muted);
+  color: var(--text-gedempt);
   font-size: 0.92rem;
-  line-height: 1.6;
+  lijn-hoogte: 1.6;
 }
 
-.feature-card a {
+.feature-card een {
   color: var(--accent-light);
 }
 
-.feature-card a:hover {
-  text-decoration: underline;
+.feature-card een:hover {
+  text-decoratie: onderstreping;
 }
 
-/* FAQ List */
+/* FAQ lijst */
 .faq-list {
-  display: flex;
-  flex-direction: column;
+  weergave: flex;
+  flex-richting: kolom;
   gap: 0.85rem;
 }
 
 .faq-item {
-  background-color: var(--bg-card);
+  achtergrondkleur: var(--bg-kaart);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
 }
 
-.faq-question {
+.faq-vraag {
   width: 100%;
-  background-color: transparent;
-  border: none;
+  achtergrondkleur: transparantie;
+  border: geen;
   padding: 1.15rem 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
+  weergave: flex;
+  rechtmatigheid: ruimte-tussen;
+  uitlijning items: centrum;
+  tekst-uitlijning: links;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-main);
-  cursor: pointer;
+  cursor: aanwijzer;
 }
 
 .faq-indicator {
   font-size: 1.25rem;
-  font-weight: 400;
+  font-gewicht: 400;
   color: var(--accent-light);
 }
 
-.faq-answer {
-  max-height: 0;
+.faq-antwoord {
+  max-hoogte: 0;
   overflow: hidden;
-  transition: max-height 0.25s ease;
+  transitie: max-hoogte 0.25s gemakkelijk;
 }
 
-.faq-answer p {
-  padding: 0 1.4rem 1.3rem;
-  color: var(--text-muted);
+.faq-antwoord p {
+  opvulling: 0 1.4rem 1.3rem;
+  color: var(--text-gedempt);
   font-size: 0.92rem;
-  line-height: 1.65;
+  lijn-hoogte: 1.65;
 }
 
-/* Footer */
+/* Voettekst */
 .footer {
   padding: 2.2rem 0;
-  background-color: var(--bg-secondary);
+  achtergrondkleur: var(--bg-seconde);
   border-top: 1px solid var(--border-color);
 }
 
-.footer-content {
+.footer-inhoud {
   text-align: center;
   color: var(--text-dim);
   font-size: 0.82rem;
 }
 
-/* Responsive */
+/* Responsieve */
 @media (max-width: 768px) {
   .step-card {
-    grid-template-columns: 1fr;
+    grid-template-kolommen: 1fr;
     gap: 0.6rem;
   }
 
-  .step-number {
+  .stapnummer {
     padding-top: 0;
   }
 
   .nav-links {
-    display: none;
+    weergave: ge; gege;
   }
 
   .page-header h1,
-  .hero-section h1,
+  .hero-sectie h1,
   .animated-title {
     font-size: 2.2rem;
   }
 }
 
-/* Light Mode Support */
-@media (prefers-color-scheme: light) {
+/* Light Mode Ondersteuning */
+@media (preferen-color-scheme: light) {
   :root {
-    --bg-primary: #f8fafc;
-    --bg-secondary: #f1f5f9;
-    --bg-tertiary: #e2e8f0;
-    --bg-card: #ffffff;
+    --bg-primaire: #f8fafc;
+    --bg-secundair: #f1f5f9;
+    --bg-tertisa: #e2e8f0;
+    --bg-kaart: #ffffffff;
     --border-color: #cbd5e1;
     --border-hover: #94a3b8;
 
     --text-main: #0f172a;
-    --text-muted: #334155;
+    --text-gedempt: #334155;
     --text-dim: #64748b;
   }
   
-  /* Adjust shadows for light mode */
+  /* Schaduw aanpassen voor de lichtmodus */
   .guide-image,
-  .hero-icon,
+  .hero-icoon,
   .discord-ui-mockup {
-    box-shadow: none;
+    box-schaduw: geen;
   }
 
-  .mii-card-corner,
-  .mii-card-corner-lounging,
-  .mii-overlap-hero {
-    filter: none;
+  .mii-kaart-hoek,
+  .mii-kaart-hoek-lounging,
+  .mii-overlap-held {
+    filter: geen; geen;
   }
 
   .controller-btn {
-    box-shadow: 0 2px 0 #0f172a;
+    box-schaduw: 0 2px 0 #0f172a;
   }
 }
 
-/* Discord UI Mockup Section */
-.discord-ui-section {
+/* Discord UI Mockup Sectie */
+.discord-ui-sectie {
   overflow: hidden;
 }
 
 .discord-ui-layout {
-  display: flex;
-  align-items: center;
+  weergave: flex;
+  uitlijning items: centrum;
   gap: 3rem;
 }
 
-.discord-ui-text {
-  flex: 1;
+.discord-ui-tekst {
+  flexibele code: 1;
 }
 
-.discord-ui-text h2 {
+.discord-ui-tekst h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  onderkant: 1rest;
 }
 
-.discord-ui-text .btn-fullwidth {
-  display: inline-flex;
+.discord-ui-tekst .btn-fullwidth {
+  weergave: inline-flex;
   width: auto;
-  margin-top: 1rem;
+  margin-top: 1rest;
 }
 
 .discord-ui-mockup {
-  flex: 1;
-  background-color: #313338;
+  flexibele code: 1;
+  achtergrondkleur: #313338;
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid #1e1f22;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0.4);
   font-family: var(--font-body);
   color: #dbdee1;
   min-width: 350px;
 }
 
 .discord-ui-header {
-  background-color: #2b2d31;
-  padding: 12px 16px;
+  achtergrondkleur: #2b2d31;
+  opvulling: 12px 16px;
   font-weight: 600;
   border-bottom: 1px solid #1e1f22;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  weergave: flex;
+  uitlijning items: centrum;
+  gat: 8px;
   color: #f2f3f5;
 }
 
 .discord-ui-header .hashtag {
-  color: #80848e;
+  kleur: #80848;
   font-size: 1.2rem;
 }
 
-.discord-ui-messages {
+.discord-ui-berichten {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  weergave: flex;
+  flex-richting: kolom;
   gap: 16px;
 }
 
 .discord-msg {
-  display: flex;
+  weergave: flex;
   gap: 16px;
-  opacity: 0;
+  doorzichtigheid: 0;
   transform: translateY(10px);
 }
 
 .discord-avatar {
   width: 40px;
-  height: 40px;
+  hoogte: 40px;
   border-radius: 50%;
-  object-fit: cover;
-  background-color: #2b2d31;
+  object-pasvorm: dekking;
+  achtergrondkleur: #2b2d31;
 }
 
 .discord-msg-content {
-  flex: 1;
+  flexibele code: 1;
 }
 
 .discord-msg-header {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin-bottom: 4px;
+  weergave: flex;
+  uitlijning items: basislijn;
+  gat: 8px;
+  onderkant: 4px;
 }
 
 .discord-user {
-  font-weight: 500;
+  font-gewicht: 500;
   color: #f2f3f5;
 }
 
 .discord-user.admin-user {
-  color: #eb459e; /* Pink role color */
+  kleur: #eb459e; /* Roze rol kleur */
 }
 
 .discord-time {
   font-size: 0.75rem;
-  color: #949ba4;
+  kleur: #949ba4;
 }
 
 .discord-msg p {
   color: #dbdee1;
   font-size: 0.95rem;
-  line-height: 1.4;
+  lijn-hoogte: 1.4;
   margin: 0;
 }
 
-/* Animations for Discord Mockup */
+/* Animaties voor Discord Mockup */
 .start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
 .start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
 .start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
 
 @keyframes popIn {
-  to {
-    opacity: 1;
+  naar {
+    doorzichtigheid: 1;
     transform: translateY(0);
   }
 }
 
-/* Mods Grid */
+/* Mods Raster */
 .mods-grid {
-  display: grid;
+  weergave: raster;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 2rest;
 }
 
 .mod-card {
-  background-color: var(--bg-card);
+  achtergrondkleur: var(--bg-kaart);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 2rem 1rem;
   text-align: center;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  Overgang: alle 0,2s gemakkelijk;
+  weergave: flex;
+  flex-richting: kolom;
+  uitlijning items: centrum;
   gap: 0.75rem;
 }
 
 .mod-avatar {
-  width: 80px;
-  height: 80px;
+  breedte: 80px;
+  hoogte: 80px;
   border-radius: 50%;
-  background-color: var(--bg-tertiary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  achtergrondkleur: var(--bg-tertiary);
+  weergave: flex;
+  uitlijning items: centrum;
+  justitief-inhoud: centrum;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--text-gedempt);
   overflow: hidden;
 }
 
 .mod-avatar img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  hoogte: 100%;
+  object-pasvorm: dekking;
 }
 
 .mod-name {
@@ -1008,53 +1008,53 @@ a.btn-discord:hover {
   color: var(--text-dim);
 }
 
-/* Juxtaposition Carousel */
+/* Juxtapositie carrousel */
 .juxt-carousel-wrapper {
   overflow: hidden;
-  position: relative;
+  positie: relatief;
   width: 100%;
-  margin-top: 2rem;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  margin-top: 2rest;
+  mask-afbeelding: lineair verloop (tot rechts, transparant, zwart 10%, zwart 90%, transparant);
+  -webkit-mask-image: linear-gradient(tot rechts, transparant, zwart 10%, zwart 90%, transparant);
 }
 
 .juxt-carousel {
-  display: flex;
-  width: fit-content;
-  animation: scrollCarousel 20s linear infinite;
+  weergave: flex;
+  width: fit-inhoud;
+  animatie: scrollCarousel 20s lineaire oneindig;
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  animation-play-state: paused;
+  animatie-play-status: gepauzeerd;
 }
 
 .juxt-post {
-  background-color: var(--bg-card);
+  achtergrondkleur: var(--bg-kaart);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 1.25rem;
-  width: 320px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  breedte: 320px;
+  flex-krimp: 0;
+  weergave: flex;
+  flex-richting: rij;
+  uitlijning items: centrum;
   gap: 1rem;
-  text-align: left;
+  tekst-uitlijning: links;
 }
 
 .juxt-post img {
   width: 64px;
-  height: 64px;
+  hoogte: 64px;
   border-radius: 8px;
-  object-fit: cover;
+  object-pasvorm: dekking;
 }
 
-.juxt-content strong {
-  display: block;
+.juxt-content sterk {
+  weergave: blok;
   font-size: 1.1rem;
   color: var(--accent-cyan);
-  margin-bottom: 0.5rem;
+  margin-onder: 0,5rest;
 }
 
 .juxt-content p {
@@ -1069,7 +1069,7 @@ a.btn-discord:hover {
 
 @media (max-width: 900px) {
   .discord-ui-layout {
-    flex-direction: column;
+    flex-richting: kolom;
   }
   .discord-ui-mockup {
     width: 100%;
@@ -1077,5 +1077,5 @@ a.btn-discord:hover {
 }
 
 .feature-logo {
-  margin-bottom: 1rem;
+  onderkant: 1rest;
 }
