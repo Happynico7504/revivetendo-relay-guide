@@ -119,3 +119,29 @@ function toggleFaq(buttonEl) {
     if (indicatorEl) indicatorEl.textContent = "-";
   }
 }
+
+// Tab Switcher for Setup Guide
+function switchGuideTab(consoleId) {
+  // Update buttons
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.classList.remove('btn-primary');
+    btn.classList.add('btn-secondary');
+    btn.classList.remove('active');
+  });
+  
+  const activeBtn = document.querySelector(`.tab-btn[data-target="${consoleId}"]`);
+  if (activeBtn) {
+    activeBtn.classList.remove('btn-secondary');
+    activeBtn.classList.add('btn-primary');
+    activeBtn.classList.add('active');
+  }
+
+  // Update content sections
+  document.querySelectorAll('.guide-tab-content').forEach(section => {
+    section.style.display = 'none';
+  });
+  const activeSection = document.getElementById(`guide-${consoleId}`);
+  if (activeSection) {
+    activeSection.style.display = 'block';
+  }
+}
