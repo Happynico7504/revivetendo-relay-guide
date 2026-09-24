@@ -33,9 +33,9 @@ function copyText(text, btnElement) {
   if (!navigator.clipboard) return;
   navigator.clipboard.writeText(text).then(() => {
     const originalText = btnElement.textContent;
-    btnElement.textContent = 'Copied!';
+    btnElement.textContent = 'Αντιγράφηκε!';
     btnElement.style.backgroundColor = '#059669';
-    btnElement.style.color = '#ffffff';
+    btnElement.style.color = '#ffffffff';
     setTimeout(() => {
       btnElement.textContent = originalText;
       btnElement.style.backgroundColor = '';
@@ -83,9 +83,9 @@ function switchGuideTab(consoleId) {
 
   // Update content sections
   document.querySelectorAll('.guide-tab-content').forEach((section) => {
-    section.style.display = 'none';
+    section.style.display = 'κανένα';
   });
-  const activeSection = document.getElementById(`guide-${consoleId}`);
+  const activeSection = document.getElementById(`οδηγός-${consoleId}`);
   if (activeSection) {
     activeSection.style.display = 'block';
   }
