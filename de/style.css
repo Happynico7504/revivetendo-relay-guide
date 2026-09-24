@@ -1,18 +1,18 @@
 /* ==========================================================================
-   Revivetendo Relay Network — Clean Solid CSS Design System
+   Revivetendo Relais Netzwerk — Solid CSS Design System reinigen
    ========================================================================== */
 
 :root {
-  /* Solid Color Palette - No Gradients or Glows */
+  /* Solide Farbpalette - Keine Farbverläufe oder Glühbirnen */
   --bg-primary: #0f1117;
-  --bg-secondary: #161821;
+  --bg-sekundär: #161821;
   --bg-tertiary: #1e202b;
-  --bg-card: #181a24;
-  --border-color: #2a2d3d;
+  --bg-Karte: #181a24;
+  --Randfarbe: #2a2d3d;
   --border-hover: #3d4259;
 
   --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
+  --text-stumm: #94a3b8;
   --text-dim: #64748b;
 
   --accent-cyan: #0284c7;
@@ -21,105 +21,105 @@
   --accent-purple: #7c3aed;
   --accent-green: #059669;
 
-  /* Clean Typography */
+  /* Typographie reinigen */
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+  box-Größe: Box-Box;
+  Rand: 0;
   padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-Verhalten: glatt;
   font-family: var(--font-body);
   background-color: var(--bg-primary);
-  color: var(--text-main);
+  farbe: var(--text-main);
 }
 
-body {
-  line-height: 1.6;
+körper {
+  Zeilenhöhe: 1.6;
 }
 
 .container {
-  max-width: 980px;
-  margin: 0 auto;
+  max-Breite: 980px;
+  Rand: 0 Auto;
   padding: 0 1.5rem;
 }
 
-/* Links - High Contrast Bright Cyan */
+/* Links - Hoher Kontrast Türkis * /
 a {
-  color: var(--accent-light);
-  text-decoration: underline;
+  farbe: var(--accent-light);
+  text-dekoration: unterstrichen;
   text-underline-offset: 3px;
-  transition: color 0.15s ease;
+  übergang: Farbe 0.15s einfach;
 }
 
 a:hover {
-  color: #7dd3fc;
+  farbe: #7dd3fc;
 }
 
 /* Navigation */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: klebend;
+  oben: 0;
+  z-Index: 100;
   background-color: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  max-width: 980px;
-  margin: 0 auto;
+.nav-Container {
+  anzeigen: Flex;
+  align-items: mitte;
+  gerechtfertigter Inhalt: Leerzeichen zwischen;
+  Höhe: 64px;
+  max-Breite: 980px;
+  Rand: 0 Auto;
   padding: 0 1.5rem;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
+  anzeigen: Flex;
+  align-items: mitte;
   gap: 0.75rem;
-  text-decoration: none !important;
+  text-Dekoration: keine !wichtig;
 }
 
-.brand-icon {
+.brand-Icon {
   width: 34px;
-  height: 34px;
+  Höhe: 34px;
   border-radius: 8px;
-  object-fit: contain;
+  objekt-fit: enthalten;
 }
 
 .brand-title {
   font-family: var(--font-main);
-  font-weight: 700;
+  Schriftgewicht: 700;
   font-size: 1.15rem;
-  color: var(--text-main);
+  farbe: var(--text-main);
 }
 
 .nav-links {
-  display: flex;
+  anzeigen: Flex;
   gap: 2rem;
 }
 
 .nav-link {
-  color: var(--text-muted);
-  text-decoration: none !important;
+  farbe: var(--text-stumm);
+  text-Dekoration: keine !wichtig;
   font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.15s ease;
+  Schriftgewicht: 500;
+  übergang: Farbe 0.15s einfach;
 }
 
 .nav-link:hover {
-  color: var(--text-main);
+  farbe: var(--text-main);
 }
 
-/* Page Header */
+/* Seitenkopf */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
@@ -129,92 +129,92 @@ a:hover {
 .page-header h1 {
   font-family: var(--font-main);
   font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.8rem;
+  Schriftgewicht: 700;
+  farbe: var(--text-main);
+  margin-unten: 0.8rem;
 }
 
 .page-description {
   font-size: 1.05rem;
-  color: var(--text-muted);
-  max-width: 780px;
-  line-height: 1.65;
+  farbe: var(--text-stumm);
+  max-Breite: 780px;
+  Zeilenhöhe: 1,65;
 }
 
-/* Section Shared Styles */
-.guide-section,
+/* Abschnitt geteilte Stile */
+.guide-Sektion,
 .content-section {
-  margin-bottom: 4rem;
+  margin-unten: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
 }
 
-.guide-section h2,
+.guide-Abschnitt h2,
 .content-section h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  Schriftgewicht: 700;
+  farbe: var(--text-main);
+  margin-unten: 0.4rem;
 }
 
 .section-lead {
   font-size: 1rem;
-  color: var(--text-muted);
+  farbe: var(--text-stumm);
   margin-bottom: 2rem;
 }
 
-/* Step Cards */
-.steps-list {
-  display: flex;
-  flex-direction: column;
+/* Schrittkarten */
+.steps-Liste {
+  anzeigen: Flex;
+  flex-Richtung: Spalte;
   gap: 2rem;
 }
 
 .step-card {
-  display: grid;
+  anzeigen: Gitter;
   grid-template-columns: 85px 1fr;
   gap: 1.8rem;
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  position: relative;
+  position: relativ;
   overflow: hidden;
 }
 
 .step-number {
   font-family: var(--font-main);
   font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--accent-light);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  Schriftgewicht: 700;
+  farbe: var(--accent-light);
+  text-transform: Großbuchstaben;
+  buchstabenabstand: 0.05em;
   padding-top: 0.1rem;
 }
 
 .step-content h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  Schriftgewicht: 700;
+  farbe: var(--text-main);
+  margin-unten: 0.6rem;
 }
 
 .step-content p {
-  color: var(--text-main);
+  farbe: var(--text-main);
   font-size: 0.98rem;
   margin-bottom: 1.25rem;
 }
 
 .step-note {
-  font-size: 0.9rem !important;
-  color: var(--text-muted) !important;
+  Schriftgröße: 0.9rem !wichtig;
+  farbe: var(--text-muted) !wichtig;
   margin-top: 1rem;
-  margin-bottom: 0 !important;
+  margin-unten: 0 !wichtig;
 }
 
-/* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
+/* Leitfaden-Referenzbilder - natürliches Seitenverhältnis, keine Schwarzen Bereiche */
 .guide-image-container {
   margin: 1.5rem 0;
   width: 100%;
@@ -222,9 +222,9 @@ a:hover {
 
 .guide-image {
   width: 100%;
-  max-width: 580px;
-  height: auto;
-  display: block;
+  max-Breite: 580px;
+  Höhe: auto;
+  anzeigen: Block;
   border: 1px solid var(--border-color);
   border-radius: 8px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
@@ -232,34 +232,34 @@ a:hover {
 
 .image-caption {
   font-size: 0.82rem;
-  color: var(--text-dim);
+  farbe: var(--text-dim);
   margin-top: 0.5rem;
-  display: block;
+  anzeigen: Block;
 }
 
-/* Clean Boxes inside steps */
+/* Säubere Boxen innerhalb von Schritten */
 .info-box {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.25rem 1.4rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1,5rem;
 }
 
 .info-box h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  Schriftgewicht: 700;
+  farbe: var(--text-main);
+  margin-unten: 0.4rem;
 }
 
 .info-box p {
-  font-size: 0.92rem !important;
-  color: var(--text-muted) !important;
-  margin: 0 !important;
+  Schriftgröße: 0.92rem !wichtig;
+  farbe: var(--text-muted) !wichtig;
+  Rand: 0 !wichtig;
 }
 
-.requirements-list {
+.requirements-Liste {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -268,75 +268,75 @@ a:hover {
 
 .requirements-list h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  Schriftgewicht: 700;
+  farbe: var(--text-main);
+  margin-unten: 0.6rem;
 }
 
 .requirements-list ul {
   list-style-type: disc;
-  margin-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
+  margin-links: 1,25rem;
+  anzeigen: Flex;
+  flex-Richtung: Spalte;
   gap: 0.5rem;
 }
 
 .requirements-list li {
   font-size: 0.92rem;
-  color: var(--text-main);
+  farbe: var(--text-main);
 }
 
-/* Action Box */
+/* Aktionsfeld */
 .action-box {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.25rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  anzeigen: Flex;
+  align-items: mitte;
+  gerechtfertigter Inhalt: Leerzeichen zwischen;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1,5rem;
   flex-wrap: wrap;
 }
 
 .action-box h4 {
   font-size: 1.05rem;
-  color: var(--text-main);
-  font-weight: 700;
-  margin-bottom: 0.15rem;
+  farbe: var(--text-main);
+  Schriftgewicht: 700;
+  margin-unten: 0.15rem;
 }
 
-.text-muted {
-  color: var(--text-muted);
+.text-stumm {
+  farbe: var(--text-stumm);
   font-size: 0.85rem;
 }
 
-/* Buttons - Pure White Text on Cyan Background */
+/* Tasten - reiner weißer Text auf Türkischem Hintergrund */
 .btn,
 a.btn,
 .feature-card a.btn,
 .action-box a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  anzeigen: inline-flex;
+  align-items: mitte;
+  berechtigter Inhalt: Zentrum;
   gap: 0.5rem;
   padding: 0.65rem 1.3rem;
   border-radius: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  text-decoration: none !important;
-  border: none;
-  cursor: pointer;
+  text-Dekoration: keine !wichtig;
+  rand: keine;
+  cursor: Zeiger;
   background-color: var(--accent-cyan);
-  color: #ffffff !important;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  farbe: #ffffff !wichtig;
+  übergang: Hintergrundfarbe 0,15s einfach, Rahmenfarbe 0,15s einfach;
 }
 
 .lucide {
-  flex-shrink: 0;
-  vertical-align: middle;
+  flex-schrumpfen: 0;
+  vertikal-Ausricht: Mitte;
 }
 
 .btn:hover,
@@ -344,143 +344,143 @@ a.btn:hover,
 .feature-card a.btn:hover,
 .action-box a.btn:hover {
   background-color: var(--accent-cyan-hover);
-  color: #ffffff !important;
+  farbe: #ffffff !wichtig;
 }
 
-.btn-secondary,
-a.btn-secondary {
-  background-color: var(--bg-tertiary) !important;
+.btn-sekundär,
+a.btn-sekundär {
+  background-color: var(--bg-tertiary) !wichtig;
   border: 1px solid var(--border-color) !important;
-  color: var(--text-main) !important;
+  farbe: var(--text-main) !wichtig;
 }
 
-.btn-secondary:hover,
+.btn-sekundär:hover,
 a.btn-secondary:hover {
-  background-color: #262938 !important;
+  background-color: #262938 !wichtig;
   border-color: var(--border-hover) !important;
-  color: #ffffff !important;
+  farbe: #ffffff !wichtig;
 }
 
 .btn-discord,
 a.btn-discord {
-  background-color: #5865f2 !important;
-  color: #ffffff !important;
+  background-color: #5865f2 !wichtig;
+  farbe: #ffffff !wichtig;
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
-  background-color: #4752c4 !important;
-  color: #ffffff !important;
+  background-color: #4752c4 !wichtig;
+  farbe: #ffffff !wichtig;
 }
 
-/* Landing Page Hero Section */
-.hero-section {
+/* Landing Page Held Abschnitt */
+.hero-Abschnitt {
   padding: 5rem 0 3rem;
-  border-bottom: none !important;
+  border-unten: keine!wichtig;
   margin-bottom: 3rem;
   text-align: center;
-  position: relative;
-  overflow: visible !important;
+  position: relativ;
+  überlauf: sichtbar!wichtig;
 }
 
-.hero-icon {
-  width: 90px;
-  height: 90px;
+.hero-Icon {
+  breite: 90px;
+  Höhe: 90px;
   border-radius: 22px;
-  margin: 0 auto 1.5rem;
-  display: block;
+  Rand: 0 Auto 1,5rem;
+  anzeigen: Block;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
+/* Animation: Einmal von oben OHNE verblassen (Deckkraft bleibt 100%) */
 @keyframes dropFromTop {
   0% {
     transform: translateY(-45px);
-    visibility: hidden;
+    sichtbarkeit: versteckt;
   }
   1% {
-    visibility: visible;
+    sichtbar: sichtbar;
   }
   100% {
     transform: translateY(0);
-    visibility: visible;
+    sichtbar: sichtbar;
   }
 }
 
-.animated-title {
-  display: inline-flex;
+.animierte Titel {
+  anzeigen: inline-flex;
   gap: 0.3em;
   flex-wrap: wrap;
-  justify-content: center;
+  berechtigter Inhalt: Zentrum;
   font-family: var(--font-main);
   font-size: 3.2rem;
-  font-weight: 700;
-  color: var(--text-main);
+  Schriftgewicht: 700;
+  farbe: var(--text-main);
   margin-bottom: 1.1rem;
-  letter-spacing: -0.02em;
+  buchstabenabstand: -0.02em;
 }
 
-.animated-title .word {
-  display: inline-block;
-  visibility: hidden;
+.animierte Titel .word {
+  anzeigen: inline-block;
+  sichtbarkeit: versteckt;
   animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
-  animation-delay: calc(var(--animation-order) * 0.25s);
+  animationsverzögerung: calc(var(--animation-order) * 0.25s);
 }
 
-/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
+/* Stufeneingang für alle Inhalte, die NACH Titelwort Drop angezeigt werden (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacity: 0;
+    transparenz: 0;
     transform: translateY(22px);
-    visibility: hidden;
+    sichtbarkeit: versteckt;
   }
   1% {
-    visibility: visible;
+    sichtbar: sichtbar;
   }
   100% {
-    opacity: 1;
+    transparenz: 1;
     transform: translateY(0);
-    visibility: visible;
+    sichtbar: sichtbar;
   }
 }
 
 .stagger-in {
-  opacity: 0;
-  visibility: hidden;
+  transparenz: 0;
+  sichtbarkeit: versteckt;
   animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: 1.08s;
+  animationsverzögerung: 1.08s;
 }
 
-.hero-description {
+.hero-Beschreibung {
   font-size: 1.2rem;
-  color: var(--text-muted);
-  max-width: 680px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.65;
+  farbe: var(--text-stumm);
+  max-Breite: 680px;
+  Rand: 0 auto 2.5rem;
+  Zeilenhöhe: 1,65;
 }
 
-.hero-buttons {
-  display: flex;
+.hero-Schaltflächen {
+  anzeigen: Flex;
   gap: 1.25rem;
-  justify-content: center;
+  berechtigter Inhalt: Zentrum;
   flex-wrap: wrap;
 }
 
-/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
-.content-section,
-.feature-grid,
-.feature-card,
-.step-card,
-.info-box,
-.requirements-list {
-  position: relative;
-  overflow: visible !important;
+/* Mii Zeichen platziert in leeren Boxbereichen & Out-of-Bounding */
+.Inhaltsabschnitt,
+.feature-Gitter,
+.feature-card
+.Schritt-Karte
+.info-Box
+.requirements-Liste {
+  position: relativ;
+  überlauf: sichtbar!wichtig;
 }
 
-/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
+/* Merkmalskarten mit äußerer Ecke Miis: Reservieren Sie 90px rechts mit dem BOTH-Titel und Absatz, so dass Text verpackt sauber und Null Wörter blockiert werden */
 .feature-card.has-mii {
-  position: relative;
-  overflow: visible !important;
+  position: relativ;
+  überlauf: sichtbar!wichtig;
 }
 
 .feature-card.has-mii h3,
@@ -489,120 +489,120 @@ a.btn-discord:hover {
 }
 
 .feature-card.has-mii h3 {
-  margin-bottom: 0.85rem;
+  margin-unten: 0.85rem;
 }
 
-.mii-card-corner {
-  position: absolute;
+.mii-Karten-Ecke {
+  position: absolut;
   right: -24px;
   top: -42px;
-  height: 165px;
+  Höhe: 165px;
   width: auto;
-  z-index: 10;
+  z-Index: 10;
   filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  pointerevents: keine;
 }
 
 .mii-card-corner-lounging {
-  position: absolute;
-  right: -18px;
+  position: absolut;
+  rechts: -18px;
   top: -50px;
-  height: 140px;
+  Höhe: 140px;
   width: auto;
-  z-index: 10;
+  z-Index: 10;
   filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  pointerevents: keine;
 }
 
-/* Hero section bottom-right overlapping Mii */
+/* Helden Abschnitt unten rechts überlappende Mii */
 .mii-overlap-hero {
-  position: absolute;
+  position: absolut;
   right: -25px;
-  bottom: -45px;
-  height: 260px;
+  unten: -45px;
+  Höhe: 260px;
   width: auto;
-  z-index: 10;
+  z-Index: 10;
   filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
-  transform: rotate(4deg);
-  pointer-events: none;
+  transformieren: drehen(4deg);
+  pointerevents: keine;
 }
 
 @media (max-width: 900px) {
   .mii-overlap-hero {
-    height: 180px;
-    right: -10px;
+    Höhe: 180px;
+    rechts: -10px;
     bottom: -30px;
   }
 }
 
 @media (max-width: 600px) {
   .feature-card.has-mii h3 {
-    padding-right: 0;
+    padding-rechts: 0;
   }
-  .mii-card-corner,
+  .mii-Karten-Ecke,
   .mii-overlap-hero {
-    display: none;
+    anzeigen: keine;
   }
 }
 
-/* Quick Start Banner */
+/* Schnellstart-Banner */
 .quick-start-banner {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 3rem 2rem;
   text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
+  margin-unten: 4rem;
+  position: relativ;
   overflow: hidden;
 }
 
 .quick-start-banner h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.75rem;
+  Schriftgewicht: 700;
+  farbe: var(--text-main);
+  margin-unten: 0.75rem;
 }
 
 .quick-start-banner p {
-  color: var(--text-muted);
+  farbe: var(--text-stumm);
   font-size: 1.05rem;
-  margin-bottom: 1.75rem;
-  max-width: 580px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-unten: 1.75rem;
+  max-Breite: 580px;
+  Rand links: auto;
+  margin-rechts: auto;
 }
 
-/* Code block / Directory tree */
+/* Code Block / Verzeichnisbaum */
 .code-block {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1,5rem;
 }
 
 .code-header {
   background-color: var(--bg-secondary);
   padding: 0.55rem 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  anzeigen: Flex;
+  gerechtfertigter Inhalt: Leerzeichen zwischen;
+  align-items: mitte;
   font-size: 0.82rem;
-  color: var(--text-muted);
+  farbe: var(--text-stumm);
   border-bottom: 1px solid var(--border-color);
 }
 
 .btn-copy {
   background-color: var(--border-color);
-  border: none;
-  color: var(--text-main);
+  rand: keine;
+  farbe: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  cursor: pointer;
+  cursor: Zeiger;
 }
 
 .btn-copy:hover {
@@ -613,79 +613,79 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  line-height: 1.5;
-  color: var(--text-main);
+  Zeilenhöhe: 1,5;
+  farbe: var(--text-main);
   overflow-x: auto;
 }
 
-/* Ordered instructions */
-.ordered-instructions {
-  margin-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
+/* Bestellte Anweisungen */
+.Bestellte Anweisungen {
+  margin-links: 1.4rem;
+  anzeigen: Flex;
+  flex-Richtung: Spalte;
   gap: 0.85rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1,5rem;
 }
 
-.ordered-instructions li {
+.Bestellte Anweisungen li {
   font-size: 0.95rem;
-  color: var(--text-main);
+  farbe: var(--text-main);
   padding-left: 0.3rem;
 }
 
-/* Controller Physical Button Tokens */
+/* Controller Physical Button Token */
 .controller-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  anzeigen: inline-flex;
+  align-items: mitte;
+  berechtigter Inhalt: Zentrum;
   font-family: var(--font-main);
-  font-weight: 700;
-  color: #f8fafc;
+  Schriftgewicht: 700;
+  farbe: #f8fafc;
   background-color: #334155;
-  border: 1px solid #64748b;
+  rand: 1px solide #64748b;
   box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
-  user-select: none;
-  vertical-align: middle;
-  line-height: 1;
-  margin: 0 0.15rem;
+  benutzerwählen: keine;
+  vertikal-Ausricht: Mitte;
+  Zeilenhöhe: 1;
+  Rand: 0 0,15rem;
 }
 
 .controller-btn.btn-round {
   width: 24px;
-  height: 24px;
+  Höhe: 24px;
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
-.controller-btn.btn-shoulder {
+.controller-btn.btn-Schulter {
   padding: 0 0.55rem;
-  height: 24px;
+  Höhe: 24px;
   border-radius: 6px;
   font-size: 0.82rem;
 }
 
-.controller-btn.btn-pill {
+.controller-btn.btn-Pill {
   padding: 0 0.65rem;
-  height: 24px;
+  Höhe: 24px;
   border-radius: 12px;
   font-size: 0.74rem;
-  letter-spacing: 0.04em;
+  buchstabenabstand: 0.04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  height: 24px;
+  Höhe: 24px;
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  display: block;
+  anzeigen: Block;
 }
 
-/* Feature Grid */
+/* Feature Raster */
 .feature-grid {
-  display: grid;
+  anzeigen: Gitter;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
@@ -700,29 +700,29 @@ a.btn-discord:hover {
 .feature-card h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
+  Schriftgewicht: 700;
+  farbe: var(--text-main);
+  margin-unten: 0.5rem;
 }
 
 .feature-card p {
-  color: var(--text-muted);
+  farbe: var(--text-stumm);
   font-size: 0.92rem;
-  line-height: 1.6;
+  Zeilenhöhe: 1.6;
 }
 
 .feature-card a {
-  color: var(--accent-light);
+  farbe: var(--accent-light);
 }
 
 .feature-card a:hover {
-  text-decoration: underline;
+  text-dekoration: unterstrichen;
 }
 
-/* FAQ List */
-.faq-list {
-  display: flex;
-  flex-direction: column;
+/* FAQ-Liste */
+.faq-Liste {
+  anzeigen: Flex;
+  flex-Richtung: Spalte;
   gap: 0.85rem;
 }
 
@@ -733,51 +733,51 @@ a.btn-discord:hover {
   overflow: hidden;
 }
 
-.faq-question {
+.faq-Frage {
   width: 100%;
-  background-color: transparent;
-  border: none;
+  hintergrundfarbe: transparent;
+  rand: keine;
   padding: 1.15rem 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
+  anzeigen: Flex;
+  gerechtfertigter Inhalt: Leerzeichen zwischen;
+  align-items: mitte;
+  text-Ausricht: links;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-main);
-  cursor: pointer;
+  farbe: var(--text-main);
+  cursor: Zeiger;
 }
 
-.faq-indicator {
+.faq-Indikator {
   font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--accent-light);
+  Schriftgewicht: 400;
+  farbe: var(--accent-light);
 }
 
-.faq-answer {
+.faq-Antwort {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.25s ease;
+  übergang: max-height 0.25s ease;
 }
 
-.faq-answer p {
+.faq-Antwort p {
   padding: 0 1.4rem 1.3rem;
-  color: var(--text-muted);
+  farbe: var(--text-stumm);
   font-size: 0.92rem;
-  line-height: 1.65;
+  Zeilenhöhe: 1,65;
 }
 
-/* Footer */
+/* Fußzeile */
 .footer {
   padding: 2.2rem 0;
   background-color: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
 }
 
-.footer-content {
+.footer-Inhalt {
   text-align: center;
-  color: var(--text-dim);
+  farbe: var(--text-dim);
   font-size: 0.82rem;
 }
 
@@ -793,42 +793,42 @@ a.btn-discord:hover {
   }
 
   .nav-links {
-    display: none;
+    anzeigen: keine;
   }
 
   .page-header h1,
-  .hero-section h1,
-  .animated-title {
+  .hero-Abschnitt h1,
+  .animierte Titel {
     font-size: 2.2rem;
   }
 }
 
-/* Light Mode Support */
+/* Light Mode Unterstützung */
 @media (prefers-color-scheme: light) {
   :root {
     --bg-primary: #f8fafc;
     --bg-secondary: #f1f5f9;
     --bg-tertiary: #e2e8f0;
-    --bg-card: #ffffff;
+    --bg-Karte: #ffffff;
     --border-color: #cbd5e1;
     --border-hover: #94a3b8;
 
     --text-main: #0f172a;
-    --text-muted: #334155;
+    --text-stumm: #334155;
     --text-dim: #64748b;
   }
   
-  /* Adjust shadows for light mode */
-  .guide-image,
-  .hero-icon,
+  /* Schatten für den Lichtmodus anpassen */
+  .guide-Bild,
+  .hero-Icon,
   .discord-ui-mockup {
-    box-shadow: none;
+    box-shadow: keine;
   }
 
-  .mii-card-corner,
-  .mii-card-corner-lounging,
+  .mii-Karten-Ecke,
+  .mii-Karten-Ecke, Liegeplatz
   .mii-overlap-hero {
-    filter: none;
+    filter: keine;
   }
 
   .controller-btn {
@@ -836,14 +836,14 @@ a.btn-discord:hover {
   }
 }
 
-/* Discord UI Mockup Section */
+/* Discord UI Mockup Abschnitt */
 .discord-ui-section {
   overflow: hidden;
 }
 
 .discord-ui-layout {
-  display: flex;
-  align-items: center;
+  anzeigen: Flex;
+  align-items: mitte;
   gap: 3rem;
 }
 
@@ -853,11 +853,11 @@ a.btn-discord:hover {
 
 .discord-ui-text h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-unten: 1rem;
 }
 
 .discord-ui-text .btn-fullwidth {
-  display: inline-flex;
+  anzeigen: inline-flex;
   width: auto;
   margin-top: 1rem;
 }
@@ -867,10 +867,10 @@ a.btn-discord:hover {
   background-color: #313338;
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid #1e1f22;
+  rand: 1px solide #1e1f22;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   font-family: var(--font-body);
-  color: #dbdee1;
+  farbe: #dbdee1;
   min-width: 350px;
 }
 
@@ -878,37 +878,37 @@ a.btn-discord:hover {
   background-color: #2b2d31;
   padding: 12px 16px;
   font-weight: 600;
-  border-bottom: 1px solid #1e1f22;
-  display: flex;
-  align-items: center;
+  border-bottom: 1px solide #1e1f22;
+  anzeigen: Flex;
+  align-items: mitte;
   gap: 8px;
-  color: #f2f3f5;
+  farbe: #f2f3f5;
 }
 
 .discord-ui-header .hashtag {
-  color: #80848e;
+  farbe: #80848e;
   font-size: 1.2rem;
 }
 
-.discord-ui-messages {
+.discord-ui-Nachrichten {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  anzeigen: Flex;
+  flex-Richtung: Spalte;
   gap: 16px;
 }
 
 .discord-msg {
-  display: flex;
+  anzeigen: Flex;
   gap: 16px;
-  opacity: 0;
+  transparenz: 0;
   transform: translateY(10px);
 }
 
 .discord-avatar {
-  width: 40px;
-  height: 40px;
+  breite: 40px;
+  Höhe: 40px;
   border-radius: 50%;
-  object-fit: cover;
+  objekt-fit: cover;
   background-color: #2b2d31;
 }
 
@@ -917,48 +917,48 @@ a.btn-discord:hover {
 }
 
 .discord-msg-header {
-  display: flex;
-  align-items: baseline;
+  anzeigen: Flex;
+  align-items: Baseline;
   gap: 8px;
-  margin-bottom: 4px;
+  Rand unten: 4px;
 }
 
 .discord-user {
-  font-weight: 500;
-  color: #f2f3f5;
+  Schriftgewicht: 500;
+  farbe: #f2f3f5;
 }
 
 .discord-user.admin-user {
-  color: #eb459e; /* Pink role color */
+  color: #eb459e; /* Rosa Rollenfarbe */
 }
 
-.discord-time {
+.discord-Zeit {
   font-size: 0.75rem;
-  color: #949ba4;
+  farbe: #949ba4;
 }
 
 .discord-msg p {
-  color: #dbdee1;
+  farbe: #dbdee1;
   font-size: 0.95rem;
-  line-height: 1.4;
-  margin: 0;
+  Zeilenhöhe: 1.4;
+  Rand: 0;
 }
 
-/* Animations for Discord Mockup */
-.start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
-.start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
-.start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
+/* Animationen für Discord Mockup */
+.start-anim .msg-anim-1 { Animation: popIn 0.4s erleichtern Weiterleitungen 0.2s; }
+.start-anim .msg-anim-2 { Animation: popIn 0.4s erleichtern Weiterleitungen 1.4s; }
+.start-anim .msg-anim-3 { Animation: popIn 0.4s erleichtern die Weiterleitung 2.6s; }
 
 @keyframes popIn {
-  to {
-    opacity: 1;
+  auf {
+    transparenz: 1;
     transform: translateY(0);
   }
 }
 
-/* Mods Grid */
+/* Mods Raster */
 .mods-grid {
-  display: grid;
+  anzeigen: Gitter;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
@@ -970,63 +970,63 @@ a.btn-discord:hover {
   border-radius: 8px;
   padding: 2rem 1rem;
   text-align: center;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  übergang: alle 0.2s einfach;
+  anzeigen: Flex;
+  flex-Richtung: Spalte;
+  align-items: mitte;
   gap: 0.75rem;
 }
 
 .mod-avatar {
-  width: 80px;
-  height: 80px;
+  breite: 80px;
+  Höhe: 80px;
   border-radius: 50%;
   background-color: var(--bg-tertiary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  anzeigen: Flex;
+  align-items: mitte;
+  berechtigter Inhalt: Zentrum;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--text-muted);
+  farbe: var(--text-stumm);
   overflow: hidden;
 }
 
 .mod-avatar img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  Höhe: 100%;
+  objekt-fit: cover;
 }
 
 .mod-name {
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--text-main);
+  farbe: var(--text-main);
 }
 
 .mod-username {
   font-size: 0.9rem;
-  color: var(--text-dim);
+  farbe: var(--text-dim);
 }
 
-/* Juxtaposition Carousel */
-.juxt-carousel-wrapper {
+/* Juxtapositionskarussell */
+.juxt-Karussell-Wrapper {
   overflow: hidden;
-  position: relative;
+  position: relativ;
   width: 100%;
   margin-top: 2rem;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-bild: linear-gradient(nach rechts, transparent, schwarz 10%, schwarz 90%, transparent);
+  -Webkit-Mask-Bild: linear-gradient(nach rechts, transparent, schwarz 10%, schwarz 90%, transparent);
 }
 
 .juxt-carousel {
-  display: flex;
-  width: fit-content;
-  animation: scrollCarousel 20s linear infinite;
+  anzeigen: Flex;
+  width: Passender Inhalt;
+  animation: scrollCarousel 20s lineare unendlich;
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  animation-play-state: paused;
+  animations-play-Zustand: angehalten;
 }
 
 .juxt-post {
@@ -1034,32 +1034,32 @@ a.btn-discord:hover {
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 1.25rem;
-  width: 320px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  breite: 320px;
+  flex-schrumpfen: 0;
+  anzeigen: Flex;
+  flex-Richtung: Zeile;
+  align-items: mitte;
   gap: 1rem;
-  text-align: left;
+  text-Ausricht: links;
 }
 
 .juxt-post img {
   width: 64px;
-  height: 64px;
+  Höhe: 64px;
   border-radius: 8px;
-  object-fit: cover;
+  objekt-fit: cover;
 }
 
-.juxt-content strong {
-  display: block;
+.juxt-content stark {
+  anzeigen: Block;
   font-size: 1.1rem;
-  color: var(--accent-cyan);
-  margin-bottom: 0.5rem;
+  farbe: var(--Akzentzyan);
+  margin-unten: 0.5rem;
 }
 
 .juxt-content p {
   font-size: 0.95rem;
-  margin: 0;
+  Rand: 0;
 }
 
 @keyframes scrollCarousel {
@@ -1069,7 +1069,7 @@ a.btn-discord:hover {
 
 @media (max-width: 900px) {
   .discord-ui-layout {
-    flex-direction: column;
+    flex-Richtung: Spalte;
   }
   .discord-ui-mockup {
     width: 100%;
@@ -1077,5 +1077,5 @@ a.btn-discord:hover {
 }
 
 .feature-logo {
-  margin-bottom: 1rem;
+  margin-unten: 1rem;
 }
