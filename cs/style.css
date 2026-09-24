@@ -1,11 +1,11 @@
 /* ==========================================================================
-   Revivetendo Relay Network — Clean Solid CSS Design System
+   Revivetendo Relay Network – Clean Solid CSS Design System
    ========================================================================== */
 
 :root {
-  /* Solid Color Palette - No Gradients or Glows */
+  /* Pevná barva paleta - bez sklonu nebo sklonu */
   --bg-primary: #0f1117;
-  --bg-secondary: #161821;
+  --bg-sekundární: #161821;
   --bg-tertiary: #1e202b;
   --bg-card: #181a24;
   --border-color: #2a2d3d;
@@ -21,466 +21,466 @@
   --accent-purple: #7c3aed;
   --accent-green: #059669;
 
-  /* Clean Typography */
+  /* Čistá typografie */
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+  velikost krabice: hraniční krabice;
+  marže: 0;
   padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+  posun – chování: hladký;
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
-  color: var(--text-main);
+  pozadí: var(--bg-primary);
+  barva: var(--text-main);
 }
 
-body {
-  line-height: 1.6;
+tělo {
+  výška trati: 1.6;
 }
 
 .container {
-  max-width: 980px;
-  margin: 0 auto;
+  max-šířka: 980px;
+  marže: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* Links - High Contrast Bright Cyan */
+/* Odkazy - Vysoký kontrast jasu kyan */
 a {
-  color: var(--accent-light);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease;
+  barva: var(--accent-light);
+  dekorace textu: podtržení;
+  Odsazení textu podtržení: 3px;
+  přechod: barva 0,15 s snadně;
 }
 
 a:hover {
-  color: #7dd3fc;
+  barva: #7dd3fc;
 }
 
 /* Navigation */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: var(--bg-secondary);
+  poloha: tyčinka;
+  horní část: 0;
+  Z-index: 100;
+  pozadí: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  max-width: 980px;
-  margin: 0 auto;
+.nav-kontejner {
+  displej: ohyb;
+  zboží: střed;
+  obsah zdůvodnění: mezera,
+  výška: 64px;
+  max-šířka: 980px;
+  marže: 0 auto;
   padding: 0 1.5rem;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
+  displej: ohyb;
+  zboží: střed;
   gap: 0.75rem;
-  text-decoration: none !important;
+  dekorace textu: žádný !, důležitý,
 }
 
-.brand-icon {
+.Značka {
   width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  object-fit: contain;
+  výška: 34px;
+  hraniční poloměr: 8px;
+  objekt: obsahuje;
 }
 
 .brand-title {
   font-family: var(--font-main);
-  font-weight: 700;
+  hmotnost fontu: 700;
   font-size: 1.15rem;
-  color: var(--text-main);
+  barva: var(--text-main);
 }
 
 .nav-links {
-  display: flex;
+  displej: ohyb;
   gap: 2rem;
 }
 
 .nav-link {
-  color: var(--text-muted);
-  text-decoration: none !important;
+  barva: var(--text-muted);
+  dekorace textu: žádný !, důležitý,
   font-size: 0.95rem;
   font-weight: 500;
-  transition: color 0.15s ease;
+  přechod: barva 0,15 s snadně;
 }
 
 .nav-link:hover {
-  color: var(--text-main);
+  barva: var(--text-main);
 }
 
-/* Page Header */
+/* Záhlaví stránky */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 3rem;
+  spodní část: 3rem;
 }
 
 .page-header h1 {
   font-family: var(--font-main);
   font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.8rem;
+  hmotnost fontu: 700;
+  barva: var(--text-main);
+  maržové dno: 0.8rem;
 }
 
 .page-description {
   font-size: 1.05rem;
-  color: var(--text-muted);
-  max-width: 780px;
-  line-height: 1.65;
+  barva: var(--text-muted);
+  max-šířka: 780px;
+  výška trati: 1.65;
 }
 
-/* Section Shared Styles */
-.guide-section,
+/* Sekce sdílené styly */
+.naváděcí sekce,
 .content-section {
-  margin-bottom: 4rem;
+  maržové dno: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
 }
 
-.guide-section h2,
+.naváděcí oddíl h2,
 .content-section h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  hmotnost fontu: 700;
+  barva: var(--text-main);
+  maržové dno: 0.4rem;
 }
 
 .section-lead {
   font-size: 1rem;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
+  barva: var(--text-muted);
+  spodní část: 2rem;
 }
 
-/* Step Cards */
+/* Krokové karty */
 .steps-list {
-  display: flex;
-  flex-direction: column;
+  displej: ohyb;
+  směr ohybu: sloupec,
   gap: 2rem;
 }
 
 .step-card {
-  display: grid;
-  grid-template-columns: 85px 1fr;
+  zobrazení: síť;
+  sloupce v souřadnicové síti: 85px 1fr;
   gap: 1.8rem;
-  background-color: var(--bg-card);
+  pozadí: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  position: relative;
+  pozice: příbuzný;
   overflow: hidden;
 }
 
 .step-number {
   font-family: var(--font-main);
   font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--accent-light);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  hmotnost fontu: 700;
+  barva: var(--accent-light);
+  textová transformace: velká písmena,
+  odstupňování písmen: 0.05em;
   padding-top: 0.1rem;
 }
 
 .step-content h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  hmotnost fontu: 700;
+  barva: var(--text-main);
+  maržové dno: 0.6rem;
 }
 
 .step-content p {
-  color: var(--text-main);
+  barva: var(--text-main);
   font-size: 0.98rem;
-  margin-bottom: 1.25rem;
+  spodní hranice: 1.25rem;
 }
 
 .step-note {
-  font-size: 0.9rem !important;
-  color: var(--text-muted) !important;
-  margin-top: 1rem;
+  velikost písma: 0.9rem !important;
+  barva: var(--text-muted) !important;
+  marže: 1rem;
   margin-bottom: 0 !important;
 }
 
-/* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
+/* Referenční obrázky průvodce - Natural Aspect Poměr, No Black Areas */
 .guide-image-container {
-  margin: 1.5rem 0;
+  marže: 1.5rem 0;
   width: 100%;
 }
 
 .guide-image {
   width: 100%;
-  max-width: 580px;
-  height: auto;
-  display: block;
+  max-šířka: 580px;
+  výška: auto;
+  zobrazení: blokování;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  hraniční poloměr: 8px;
+  stín boxů: 0 4px 14px rgba(0, 0, 0, 0, 0.35);
 }
 
-.image-caption {
+.image-titulek {
   font-size: 0.82rem;
-  color: var(--text-dim);
-  margin-top: 0.5rem;
-  display: block;
+  barva: var(--text-dim);
+  horní marže: 0.5rem;
+  zobrazení: blokování;
 }
 
-/* Clean Boxes inside steps */
+/* Vyčistit krabice v krocích */
 .info-box {
-  background-color: var(--bg-tertiary);
+  pozadí: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  hraniční poloměr: 8px;
   padding: 1.25rem 1.4rem;
-  margin-bottom: 1.5rem;
+  spodní hranice: 1.5rem;
 }
 
 .info-box h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  hmotnost fontu: 700;
+  barva: var(--text-main);
+  maržové dno: 0.4rem;
 }
 
 .info-box p {
-  font-size: 0.92rem !important;
-  color: var(--text-muted) !important;
-  margin: 0 !important;
+  velikost písma: 0.92rem !important;
+  barva: var(--text-muted) !important;
+  marže: 0 !Důležité;
 }
 
 .requirements-list {
-  background-color: var(--bg-tertiary);
+  pozadí: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  hraniční poloměr: 8px;
   padding: 1.25rem 1.4rem;
 }
 
 .requirements-list h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  hmotnost fontu: 700;
+  barva: var(--text-main);
+  maržové dno: 0.6rem;
 }
 
 .requirements-list ul {
-  list-style-type: disc;
-  margin-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
+  typ listu: kotouč;
+  Mezní hodnota: 1.25rem;
+  displej: ohyb;
+  směr ohybu: sloupec,
   gap: 0.5rem;
 }
 
 .requirements-list li {
   font-size: 0.92rem;
-  color: var(--text-main);
+  barva: var(--text-main);
 }
 
-/* Action Box */
+/* Krabice akcí */
 .action-box {
-  background-color: var(--bg-tertiary);
+  pozadí: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  hraniční poloměr: 8px;
   padding: 1.25rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  displej: ohyb;
+  zboží: střed;
+  obsah zdůvodnění: mezera,
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+  spodní hranice: 1.5rem;
+  flex-wrap: obal;
 }
 
 .action-box h4 {
   font-size: 1.05rem;
-  color: var(--text-main);
-  font-weight: 700;
-  margin-bottom: 0.15rem;
+  barva: var(--text-main);
+  hmotnost fontu: 700;
+  maržové dno: 0.15rem;
 }
 
 .text-muted {
-  color: var(--text-muted);
+  barva: var(--text-muted);
   font-size: 0.85rem;
 }
 
-/* Buttons - Pure White Text on Cyan Background */
+/* Tlačítka - Čistý bílý text na pozadí Cyan */
 .btn,
 a.btn,
 .feature-card a.btn,
 .action-box a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  zobrazení: inline-flex;
+  zboží: střed;
+  obsah zdůvodnění: centrum;
   gap: 0.5rem;
-  padding: 0.65rem 1.3rem;
-  border-radius: 6px;
+  odsazení: 0.65rem 1.3rem;
+  hraniční poloměr: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  text-decoration: none !important;
-  border: none;
-  cursor: pointer;
-  background-color: var(--accent-cyan);
-  color: #ffffff !important;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  dekorace textu: žádný !, důležitý,
+  hranice: žádná;
+  kurzor: pór,
+  pozadí: var(--accent-cyan);
+  barva: #ffffff !Důležité;
+  přechod: pozadí-barva 0.15 s snadná, barva okraje 0,15 s;
 }
 
 .lucide {
-  flex-shrink: 0;
-  vertical-align: middle;
+  smrštění: 0;
+  vertikální zarovnání: střední;
 }
 
 .btn:hover,
 a.btn:hover,
 .feature-card a.btn:hover,
 .action-box a.btn:hover {
-  background-color: var(--accent-cyan-hover);
-  color: #ffffff !important;
+  pozadí: var(--accent-cyan-hover);
+  barva: #ffffff !Důležité;
 }
 
-.btn-secondary,
-a.btn-secondary {
-  background-color: var(--bg-tertiary) !important;
+.btn-sekundární,
+a.btn-sekundární {
+  pozadí-color: var(--bg-tertiary) !important;
   border: 1px solid var(--border-color) !important;
-  color: var(--text-main) !important;
+  barva: var(--text-main) !important;
 }
 
-.btn-secondary:hover,
+.btn-sekundární:hover,
 a.btn-secondary:hover {
-  background-color: #262938 !important;
+  pozadí – barva: #262938 !Důležité;
   border-color: var(--border-hover) !important;
-  color: #ffffff !important;
+  barva: #ffffff !Důležité;
 }
 
-.btn-discord,
+btn-discord,
 a.btn-discord {
-  background-color: #5865f2 !important;
-  color: #ffffff !important;
+  barva pozadí: #5865f2 !Důležitá;
+  barva: #ffffff !Důležité;
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
-  background-color: #4752c4 !important;
-  color: #ffffff !important;
+  barva pozadí: #4752c4 !Důležitá;
+  barva: #ffffff !Důležité;
 }
 
-/* Landing Page Hero Section */
+/* Úvodní stránka Hrdinové sekce */
 .hero-section {
   padding: 5rem 0 3rem;
-  border-bottom: none !important;
-  margin-bottom: 3rem;
+  Hraniční dno: žádný !important;
+  spodní část: 3rem;
   text-align: center;
-  position: relative;
-  overflow: visible !important;
+  pozice: příbuzný;
+  přetečení: viditelné !důležité;
 }
 
-.hero-icon {
-  width: 90px;
-  height: 90px;
+.hero-ikona {
+  šířka: 90px;
+  výška: 90px;
   border-radius: 22px;
-  margin: 0 auto 1.5rem;
-  display: block;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  marže: 0 auto 1.5rem;
+  zobrazení: blokování;
+  stín boxů: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
+/* Animace: Zahodit jeden po druhém nahoře BEZ slábnutí (průhlednost zůstane 100%) */
 @keyframes dropFromTop {
   0% {
-    transform: translateY(-45px);
-    visibility: hidden;
+    transformace: translateY(-45px);
+    viditelnost: skrytá;
   }
   1% {
-    visibility: visible;
+    viditelnost: viditelná;
   }
   100% {
-    transform: translateY(0);
-    visibility: visible;
+    transformace: translateY(0);
+    viditelnost: viditelná;
   }
 }
 
 .animated-title {
-  display: inline-flex;
+  zobrazení: inline-flex;
   gap: 0.3em;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: obal;
+  obsah zdůvodnění: centrum;
   font-family: var(--font-main);
   font-size: 3.2rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 1.1rem;
-  letter-spacing: -0.02em;
+  hmotnost fontu: 700;
+  barva: var(--text-main);
+  spodní hranice: 1.1Rm;
+  odstupňování písmen -0.02em;
 }
 
 .animated-title .word {
-  display: inline-block;
-  visibility: hidden;
-  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
-  animation-delay: calc(var(--animation-order) * 0.25s);
+  zobrazení: inline-block;
+  viditelnost: skrytá;
+  animace: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) dopředu;
+  zpoždění animace: calc(var(--animation-order) * 0.25s);
 }
 
-/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
+/* Obalový vchod pro veškerý obsah, který se zobrazuje po vypnutí titulku (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacity: 0;
-    transform: translateY(22px);
-    visibility: hidden;
+    zákal: 0;
+    transformace: translateY(22px);
+    viditelnost: skrytá;
   }
   1% {
-    visibility: visible;
+    viditelnost: viditelná;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
+    zákal: 1;
+    transformace: translateY(0);
+    viditelnost: viditelná;
   }
 }
 
 .stagger-in {
-  opacity: 0;
-  visibility: hidden;
-  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: 1.08s;
+  zákal: 0;
+  viditelnost: skrytá;
+  animace: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwardy;
+  Zpoždění animace: 1.08;
 }
 
 .hero-description {
   font-size: 1.2rem;
-  color: var(--text-muted);
-  max-width: 680px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.65;
+  barva: var(--text-muted);
+  max-šířka: 680px;
+  marže: 0 auto 2,5rem;
+  výška trati: 1.65;
 }
 
-.hero-buttons {
-  display: flex;
+.hero-tlačítka {
+  displej: ohyb;
   gap: 1.25rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  obsah zdůvodnění: centrum;
+  flex-wrap: obal;
 }
 
-/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
-.content-section,
+/* Mii Znaky umístěné uvnitř prázdné krabice a vyskakování mimo hranice */
+.Content section,
 .feature-grid,
-.feature-card,
+.funkční karta,
 .step-card,
 .info-box,
 .requirements-list {
-  position: relative;
-  overflow: visible !important;
+  pozice: příbuzný;
+  přetečení: viditelné !důležité;
 }
 
-/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
+/* Vlastnostní karty s vnějším rohem Miis: rezervujte 90px pravé odsazení na BOTH titulek a odstavec takže balení textu je zablokováno */
 .feature-card.has-mii {
-  position: relative;
-  overflow: visible !important;
+  pozice: příbuzný;
+  přetečení: viditelné !důležité;
 }
 
 .feature-card.has-mii h3,
@@ -489,120 +489,120 @@ a.btn-discord:hover {
 }
 
 .feature-card.has-mii h3 {
-  margin-bottom: 0.85rem;
+  maržové dno: 0.85rem;
 }
 
 .mii-card-corner {
-  position: absolute;
+  poloha: absolutní;
   right: -24px;
   top: -42px;
-  height: 165px;
+  výška: 165px;
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  index z: 10;
+  filtr: stín kapek (0 10px 24px rgba(0, 0, 0, 0,65));
+  tři události: žádný;
 }
 
 .mii-card-corner-lounging {
-  position: absolute;
-  right: -18px;
+  poloha: absolutní;
+  vpravo: -18px;
   top: -50px;
-  height: 140px;
+  výška: 140px;
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  index z: 10;
+  filtr: stín kapek (0 10px 24px rgba(0, 0, 0, 0,65));
+  tři události: žádný;
 }
 
-/* Hero section bottom-right overlapping Mii */
+/* část hrdinové vpravo se překrývá s Mii */
 .mii-overlap-hero {
-  position: absolute;
+  poloha: absolutní;
   right: -25px;
-  bottom: -45px;
-  height: 260px;
+  dno: -45px;
+  výška: 260px;
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
-  transform: rotate(4deg);
-  pointer-events: none;
+  index z: 10;
+  filtr: stín shora (0 16px 36px rgba(0, 0, 0, 0,7));
+  transformace: otočit (4deg);
+  tři události: žádný;
 }
 
 @media (max-width: 900px) {
   .mii-overlap-hero {
-    height: 180px;
-    right: -10px;
+    výška: 180px;
+    vpravo: -10px;
     bottom: -30px;
   }
 }
 
 @media (max-width: 600px) {
   .feature-card.has-mii h3 {
-    padding-right: 0;
+    čalounění vpravo: 0;
   }
-  .mii-card-corner,
+  .mii-karty - roh,
   .mii-overlap-hero {
-    display: none;
+    zobrazení: žádný;
   }
 }
 
-/* Quick Start Banner */
+/* Banner rychlého spuštění */
 .quick-start-banner {
-  background-color: var(--bg-card);
+  pozadí: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  hraniční poloměr: 12px;
   padding: 3rem 2rem;
   text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
+  maržové dno: 4rem;
+  pozice: příbuzný;
   overflow: hidden;
 }
 
 .quick-start-banner h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.75rem;
+  hmotnost fontu: 700;
+  barva: var(--text-main);
+  maržové dno: 0.75rem;
 }
 
 .quick-start-banner p {
-  color: var(--text-muted);
+  barva: var(--text-muted);
   font-size: 1.05rem;
-  margin-bottom: 1.75rem;
-  max-width: 580px;
+  spodní hranice: 1.75rem;
+  max-šířka: 580px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Code block / Directory tree */
+/* Blok kódu / strom adresářů */
 .code-block {
-  background-color: var(--bg-tertiary);
+  pozadí: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  hraniční poloměr: 8px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  spodní hranice: 1.5rem;
 }
 
 .code-header {
-  background-color: var(--bg-secondary);
+  pozadí: var(--bg-secondary);
   padding: 0.55rem 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  displej: ohyb;
+  obsah zdůvodnění: mezera,
+  zboží: střed;
   font-size: 0.82rem;
-  color: var(--text-muted);
+  barva: var(--text-muted);
   border-bottom: 1px solid var(--border-color);
 }
 
 .btn-copy {
-  background-color: var(--border-color);
-  border: none;
-  color: var(--text-main);
+  pozadí-barva: var(--border-color);
+  hranice: žádná;
+  barva: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  cursor: pointer;
+  kurzor: pór,
 }
 
 .btn-copy:hover {
@@ -613,178 +613,178 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  line-height: 1.5;
-  color: var(--text-main);
+  výška trati: 1.5;
+  barva: var(--text-main);
   overflow-x: auto;
 }
 
-/* Ordered instructions */
+/* Objednané instrukce */
 .ordered-instructions {
-  margin-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
+  okraj vlevo: 1.4rem;
+  displej: ohyb;
+  směr ohybu: sloupec,
   gap: 0.85rem;
-  margin-bottom: 1.5rem;
+  spodní hranice: 1.5rem;
 }
 
 .ordered-instructions li {
   font-size: 0.95rem;
-  color: var(--text-main);
+  barva: var(--text-main);
   padding-left: 0.3rem;
 }
 
-/* Controller Physical Button Tokens */
+/* Fyzické tokeny tlačítka ovladače */
 .controller-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  zobrazení: inline-flex;
+  zboží: střed;
+  obsah zdůvodnění: centrum;
   font-family: var(--font-main);
-  font-weight: 700;
-  color: #f8fafc;
-  background-color: #334155;
-  border: 1px solid #64748b;
-  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
-  user-select: none;
-  vertical-align: middle;
-  line-height: 1;
-  margin: 0 0.15rem;
+  hmotnost fontu: 700;
+  barva: #f8fafc;
+  barva pozadí: #334155;
+  hranice: 1px pevná látka #64748b;
+  stín boxů: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
+  výběr uživatelů: žádný;
+  vertikální zarovnání: střední;
+  výška trati: 1;
+  marže: 0 0.15rem;
 }
 
 .controller-btn.btn-round {
   width: 24px;
-  height: 24px;
+  výška: 24px;
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-shoulder {
-  padding: 0 0.55rem;
-  height: 24px;
-  border-radius: 6px;
+  odsazení: 0 0.55rem;
+  výška: 24px;
+  hraniční poloměr: 6px;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-pill {
-  padding: 0 0.65rem;
-  height: 24px;
-  border-radius: 12px;
+  odsazení: 0 0.65rem;
+  výška: 24px;
+  hraniční poloměr: 12px;
   font-size: 0.74rem;
-  letter-spacing: 0.04em;
+  odstupňování písmen: 0.04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  height: 24px;
+  výška: 24px;
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  display: block;
+  zobrazení: blokování;
 }
 
-/* Feature Grid */
+/* Mřížka funkcí */
 .feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  zobrazení: síť;
+  sloupce mřížky – šablona: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
 .feature-card {
-  background-color: var(--bg-card);
+  pozadí: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  hraniční poloměr: 8px;
   padding: 1.6rem;
 }
 
 .feature-card h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
+  hmotnost fontu: 700;
+  barva: var(--text-main);
+  maržové dno: 0.5rem;
 }
 
 .feature-card p {
-  color: var(--text-muted);
+  barva: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.6;
+  výška trati: 1.6;
 }
 
 .feature-card a {
-  color: var(--accent-light);
+  barva: var(--accent-light);
 }
 
 .feature-card a:hover {
-  text-decoration: underline;
+  dekorace textu: podtržení;
 }
 
-/* FAQ List */
+/* seznam FAQ */
 .faq-list {
-  display: flex;
-  flex-direction: column;
+  displej: ohyb;
+  směr ohybu: sloupec,
   gap: 0.85rem;
 }
 
 .faq-item {
-  background-color: var(--bg-card);
+  pozadí: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  hraniční poloměr: 8px;
   overflow: hidden;
 }
 
 .faq-question {
   width: 100%;
-  background-color: transparent;
-  border: none;
+  barva pozadí: průhledná;
+  hranice: žádná;
   padding: 1.15rem 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
+  displej: ohyb;
+  obsah zdůvodnění: mezera,
+  zboží: střed;
+  zarovnaný text: vlevo;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-main);
-  cursor: pointer;
+  barva: var(--text-main);
+  kurzor: pór,
 }
 
-.faq-indicator {
+.faq-indikátor {
   font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--accent-light);
+  hmotnost fontu: 400;
+  barva: var(--accent-light);
 }
 
-.faq-answer {
-  max-height: 0;
+.faq-odpověď {
+  max-výška: 0;
   overflow: hidden;
-  transition: max-height 0.25s ease;
+  přechod: maximální výška 0,25s je snadná,
 }
 
-.faq-answer p {
-  padding: 0 1.4rem 1.3rem;
-  color: var(--text-muted);
+.faq-odpověď p {
+  odsazení: 0 1.4rem 1.3rem;
+  barva: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.65;
+  výška trati: 1.65;
 }
 
-/* Footer */
-.footer {
+/* Zápatí */
+.Zápatí {
   padding: 2.2rem 0;
-  background-color: var(--bg-secondary);
+  pozadí: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
   text-align: center;
-  color: var(--text-dim);
+  barva: var(--text-dim);
   font-size: 0.82rem;
 }
 
-/* Responsive */
+/* responzivní */
 @media (max-width: 768px) {
   .step-card {
-    grid-template-columns: 1fr;
+    v tabulce – šablony: 1fr;
     gap: 0.6rem;
   }
 
@@ -793,17 +793,17 @@ a.btn-discord:hover {
   }
 
   .nav-links {
-    display: none;
+    zobrazení: žádný;
   }
 
   .page-header h1,
-  .hero-section h1,
+  .hero-oddíl h1,
   .animated-title {
     font-size: 2.2rem;
   }
 }
 
-/* Light Mode Support */
+/* Podpora světlého režimu */
 @media (prefers-color-scheme: light) {
   :root {
     --bg-primary: #f8fafc;
@@ -818,32 +818,32 @@ a.btn-discord:hover {
     --text-dim: #64748b;
   }
   
-  /* Adjust shadows for light mode */
-  .guide-image,
-  .hero-icon,
+  /* Upravte stíny pro světlý režim */
+  .naváděcí obrázek,
+  .hero-ikona
   .discord-ui-mockup {
-    box-shadow: none;
+    stín boxů: žádný;
   }
 
-  .mii-card-corner,
-  .mii-card-corner-lounging,
+  .mii-karty - roh,
+  .mii-karty – lounging,
   .mii-overlap-hero {
-    filter: none;
+    filtr: žádný;
   }
 
   .controller-btn {
-    box-shadow: 0 2px 0 #0f172a;
+    stín boxů: 0 2px 0 #0f172a;
   }
 }
 
-/* Discord UI Mockup Section */
+/* Sekce přizpůsobení uživatelského rozhraní Discordu */
 .discord-ui-section {
   overflow: hidden;
 }
 
 .discord-ui-layout {
-  display: flex;
-  align-items: center;
+  displej: ohyb;
+  zboží: střed;
   gap: 3rem;
 }
 
@@ -853,63 +853,63 @@ a.btn-discord:hover {
 
 .discord-ui-text h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  maržové dno: 1rem;
 }
 
 .discord-ui-text .btn-fullwidth {
-  display: inline-flex;
+  zobrazení: inline-flex;
   width: auto;
-  margin-top: 1rem;
+  marže: 1rem;
 }
 
 .discord-ui-mockup {
   flex: 1;
-  background-color: #313338;
-  border-radius: 8px;
+  pozadí: #313338;
+  hraniční poloměr: 8px;
   overflow: hidden;
-  border: 1px solid #1e1f22;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  hranice: 1px pevná látka #1e1f22;
+  stín boxů: 0 8px 24px rgba(0, 0, 0, 0.4);
   font-family: var(--font-body);
-  color: #dbdee1;
+  barva: #dbdeep1;
   min-width: 350px;
 }
 
 .discord-ui-header {
-  background-color: #2b2d31;
-  padding: 12px 16px;
+  Barva pozadí: #2b2d31;
+  výčnělky: 12px 16px;
   font-weight: 600;
-  border-bottom: 1px solid #1e1f22;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #f2f3f5;
+  hraniční dno: 1px pevná látka #1e1f22;
+  displej: ohyb;
+  zboží: střed;
+  mezera: 8px;
+  barva: #f2f3f5;
 }
 
 .discord-ui-header .hashtag {
-  color: #80848e;
+  barva: #80848e;
   font-size: 1.2rem;
 }
 
-.discord-ui-messages {
+.discord-ui-zprávy {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  displej: ohyb;
+  směr ohybu: sloupec,
   gap: 16px;
 }
 
 .discord-msg {
-  display: flex;
+  displej: ohyb;
   gap: 16px;
-  opacity: 0;
-  transform: translateY(10px);
+  zákal: 0;
+  transformace: translateY(10px);
 }
 
 .discord-avatar {
-  width: 40px;
-  height: 40px;
+  šířka: 40px;
+  výška: 40px;
   border-radius: 50%;
-  object-fit: cover;
-  background-color: #2b2d31;
+  vybavení pro objekt: krytí;
+  Barva pozadí: #2b2d31;
 }
 
 .discord-msg-content {
@@ -917,149 +917,149 @@ a.btn-discord:hover {
 }
 
 .discord-msg-header {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin-bottom: 4px;
+  displej: ohyb;
+  zarovnané položky: základní položky;
+  mezera: 8px;
+  maržové dno: 4px;
 }
 
 .discord-user {
   font-weight: 500;
-  color: #f2f3f5;
+  barva: #f2f3f5;
 }
 
-.discord-user.admin-user {
-  color: #eb459e; /* Pink role color */
+.discord-user.admin-uživatel {
+  barva: #eb459e; /* Barva Růžové role */
 }
 
-.discord-time {
+Čas času .discord-time
   font-size: 0.75rem;
-  color: #949ba4;
+  barva: #949ba4;
 }
 
 .discord-msg p {
-  color: #dbdee1;
+  barva: #dbdeep1;
   font-size: 0.95rem;
-  line-height: 1.4;
-  margin: 0;
+  výška trati: 1.4;
+  marže: 0;
 }
 
-/* Animations for Discord Mockup */
-.start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
-.start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
-.start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
+/* Animace pro Discord Mockup */
+.start-anim .msg-anim-1 { animace: popIn 0.4s snadná vpřed 0.2s; }
+.start-anim .msg-anim-2 { animace: popIn 0.4s uvolní vpřed 1.4s; }
+.start-anim .msg-anim-3 { animace: popIn 0.4s uvolní vpřed 2.6s; }
 
 @keyframes popIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  do {
+    zákal: 1;
+    transformace: translateY(0);
   }
 }
 
-/* Mods Grid */
+/* Módová mřížka */
 .mods-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  zobrazení: síť;
+  sloupce mřížky – šablony: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  marže: 2rem;
 }
 
 .mod-card {
-  background-color: var(--bg-card);
+  pozadí: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  hraniční poloměr: 8px;
   padding: 2rem 1rem;
   text-align: center;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  transformace: všech 0.2s je snadné;
+  displej: ohyb;
+  směr ohybu: sloupec,
+  zboží: střed;
   gap: 0.75rem;
 }
 
 .mod-avatar {
-  width: 80px;
-  height: 80px;
+  šířka: 80px;
+  výška: 80px;
   border-radius: 50%;
-  background-color: var(--bg-tertiary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  pozadí: var(--bg-tertiary);
+  displej: ohyb;
+  zboží: střed;
+  obsah zdůvodnění: centrum;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--text-muted);
+  barva: var(--text-muted);
   overflow: hidden;
 }
 
 .mod-avatar img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  výška: 100 %,
+  vybavení pro objekt: krytí;
 }
 
 .mod-name {
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--text-main);
+  barva: var(--text-main);
 }
 
 .mod-username {
   font-size: 0.9rem;
-  color: var(--text-dim);
+  barva: var(--text-dim);
 }
 
 /* Juxtaposition Carousel */
-.juxt-carousel-wrapper {
+.juxt-karousel-wrapper {
   overflow: hidden;
-  position: relative;
+  pozice: příbuzný;
   width: 100%;
-  margin-top: 2rem;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  marže: 2rem;
+  maskový obraz: linear-gradient(doprava, transparentní, černá 10%, černá 90%, transparentní);
+  -webkit-mask-image: linear-gradient (doprava, transparentní, černá 10%, černá 90%, transparentní);
 }
 
 .juxt-carousel {
-  display: flex;
-  width: fit-content;
-  animation: scrollCarousel 20s linear infinite;
+  displej: ohyb;
+  šířka: obsah
+  animace: scrollCarousel 20 s lineární nekonečno;
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  animation-play-state: paused;
+  stav animace: pozastaven;
 }
 
 .juxt-post {
-  background-color: var(--bg-card);
+  pozadí: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  hraniční poloměr: 12px;
   padding: 1.25rem;
-  width: 320px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  šířka: 320px;
+  smrštění: 0;
+  displej: ohyb;
+  směr ohybu: řádky;
+  zboží: střed;
   gap: 1rem;
-  text-align: left;
+  zarovnaný text: vlevo;
 }
 
 .juxt-post img {
   width: 64px;
-  height: 64px;
-  border-radius: 8px;
-  object-fit: cover;
+  výška: 64px;
+  hraniční poloměr: 8px;
+  vybavení pro objekt: krytí;
 }
 
-.juxt-content strong {
-  display: block;
+.juxt-obsah silný {
+  zobrazení: blokování;
   font-size: 1.1rem;
-  color: var(--accent-cyan);
-  margin-bottom: 0.5rem;
+  barva: var(--accent-cyan);
+  maržové dno: 0.5rem;
 }
 
 .juxt-content p {
   font-size: 0.95rem;
-  margin: 0;
+  marže: 0;
 }
 
 @keyframes scrollCarousel {
@@ -1069,7 +1069,7 @@ a.btn-discord:hover {
 
 @media (max-width: 900px) {
   .discord-ui-layout {
-    flex-direction: column;
+    směr ohybu: sloupec,
   }
   .discord-ui-mockup {
     width: 100%;
@@ -1077,5 +1077,5 @@ a.btn-discord:hover {
 }
 
 .feature-logo {
-  margin-bottom: 1rem;
+  maržové dno: 1rem;
 }
