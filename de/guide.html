@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revivetendo Relais Netzwerk — Setup Guide</title>
-  <meta name="description" content="Einfache Schritt-für-Schritt Anleitung für Revivetendo Relais Network Wii U Chat und Juxtaposition Server.">
+  <title>Revivetendo Relay Network — Setup Guide</title>
+  <meta name="description" content="Simple, step-by-step setup guide for Revivetendo Relay Network Wii U Chat and Juxtaposition servers.">
   <link rel="icon" type="image/png" href="images/revivetendo_logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,10 @@
 
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="guide.html" class="nav-link">Anleitung</a>
-        <a href="privacy.html" class="nav-link">Datenschutzrichtlinie</a>
+        <a href="guide.html" class="nav-link">Guide</a>
+        <a href="privacy.html" class="nav-link">Privacy Policy</a>
         <a href="https://olv-web.nicochristmann.net/" target="_blank" rel="noopener noreferrer" class="nav-link">Juxtaposition (Revivetendo) </a>
         <a href="#faq" class="nav-link">FAQ</a>
-        
         <a href="https://discord.gg/PVaXnYuQfy" target="_blank" rel="noopener noreferrer" class="nav-link">Discord</a>
       </nav>
     </div>
@@ -37,9 +36,9 @@
     <div class="container">
       <!-- Page Header -->
       <header class="page-header">
-        <h1>Revivetendo Relais Netzwerk &mdash; Setup Guide</h1>
+        <h1>Revivetendo Relay Network &mdash; Setup Guide</h1>
         <p class="page-description">
-          Wählen Sie Ihre Konsole aus, um mit dem Revivetendo Relay Network loszulegen.
+          Select your console to get started with the Revivetendo Relay Network.
         </p>
 
         <div class="tabs-container" style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
@@ -52,28 +51,28 @@
 
       <!-- Step-by-Step Installation Guide -->
       <section class="guide-section" id="install-guide">
-        <h2>Installationsschritte</h2>
-        <p class="section-lead">Folgen Sie diesen vier Schritten, um Ihre Konsole mit dem Server zu verbinden.</p>
+        <h2>Installation Steps</h2>
+        <p class="section-lead">Follow these four steps to connect your console to the relay.</p>
 
         <div class="steps-list">
           <!-- Step 1 -->
           <article class="step-card">
-            <div class="step-number">Schritt 1</div>
+            <div class="step-number">Step 1</div>
             <div class="step-content">
-              <h3>Überprüfe dein Homebrew Setup</h3>
-              <p>Ihre Wii U muss die <strong>Aroma Homebrew Environment</strong> mit <strong>Coldboot</strong> aktiviert sein.</p>
+              <h3>Check Your Homebrew Setup</h3>
+              <p>Your Wii U must be running the <strong>Aroma Homebrew Environment</strong> with <strong>Coldboot</strong> enabled.</p>
               
               <div class="info-box">
-                <h4>Warum Coldboot benötigt wird</h4>
-                <p>Coldboot startet Inkay, wenn die Konsole eingeschaltet ist, damit SpotPass Dienste sich richtig verbinden können. Ältere Methoden wie Tiramisu oder Haxchi werden nicht unterstützt.</p>
+                <h4>Why Coldboot is Required</h4>
+                <p>Coldboot starts Inkay when the console powers on so SpotPass services can connect properly. Older methods like Tiramisu or Haxchi are not supported.</p>
               </div>
 
               <div class="requirements-list">
-                <h4>Voraussetzungen</h4>
+                <h4>Prerequisites</h4>
                 <ul>
-                  <li>Wii U läuft Aroma mit Coldboot aktiviert.</li>
-                  <li>SD-Kartenleser oder FTP-Verbindung zu Ihrer Konsole.</li>
-                  <li>Pretendo Netzwerk ID (PNID).</li>
+                  <li>Wii U running Aroma with Coldboot enabled.</li>
+                  <li>SD card reader or FTP connection to your console.</li>
+                  <li>Pretendo Network ID (PNID).</li>
                 </ul>
               </div>
             </div>
@@ -81,90 +80,90 @@
 
           <!-- Step 2 -->
           <article class="step-card">
-            <div class="step-number">Schritt 2</div>
+            <div class="step-number">Step 2</div>
             <div class="step-content">
               <h3>Download Inkay Switcher</h3>
-              <p>Laden Sie die Inkay Switcher Anwendung herunter, um zwischen Serverrelais auf Ihrer Konsole zu wechseln.</p>
+              <p>Download the Inkay Switcher application to switch between server relays on your console.</p>
 
               <div class="action-box">
                 <div>
                   <h4>Inkay Switcher (.wuhb)</h4>
-                  <p class="text-muted">Wii U Aroma-Anwendung</p>
+                  <p class="text-muted">Wii U Aroma Application</p>
                 </div>
-                <a href="https://github.com/Happynico7504/Inkay-Switcher/release" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <a href="https://github.com/Happynico7504/Inkay-Switcher/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                   <svg class="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download Release (.wuhb)
                 </a>
               </div>
 
               <div class="guide-image-container">
-                <img src="images/github_what_to_download.png" alt="GitHub Release zeigt revivetendo_installer.wuhb Asset zum Herunterladen an" class="guide-image">
-                <span class="image-caption">Lade revivetendo_installer.wuhb aus dem Abschnitt Assets auf GitHub herunter.</span>
+                <img src="images/github_what_to_download.png" alt="GitHub release showing revivetendo_installer.wuhb asset to download" class="guide-image">
+                <span class="image-caption">Download revivetendo_installer.wuhb from the Assets section on GitHub.</span>
               </div>
 
-              <h4>SD-Kartenplatzierung</h4>
-              <p>Kopieren Sie <code>revivetendo_installer.wuhb</code> in das <code>/wiiu/apps/</code> Verzeichnis auf Ihrer SD-Karte:</p>
+              <h4>SD Card Placement</h4>
+              <p>Copy <code>revivetendo_installer.wuhb</code> into the <code>/wiiu/apps/</code> directory on your SD card:</p>
               
               <div class="code-block">
                 <div class="code-header">
-                  <span>Verzeichnispfad</span>
-                  <button class="btn-copy" onclick="copyText('sd:/wiiu/apps/revivetendo_installer.wuhb', this)">Pfad</button> kopieren
+                  <span>Directory Path</span>
+                  <button class="btn-copy" onclick="copyText('sd:/wiiu/apps/revivetendo_installer.wuhb', this)">Copy Path</button>
                 </div>
                 <pre><code>sd:/wiiu/apps/revivetendo_installer.wuhb</code></pre>
               </div>
 
-              <p class="step-note">Wenn du die SD-Karte zurücklegt und die Wii U startest, wird das Revivetendo Installer Symbol auf deinem HOME Menü angezeigt.</p>
+              <p class="step-note">When you put the SD card back and start your Wii U, the Revivetendo Installer icon will appear on your HOME Menu.</p>
 
               <div class="guide-image-container">
-                <img src="images/revivetendo_installer_on_home_menu.jpg" alt="Revivetendo Installer im Wii U HOME Menü" class="guide-image">
-                <span class="image-caption">Revivetendo Installer Programm Kachel (Rv Installer) auf Ihrem Wii U HOME Menü.</span>
+                <img src="images/revivetendo_installer_on_home_menu.jpg" alt="Revivetendo Installer on Wii U HOME Menu" class="guide-image">
+                <span class="image-caption">Revivetendo Installer application tile (Rv Installer) on your Wii U HOME Menu.</span>
               </div>
             </div>
           </article>
 
           <!-- Step 3 -->
           <article class="step-card">
-            <div class="step-number">Schritt 3</div>
+            <div class="step-number">Step 3</div>
             <div class="step-content">
-              <h3>Benutzerdefiniertes Relais installieren</h3>
-              <p>Konfigurieren Sie Ihre Konsole so, dass Wii U Chat auf Nicos Server geleitet wird.</p>
+              <h3>Install the Custom Relay</h3>
+              <p>Configure your console to route Wii U Chat to Nico's server.</p>
 
               <ol class="ordered-instructions">
                 <li>
-                  <strong>Öffne Inkay Switcher:</strong> Starte Revivetendo Installer aus deinem Wii U HOME Menü.
+                  <strong>Open Inkay Switcher:</strong> Launch Revivetendo Installer from your Wii U HOME Menu.
                 </li>
                 <li>
-                  <strong>Benutzerdefiniertes Relais wählen:</strong> Wählen Sie <strong>Revivetendo</strong>. (Um später zum Standard Pretendo zurückzukehren, wählen Sie stattdessen <strong>Pretendo</strong> aus).
+                  <strong>Select Custom Relay:</strong> Choose <strong>Revivetendo</strong>. (To return to standard Pretendo later, select <strong>Pretendo</strong> instead).
                   <div class="guide-image-container">
-                    <img src="images/revivetendo_wuhb_ui.png" alt="Revivetendo im Inkay Switcher auswählen" class="guide-image">
-                    <span class="image-caption">Wähle "Revivetendo" aus dem Schaltmenü aus.</span>
+                    <img src="images/revivetendo_wuhb_ui.png" alt="Selecting Revivetendo inside Inkay Switcher" class="guide-image">
+                    <span class="image-caption">Select "Revivetendo" from the switcher menu.</span>
                   </div>
                 </li>
                 <li>
-                  <strong>Installieren und Neustarten:</strong> Wählen Sie Ihre Umgebung aus, drücken Sie <span class="controller-btn btn-round" title="Button A">A</span> um zu installieren, dann drücken Sie <span class="controller-btn btn-round" title="Button B">B</span> um neu zu starten.
+                  <strong>Install and Reboot:</strong> Select your environment, press <span class="controller-btn btn-round" title="Button A">A</span> to install, then press <span class="controller-btn btn-round" title="Button B">B</span> to reboot.
                   <div class="guide-image-container">
-                    <img src="images/installed_inkay_press_b_to_restart.jpg" alt="Installierte Inkay Taste B zum Neustarten" class="guide-image">
-                    <span class="image-caption">Bestätigungs-Eingabeaufforderung vor dem Neustart angezeigt.</span>
+                    <img src="images/installed_inkay_press_b_to_restart.jpg" alt="Installed Inkay Press B to Restart" class="guide-image">
+                    <span class="image-caption">Confirmation prompt shown before rebooting.</span>
                   </div>
                 </li>
               </ol>
 
               <div class="info-box">
-                <h4>Überprüfungsprüfung</h4>
-                <p>Überprüfen Sie nach dem Neustart den linken oberen Banner im HOME-Menü. Es sollte heißen: <strong>Benutze Pretendo Netzwerk (Revivetendo)</strong>.</p>
+                <h4>Verification Check</h4>
+                <p>After rebooting, check the top-left banner on the HOME Menu. It should say: <strong>Using Pretendo Network (Revivetendo)</strong>.</p>
               </div>
 
               <div class="info-box">
-                <h4>In-Game Plugin Menü</h4>
+                <h4>In-Game Plugin Menu</h4>
                 <p>
-                  Öffnen Sie das Plugin-Menü überall auf Ihrer Wii U durch Drücken von 
+                  Open the Plugin Menu anywhere on your Wii U by pressing 
                   <span class="controller-btn btn-shoulder" title="L Button">L</span> + 
                   <span class="controller-btn btn-dpad" title="D-Pad Down">
                     <svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 4v16m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
                   </span> + 
                   <span class="controller-btn btn-round" title="Minus Button">-</span> 
-                  oder 
+                  or 
                   <span class="controller-btn btn-round" title="Plus Button">+</span>. 
-                  Wählen Sie <strong>Inkay (Revivetendo)</strong> aus, um die Verbindungseinstellungen zu verwalten oder Ihre WaraWara Plaza zurückzusetzen.
+                  Select <strong>Inkay (Revivetendo)</strong> to manage connection settings or reset your WaraWara Plaza.
                 </p>
               </div>
             </div>
@@ -175,73 +174,73 @@
       <!-- Juxtaposition Showcase Section -->
       <section class="content-section" id="juxtaposition">
         <h2>Juxtaposition Miiverse</h2>
-        <p class="section-lead">Revivetendo beherbergt auch eine eigene Juxtaposition Instanz für spezielle Miverse Communities.</p>
+        <p class="section-lead">Revivetendo also hosts a custom instance of Juxtaposition for special Miiverse communities.</p>
 
         <div class="feature-grid">
           <div class="feature-card">
-            <h3>Webzugriff</h3>
-            <p>Durchsuchen Sie von jedem Browser aus handgeschriebene Beiträge, Screenshots und Spiele/App-Communities.</p>
+            <h3>Web Access</h3>
+            <p>Browse handwritten posts, screenshots, and game/app communities directly from any browser.</p>
             <div style="margin-top: 1.25rem;">
-              <a href="https://olv-web.nicochristmann.net/" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><svg class="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg> Starte Revivetendo Juxt</a>
+              <a href="https://olv-web.nicochristmann.net/" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><svg class="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg> Launch Revivetendo Juxt</a>
             </div>
           </div>
 
           <div class="feature-card">
             <h3>WaraWara Plaza</h3>
-            <p>Mii Avatare, Zeichnungen und populäre Beiträge laden automatisch auf Ihrem Fernseher beim Booten von Aroma.</p>
+            <p>Mii avatars, drawings, and popular posts load on your TV screen automatically when booting Aroma.</p>
           </div>
 
           <div class="feature-card">
-            <h3>Separate Konten</h3>
-            <p>Deine Beiträge, Communities und Anhänger auf den Servern von Pretendo und Revivetendos bleiben über Plattformen hinweg getrennt.</p>
+            <h3>Separate Accounts</h3>
+            <p>Your posts, communities, and followers on Pretendo's and Revivetendos's servers remain separate across platforms.</p>
           </div>
         </div>
       </section>
 
       <!-- FAQ Section -->
       <section class="content-section" id="faq">
-        <h2>Häufig gestellte Fragen</h2>
-        <p class="section-lead">Schnelle Antworten auf gängige Fragen zum Relais.</p>
+        <h2>Frequently Asked Questions</h2>
+        <p class="section-lead">Quick answers to common questions about the relay.</p>
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Was passiert mit meinen anderen Online-Spielen?</span>
+              <span>What happens to my other online games?</span>
               <span class="faq-indicator">+</span>
             </button>
             <div class="faq-answer">
-              <p>Spiele, die nicht weitergeleitet werden, gelangen direkt zum offiziellen Pretendo Network (pretendo.network). Du musst die Netzwerke nicht wechseln, um normale Pretendo-Spiele zu spielen.</p>
+              <p>Games that aren't relayed pass directly through to official Pretendo Network (pretendo.network). You don't need to switch networks to play normal Pretendo games.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Wie aktualisiere ich WaraWara Plaza?</span>
+              <span>How do I refresh WaraWara Plaza?</span>
               <span class="faq-indicator">+</span>
             </button>
             <div class="faq-answer">
               <p>
-                Plugin Menü öffnen (<span class="controller-btn btn-shoulder">L</span> + <span class="controller-btn btn-dpad"><svg viewBox="0 0 24 24" width="12" height="12"><path d="M12 4v16m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span> + <span class="controller-btn btn-round">-</span> oder <span class="controller-btn btn-round">+</span>), Wählen Sie <strong>Inkay (Revivetendo)</strong>und wählen Sie <strong>WaraWara Plaza</strong> zurücksetzen.
+                Open the Plugin Menu (<span class="controller-btn btn-shoulder">L</span> + <span class="controller-btn btn-dpad"><svg viewBox="0 0 24 24" width="12" height="12"><path d="M12 4v16m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span> + <span class="controller-btn btn-round">-</span> or <span class="controller-btn btn-round">+</span>), select <strong>Inkay (Revivetendo)</strong>, and choose <strong>Reset WaraWara Plaza</strong>.
               </p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Kann ich Plugins häufig wechseln?</span>
+              <span>Can I switch plugins frequently?</span>
               <span class="faq-indicator">+</span>
             </button>
             <div class="faq-answer">
-              <p>Ja. Allerdings kann das Herunterladen von Inhalten von GitHub zu oft in kurzer Zeit ein temporäres GitHub Rate Limit auslösen. - In diesem Fall müssen Sie bis zum Ablauf des Limits warten, bevor Sie wieder wechseln können.</p>
+              <p>Yes. However, downloading content from GitHub too often in a short time can trigger a temporary GitHub rate limit. - In that case you have to wait for the limit to expire before you can switch again.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">
-              <span>Welche Daten benötigt Revivetendo um sich zu verbinden?</span>
+              <span>What data does Revivetendo need to connect?</span>
               <span class="faq-indicator">+</span>
             </button>
             <div class="faq-answer">
-              <p>Genau wie offizielle Server muss unser Netzwerk deine Konsole verifizieren, damit du online spielen kannst. Wenn Sie eine Verbindung herstellen, sendet Ihre Konsole automatisch ihre Seriennummer, Geräte-ID/Zertifikat und einen Passwort-Hash zum Anmelden. Wir verwenden diese technischen Daten nur, um Ihr Gerät zu authentifizieren und sicherzustellen, dass die Dienste reibungslos laufen!</p>
+              <p>Just like official servers, our network needs to verify your console to let you play online. When you connect, your console automatically sends its serial number, device ID/certificate, and a password hash to log in. We only use this technical data to authenticate your device and ensure the services run smoothly!</p>
             </div>
           </div>
         </div>
@@ -249,122 +248,122 @@
 
       <div id="guide-3ds" class="guide-tab-content" style="display: none;">
       <section class="guide-section" id="prerequisites">
-        <h2>Voraussetzungen</h2>
+        <h2>Prerequisites</h2>
         <div class="info-box" style="margin-bottom: 2rem;">
           <ul style="margin-left: 1.5rem; line-height: 1.6;">
-            <li>Ein homebrew-fähiger 3DS (echte Hardware) <strong>oder</strong> <a href="https://github.com/azahar-emu/azahar" target="_blank" rel="noopener noreferrer">Azahar</a>.</li>
-            <li>Ein CIA-Installer auf echter Hardware, wenn Sie noch keinen haben (<strong>FBI</strong> ist die Standardwahl).</li>
-            <li>Die neueste <strong>Nimbus App</strong> Release (<code>nimbus.cia</code>, tag <code>app-v*</code>) von <a href="https://github.com/Happynico7504/nimbus-nico_christmann/releases" target="_blank" rel="noopener noreferrer">nimbus-nico_christmann veröffentlicht</a>. Verwenden Sie diesen und nicht den Upstream: Die Patches werden automatisch von der App heruntergeladen.</li>
-            <li>Eine funktionierende Internetverbindung auf der Konsole.</li>
-            <li>Nur für Azahar: die <strong>Azahar URL Weiterleitung Datei</strong> Release (<code>http_hle_replace_rules.txt</code>) von der gleichen Release-Seite.</li>
+            <li>A homebrew-capable 3DS (real hardware) <strong>or</strong> <a href="https://github.com/azahar-emu/azahar" target="_blank" rel="noopener noreferrer">Azahar</a>.</li>
+            <li>A CIA installer on real hardware if you don't already have one (<strong>FBI</strong> is the standard choice).</li>
+            <li>The latest <strong>Nimbus app</strong> release (<code>nimbus.cia</code>, tag <code>app-v*</code>) from <a href="https://github.com/Happynico7504/nimbus-nico_christmann/releases" target="_blank" rel="noopener noreferrer">nimbus-nico_christmann releases</a>. Use this one rather than upstream's: the patches are downloaded automatically by the app.</li>
+            <li>A working internet connection on the console.</li>
+            <li>For Azahar only: the <strong>Azahar URL Redirection File</strong> release (<code>http_hle_replace_rules.txt</code>) from the same releases page.</li>
           </ul>
         </div>
 
-        <h2>Installationsschritte: Echte Hardware</h2>
-        <p class="section-lead">Folge diesen Schritten, um deinen physikalischen 3DS/2DS mit dem Server zu verbinden.</p>
+        <h2>Installation Steps: Real Hardware</h2>
+        <p class="section-lead">Follow these steps to connect your physical 3DS/2DS to the relay.</p>
 
         <div class="steps-list">
           <article class="step-card">
-            <div class="step-number">Schritt 1</div>
+            <div class="step-number">Step 1</div>
             <div class="step-content">
-              <h3>Nimbus installieren</h3>
-              <p>Lade <code>nimbus.cia</code> von der neuesten <code>app-v*</code> Version herunter und lege sie auf deine SD-Karte. Installieren Sie FBI (oder Ihren CIA-Installer der Wahl), wenn Sie FBI verwenden.</p>
+              <h3>Install Nimbus</h3>
+              <p>Download <code>nimbus.cia</code> from the latest <code>app-v*</code> release and put it on your SD card. Using FBI (or your CIA installer of choice), install it.</p>
             </div>
           </article>
           
           <article class="step-card">
-            <div class="step-number">Schritt 2</div>
+            <div class="step-number">Step 2</div>
             <div class="step-content">
-              <h3>Benutzerdefiniertes Relais auswählen</h3>
-              <p>Öffne den Nimbus vom Home-Menü und drücke <strong>SELECT</strong> , um den Netzwerkbildschirm zu öffnen.</p>
-              <p>Wählen Sie <strong>Revivetendo</strong> mit den UP/DOWN Buttons und drücken Sie <strong>A</strong>. Nimbus lädt die neuesten Patches herunter, installiert sie und bittet Sie, zum Neustart zu drücken.</p>
+              <h3>Select the Custom Relay</h3>
+              <p>Open Nimbus from the Home Menu and press <strong>SELECT</strong> to open the network screen.</p>
+              <p>Choose <strong>Revivetendo</strong> with the UP/DOWN buttons and press <strong>A</strong>. Nimbus will download the newest patches, install them, and ask you to press Start to reboot.</p>
               <div class="info-box">
-                <h4>Netzwerkbildschirm-Optionen</h4>
+                <h4>Network Screen Options</h4>
                 <ul style="margin-left: 1.5rem;">
-                  <li><strong>Pretendo</strong> — das Material Pretendo Patches.</li>
-                  <li><strong>Roseverse</strong> — Pretendo mit Roseverse's Account, HTTP und Miverse Patches.</li>
-                  <li><strong>Revivetendo</strong> — unser komplettes Netzwerk. Ersetzt alles inklusive eShop/Badge Arcade Patches, die nur hier vorhanden sind, und leitet das, was wir Hosting an uns und alles andere an Pretendo weiter.</li>
+                  <li><strong>Pretendo</strong> — the stock Pretendo patches.</li>
+                  <li><strong>Roseverse</strong> — Pretendo with Roseverse's Account, HTTP, and Miiverse patches.</li>
+                  <li><strong>Revivetendo</strong> — our full network. Replaces everything including eShop/Badge Arcade patches that only exist here, routing what we host to us and everything else to Pretendo.</li>
                 </ul>
               </div>
             </div>
           </article>
 
           <article class="step-card">
-            <div class="step-number">Schritt 3</div>
+            <div class="step-number">Step 3</div>
             <div class="step-content">
-              <h3>Miiverse testen</h3>
-              <p>Öffnen Sie Miiverse aus Ihrem Home-Menü zum Test. Wenn es erfolgreich geladen wird, bist du gut zu gehen! Echte Hardware holt die Umleitungen automatisch ab, sobald Nimbus gepatcht wird.</p>
+              <h3>Test Miiverse</h3>
+              <p>Open Miiverse from your Home Menu to test. If it loads successfully, you're good to go! Real hardware picks up the redirects automatically once Nimbus is patched.</p>
             </div>
           </article>
         </div>
       </section>
 
       <section class="guide-section" id="azahar-guide" style="margin-top: 4rem;">
-        <h2>Installationsschritte: Azahar (Emulator)</h2>
-        <p class="section-lead">Azahars emulierte SD-Karte ist der Ordner <code>sdmc</code> in Ihrem ausgewählten Azahar Speicherordner.</p>
+        <h2>Installation Steps: Azahar (Emulator)</h2>
+        <p class="section-lead">Azahar's emulated SD card is the <code>sdmc</code> folder inside your chosen Azahar storage folder.</p>
 
         <div class="steps-list">
           <article class="step-card">
-            <div class="step-number">Schritt 1</div>
+            <div class="step-number">Step 1</div>
             <div class="step-content">
-              <h3>Nimbus installieren</h3>
-              <p>Laden Sie <code>nimbus.cia</code> von der neuesten <code>app-v*</code> Version herunter. In Azahar installieren Sie es genauso wie jede CIA (File → CIA installieren).</p>
+              <h3>Install Nimbus</h3>
+              <p>Download <code>nimbus.cia</code> from the latest <code>app-v*</code> release. In Azahar, install it the same way you would any CIA (File → Install CIA).</p>
             </div>
           </article>
           
           <article class="step-card">
-            <div class="step-number">Schritt 2</div>
+            <div class="step-number">Step 2</div>
             <div class="step-content">
-              <h3>LLE Module aktivieren</h3>
-              <p>Aktivieren Sie die Option <strong>"Aktivieren Sie die benötigten LLE-Module, um Online-Dienste zu nutzen"</strong> in Azahar (mulation → Konfigurieren → System). Andernfalls werden Online-Funktionen nicht funktionieren.</p>
+              <h3>Enable LLE Modules</h3>
+              <p>Enable the <strong>"Enable required LLE modules to use online services"</strong> option in Azahar (Emulation → Configure → System). Without this, online features won't work.</p>
             </div>
           </article>
 
           <article class="step-card">
-            <div class="step-number">Schritt 3</div>
+            <div class="step-number">Step 3</div>
             <div class="step-content">
-              <h3>Patches in Nimbus anwenden</h3>
-              <p>Starte das Home-Menü, führe Nimbus aus, drücke <strong>SELECT</strong>, wähle Revivetendo und wende die Patches genau wie auf realer Hardware an.</p>
+              <h3>Apply Patches in Nimbus</h3>
+              <p>Boot the Home Menu, run Nimbus, press <strong>SELECT</strong>, choose Revivetendo and apply the patches just like on real hardware.</p>
             </div>
           </article>
 
           <article class="step-card">
-            <div class="step-number">Schritt 4</div>
+            <div class="step-number">Step 4</div>
             <div class="step-content">
-              <h3>URL-Weiterleitung einrichten</h3>
-              <p>Laden Sie <code>http_hle_replace_rules.txt</code> von der <strong>Azahar URL Weiterleitung Datei</strong> herunter und platzieren Sie sie auf:</p>
+              <h3>Setup URL Redirection</h3>
+              <p>Download <code>http_hle_replace_rules.txt</code> from the <strong>Azahar URL Redirection File</strong> release and place it at:</p>
               <div class="code-block" style="margin: 1rem 0;">
                 <pre><code>&lt;your Azahar storage folder&gt;/sysdata/http_hle_replace_rules.txt</code></pre>
               </div>
-              <p class="step-note">Es muss keine Emulator-Einstellung eingeschaltet werden. Azahar lädt diese Datei beim nächsten Start automatisch.</p>
+              <p class="step-note">No emulator setting needs to be toggled. Azahar loads this file automatically on the next launch.</p>
             </div>
           </article>
 
           <article class="step-card">
-            <div class="step-number">Schritt 5</div>
+            <div class="step-number">Step 5</div>
             <div class="step-content">
-              <h3>Test und Verifizieren</h3>
-              <p>Zum Testen Miiverse starten. Sie können Azahars Protokolldatei auf eine Zeile überprüfen wie:</p>
+              <h3>Test and Verify</h3>
+              <p>Launch Miiverse to test. You can check Azahar's log file for a line like:</p>
               <div class="code-block" style="margin: 1rem 0;">
-                <pre><code>Service.HTTP &lt;Warning&gt;... Anwenden:2258: Regel "&lt;pattern&gt;" hat URL "&lt;original&gt;" nach "&lt;new&gt; " ersetzt</code></pre>
+                <pre><code>Service.HTTP &lt;Warning&gt; ... Apply:2258: rule "&lt;pattern&gt;" has replaced URL "&lt;original&gt;" to "&lt;new&gt;"</code></pre>
               </div>
-              <p>Wenn Sie das mit einem sinnvollen Ersatz sehen, wird die Umleitung leben.</p>
+              <p>If you see that with a sane replacement, the redirect is live.</p>
             </div>
           </article>
         </div>
       </section>
 
       <section class="content-section" style="margin-top: 4rem;">
-        <h2>Was wird umgeleitet?</h2>
-        <p>Beide Pfade leiten den gleichen Satz von echten Nintendo/Pretendo Hostnamen auf unseren eigenen Server um:</p>
+        <h2>What is redirected?</h2>
+        <p>Both paths redirect the same set of real Nintendo/Pretendo hostnames to our own servers:</p>
         <ul style="margin-left: 1.5rem; line-height: 1.6;">
           <li>Miiverse</li>
           <li>BOSS/SpotPass</li>
-          <li>conntest & Account Login</li>
+          <li>conntest & account login</li>
           <li>Swap Doodle's NASC login + HPP relay</li>
-          <li>Nintendo Badge Arcade's eShop-Style "buy plays" flow (verwies auf unser eigenes Shop-Backend anstelle von Nintendos echten Servern).</li>
+          <li>Nintendo Badge Arcade's eShop-style "buy plays" flow (pointed at our own shop backend instead of Nintendo's real servers).</li>
         </ul>
-        <p style="margin-top: 1rem;"><strong>Hinweis:</strong> 3DS Freunde und NASC für <em>andere</em> Titel bleiben bewusst übrig und zeigen auf das echte Pretendo Network, unverändert.</p>
+        <p style="margin-top: 1rem;"><strong>Note:</strong> 3DS Friends and NASC for <em>other</em> titles are deliberately left pointing at the real Pretendo Network, untouched.</p>
       </section>
     
       </div>
@@ -374,7 +373,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; 2026 Revivetendo Relais Network Documentation. Für Open-Source Homebrew Entwicklung.</p>
+      <p>&copy; 2026 Revivetendo Relay Network Documentation. For open-source homebrew development.</p>
     </div>
   </footer>
 
