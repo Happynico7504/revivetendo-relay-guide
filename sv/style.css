@@ -3,12 +3,12 @@
    ========================================================================== */
 
 :root {
-  /* Solid Color Palette - No Gradients or Glows */
+  /* Solid Color Palette - Inga toningar eller glöd */
   --bg-primary: #0f1117;
-  --bg-secondary: #161821;
+  --bg-sekunder: #161821;
   --bg-tertiary: #1e202b;
   --bg-card: #181a24;
-  --border-color: #2a2d3d;
+  --gränsen-färg: #2a2d3d;
   --border-hover: #3d4259;
 
   --text-main: #f1f5f9;
@@ -17,470 +17,470 @@
 
   --accent-cyan: #0284c7;
   --accent-cyan-hover: #0369a1;
-  --accent-light: #38bdf8;
-  --accent-purple: #7c3aed;
-  --accent-green: #059669;
+  --accentljus: #38bdf8;
+  --accent-lila: #7c3aed;
+  --accent-grön: #059669;
 
-  /* Clean Typography */
+  /* Ren Typografi */
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+  box-storlek: border-låda;
+  marginal: 0
   padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-beteende: slät
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
-  color: var(--text-main);
+  bakgrund-färg: var(--bg-primära);
+  färg: var(--text-main);
 }
 
-body {
-  line-height: 1.6;
+kropp {
+  linjehöjd: 1,6
 }
 
 .container {
-  max-width: 980px;
-  margin: 0 auto;
+  max-bredd: 980px;
+  marginal: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* Links - High Contrast Bright Cyan */
-a {
-  color: var(--accent-light);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease;
+/* Länkar - High Contrast Bright Cyan */
+en {
+  färg: var(--accent-ljus);
+  text-dekoration: understryka;
+  text-understrykning-offset: 3px
+  övergång: färg 0.15s lätthet;
 }
 
 a:hover {
-  color: #7dd3fc;
+  färg: #7dd3fc;
 }
 
 /* Navigation */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: var(--bg-secondary);
+  position: klibbigt
+  Topp: 0
+  z-index: 100
+  bakgrund-färg: var(--bg-sekundär);
   border-bottom: 1px solid var(--border-color);
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  max-width: 980px;
-  margin: 0 auto;
+.nav-behållare {
+  visning: flex
+  align-objekt: mitt
+  rättfärdiga innehåll: mellanslagstangent;
+  höjd: 64px
+  max-bredd: 980px;
+  marginal: 0 auto;
   padding: 0 1.5rem;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
+.märke {
+  visning: flex
+  align-objekt: mitt
   gap: 0.75rem;
-  text-decoration: none !important;
+  text-dekoration: ingen !viktig;
 }
 
 .brand-icon {
   width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  object-fit: contain;
+  höjd: 34px
+  gränsradie: 8px;
+  objekt-passform: innehåller
 }
 
 .brand-title {
   font-family: var(--font-main);
-  font-weight: 700;
+  typsnittsvikt: 700;
   font-size: 1.15rem;
-  color: var(--text-main);
+  färg: var(--text-main);
 }
 
-.nav-links {
-  display: flex;
+.nav-länkar {
+  visning: flex
   gap: 2rem;
 }
 
 .nav-link {
-  color: var(--text-muted);
-  text-decoration: none !important;
+  färg: var(--text-muted);
+  text-dekoration: ingen !viktig;
   font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.15s ease;
+  typsnittsvikt: 500
+  övergång: färg 0.15s lätthet;
 }
 
 .nav-link:hover {
-  color: var(--text-main);
+  färg: var(--text-main);
 }
 
-/* Page Header */
+/* Sidrubrik */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 3rem;
+  marginal-botten: 3rem;
 }
 
 .page-header h1 {
   font-family: var(--font-main);
   font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.8rem;
+  typsnittsvikt: 700;
+  färg: var(--text-main);
+  marginal-botten: 0.8rem;
 }
 
-.page-description {
+.page-beskrivning {
   font-size: 1.05rem;
-  color: var(--text-muted);
-  max-width: 780px;
-  line-height: 1.65;
+  färg: var(--text-muted);
+  max-bredd: 780px
+  linjehöjd: 1,65
 }
 
-/* Section Shared Styles */
-.guide-section,
+/* Sektion Delade stilar */
+.guide-sektion,
 .content-section {
-  margin-bottom: 4rem;
+  marginal-botten: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
 }
 
-.guide-section h2,
+.guide-sektion h2,
 .content-section h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  typsnittsvikt: 700;
+  färg: var(--text-main);
+  marginal-botten: 0.4rem;
 }
 
 .section-lead {
   font-size: 1rem;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
+  färg: var(--text-muted);
+  marginal-botten: 2rem;
 }
 
-/* Step Cards */
+/* Stegkort */
 .steps-list {
-  display: flex;
-  flex-direction: column;
+  visning: flex
+  flex-riktning: kolumn
   gap: 2rem;
 }
 
-.step-card {
-  display: grid;
-  grid-template-columns: 85px 1fr;
+.steg-kort {
+  visning: rutnät
+  grid-mall-kolumner: 85px 1fr;
   gap: 1.8rem;
-  background-color: var(--bg-card);
+  bakgrund-färg: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  position: relative;
+  position: relativ
   overflow: hidden;
 }
 
-.step-number {
+.steg-nummer {
   font-family: var(--font-main);
   font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--accent-light);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  typsnittsvikt: 700;
+  färg: var(--accent-ljus);
+  text-transform: versal;
+  bokstavsavdelning: 0.05em;
   padding-top: 0.1rem;
 }
 
-.step-content h3 {
+.steg-innehåll h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  typsnittsvikt: 700;
+  färg: var(--text-main);
+  marginal-botten: 0.6rem;
 }
 
-.step-content p {
-  color: var(--text-main);
+.steg-innehåll p {
+  färg: var(--text-main);
   font-size: 0.98rem;
-  margin-bottom: 1.25rem;
+  marginal-botten: 1,25rem;
 }
 
-.step-note {
-  font-size: 0.9rem !important;
-  color: var(--text-muted) !important;
-  margin-top: 1rem;
-  margin-bottom: 0 !important;
+.steg-not {
+  teckenstorlek: 0,9rem !viktigt;
+  färg: var(--text-dämpad) !viktigt;
+  marginaltopp: 1rem;
+  marginal-botten: 0 ! viktigt
 }
 
-/* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
+/* Guide Referensbilder - Naturligt bildförhållande, Inga svarta områden */
 .guide-image-container {
-  margin: 1.5rem 0;
+  marginal: 1,5 rem 0
   width: 100%;
 }
 
 .guide-image {
   width: 100%;
-  max-width: 580px;
-  height: auto;
-  display: block;
+  max-bredd: 580px
+  höjd: auto;
+  visning: block
   border: 1px solid var(--border-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  gränsradie: 8px;
+  box-skugga: 0 4px 14px rgba(0, 0, 0, 0,35);
 }
 
-.image-caption {
+.image-bildtext {
   font-size: 0.82rem;
-  color: var(--text-dim);
-  margin-top: 0.5rem;
-  display: block;
+  färg: var(--text-dim);
+  marginaltopp: 0,5 rem;
+  visning: block
 }
 
-/* Clean Boxes inside steps */
+/* Rensa lådor inuti steg */
 .info-box {
-  background-color: var(--bg-tertiary);
+  bakgrund-färg: var(--bg-tertiär);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  gränsradie: 8px;
   padding: 1.25rem 1.4rem;
-  margin-bottom: 1.5rem;
+  marginal-botten: 1,5rem;
 }
 
 .info-box h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  typsnittsvikt: 700;
+  färg: var(--text-main);
+  marginal-botten: 0.4rem;
 }
 
 .info-box p {
-  font-size: 0.92rem !important;
-  color: var(--text-muted) !important;
-  margin: 0 !important;
+  teckenstorlek: 0.92rem !viktigt;
+  färg: var(--text-dämpad) !viktigt;
+  marginal: 0 ! viktigt
 }
 
 .requirements-list {
-  background-color: var(--bg-tertiary);
+  bakgrund-färg: var(--bg-tertiär);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  gränsradie: 8px;
   padding: 1.25rem 1.4rem;
 }
 
 .requirements-list h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  typsnittsvikt: 700;
+  färg: var(--text-main);
+  marginal-botten: 0.6rem;
 }
 
 .requirements-list ul {
-  list-style-type: disc;
+  list-style-typ: disc;
   margin-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
+  visning: flex
+  flex-riktning: kolumn
   gap: 0.5rem;
 }
 
 .requirements-list li {
   font-size: 0.92rem;
-  color: var(--text-main);
+  färg: var(--text-main);
 }
 
-/* Action Box */
+/* Handlingsbox */
 .action-box {
-  background-color: var(--bg-tertiary);
+  bakgrund-färg: var(--bg-tertiär);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  gränsradie: 8px;
   padding: 1.25rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  visning: flex
+  align-objekt: mitt
+  rättfärdiga innehåll: mellanslagstangent;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  marginal-botten: 1,5rem;
   flex-wrap: wrap;
 }
 
 .action-box h4 {
   font-size: 1.05rem;
-  color: var(--text-main);
-  font-weight: 700;
-  margin-bottom: 0.15rem;
+  färg: var(--text-main);
+  typsnittsvikt: 700;
+  marginal-botten: 0,15rem;
 }
 
-.text-muted {
-  color: var(--text-muted);
+.text-tystad {
+  färg: var(--text-muted);
   font-size: 0.85rem;
 }
 
-/* Buttons - Pure White Text on Cyan Background */
+/* Knappar - ren vit text på Cyan bakgrund */
 .btn,
 a.btn,
 .feature-card a.btn,
 .action-box a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  visning: inline-flex;
+  align-objekt: mitt
+  justify-innehåll: centrum;
   gap: 0.5rem;
-  padding: 0.65rem 1.3rem;
-  border-radius: 6px;
+  stoppning: 0,65 rem 1,3rem;
+  gränsradie: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  text-decoration: none !important;
-  border: none;
-  cursor: pointer;
-  background-color: var(--accent-cyan);
-  color: #ffffff !important;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  text-dekoration: ingen !viktig;
+  gräns: ingen;
+  markör: pekare
+  bakgrund-färg: var(--accent-cyan);
+  färg: #ffffffff! viktigt
+  övergång: bakgrund-färg 0.15s lätthet, gräns-färg 0.15s lätthet;
 }
 
-.lucide {
-  flex-shrink: 0;
-  vertical-align: middle;
+.lucid {
+  flex-krympning: 0
+  vertikaljusterat: mitten;
 }
 
 .btn:hover,
 a.btn:hover,
 .feature-card a.btn:hover,
 .action-box a.btn:hover {
-  background-color: var(--accent-cyan-hover);
-  color: #ffffff !important;
+  bakgrund-färg: var(--accent-cyan-svävande);
+  färg: #ffffffff! viktigt
 }
 
-.btn-secondary,
+.btn-sekundär,
 a.btn-secondary {
-  background-color: var(--bg-tertiary) !important;
+  bakgrund-färg: var(--bg-tertiary) !viktigt;
   border: 1px solid var(--border-color) !important;
-  color: var(--text-main) !important;
+  färg: var(--text-main) !viktigt;
 }
 
-.btn-secondary:hover,
+.btn-sekunder: svävare,
 a.btn-secondary:hover {
-  background-color: #262938 !important;
+  bakgrund-färg: #262938 !viktigt;
   border-color: var(--border-hover) !important;
-  color: #ffffff !important;
+  färg: #ffffffff! viktigt
 }
 
 .btn-discord,
 a.btn-discord {
-  background-color: #5865f2 !important;
-  color: #ffffff !important;
+  bakgrund-färg: #5865f2 !viktigt;
+  färg: #ffffffff! viktigt
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
-  background-color: #4752c4 !important;
-  color: #ffffff !important;
+  bakgrund-färg: #4752c4 !viktigt;
+  färg: #ffffffff! viktigt
 }
 
-/* Landing Page Hero Section */
-.hero-section {
+/* Hjälte sida Sektion */
+.Hero-sektion {
   padding: 5rem 0 3rem;
-  border-bottom: none !important;
-  margin-bottom: 3rem;
+  gräns-botten: ingen !viktig;
+  marginal-botten: 3rem;
   text-align: center;
-  position: relative;
-  overflow: visible !important;
+  position: relativ
+  överflöde: synligt !viktigt
 }
 
-.hero-icon {
+.hjälte-ikon {
   width: 90px;
-  height: 90px;
+  höjd: 90px;
   border-radius: 22px;
-  margin: 0 auto 1.5rem;
-  display: block;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  marginal: 0 auto 1,5rem;
+  visning: block
+  box-skugga: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
+/* Animation: Släpp in en efter en från toppen UTAN bleknar (opacitet förblir 100%) */
 @keyframes dropFromTop {
   0% {
     transform: translateY(-45px);
-    visibility: hidden;
+    synlighet: gömd
   }
   1% {
-    visibility: visible;
+    synlighet: synlig
   }
   100% {
     transform: translateY(0);
-    visibility: visible;
+    synlighet: synlig
   }
 }
 
-.animated-title {
-  display: inline-flex;
+.animerad-titel {
+  visning: inline-flex;
   gap: 0.3em;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-innehåll: centrum;
   font-family: var(--font-main);
   font-size: 3.2rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 1.1rem;
-  letter-spacing: -0.02em;
+  typsnittsvikt: 700;
+  färg: var(--text-main);
+  marginal-botten: 1.1rem;
+  bokstavsavdelning: -0,02em;
 }
 
-.animated-title .word {
-  display: inline-block;
-  visibility: hidden;
-  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
-  animation-delay: calc(var(--animation-order) * 0.25s);
+.animerad-titel .word {
+  visning: inline-block
+  synlighet: gömd
+  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) framåt
+  animation-fördröjning: calc(var(--animation-order) * 0.25s);
 }
 
-/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
+/* Spänd ingång för allt innehåll som visas efter titeln ord drop slutför (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacity: 0;
+    opacitet: 0
     transform: translateY(22px);
-    visibility: hidden;
+    synlighet: gömd
   }
   1% {
-    visibility: visible;
+    synlighet: synlig
   }
   100% {
-    opacity: 1;
+    opacitet: 1
     transform: translateY(0);
-    visibility: visible;
+    synlighet: synlig
   }
 }
 
 .stagger-in {
-  opacity: 0;
-  visibility: hidden;
-  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: 1.08s;
+  opacitet: 0
+  synlighet: gömd
+  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) framåt;
+  animation-fördröjning: 1.08s;
 }
 
-.hero-description {
+.hjältebeskrivning {
   font-size: 1.2rem;
-  color: var(--text-muted);
-  max-width: 680px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.65;
+  färg: var(--text-muted);
+  max-bredd: 680px
+  marginal: 0 auto 2,5rem;
+  linjehöjd: 1,65
 }
 
-.hero-buttons {
-  display: flex;
+.Hjälte-knappar {
+  visning: flex
   gap: 1.25rem;
-  justify-content: center;
+  justify-innehåll: centrum;
   flex-wrap: wrap;
 }
 
-/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
-.content-section,
+/* Mii Tecken Placerade inuti tomma rutor Områden & Popping utanför gränser */
+.innehållssektion,
 .feature-grid,
 .feature-card,
-.step-card,
+.steg-kort,
 .info-box,
 .requirements-list {
-  position: relative;
-  overflow: visible !important;
+  position: relativ
+  överflöde: synligt !viktigt
 }
 
-/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
+/* Funktionskort med yttre hörnet Miis: reservera 90px höger utfyllnad på BÅDA titel och punkt så text wraps ren och noll ord blockeras */
 .feature-card.has-mii {
-  position: relative;
-  overflow: visible !important;
+  position: relativ
+  överflöde: synligt !viktigt
 }
 
 .feature-card.has-mii h3,
@@ -489,120 +489,120 @@ a.btn-discord:hover {
 }
 
 .feature-card.has-mii h3 {
-  margin-bottom: 0.85rem;
+  marginal-botten: 0.85rem;
 }
 
 .mii-card-corner {
-  position: absolute;
+  position: absolut;
   right: -24px;
   top: -42px;
-  height: 165px;
+  höjd: 165px;
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  z-index: 10
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0,65));
+  pekar-händelser: ingen;
 }
 
-.mii-card-corner-lounging {
-  position: absolute;
-  right: -18px;
+.mii-card-hörn-lounging {
+  position: absolut;
+  höger: -18px
   top: -50px;
-  height: 140px;
+  höjd: 140px
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  z-index: 10
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0,65));
+  pekar-händelser: ingen;
 }
 
-/* Hero section bottom-right overlapping Mii */
-.mii-overlap-hero {
-  position: absolute;
+/* Hjälte sektion längst ned till höger överlappande Mii */
+.mii-overlap-hjälte {
+  position: absolut;
   right: -25px;
-  bottom: -45px;
-  height: 260px;
+  botten: -45px
+  höjd: 260px
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
-  transform: rotate(4deg);
-  pointer-events: none;
+  z-index: 10
+  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0,7));
+  transform: rotera(4deg);
+  pekar-händelser: ingen;
 }
 
 @media (max-width: 900px) {
-  .mii-overlap-hero {
-    height: 180px;
-    right: -10px;
+  .mii-overlap-hjälte {
+    höjd: 180px
+    höger: -10px
     bottom: -30px;
   }
 }
 
 @media (max-width: 600px) {
   .feature-card.has-mii h3 {
-    padding-right: 0;
+    stopping-höger: 0
   }
-  .mii-card-corner,
-  .mii-overlap-hero {
-    display: none;
+  .mii-kort-hörn,
+  .mii-overlap-hjälte {
+    visning: ingen
   }
 }
 
-/* Quick Start Banner */
+/* Snabbstartsbanner */
 .quick-start-banner {
-  background-color: var(--bg-card);
+  bakgrund-färg: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  gränsradie: 12px;
   padding: 3rem 2rem;
   text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
+  marginal-botten: 4rem;
+  position: relativ
   overflow: hidden;
 }
 
 .quick-start-banner h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.75rem;
+  typsnittsvikt: 700;
+  färg: var(--text-main);
+  marginal-botten: 0,75rem;
 }
 
 .quick-start-banner p {
-  color: var(--text-muted);
+  färg: var(--text-muted);
   font-size: 1.05rem;
-  margin-bottom: 1.75rem;
-  max-width: 580px;
-  margin-left: auto;
-  margin-right: auto;
+  marginal-botten: 1,75rem;
+  max-bredd: 580px
+  margin-left: automatiskt
+  marginal-höger: auto;
 }
 
-/* Code block / Directory tree */
+/* Kodblock / Katalogträd */
 .code-block {
-  background-color: var(--bg-tertiary);
+  bakgrund-färg: var(--bg-tertiär);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  gränsradie: 8px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  marginal-botten: 1,5rem;
 }
 
 .code-header {
-  background-color: var(--bg-secondary);
+  bakgrund-färg: var(--bg-sekundär);
   padding: 0.55rem 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  visning: flex
+  rättfärdiga innehåll: mellanslagstangent;
+  align-objekt: mitt
   font-size: 0.82rem;
-  color: var(--text-muted);
+  färg: var(--text-muted);
   border-bottom: 1px solid var(--border-color);
 }
 
 .btn-copy {
-  background-color: var(--border-color);
-  border: none;
-  color: var(--text-main);
+  bakgrund-färg: var(--gränsen-färg);
+  gräns: ingen;
+  färg: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  cursor: pointer;
+  markör: pekare
 }
 
 .btn-copy:hover {
@@ -613,201 +613,201 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  line-height: 1.5;
-  color: var(--text-main);
+  linjehöjd: 1,5
+  färg: var(--text-main);
   overflow-x: auto;
 }
 
-/* Ordered instructions */
+/* Beställda instruktioner */
 .ordered-instructions {
-  margin-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
+  marginal-vänster: 1.4rem;
+  visning: flex
+  flex-riktning: kolumn
   gap: 0.85rem;
-  margin-bottom: 1.5rem;
+  marginal-botten: 1,5rem;
 }
 
 .ordered-instructions li {
   font-size: 0.95rem;
-  color: var(--text-main);
+  färg: var(--text-main);
   padding-left: 0.3rem;
 }
 
-/* Controller Physical Button Tokens */
+/* Kontroller Fysiska knappTokens */
 .controller-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  visning: inline-flex;
+  align-objekt: mitt
+  justify-innehåll: centrum;
   font-family: var(--font-main);
-  font-weight: 700;
-  color: #f8fafc;
-  background-color: #334155;
-  border: 1px solid #64748b;
-  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
-  user-select: none;
-  vertical-align: middle;
-  line-height: 1;
-  margin: 0 0.15rem;
+  typsnittsvikt: 700;
+  färg: #f8fafc;
+  bakgrundsfärg: #334155;
+  kant: 1 px fast #64748b;
+  box-skugga: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
+  användarval: ingen;
+  vertikaljusterat: mitten;
+  linjehöjd: 1
+  marginal: 0 0,15rem;
 }
 
 .controller-btn.btn-round {
   width: 24px;
-  height: 24px;
+  höjd: 24px
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-shoulder {
-  padding: 0 0.55rem;
-  height: 24px;
-  border-radius: 6px;
+  stoppning: 0 0,55rem;
+  höjd: 24px
+  gränsradie: 6px;
   font-size: 0.82rem;
 }
 
-.controller-btn.btn-pill {
-  padding: 0 0.65rem;
-  height: 24px;
-  border-radius: 12px;
+.controller-btn.btn-piller {
+  stoppning: 0 0.65rem;
+  höjd: 24px
+  gränsradie: 12px;
   font-size: 0.74rem;
-  letter-spacing: 0.04em;
+  bokstavsavdelning: 0.04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  height: 24px;
+  höjd: 24px
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  display: block;
+  visning: block
 }
 
 /* Feature Grid */
 .feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  visning: rutnät
+  grid-template-kolumner: Repetera (auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
 .feature-card {
-  background-color: var(--bg-card);
+  bakgrund-färg: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  gränsradie: 8px;
   padding: 1.6rem;
 }
 
 .feature-card h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
+  typsnittsvikt: 700;
+  färg: var(--text-main);
+  marginal-botten: 0,5 rem;
 }
 
 .feature-card p {
-  color: var(--text-muted);
+  färg: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.6;
+  linjehöjd: 1,6
 }
 
 .feature-card a {
-  color: var(--accent-light);
+  färg: var(--accent-ljus);
 }
 
 .feature-card a:hover {
-  text-decoration: underline;
+  text-dekoration: understryka;
 }
 
-/* FAQ List */
-.faq-list {
-  display: flex;
-  flex-direction: column;
+/* FAQ-lista */
+.faq-lista {
+  visning: flex
+  flex-riktning: kolumn
   gap: 0.85rem;
 }
 
-.faq-item {
-  background-color: var(--bg-card);
+.faq-objekt {
+  bakgrund-färg: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  gränsradie: 8px;
   overflow: hidden;
 }
 
 .faq-question {
   width: 100%;
-  background-color: transparent;
-  border: none;
+  bakgrundsfärg: genomskinlig;
+  gräns: ingen;
   padding: 1.15rem 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
+  visning: flex
+  rättfärdiga innehåll: mellanslagstangent;
+  align-objekt: mitt
+  text-align: vänster
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-main);
-  cursor: pointer;
+  färg: var(--text-main);
+  markör: pekare
 }
 
-.faq-indicator {
+.faq-indikator {
   font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--accent-light);
+  typsnittets vikt: 400
+  färg: var(--accent-ljus);
 }
 
-.faq-answer {
-  max-height: 0;
+.faq-svar {
+  max-höjd: 0
   overflow: hidden;
-  transition: max-height 0.25s ease;
+  övergång: max-höjd 0.25s lätt;
 }
 
-.faq-answer p {
-  padding: 0 1.4rem 1.3rem;
-  color: var(--text-muted);
+.faq-svar p {
+  stoppning: 0 1,4 rem 1.3rem;
+  färg: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.65;
+  linjehöjd: 1,65
 }
 
-/* Footer */
-.footer {
+/* Sidfot */
+.sidfot {
   padding: 2.2rem 0;
-  background-color: var(--bg-secondary);
+  bakgrund-färg: var(--bg-sekundär);
   border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
   text-align: center;
-  color: var(--text-dim);
+  färg: var(--text-dim);
   font-size: 0.82rem;
 }
 
-/* Responsive */
+/* Responsiv */
 @media (max-width: 768px) {
-  .step-card {
-    grid-template-columns: 1fr;
+  .steg-kort {
+    grid-mall-kolumner: 1fr;
     gap: 0.6rem;
   }
 
-  .step-number {
+  .steg-nummer {
     padding-top: 0;
   }
 
-  .nav-links {
-    display: none;
+  .nav-länkar {
+    visning: ingen
   }
 
   .page-header h1,
-  .hero-section h1,
-  .animated-title {
+  .Hjälte-sektion h1,
+  .animerad-titel {
     font-size: 2.2rem;
   }
 }
 
-/* Light Mode Support */
-@media (prefers-color-scheme: light) {
+/* Stöd för lätt läge */
+@media (prefers-color-schema: ljus) {
   :root {
     --bg-primary: #f8fafc;
-    --bg-secondary: #f1f5f9;
+    --bg-sekundärt: #f1f5f9;
     --bg-tertiary: #e2e8f0;
     --bg-card: #ffffff;
     --border-color: #cbd5e1;
@@ -818,248 +818,248 @@ a.btn-discord:hover {
     --text-dim: #64748b;
   }
   
-  /* Adjust shadows for light mode */
-  .guide-image,
-  .hero-icon,
+  /* Justera skuggor för ljusläge */
+  .guide-bild,
+  .hjälte-ikon,
   .discord-ui-mockup {
-    box-shadow: none;
+    box-skugga: ingen;
   }
 
-  .mii-card-corner,
-  .mii-card-corner-lounging,
-  .mii-overlap-hero {
-    filter: none;
+  .mii-kort-hörn,
+  .mii-kort-hörn-lounge,
+  .mii-overlap-hjälte {
+    filter: ingen;
   }
 
   .controller-btn {
-    box-shadow: 0 2px 0 #0f172a;
+    box-skugga: 0 2px 0 #0f172a;
   }
 }
 
-/* Discord UI Mockup Section */
-.discord-ui-section {
+/* Discord UI Mockup Avsnitt */
+.discord-ui-sektion {
   overflow: hidden;
 }
 
 .discord-ui-layout {
-  display: flex;
-  align-items: center;
+  visning: flex
+  align-objekt: mitt
   gap: 3rem;
 }
 
 .discord-ui-text {
-  flex: 1;
+  flex: 1
 }
 
 .discord-ui-text h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  marginal-botten: 1rem;
 }
 
-.discord-ui-text .btn-fullwidth {
-  display: inline-flex;
+.discord-ui-text .btn-fullbredd {
+  visning: inline-flex;
   width: auto;
-  margin-top: 1rem;
+  marginaltopp: 1rem;
 }
 
 .discord-ui-mockup {
-  flex: 1;
-  background-color: #313338;
-  border-radius: 8px;
+  flex: 1
+  bakgrundsfärg: #313338;
+  gränsradie: 8px;
   overflow: hidden;
-  border: 1px solid #1e1f22;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  kant: 1 px fast # 1e1f22;
+  box-skugga: 0 8px 24px rgba(0, 0, 0, 0.4);
   font-family: var(--font-body);
-  color: #dbdee1;
+  färg: #dbdee1;
   min-width: 350px;
 }
 
 .discord-ui-header {
-  background-color: #2b2d31;
-  padding: 12px 16px;
+  bakgrundsfärg: #2b2d31;
+  stoppning: 12px 16px
   font-weight: 600;
-  border-bottom: 1px solid #1e1f22;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #f2f3f5;
+  kant-botten: 1 px fast # 1e1f22;
+  visning: flex
+  align-objekt: mitt
+  gap: 8px
+  färg: #f2f3f5;
 }
 
 .discord-ui-header .hashtag {
-  color: #80848e;
+  färg: #80848e;
   font-size: 1.2rem;
 }
 
-.discord-ui-messages {
+.discord-ui-meddelanden {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  visning: flex
+  flex-riktning: kolumn
   gap: 16px;
 }
 
 .discord-msg {
-  display: flex;
+  visning: flex
   gap: 16px;
-  opacity: 0;
+  opacitet: 0
   transform: translateY(10px);
 }
 
 .discord-avatar {
-  width: 40px;
-  height: 40px;
+  width: 40px
+  höjd: 40px
   border-radius: 50%;
-  object-fit: cover;
-  background-color: #2b2d31;
+  objekt-passform: omslag;
+  bakgrundsfärg: #2b2d31;
 }
 
 .discord-msg-content {
-  flex: 1;
+  flex: 1
 }
 
 .discord-msg-header {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin-bottom: 4px;
+  visning: flex
+  align-objekt: baslinje;
+  gap: 8px
+  marginal-botten: 4px
 }
 
 .discord-user {
-  font-weight: 500;
-  color: #f2f3f5;
+  typsnittsvikt: 500
+  färg: #f2f3f5;
 }
 
 .discord-user.admin-user {
-  color: #eb459e; /* Pink role color */
+  färg: #eb459e; /* Rosa rollfärg */
 }
 
-.discord-time {
+.diskord-time {
   font-size: 0.75rem;
-  color: #949ba4;
+  färg: #949ba4;
 }
 
 .discord-msg p {
-  color: #dbdee1;
+  färg: #dbdee1;
   font-size: 0.95rem;
-  line-height: 1.4;
-  margin: 0;
+  linjehöjd: 1,4
+  marginal: 0
 }
 
-/* Animations for Discord Mockup */
-.start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
-.start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
-.start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
+/* Animationer för Discord Mockup */
+.start-anim .msg-anim-1 { animation: popIn 0.4s lätthet framåt 0.2s; }
+.start-anim .msg-anim-2 { animation: popIn 0.4s lätthet framåt 1.4s; }
+.start-anim .msg-anim-3 { animation: popIn 0.4s lätthet framåt 2.6s; }
 
 @keyframes popIn {
-  to {
-    opacity: 1;
+  till {
+    opacitet: 1
     transform: translateY(0);
   }
 }
 
-/* Mods Grid */
+/* Mods Rutnät */
 .mods-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  visning: rutnät
+  grid-template-kolumner: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  marginaltopp: 2rem;
 }
 
 .mod-card {
-  background-color: var(--bg-card);
+  bakgrund-färg: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  gränsradie: 8px;
   padding: 2rem 1rem;
   text-align: center;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  övergång: alla 0.2s lätthet
+  visning: flex
+  flex-riktning: kolumn
+  align-objekt: mitt
   gap: 0.75rem;
 }
 
 .mod-avatar {
-  width: 80px;
-  height: 80px;
+  width: 80px
+  höjd: 80px
   border-radius: 50%;
-  background-color: var(--bg-tertiary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  bakgrund-färg: var(--bg-tertiär);
+  visning: flex
+  align-objekt: mitt
+  justify-innehåll: centrum;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--text-muted);
+  färg: var(--text-muted);
   overflow: hidden;
 }
 
 .mod-avatar img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  höjd: 100%;
+  objekt-passform: omslag;
 }
 
 .mod-name {
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--text-main);
+  färg: var(--text-main);
 }
 
 .mod-username {
   font-size: 0.9rem;
-  color: var(--text-dim);
+  färg: var(--text-dim);
 }
 
-/* Juxtaposition Carousel */
+/* Juxtaposition Karusell */
 .juxt-carousel-wrapper {
   overflow: hidden;
-  position: relative;
+  position: relativ
   width: 100%;
-  margin-top: 2rem;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  marginaltopp: 2rem;
+  mask-bild: linjär-gradient(till höger, transparent, svart 10%, svart 90%, transparent),
+  -webkit-mask-bild: linjär-gradient(till höger, transparent, svart 10%, svart 90%, transparent);
 }
 
 .juxt-carousel {
-  display: flex;
-  width: fit-content;
-  animation: scrollCarousel 20s linear infinite;
+  visning: flex
+  width: passformsinnehåll
+  animation: scrollCarousel 20s linjär oändlig;
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  animation-play-state: paused;
+  animation-play-state: pausad;
 }
 
 .juxt-post {
-  background-color: var(--bg-card);
+  bakgrund-färg: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  gränsradie: 12px;
   padding: 1.25rem;
   width: 320px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-krympning: 0
+  visning: flex
+  flex-riktning: rad
+  align-objekt: mitt
   gap: 1rem;
-  text-align: left;
+  text-align: vänster
 }
 
 .juxt-post img {
   width: 64px;
-  height: 64px;
-  border-radius: 8px;
-  object-fit: cover;
+  höjd: 64px
+  gränsradie: 8px;
+  objekt-passform: omslag;
 }
 
-.juxt-content strong {
-  display: block;
+.juxt-innehåll starkt {
+  visning: block
   font-size: 1.1rem;
-  color: var(--accent-cyan);
-  margin-bottom: 0.5rem;
+  färg: var(--accent-cyan);
+  marginal-botten: 0,5 rem;
 }
 
-.juxt-content p {
+.juxt-innehåll p {
   font-size: 0.95rem;
-  margin: 0;
+  marginal: 0
 }
 
 @keyframes scrollCarousel {
@@ -1069,7 +1069,7 @@ a.btn-discord:hover {
 
 @media (max-width: 900px) {
   .discord-ui-layout {
-    flex-direction: column;
+    flex-riktning: kolumn
   }
   .discord-ui-mockup {
     width: 100%;
@@ -1077,5 +1077,5 @@ a.btn-discord:hover {
 }
 
 .feature-logo {
-  margin-bottom: 1rem;
+  marginal-botten: 1rem;
 }
