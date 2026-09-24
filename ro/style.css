@@ -1,125 +1,125 @@
 /* ==========================================================================
-   Revivetendo Relay Network — Clean Solid CSS Design System
+   Reţeaua de Releu Revivetendo - Sistem de proiectare CSS curat
    ========================================================================== */
 
 :root {
-  /* Solid Color Palette - No Gradients or Glows */
-  --bg-primary: #0f1117;
-  --bg-secondary: #161821;
-  --bg-tertiary: #1e202b;
+  /* Paletă de culori solide - fără radiente sau flori */
+  --bg-primar: #0f1117;
+  --bg-secundar: #161821;
+  --bg-terțiar: #1e202b;
   --bg-card: #181a24;
-  --border-color: #2a2d3d;
+  --border-culoare: #2a2d3d;
   --border-hover: #3d4259;
 
-  --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
+  --text-principal: #f1f5f9;
+  --text-mutat: #94a3b8;
   --text-dim: #64748b;
 
-  --accent-cyan: #0284c7;
+  --accent-cian: #0284c7;
   --accent-cyan-hover: #0369a1;
   --accent-light: #38bdf8;
-  --accent-purple: #7c3aed;
-  --accent-green: #059669;
+  --accent-violet: #7c3aat;
+  --accent-verde: #059669;
 
-  /* Clean Typography */
+  /* Tipografie curată */
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -mere, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+  dimensionarea cutiei: cutie-limită;
+  marjă: 0;
   padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+  comportament de sproll-: neted;
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
-  color: var(--text-main);
+  culoarea-fundal: var(--bg-primară);
+  culoare: var(--text-main);
 }
 
-body {
-  line-height: 1.6;
+Corp {
+  înălţime-linie: 1.6;
 }
 
 .container {
-  max-width: 980px;
-  margin: 0 auto;
+  lățime-max: 980px;
+  marjă: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* Links - High Contrast Bright Cyan */
-a {
-  color: var(--accent-light);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease;
+/* Link-uri - Cyan cu contrast mare */
+o {
+  culoare: var(--accent-light);
+  decorațiune text: minusculă;
+  offset-text-subliniu: 3px;
+  tranziție: culoare Ușoară 0,15s;
 }
 
 a:hover {
-  color: #7dd3fc;
+  culoare: #7dd3fc;
 }
 
 /* Navigation */
 .navbar {
-  position: sticky;
+  poziție: adezivă;
   top: 0;
   z-index: 100;
-  background-color: var(--bg-secondary);
+  culoarea-fundal: var(--bg-secundară);
   border-bottom: 1px solid var(--border-color);
 }
 
 .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  max-width: 980px;
-  margin: 0 auto;
+  afișare: flex;
+  alinieri: centru;
+  conţinutul-justificativ: spaţiu-între;
+  înălţime: 64px;
+  lățime-max: 980px;
+  marjă: 0 auto;
   padding: 0 1.5rem;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
+  afișare: flex;
+  alinieri: centru;
   gap: 0.75rem;
-  text-decoration: none !important;
+  decorațiune text: niciunul!important;
 }
 
 .brand-icon {
   width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  object-fit: contain;
+  înălţime: 34px;
+  raza frontieră: 8px;
+  obiect-fit: conținut;
 }
 
 .brand-title {
   font-family: var(--font-main);
-  font-weight: 700;
+  greutate font: 700;
   font-size: 1.15rem;
-  color: var(--text-main);
+  culoare: var(--text-main);
 }
 
-.nav-links {
-  display: flex;
+.nav-link-uri {
+  afișare: flex;
   gap: 2rem;
 }
 
 .nav-link {
-  color: var(--text-muted);
-  text-decoration: none !important;
+  culoare: var(--text-muted);
+  decorațiune text: niciunul!important;
   font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.15s ease;
+  greutate font: 500;
+  tranziție: culoare Ușoară 0,15s;
 }
 
 .nav-link:hover {
-  color: var(--text-main);
+  culoare: var(--text-main);
 }
 
-/* Page Header */
+/* Antet pagină */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
@@ -129,22 +129,22 @@ a:hover {
 .page-header h1 {
   font-family: var(--font-main);
   font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.8rem;
+  greutate font: 700;
+  culoare: var(--text-main);
+  margin-bottom: 0,8rem;
 }
 
-.page-description {
+.page-descriere {
   font-size: 1.05rem;
-  color: var(--text-muted);
-  max-width: 780px;
-  line-height: 1.65;
+  culoare: var(--text-muted);
+  lățime-max: 780px;
+  înălțime-linie: 1,65;
 }
 
-/* Section Shared Styles */
-.guide-section,
-.content-section {
-  margin-bottom: 4rem;
+/* Secțiune stiluri partajate */
+.guide-secțiune,
+.content-secţiunea {
+  marja în jos: 4 rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
 }
@@ -153,334 +153,334 @@ a:hover {
 .content-section h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  greutate font: 700;
+  culoare: var(--text-main);
+  margin-bottom: 0,4 rem;
 }
 
 .section-lead {
   font-size: 1rem;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
+  culoare: var(--text-muted);
+  marja în jos: 2rem;
 }
 
-/* Step Cards */
+/* Carduri Pasi */
 .steps-list {
-  display: flex;
-  flex-direction: column;
+  afișare: flex;
+  flex-direcție: coloană;
   gap: 2rem;
 }
 
 .step-card {
-  display: grid;
-  grid-template-columns: 85px 1fr;
+  afișare: grilă;
+  coloane grid-template-pilon: 85px 1fr;
   gap: 1.8rem;
-  background-color: var(--bg-card);
+  culoarea-fundal: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  position: relative;
+  situație: rudă;
   overflow: hidden;
 }
 
 .step-number {
   font-family: var(--font-main);
   font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--accent-light);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  greutate font: 700;
+  culoare: var(--accent-light);
+  text-transformare: majusculă;
+  spațierea literelor: 0,05em;
   padding-top: 0.1rem;
 }
 
 .step-content h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  greutate font: 700;
+  culoare: var(--text-main);
+  margin-bottom: 0,6 rem;
 }
 
 .step-content p {
-  color: var(--text-main);
+  culoare: var(--text-main);
   font-size: 0.98rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1,25rem;
 }
 
 .step-note {
-  font-size: 0.9rem !important;
-  color: var(--text-muted) !important;
-  margin-top: 1rem;
+  dimensiunea fontului: 0.9rem !important;
+  culoare: var(--text-muted) !important;
+  marjă: 1 rem;
   margin-bottom: 0 !important;
 }
 
 /* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
 .guide-image-container {
-  margin: 1.5rem 0;
+  marjă: 1,5rem 0;
   width: 100%;
 }
 
 .guide-image {
   width: 100%;
-  max-width: 580px;
-  height: auto;
-  display: block;
+  lățime-max: 580px;
+  înălţime: auto;
+  ecran: bloc;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  raza frontieră: 8px;
+  box-umbră: 0 4px 14px rgba(0, 0, 0,35);
 }
 
 .image-caption {
   font-size: 0.82rem;
-  color: var(--text-dim);
-  margin-top: 0.5rem;
-  display: block;
+  culoare: var(--text-dim);
+  marjă: 0,5 rem;
+  ecran: bloc;
 }
 
-/* Clean Boxes inside steps */
+/* Curățare căsuțe în interiorul pașilor */
 .info-box {
-  background-color: var(--bg-tertiary);
+  culoarea-fundalului: var(--bg-terțiară);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  raza frontieră: 8px;
   padding: 1.25rem 1.4rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1,5 rem;
 }
 
 .info-box h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  greutate font: 700;
+  culoare: var(--text-main);
+  margin-bottom: 0,4 rem;
 }
 
 .info-box p {
-  font-size: 0.92rem !important;
-  color: var(--text-muted) !important;
-  margin: 0 !important;
+  dimensiunea fontului: 0.92rem !important;
+  culoare: var(--text-muted) !important;
+  marja: 0 !important;
 }
 
 .requirements-list {
-  background-color: var(--bg-tertiary);
+  culoarea-fundalului: var(--bg-terțiară);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  raza frontieră: 8px;
   padding: 1.25rem 1.4rem;
 }
 
 .requirements-list h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  greutate font: 700;
+  culoare: var(--text-main);
+  margin-bottom: 0,6 rem;
 }
 
 .requirements-list ul {
-  list-style-type: disc;
-  margin-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
+  tip listă: disc;
+  marja de stânga: 1,25rem;
+  afișare: flex;
+  flex-direcție: coloană;
   gap: 0.5rem;
 }
 
 .requirements-list li {
   font-size: 0.92rem;
-  color: var(--text-main);
+  culoare: var(--text-main);
 }
 
-/* Action Box */
+/* Caseta de acțiune */
 .action-box {
-  background-color: var(--bg-tertiary);
+  culoarea-fundalului: var(--bg-terțiară);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  raza frontieră: 8px;
   padding: 1.25rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  afișare: flex;
+  alinieri: centru;
+  conţinutul-justificativ: spaţiu-între;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+  margin-bottom: 1,5 rem;
+  Ambalaj flex-înveliș: înveliș;
 }
 
 .action-box h4 {
   font-size: 1.05rem;
-  color: var(--text-main);
-  font-weight: 700;
-  margin-bottom: 0.15rem;
+  culoare: var(--text-main);
+  greutate font: 700;
+  margin-bottom: 0,15 rem;
 }
 
 .text-muted {
-  color: var(--text-muted);
+  culoare: var(--text-muted);
   font-size: 0.85rem;
 }
 
-/* Buttons - Pure White Text on Cyan Background */
+/* Butoane - Pur alb Text pe Fundalul cianului*/
 .btn,
 a.btn,
 .feature-card a.btn,
 .action-box a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  afișare: inline-flex;
+  alinieri: centru;
+  conținutul justificativ: centru;
   gap: 0.5rem;
-  padding: 0.65rem 1.3rem;
-  border-radius: 6px;
+  adăpostire: 0,65rem 1,3rem;
+  raza frontieră: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  text-decoration: none !important;
-  border: none;
-  cursor: pointer;
-  background-color: var(--accent-cyan);
-  color: #ffffff !important;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  decorațiune text: niciunul!important;
+  frontieră: non;
+  cursor: indicativ;
+  culoarea-fundal: var(--accent-cian);
+  culoare: #ffffff !important;
+  tranziție: culoare de fundal, 0,15 s eae, culoare limită 0,15 s eas;
 }
 
 .lucide {
-  flex-shrink: 0;
-  vertical-align: middle;
+  subțiere flex-mică: 0;
+  aliniere verticală: medie;
 }
 
 .btn:hover,
 a.btn:hover,
 .feature-card a.btn:hover,
 .action-box a.btn:hover {
-  background-color: var(--accent-cyan-hover);
-  color: #ffffff !important;
+  culoarea-fundal: var(--accent-cyan-hover);
+  culoare: #ffffff !important;
 }
 
-.btn-secondary,
-a.btn-secondary {
-  background-color: var(--bg-tertiary) !important;
+.btn-secundar,
+a.btn-secundar {
+  culoarea-fundalului: var(--bg-terțiară) !importantă;
   border: 1px solid var(--border-color) !important;
-  color: var(--text-main) !important;
+  culoare: var(--text-main) !importantă;
 }
 
-.btn-secondary:hover,
+.btn-secundar:hover,
 a.btn-secondary:hover {
-  background-color: #262938 !important;
+  culoarea fundalului: #262938 !important;
   border-color: var(--border-hover) !important;
-  color: #ffffff !important;
+  culoare: #ffffff !important;
 }
 
 .btn-discord,
 a.btn-discord {
-  background-color: #5865f2 !important;
-  color: #ffffff !important;
+  culoarea fundalului: #5865f2 !important;
+  culoare: #ffffff !important;
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
-  background-color: #4752c4 !important;
-  color: #ffffff !important;
+  culoarea fundalului: #4752c4 !important;
+  culoare: #ffffff !important;
 }
 
-/* Landing Page Hero Section */
-.hero-section {
+/* Secțiunea Erou Pagină de Aterizare */
+.ero-section {
   padding: 5rem 0 3rem;
-  border-bottom: none !important;
+  jos de frontieră: niciuna !importantă;
   margin-bottom: 3rem;
   text-align: center;
-  position: relative;
-  overflow: visible !important;
+  situație: rudă;
+  flux: vizibil!important;
 }
 
-.hero-icon {
-  width: 90px;
-  height: 90px;
+.ero-icon {
+  lăţime: 90px;
+  înălțime: 90px;
   border-radius: 22px;
-  margin: 0 auto 1.5rem;
-  display: block;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  marjă: 0 auto 1,5 rem;
+  ecran: bloc;
+  box-umbră: 0 8px 24px rgba(0, 0, 0,4);
 }
 
-/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
+/* Animaţie: Fiţi în unul de sus FĂRĂ decolorare (opacitatea rămâne 100%) */
 @keyframes dropFromTop {
   0% {
-    transform: translateY(-45px);
-    visibility: hidden;
+    transform: traduceY(-45px);
+    vizibilitate: ascunsă;
   }
   1% {
-    visibility: visible;
+    vizibilitate: vizibilă;
   }
   100% {
-    transform: translateY(0);
-    visibility: visible;
+    transform: traducereY(0);
+    vizibilitate: vizibilă;
   }
 }
 
-.animated-title {
-  display: inline-flex;
+titlu .animated-title {
+  afișare: inline-flex;
   gap: 0.3em;
-  flex-wrap: wrap;
-  justify-content: center;
+  Ambalaj flex-înveliș: înveliș;
+  conținutul justificativ: centru;
   font-family: var(--font-main);
   font-size: 3.2rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 1.1rem;
-  letter-spacing: -0.02em;
+  greutate font: 700;
+  culoare: var(--text-main);
+  margin-bottom: 1,1rem;
+  spațierea literelor: -0,02em;
 }
 
 .animated-title .word {
-  display: inline-block;
-  visibility: hidden;
-  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
-  animation-delay: calc(var(--animation-order) * 0.25s);
+  afișare: bloc inline;
+  vizibilitate: ascunsă;
+  animație: dropFromTop 0,32s cubic-bezier(0,2, 0,85, 0,35, 1,1) înainte;
+  întârzierea animaţiei: calc(var(--animation-order) * 0,25);
 }
 
-/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
+/* Intrare blocată pentru toate conținuturile care apar după titlul drop cuvinte complete (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacity: 0;
+    opacitate: 0;
     transform: translateY(22px);
-    visibility: hidden;
+    vizibilitate: ascunsă;
   }
   1% {
-    visibility: visible;
+    vizibilitate: vizibilă;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
+    opacitate: 1;
+    transform: traducereY(0);
+    vizibilitate: vizibilă;
   }
 }
 
 .stagger-in {
-  opacity: 0;
-  visibility: hidden;
-  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: 1.08s;
+  opacitate: 0;
+  vizibilitate: ascunsă;
+  animație: staggerFadeUp 0,45s cubic-bezier(0,16, 1, 0,3, 1) înainte;
+  întârziere la animare: 1,08;
 }
 
-.hero-description {
+.ero-description {
   font-size: 1.2rem;
-  color: var(--text-muted);
-  max-width: 680px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.65;
+  culoare: var(--text-muted);
+  lățime-max: 680px;
+  marjă: 0 auto 2,5rem;
+  înălțime-linie: 1,65;
 }
 
-.hero-buttons {
-  display: flex;
+.ero-buttons {
+  afișare: flex;
   gap: 1.25rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  conținutul justificativ: centru;
+  Ambalaj flex-înveliș: înveliș;
 }
 
-/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
-.content-section,
+/* Caractere Mii plasate în interiorul cutiei cu bucăți goale și Lovituri în afara limitelor */
+.content-secțiune,
 .feature-grid,
-.feature-card,
+.feature-card;
 .step-card,
 .info-box,
 .requirements-list {
-  position: relative;
-  overflow: visible !important;
+  situație: rudă;
+  flux: vizibil!important;
 }
 
-/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
+/* Carduri de caracteristici cu colțul exterior Miis: rezervă 90px dreapta padding pe titlul și paragraful ambele, astfel încât textul să fie verificat în mod curat și zero cuvinte să fie blocate */
 .feature-card.has-mii {
-  position: relative;
-  overflow: visible !important;
+  situație: rudă;
+  flux: vizibil!important;
 }
 
 .feature-card.has-mii h3,
@@ -489,48 +489,48 @@ a.btn-discord:hover {
 }
 
 .feature-card.has-mii h3 {
-  margin-bottom: 0.85rem;
+  margin-bottom: 0,85rem;
 }
 
-.mii-card-corner {
-  position: absolute;
+.mii-card-colner {
+  poziţie: absolută;
   right: -24px;
   top: -42px;
-  height: 165px;
+  înălţime: 165px;
   width: auto;
   z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  filtru: picătură-umbră (0 10px 24px rgba(0, 0, 0,65));
+  interevenimente: non;
 }
 
 .mii-card-corner-lounging {
-  position: absolute;
-  right: -18px;
+  poziţie: absolută;
+  dreapta: -18 px;
   top: -50px;
-  height: 140px;
+  înălţime: 140px;
   width: auto;
   z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  filtru: picătură-umbră (0 10px 24px rgba(0, 0, 0,65));
+  interevenimente: non;
 }
 
-/* Hero section bottom-right overlapping Mii */
+/* Secțiune ero-dreapta jos care se suprapune Mii */
 .mii-overlap-hero {
-  position: absolute;
+  poziţie: absolută;
   right: -25px;
-  bottom: -45px;
-  height: 260px;
+  jos: -45px;
+  înălțime: 260 px;
   width: auto;
   z-index: 10;
-  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
-  transform: rotate(4deg);
-  pointer-events: none;
+  filtru: picătură-umbră (0 16px 36px rgba(0, 0, 0,7));
+  transform: rotaţie(4deg);
+  interevenimente: non;
 }
 
 @media (max-width: 900px) {
   .mii-overlap-hero {
-    height: 180px;
-    right: -10px;
+    înălțime: 180 px;
+    dreapta: -10px;
     bottom: -30px;
   }
 }
@@ -539,70 +539,70 @@ a.btn-discord:hover {
   .feature-card.has-mii h3 {
     padding-right: 0;
   }
-  .mii-card-corner,
+  .mii-card-colner,
   .mii-overlap-hero {
-    display: none;
+    afișare: nici una;
   }
 }
 
-/* Quick Start Banner */
+/* Banner de pornire rapidă */
 .quick-start-banner {
-  background-color: var(--bg-card);
+  culoarea-fundal: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  raza frontieră: 12px;
   padding: 3rem 2rem;
   text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
+  marja în jos: 4 rem;
+  situație: rudă;
   overflow: hidden;
 }
 
 .quick-start-banner h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.75rem;
+  greutate font: 700;
+  culoare: var(--text-main);
+  margin-bottom: 0,75rem;
 }
 
 .quick-start-banner p {
-  color: var(--text-muted);
+  culoare: var(--text-muted);
   font-size: 1.05rem;
-  margin-bottom: 1.75rem;
-  max-width: 580px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 1,75rem;
+  lățime-max: 580px;
+  margin-stânga: auto;
+  margin-dreapta: auto;
 }
 
-/* Code block / Directory tree */
+/* Bloc cod / Director arbore */
 .code-block {
-  background-color: var(--bg-tertiary);
+  culoarea-fundalului: var(--bg-terțiară);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  raza frontieră: 8px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1,5 rem;
 }
 
 .code-header {
-  background-color: var(--bg-secondary);
+  culoarea-fundal: var(--bg-secundară);
   padding: 0.55rem 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  afișare: flex;
+  conţinutul-justificativ: spaţiu-între;
+  alinieri: centru;
   font-size: 0.82rem;
-  color: var(--text-muted);
+  culoare: var(--text-muted);
   border-bottom: 1px solid var(--border-color);
 }
 
 .btn-copy {
-  background-color: var(--border-color);
-  border: none;
-  color: var(--text-main);
+  culoarea-fundal: var(--border-color);
+  frontieră: non;
+  culoare: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  cursor: pointer;
+  cursor: indicativ;
 }
 
 .btn-copy:hover {
@@ -613,178 +613,178 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  line-height: 1.5;
-  color: var(--text-main);
+  înălţime-linie: 1.5;
+  culoare: var(--text-main);
   overflow-x: auto;
 }
 
-/* Ordered instructions */
-.ordered-instructions {
-  margin-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
+/* Instrucțiuni ordonate */
+Instrucţiuni .ordered-{
+  margin-stânga: 1,4rem;
+  afișare: flex;
+  flex-direcție: coloană;
   gap: 0.85rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1,5 rem;
 }
 
-.ordered-instructions li {
+Instrucţiuni .ordered li {
   font-size: 0.95rem;
-  color: var(--text-main);
+  culoare: var(--text-main);
   padding-left: 0.3rem;
 }
 
-/* Controller Physical Button Tokens */
+/* Tokeni butoane fizice Controller */
 .controller-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  afișare: inline-flex;
+  alinieri: centru;
+  conținutul justificativ: centru;
   font-family: var(--font-main);
-  font-weight: 700;
-  color: #f8fafc;
-  background-color: #334155;
-  border: 1px solid #64748b;
-  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
-  user-select: none;
-  vertical-align: middle;
+  greutate font: 700;
+  culoare: #f8fafc;
+  culoarea-fundal: #334155;
+  graniță: 1px solid #64748b;
+  box-umbră: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0,3);
+  alegerea utilizatorului: nici una;
+  aliniere verticală: medie;
   line-height: 1;
-  margin: 0 0.15rem;
+  marjă: 0,15 rem;
 }
 
 .controller-btn.btn-round {
   width: 24px;
-  height: 24px;
+  înălţime: 24 px;
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-shoulder {
-  padding: 0 0.55rem;
-  height: 24px;
-  border-radius: 6px;
+  padding: 0 0,55rem;
+  înălţime: 24 px;
+  raza frontieră: 6px;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-pill {
-  padding: 0 0.65rem;
-  height: 24px;
-  border-radius: 12px;
+  padding: 0,65rem;
+  înălţime: 24 px;
+  raza frontieră: 12px;
   font-size: 0.74rem;
-  letter-spacing: 0.04em;
+  spațierea literelor: 0,04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  height: 24px;
+  înălţime: 24 px;
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  display: block;
+  ecran: bloc;
 }
 
-/* Feature Grid */
+/* Caracteristică Grilă */
 .feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  afișare: grilă;
+  coloane grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
 .feature-card {
-  background-color: var(--bg-card);
+  culoarea-fundal: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  raza frontieră: 8px;
   padding: 1.6rem;
 }
 
 .feature-card h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
+  greutate font: 700;
+  culoare: var(--text-main);
+  margin-bottom: 0,5 rem;
 }
 
 .feature-card p {
-  color: var(--text-muted);
+  culoare: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.6;
+  înălţime-linie: 1.6;
 }
 
 .feature-card a {
-  color: var(--accent-light);
+  culoare: var(--accent-light);
 }
 
 .feature-card a:hover {
-  text-decoration: underline;
+  decorațiune text: minusculă;
 }
 
-/* FAQ List */
+/* Lista de întrebări frecvente */
 .faq-list {
-  display: flex;
-  flex-direction: column;
+  afișare: flex;
+  flex-direcție: coloană;
   gap: 0.85rem;
 }
 
 .faq-item {
-  background-color: var(--bg-card);
+  culoarea-fundal: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  raza frontieră: 8px;
   overflow: hidden;
 }
 
 .faq-question {
   width: 100%;
-  background-color: transparent;
-  border: none;
+  culoarea-fundal: transparentă;
+  frontieră: non;
   padding: 1.15rem 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
+  afișare: flex;
+  conţinutul-justificativ: spaţiu-între;
+  alinieri: centru;
+  text-aliniere: stânga;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-main);
-  cursor: pointer;
+  culoare: var(--text-main);
+  cursor: indicativ;
 }
 
 .faq-indicator {
   font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--accent-light);
+  greutate font: 400;
+  culoare: var(--accent-light);
 }
 
-.faq-answer {
-  max-height: 0;
+.faq-reply {
+  înălțime: 0;
   overflow: hidden;
-  transition: max-height 0.25s ease;
+  tranziție: înălțimea maximă 0,25s eas;
 }
 
 .faq-answer p {
-  padding: 0 1.4rem 1.3rem;
-  color: var(--text-muted);
+  îmbinare: ↓ 1,4rem 1,3rem;
+  culoare: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.65;
+  înălțime-linie: 1,65;
 }
 
-/* Footer */
+/* Subsol */
 .footer {
   padding: 2.2rem 0;
-  background-color: var(--bg-secondary);
+  culoarea-fundal: var(--bg-secundară);
   border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
   text-align: center;
-  color: var(--text-dim);
+  culoare: var(--text-dim);
   font-size: 0.82rem;
 }
 
-/* Responsive */
+/* Responsiv */
 @media (max-width: 768px) {
   .step-card {
-    grid-template-columns: 1fr;
+    coloane grid-template-columns: 1 fr;
     gap: 0.6rem;
   }
 
@@ -792,58 +792,58 @@ a.btn-discord:hover {
     padding-top: 0;
   }
 
-  .nav-links {
-    display: none;
+  .nav-link-uri {
+    afișare: nici una;
   }
 
   .page-header h1,
-  .hero-section h1,
-  .animated-title {
+  .ero-secţiunea h1,
+  titlu .animated-title {
     font-size: 2.2rem;
   }
 }
 
-/* Light Mode Support */
-@media (prefers-color-scheme: light) {
+/* Suport pentru modul ușor */
+@media (prefers-color-scheme: lumină) {
   :root {
-    --bg-primary: #f8fafc;
-    --bg-secondary: #f1f5f9;
-    --bg-tertiary: #e2e8f0;
+    --bg-primar: #f8fafc;
+    --bg-secundar: #f1f5f9;
+    --bg-terțiar: #e2e8f0;
     --bg-card: #ffffff;
     --border-color: #cbd5e1;
     --border-hover: #94a3b8;
 
-    --text-main: #0f172a;
-    --text-muted: #334155;
+    --text-principal: #0f172a;
+    --text-mutat: #334155;
     --text-dim: #64748b;
   }
   
-  /* Adjust shadows for light mode */
+  /* Reglaţi umbrele pentru modul luminos */
   .guide-image,
-  .hero-icon,
+  .ero-icon,
   .discord-ui-mockup {
-    box-shadow: none;
+    umbră: nici una;
   }
 
-  .mii-card-corner,
-  .mii-card-corner-lounging,
+  .mii-card-colner,
+  .mii-card-colț-colț;
   .mii-overlap-hero {
-    filter: none;
+    filtru: nici una;
   }
 
   .controller-btn {
-    box-shadow: 0 2px 0 #0f172a;
+    box-umbră: 0 2px 0 #0f172a;
   }
 }
 
-/* Discord UI Mockup Section */
-.discord-ui-section {
+/* Secțiunea Mockup pentru interfața Discord */
+.discord-ui-secţiunea {
   overflow: hidden;
 }
 
 .discord-ui-layout {
-  display: flex;
-  align-items: center;
+  afișare: flex;
+  alinieri: centru;
   gap: 3rem;
 }
 
@@ -853,63 +853,63 @@ a.btn-discord:hover {
 
 .discord-ui-text h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  marja în jos: 1 rem;
 }
 
 .discord-ui-text .btn-fullwidth {
-  display: inline-flex;
+  afișare: inline-flex;
   width: auto;
-  margin-top: 1rem;
+  marjă: 1 rem;
 }
 
 .discord-ui-mockup {
   flex: 1;
-  background-color: #313338;
-  border-radius: 8px;
+  culoarea-fundal: #313338;
+  raza frontieră: 8px;
   overflow: hidden;
-  border: 1px solid #1e1f22;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  graniță: 1px solid #1e1f22;
+  box-umbră: 0 8px 24px rgba(0, 0, 0,4);
   font-family: var(--font-body);
-  color: #dbdee1;
+  culoare: #dbdee1;
   min-width: 350px;
 }
 
 .discord-ui-header {
-  background-color: #2b2d31;
-  padding: 12px 16px;
+  culoarea-fundal: #2b2d31;
+  îmbinare: 12px 16px;
   font-weight: 600;
-  border-bottom: 1px solid #1e1f22;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #f2f3f5;
+  jos de frontieră: 1px solid #1e1f22;
+  afișare: flex;
+  alinieri: centru;
+  gol: 8 px;
+  culoare: #f2f3f5;
 }
 
 .discord-ui-header .hashtag {
-  color: #80848e;
+  culoare: #80848e;
   font-size: 1.2rem;
 }
 
 .discord-ui-messages {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  afișare: flex;
+  flex-direcție: coloană;
   gap: 16px;
 }
 
 .discord-msg {
-  display: flex;
+  afișare: flex;
   gap: 16px;
-  opacity: 0;
-  transform: translateY(10px);
+  opacitate: 0;
+  transformare: traduceY(10px);
 }
 
 .discord-avatar {
   width: 40px;
-  height: 40px;
+  înălţime: 40px;
   border-radius: 50%;
-  object-fit: cover;
-  background-color: #2b2d31;
+  fit-obiect: acoperitor;
+  culoarea-fundal: #2b2d31;
 }
 
 .discord-msg-content {
@@ -917,159 +917,159 @@ a.btn-discord:hover {
 }
 
 .discord-msg-header {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin-bottom: 4px;
+  afișare: flex;
+  alinieri: scenariu de bază;
+  gol: 8 px;
+  marja în jos: 4 px;
 }
 
 .discord-user {
-  font-weight: 500;
-  color: #f2f3f5;
+  greutate font: 500;
+  culoare: #f2f3f5;
 }
 
 .discord-user.admin-user {
-  color: #eb459e; /* Pink role color */
+  culoare: #eb459e; /* Culoare roz pentru rol */
 }
 
 .discord-time {
   font-size: 0.75rem;
-  color: #949ba4;
+  culoare: #949ba4;
 }
 
 .discord-msg p {
-  color: #dbdee1;
+  culoare: #dbdee1;
   font-size: 0.95rem;
-  line-height: 1.4;
-  margin: 0;
+  înălţime-linie: 1.4;
+  marjă: 0;
 }
 
-/* Animations for Discord Mockup */
-.start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
-.start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
-.start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
+/* Animații pentru Mockup-ul Discord */
+.start-anim .msg-anim-1 { animation: popIn 0.4s ease înainte 0.2s; }
+.start-anim .msg-anim-2 { animation: popIn 0.4s ease înainte 1.4s; }
+.start-anim .msg-anim-3 { animation: popIn 0.4s ease înainte 2.6s; }
 
 @keyframes popIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  pentru {
+    opacitate: 1;
+    transform: traducereY(0);
   }
 }
 
-/* Mods Grid */
+/* Grila de Moduri */
 .mods-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  afișare: grilă;
+  coloane grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  marjă: 2rem;
 }
 
 .mod-card {
-  background-color: var(--bg-card);
+  culoarea-fundal: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  raza frontieră: 8px;
   padding: 2rem 1rem;
   text-align: center;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  tranziție: toate urechile de 0,2s;
+  afișare: flex;
+  flex-direcție: coloană;
+  alinieri: centru;
   gap: 0.75rem;
 }
 
 .mod-avatar {
   width: 80px;
-  height: 80px;
+  înălţime: 80px;
   border-radius: 50%;
-  background-color: var(--bg-tertiary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  culoarea-fundalului: var(--bg-terțiară);
+  afișare: flex;
+  alinieri: centru;
+  conținutul justificativ: centru;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--text-muted);
+  culoare: var(--text-muted);
   overflow: hidden;
 }
 
 .mod-avatar img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  înălţime: 100%;
+  fit-obiect: acoperitor;
 }
 
 .mod-name {
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--text-main);
+  culoare: var(--text-main);
 }
 
 .mod-username {
   font-size: 0.9rem;
-  color: var(--text-dim);
+  culoare: var(--text-dim);
 }
 
-/* Juxtaposition Carousel */
+/* Carusel Juxtapunition */
 .juxt-carousel-wrapper {
   overflow: hidden;
-  position: relative;
+  situație: rudă;
   width: 100%;
-  margin-top: 2rem;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  marjă: 2rem;
+  imagine-mask: linear-gradient(dreapta, transparentă, 10 %, negru 90%, transparent);
+  - webkit-mask-image: linear-gradient(dreapta, transparentă, 10%, negru 90%, transparent);
 }
 
 .juxt-carousel {
-  display: flex;
+  afișare: flex;
   width: fit-content;
-  animation: scrollCarousel 20s linear infinite;
+  animație: scrollCarousel 20s infinit liniar;
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  animation-play-state: paused;
+  animation-stat-joacă: pauză;
 }
 
 .juxt-post {
-  background-color: var(--bg-card);
+  culoarea-fundal: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  raza frontieră: 12px;
   padding: 1.25rem;
-  width: 320px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  lăţime: 320px;
+  subțiere flex-mică: 0;
+  afișare: flex;
+  flex-direcție: rând;
+  alinieri: centru;
   gap: 1rem;
-  text-align: left;
+  text-aliniere: stânga;
 }
 
 .juxt-post img {
   width: 64px;
-  height: 64px;
-  border-radius: 8px;
-  object-fit: cover;
+  înălţime: 64px;
+  raza frontieră: 8px;
+  fit-obiect: acoperitor;
 }
 
-.juxt-content strong {
-  display: block;
+.juxt-content puternic {
+  ecran: bloc;
   font-size: 1.1rem;
-  color: var(--accent-cyan);
-  margin-bottom: 0.5rem;
+  culoare: var(--accent-cian);
+  margin-bottom: 0,5 rem;
 }
 
 .juxt-content p {
   font-size: 0.95rem;
-  margin: 0;
+  marjă: 0;
 }
 
 @keyframes scrollCarousel {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - 0.75rem)); }
+  100% { transformare: translateX(calc(-50% - 0,75rem)); }
 }
 
 @media (max-width: 900px) {
   .discord-ui-layout {
-    flex-direction: column;
+    flex-direcție: coloană;
   }
   .discord-ui-mockup {
     width: 100%;
@@ -1077,5 +1077,5 @@ a.btn-discord:hover {
 }
 
 .feature-logo {
-  margin-bottom: 1rem;
+  marja în jos: 1 rem;
 }
