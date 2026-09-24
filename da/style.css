@@ -1,486 +1,486 @@
 /* ==========================================================================
-   Revivetendo Relay Network — Clean Solid CSS Design System
+   Revivetendo Relay Network - Clean Solid CSS Design System
    ========================================================================== */
 
 :root {
-  /* Solid Color Palette - No Gradients or Glows */
-  --bg-primary: #0f1117;
-  --bg-secondary: #161821;
-  --bg-tertiary: #1e202b;
-  --bg-card: #181a24;
-  --border-color: #2a2d3d;
+  /* Solid Color Palet - Ingen Gradienter eller Glows */
+  -- bg- primary: # 0f1117;
+  -- bg- secondary: # 161821;
+  -- bg-tertiary: #1e202b;
+  -- bg- card: # 181a24;
+  -- border- color: # 2a2d3d;
   --border-hover: #3d4259;
 
-  --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  -- text- main: # f1f5f9;
+  -- text- muted: # 94a3b8
+  -- text- dim: # 64748b;
 
-  --accent-cyan: #0284c7;
+  -- accent- cyan: # 0284c7;
   --accent-cyan-hover: #0369a1;
-  --accent-light: #38bdf8;
-  --accent-purple: #7c3aed;
-  --accent-green: #059669;
+  -- accent- light: # 38bdf8;
+  -- accent- purple: # 7c3aed;
+  -- accent- green: # 059669;
 
-  /* Clean Typography */
-  --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Ren Typografi * /
+  -- font- main: 'Outfit', - apple-system, BlinkMacSystemFont, sans- serif;
+  -- font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif
   --font-mono: 'Fira Code', monospace;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+  box sizing: border-box
+  margin: 0
   padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+  rulleopførsel: jævn
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
-  color: var(--text-main);
+  baggrundsfarve: var( -- bg-primary);
+  farve: var( -- text- main)
 }
 
-body {
-  line-height: 1.6;
+krop {
+  liniehøjde: 1,6
 }
 
 .container {
-  max-width: 980px;
-  margin: 0 auto;
+  max-bredde: 980px
+  margin: 0 auto
   padding: 0 1.5rem;
 }
 
-/* Links - High Contrast Bright Cyan */
+/* Links - Høj Kontrast Bright Cyan * /
 a {
-  color: var(--accent-light);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease;
+  farve: var( -- accent-light);
+  tekstdekoration: understregning
+  tekst-understregning-forskydning: 3px
+  Overgang: farve 0,15 lethed
 }
 
 a:hover {
-  color: #7dd3fc;
+  farve: # 7dd3fc
 }
 
 /* Navigation */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: var(--bg-secondary);
+  position: klæbrig
+  top: 0
+  z-index: 100
+  baggrundsfarve: var( -- bg- sekundær);
   border-bottom: 1px solid var(--border-color);
 }
 
 .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  max-width: 980px;
-  margin: 0 auto;
+  display: flex
+  justeringspunkter: centrum;
+  justify-indhold: mellemrumstasten
+  højde: 64px
+  max-bredde: 980px
+  margin: 0 auto
   padding: 0 1.5rem;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
+  display: flex
+  justeringspunkter: centrum;
   gap: 0.75rem;
-  text-decoration: none !important;
+  tekst-dekoration: ingenting! vigtigt
 }
 
-.brand-icon {
+.brand-ikon {
   width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  object-fit: contain;
+  højde: 34px
+  borderradius: 8px
+  objektfit: indeholder
 }
 
 .brand-title {
   font-family: var(--font-main);
-  font-weight: 700;
+  font-vægt: 700
   font-size: 1.15rem;
-  color: var(--text-main);
+  farve: var( -- text- main)
 }
 
 .nav-links {
-  display: flex;
+  display: flex
   gap: 2rem;
 }
 
 .nav-link {
-  color: var(--text-muted);
-  text-decoration: none !important;
+  farve: var( -- text-muted);
+  tekst-dekoration: ingenting! vigtigt
   font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.15s ease;
+  font-vægt: 500
+  Overgang: farve 0,15 lethed
 }
 
 .nav-link:hover {
-  color: var(--text-main);
+  farve: var( -- text- main)
 }
 
-/* Page Header */
+/* Sidehoved */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 3rem;
+  margin-bund: 3rem;
 }
 
 .page-header h1 {
   font-family: var(--font-main);
   font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.8rem;
+  font-vægt: 700
+  farve: var( -- text- main)
+  margin-bund: 0,8rem;
 }
 
-.page-description {
+.page-beskrivelse {
   font-size: 1.05rem;
-  color: var(--text-muted);
-  max-width: 780px;
-  line-height: 1.65;
+  farve: var( -- text-muted);
+  max-bredde: 780px
+  liniehøjde: 1,65
 }
 
-/* Section Shared Styles */
-.guide-section,
-.content-section {
-  margin-bottom: 4rem;
+/* Afsnit Delt Stilarter */
+.guide-sektion,
+.content-sektion {
+  margin-bund: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
 }
 
 .guide-section h2,
-.content-section h2 {
+.Content-section h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  font-vægt: 700
+  farve: var( -- text- main)
+  margin-bund: 0,4rem;
 }
 
 .section-lead {
   font-size: 1rem;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
+  farve: var( -- text-muted);
+  margin-bund: 2rem;
 }
 
-/* Step Cards */
-.steps-list {
-  display: flex;
-  flex-direction: column;
+/* Trin Kort */
+.trin-liste {
+  display: flex
+  flexretning: kolonne
   gap: 2rem;
 }
 
 .step-card {
-  display: grid;
-  grid-template-columns: 85px 1fr;
+  display: gitter
+  grad-skabelon-kolonner: 85px 1fr;
   gap: 1.8rem;
-  background-color: var(--bg-card);
+  baggrundsfarve: var( -- bg- kort)
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  position: relative;
+  position: relativ
   overflow: hidden;
 }
 
-.step-number {
+.trin-number {
   font-family: var(--font-main);
   font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--accent-light);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-vægt: 700
+  farve: var( -- accent-light);
+  teksttransform: store bogstaver
+  brevafstand: 0,05em;
   padding-top: 0.1rem;
 }
 
 .step-content h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  font-vægt: 700
+  farve: var( -- text- main)
+  margin-bund: 0,6rem;
 }
 
 .step-content p {
-  color: var(--text-main);
+  farve: var( -- text- main)
   font-size: 0.98rem;
-  margin-bottom: 1.25rem;
+  margin-bund: 1,25 rester
 }
 
-.step-note {
-  font-size: 0.9rem !important;
-  color: var(--text-muted) !important;
+.trin-note {
+  skriftstørrelse: 0.9rem !important;
+  color: var( -- text-muted) !important;
   margin-top: 1rem;
-  margin-bottom: 0 !important;
+  margin-bund: 0 !import;
 }
 
-/* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
+/* Guide Reference Billeder - Naturlige Aspektforhold, Ingen Sorte Områder */
 .guide-image-container {
-  margin: 1.5rem 0;
+  margin: 1,5rem 0
   width: 100%;
 }
 
-.guide-image {
+.guide-billede {
   width: 100%;
-  max-width: 580px;
-  height: auto;
-  display: block;
+  max-bredde: 580px
+  højde: auto;
+  display: blokering
   border: 1px solid var(--border-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  borderradius: 8px
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0,35)
 }
 
-.image-caption {
+.billedtekst {
   font-size: 0.82rem;
-  color: var(--text-dim);
+  farve: var( -- text- dim);
   margin-top: 0.5rem;
-  display: block;
+  display: blokering
 }
 
-/* Clean Boxes inside steps */
+/* Rengør bokse inde i trin */
 .info-box {
-  background-color: var(--bg-tertiary);
+  baggrundsfarve: var( -- bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  borderradius: 8px
   padding: 1.25rem 1.4rem;
-  margin-bottom: 1.5rem;
+  margin-bund: 1,5 rester
 }
 
 .info-box h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  font-vægt: 700
+  farve: var( -- text- main)
+  margin-bund: 0,4rem;
 }
 
 .info-box p {
-  font-size: 0.92rem !important;
-  color: var(--text-muted) !important;
-  margin: 0 !important;
+  font-size: 0.92rem !important
+  color: var( -- text-muted) !important;
+  margin: 0 !important
 }
 
 .requirements-list {
-  background-color: var(--bg-tertiary);
+  baggrundsfarve: var( -- bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  borderradius: 8px
   padding: 1.25rem 1.4rem;
 }
 
 .requirements-list h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  font-vægt: 700
+  farve: var( -- text- main)
+  margin-bund: 0,6rem;
 }
 
 .requirements-list ul {
-  list-style-type: disc;
-  margin-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
+  liste-stiltype: disk
+  margin-venstre: 1,25rem;
+  display: flex
+  flexretning: kolonne
   gap: 0.5rem;
 }
 
 .requirements-list li {
   font-size: 0.92rem;
-  color: var(--text-main);
+  farve: var( -- text- main)
 }
 
-/* Action Box */
+/* Handlingsboks */
 .action-box {
-  background-color: var(--bg-tertiary);
+  baggrundsfarve: var( -- bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  borderradius: 8px
   padding: 1.25rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex
+  justeringspunkter: centrum;
+  justify-indhold: mellemrumstasten
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bund: 1,5 rester
   flex-wrap: wrap;
 }
 
 .action-box h4 {
   font-size: 1.05rem;
-  color: var(--text-main);
-  font-weight: 700;
-  margin-bottom: 0.15rem;
+  farve: var( -- text- main)
+  font-vægt: 700
+  margin-bund: 0,15rem;
 }
 
 .text-muted {
-  color: var(--text-muted);
+  farve: var( -- text-muted);
   font-size: 0.85rem;
 }
 
-/* Buttons - Pure White Text on Cyan Background */
+/* Knapper - ren hvid tekst på cyan-baggrund * /
 .btn,
 a.btn,
 .feature-card a.btn,
 .action-box a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-flex
+  justeringspunkter: centrum;
+  justify-indhold: center
   gap: 0.5rem;
-  padding: 0.65rem 1.3rem;
-  border-radius: 6px;
+  polstring: 0.65rem 1.3rem;
+  borderradius: 6px
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  text-decoration: none !important;
-  border: none;
-  cursor: pointer;
-  background-color: var(--accent-cyan);
-  color: #ffffff !important;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  tekst-dekoration: ingenting! vigtigt
+  grænse: ingen
+  markør: markør
+  baggrundsfarve: var( -- accent-cyan);
+  farve: #ffffff!important
+  Overgang: baggrundsfarve 0.15s lethed, kant-farve 0.15s lethed;
 }
 
-.lucide {
-  flex-shrink: 0;
-  vertical-align: middle;
+.lucid {
+  flex- krympe: 0
+  vertikal justering: midterste
 }
 
 .btn:hover,
 a.btn:hover,
 .feature-card a.btn:hover,
 .action-box a.btn:hover {
-  background-color: var(--accent-cyan-hover);
-  color: #ffffff !important;
+  baggrundsfarve: var( -- accent-cyan-hover);
+  farve: #ffffff!important
 }
 
-.btn-secondary,
-a.btn-secondary {
-  background-color: var(--bg-tertiary) !important;
+.btn-sekundær
+a.btn-sekundær {
+  baggrundsfarve: var( -- bg-tertiary) !import;
   border: 1px solid var(--border-color) !important;
-  color: var(--text-main) !important;
+  color: var( -- text- main) !important
 }
 
-.btn-secondary:hover,
+.btn-sekundær:hover,
 a.btn-secondary:hover {
-  background-color: #262938 !important;
+  baggrundsfarve: # 262938! vigtig;
   border-color: var(--border-hover) !important;
-  color: #ffffff !important;
+  farve: #ffffff!important
 }
 
-.btn-discord,
+.btn-discord
 a.btn-discord {
-  background-color: #5865f2 !important;
-  color: #ffffff !important;
+  baggrundsfarve: # 5865f2 !important;
+  farve: #ffffff!important
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
-  background-color: #4752c4 !important;
-  color: #ffffff !important;
+  Baggrundsfarve: # 4752c4!import;
+  farve: #ffffff!important
 }
 
-/* Landing Page Hero Section */
-.hero-section {
+/* Landing Side Helten Afsnit */
+.hero-sektion {
   padding: 5rem 0 3rem;
-  border-bottom: none !important;
-  margin-bottom: 3rem;
+  border-bottom: ingen !import;
+  margin-bund: 3rem;
   text-align: center;
-  position: relative;
-  overflow: visible !important;
+  position: relativ
+  overløb: synlig! vigtigt
 }
 
-.hero-icon {
-  width: 90px;
-  height: 90px;
+.hero-ikon {
+  bredde: 90px
+  højde: 90px
   border-radius: 22px;
-  margin: 0 auto 1.5rem;
-  display: block;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  margin: 0 auto 1,5 rest
+  display: blokering
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0, 0,4)
 }
 
-/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
+/* Animation: Drop en efter en fra toppen UDEN fade (opacitet forbliver 100%) */
 @keyframes dropFromTop {
   0% {
     transform: translateY(-45px);
-    visibility: hidden;
+    synlighed: skjult
   }
   1% {
-    visibility: visible;
+    synlighed: synligt
   }
   100% {
     transform: translateY(0);
-    visibility: visible;
+    synlighed: synligt
   }
 }
 
-.animated-title {
-  display: inline-flex;
+.animeret-titel {
+  display: inline-flex
   gap: 0.3em;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-indhold: center
   font-family: var(--font-main);
   font-size: 3.2rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 1.1rem;
-  letter-spacing: -0.02em;
+  font-vægt: 700
+  farve: var( -- text- main)
+  margin-bund: 1.1rem;
+  brevafstand: -0,02em;
 }
 
 .animated-title .word {
   display: inline-block;
-  visibility: hidden;
-  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
-  animation-delay: calc(var(--animation-order) * 0.25s);
+  synlighed: skjult
+  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) fremad;
+  animation-delay: calc(var(--animation-order) * 0,25s);
 }
 
-/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
+/* Staggered indgang for alt indhold, der vises efter titel ord drop fuldender (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacity: 0;
+    opacitet: 0
     transform: translateY(22px);
-    visibility: hidden;
+    synlighed: skjult
   }
   1% {
-    visibility: visible;
+    synlighed: synligt
   }
   100% {
-    opacity: 1;
+    ugennemsigtighed: 1
     transform: translateY(0);
-    visibility: visible;
+    synlighed: synligt
   }
 }
 
 .stagger-in {
-  opacity: 0;
-  visibility: hidden;
-  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: 1.08s;
+  opacitet: 0
+  synlighed: skjult
+  animation: forskydningFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) fremad;
+  animationsforsinkelse: 1.08;
 }
 
-.hero-description {
+.hero-beskrivelse {
   font-size: 1.2rem;
-  color: var(--text-muted);
-  max-width: 680px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.65;
+  farve: var( -- text-muted);
+  max-bredde: 680px
+  margin: 0 auto 2,5 rester
+  liniehøjde: 1,65
 }
 
-.hero-buttons {
-  display: flex;
+.hero-knapper {
+  display: flex
   gap: 1.25rem;
-  justify-content: center;
+  justify-indhold: center
   flex-wrap: wrap;
 }
 
-/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
-.content-section,
+/* Mii Tegn Placeret Inde Blanke Bokse Områder & Popping Udenfor Grænser */
+.indholdsafsnittet
 .feature-grid,
 .feature-card,
 .step-card,
-.info-box,
+.info-boks
 .requirements-list {
-  position: relative;
-  overflow: visible !important;
+  position: relativ
+  overløb: synlig! vigtigt
 }
 
 /* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
 .feature-card.has-mii {
-  position: relative;
-  overflow: visible !important;
+  position: relativ
+  overløb: synlig! vigtigt
 }
 
 .feature-card.has-mii h3,
@@ -489,120 +489,120 @@ a.btn-discord:hover {
 }
 
 .feature-card.has-mii h3 {
-  margin-bottom: 0.85rem;
+  margin-bund: 0,85rem;
 }
 
 .mii-card-corner {
-  position: absolute;
+  position: absolute
   right: -24px;
   top: -42px;
-  height: 165px;
+  højde: 165px
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  z-index: 10
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0, 0.65));
+  markørhændelser: ingen
 }
 
 .mii-card-corner-lounging {
-  position: absolute;
-  right: -18px;
+  position: absolute
+  højre: -18px
   top: -50px;
-  height: 140px;
+  højde: 140px
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  z-index: 10
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0, 0.65));
+  markørhændelser: ingen
 }
 
-/* Hero section bottom-right overlapping Mii */
-.mii-overlap-hero {
-  position: absolute;
+/* Heltsektion nederst til højre overlappende Mii */
+.mii-overlap-helt {
+  position: absolute
   right: -25px;
-  bottom: -45px;
-  height: 260px;
+  bund: -45px
+  højde: 260px
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
-  transform: rotate(4deg);
-  pointer-events: none;
+  z-index: 10
+  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0,7));
+  transform: rotation (4deg)
+  markørhændelser: ingen
 }
 
 @media (max-width: 900px) {
-  .mii-overlap-hero {
-    height: 180px;
-    right: -10px;
+  .mii-overlap-helt {
+    højde: 180px
+    højre: -10px
     bottom: -30px;
   }
 }
 
 @media (max-width: 600px) {
   .feature-card.has-mii h3 {
-    padding-right: 0;
+    polstringsret: 0
   }
-  .mii-card-corner,
-  .mii-overlap-hero {
-    display: none;
+  .mii-card-corner
+  .mii-overlap-helt {
+    display: intet;
   }
 }
 
-/* Quick Start Banner */
+/* Hurtig Start Banner */
 .quick-start-banner {
-  background-color: var(--bg-card);
+  baggrundsfarve: var( -- bg- kort)
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  borderradius: 12px
   padding: 3rem 2rem;
   text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
+  margin-bund: 4rem;
+  position: relativ
   overflow: hidden;
 }
 
 .quick-start-banner h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.75rem;
+  font-vægt: 700
+  farve: var( -- text- main)
+  margin-bund: 0,75rem;
 }
 
 .quick-start-banner p {
-  color: var(--text-muted);
+  farve: var( -- text-muted);
   font-size: 1.05rem;
-  margin-bottom: 1.75rem;
-  max-width: 580px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bund: 1.75rem;
+  max-bredde: 580px
+  margin-venstre: auto;
+  margin-højre: auto;
 }
 
-/* Code block / Directory tree */
+/* Kode blok / Mappetræ */
 .code-block {
-  background-color: var(--bg-tertiary);
+  baggrundsfarve: var( -- bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  borderradius: 8px
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margin-bund: 1,5 rester
 }
 
 .code-header {
-  background-color: var(--bg-secondary);
+  baggrundsfarve: var( -- bg- sekundær);
   padding: 0.55rem 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex
+  justify-indhold: mellemrumstasten
+  justeringspunkter: centrum;
   font-size: 0.82rem;
-  color: var(--text-muted);
+  farve: var( -- text-muted);
   border-bottom: 1px solid var(--border-color);
 }
 
 .btn-copy {
-  background-color: var(--border-color);
-  border: none;
-  color: var(--text-main);
+  baggrundsfarve: var( -- border- farve)
+  grænse: ingen
+  farve: var( -- text- main)
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  cursor: pointer;
+  markør: markør
 }
 
 .btn-copy:hover {
@@ -613,222 +613,222 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  line-height: 1.5;
-  color: var(--text-main);
+  liniehøjde: 1,5
+  farve: var( -- text- main)
   overflow-x: auto;
 }
 
-/* Ordered instructions */
+/* Bestilte instruktioner */
 .ordered-instructions {
-  margin-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
+  margin-venstre: 1,4rem;
+  display: flex
+  flexretning: kolonne
   gap: 0.85rem;
-  margin-bottom: 1.5rem;
+  margin-bund: 1,5 rester
 }
 
 .ordered-instructions li {
   font-size: 0.95rem;
-  color: var(--text-main);
+  farve: var( -- text- main)
   padding-left: 0.3rem;
 }
 
-/* Controller Physical Button Tokens */
+/* Controller Fysisk Knap Tokens */
 .controller-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-flex
+  justeringspunkter: centrum;
+  justify-indhold: center
   font-family: var(--font-main);
-  font-weight: 700;
-  color: #f8fafc;
-  background-color: #334155;
-  border: 1px solid #64748b;
-  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
-  user-select: none;
-  vertical-align: middle;
-  line-height: 1;
-  margin: 0 0.15rem;
+  font-vægt: 700
+  farve: # f8fafc
+  baggrundsfarve: # 334155;
+  grænse: 1px solid # 64748b
+  box-shadow: 0 2px 0 # 0f172a, 0 3px 3px rgba(0, 0, 0, 0, 0,3);
+  user-select: none
+  vertikal justering: midterste
+  linjehøjde: 1
+  margin: 0 0,15rem;
 }
 
 .controller-btn.btn-round {
   width: 24px;
-  height: 24px;
+  højde: 24px
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-shoulder {
-  padding: 0 0.55rem;
-  height: 24px;
-  border-radius: 6px;
+  polstring: 0 0,55rem;
+  højde: 24px
+  borderradius: 6px
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-pill {
-  padding: 0 0.65rem;
-  height: 24px;
-  border-radius: 12px;
+  polstring: 0 0,65rem;
+  højde: 24px
+  borderradius: 12px
   font-size: 0.74rem;
-  letter-spacing: 0.04em;
+  brevafstand: 0.04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  height: 24px;
+  højde: 24px
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  display: block;
+  display: blokering
 }
 
-/* Feature Grid */
+/* Feature Gitter */
 .feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: gitter
+  gitter-skabelon-kolonner: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
-.feature-card {
-  background-color: var(--bg-card);
+.feature-kort {
+  baggrundsfarve: var( -- bg- kort)
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  borderradius: 8px
   padding: 1.6rem;
 }
 
 .feature-card h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
+  font-vægt: 700
+  farve: var( -- text- main)
+  margin-bund: 0.5rem;
 }
 
 .feature-card p {
-  color: var(--text-muted);
+  farve: var( -- text-muted);
   font-size: 0.92rem;
-  line-height: 1.6;
+  liniehøjde: 1,6
 }
 
-.feature-card a {
-  color: var(--accent-light);
+.feature-kort en {
+  farve: var( -- accent-light);
 }
 
-.feature-card a:hover {
-  text-decoration: underline;
+.feature-kort a:hover {
+  tekstdekoration: understregning
 }
 
-/* FAQ List */
+/* FAQ Liste */
 .faq-list {
-  display: flex;
-  flex-direction: column;
+  display: flex
+  flexretning: kolonne
   gap: 0.85rem;
 }
 
 .faq-item {
-  background-color: var(--bg-card);
+  baggrundsfarve: var( -- bg- kort)
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  borderradius: 8px
   overflow: hidden;
 }
 
-.faq-question {
+.faq-spørgsmål {
   width: 100%;
-  background-color: transparent;
-  border: none;
+  baggrundsfarve: gennemsigtig;
+  grænse: ingen
   padding: 1.15rem 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
+  display: flex
+  justify-indhold: mellemrumstasten
+  justeringspunkter: centrum;
+  tekstjustering: til venstre
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-main);
-  cursor: pointer;
+  farve: var( -- text- main)
+  markør: markør
 }
 
-.faq-indicator {
+.faq-indikator {
   font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--accent-light);
+  font-vægt: 400
+  farve: var( -- accent-light);
 }
 
-.faq-answer {
-  max-height: 0;
+.faq-svar {
+  max-højde: 0
   overflow: hidden;
-  transition: max-height 0.25s ease;
+  Overgang: max-højde 0,25s lethed;
 }
 
-.faq-answer p {
-  padding: 0 1.4rem 1.3rem;
-  color: var(--text-muted);
+.faq-svar p {
+  polstring: 0 1.4rem 1.3rem;
+  farve: var( -- text-muted);
   font-size: 0.92rem;
-  line-height: 1.65;
+  liniehøjde: 1,65
 }
 
-/* Footer */
+/* Sidefod */
 .footer {
   padding: 2.2rem 0;
-  background-color: var(--bg-secondary);
+  baggrundsfarve: var( -- bg- sekundær);
   border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
   text-align: center;
-  color: var(--text-dim);
+  farve: var( -- text- dim);
   font-size: 0.82rem;
 }
 
-/* Responsive */
+/* Responsiv */
 @media (max-width: 768px) {
   .step-card {
-    grid-template-columns: 1fr;
+    søjle 2-elementer:
     gap: 0.6rem;
   }
 
-  .step-number {
+  .trin-number {
     padding-top: 0;
   }
 
   .nav-links {
-    display: none;
+    display: intet;
   }
 
   .page-header h1,
-  .hero-section h1,
-  .animated-title {
+  .hero-sektion h1,
+  .animeret-titel {
     font-size: 2.2rem;
   }
 }
 
-/* Light Mode Support */
+/* Understøttelse Af Lystilstand */
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-primary: #f8fafc;
-    --bg-secondary: #f1f5f9;
-    --bg-tertiary: #e2e8f0;
-    --bg-card: #ffffff;
+    -- bg- primary: # f8fafc
+    -- bg-secondary: #f1f5f9
+    -- bg-tertiary: #e2e8f0;
+    -- bg- card: #ffffff;
     --border-color: #cbd5e1;
     --border-hover: #94a3b8;
 
-    --text-main: #0f172a;
-    --text-muted: #334155;
-    --text-dim: #64748b;
+    -- text- main: # 0f172a;
+    -- text- muted: # 334155;
+    -- text- dim: # 64748b;
   }
   
-  /* Adjust shadows for light mode */
+  /* Justér skygger for lystilstand */
   .guide-image,
-  .hero-icon,
+  .hero-ikon
   .discord-ui-mockup {
-    box-shadow: none;
+    box-skygge: ingen
   }
 
-  .mii-card-corner,
+  .mii-card-corner
   .mii-card-corner-lounging,
-  .mii-overlap-hero {
-    filter: none;
+  .mii-overlap-helt {
+    filter: ingen
   }
 
   .controller-btn {
@@ -836,240 +836,240 @@ a.btn-discord:hover {
   }
 }
 
-/* Discord UI Mockup Section */
-.discord-ui-section {
+/* Discord UI Mockup Afsnit */
+.discord-ui-sektion {
   overflow: hidden;
 }
 
 .discord-ui-layout {
-  display: flex;
-  align-items: center;
+  display: flex
+  justeringspunkter: centrum;
   gap: 3rem;
 }
 
-.discord-ui-text {
-  flex: 1;
+.discord-ui-tekst {
+  flex: 1
 }
 
 .discord-ui-text h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bund: 1rest
 }
 
 .discord-ui-text .btn-fullwidth {
-  display: inline-flex;
+  display: inline-flex
   width: auto;
   margin-top: 1rem;
 }
 
 .discord-ui-mockup {
-  flex: 1;
-  background-color: #313338;
-  border-radius: 8px;
+  flex: 1
+  baggrundsfarve: # 313338;
+  borderradius: 8px
   overflow: hidden;
-  border: 1px solid #1e1f22;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  grænse: 1px solid # 1e1f22;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0, 0,4)
   font-family: var(--font-body);
-  color: #dbdee1;
+  farve: #dbdee1;
   min-width: 350px;
 }
 
 .discord-ui-header {
-  background-color: #2b2d31;
-  padding: 12px 16px;
+  baggrundsfarve: # 2b2d31;
+  polstring: 12px 16px
   font-weight: 600;
-  border-bottom: 1px solid #1e1f22;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #f2f3f5;
+  borderbund: 1px fast # 1e1f22
+  display: flex
+  justeringspunkter: centrum;
+  hul: 8px
+  farve: # f2f3f5;
 }
 
 .discord-ui-header .hashtag {
-  color: #80848e;
+  farve: # 80848e;
   font-size: 1.2rem;
 }
 
 .discord-ui-messages {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  display: flex
+  flexretning: kolonne
   gap: 16px;
 }
 
 .discord-msg {
-  display: flex;
+  display: flex
   gap: 16px;
-  opacity: 0;
+  opacitet: 0
   transform: translateY(10px);
 }
 
 .discord-avatar {
-  width: 40px;
-  height: 40px;
+  bredde: 40px
+  højde: 40px
   border-radius: 50%;
-  object-fit: cover;
-  background-color: #2b2d31;
+  objektfit: dækning
+  baggrundsfarve: # 2b2d31;
 }
 
 .discord-msg-content {
-  flex: 1;
+  flex: 1
 }
 
 .discord-msg-header {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin-bottom: 4px;
+  display: flex
+  justeringspunkter: basislinie
+  hul: 8px
+  margin-bund: 4px
 }
 
 .discord-user {
-  font-weight: 500;
-  color: #f2f3f5;
+  font-vægt: 500
+  farve: # f2f3f5;
 }
 
 .discord-user.admin-user {
-  color: #eb459e; /* Pink role color */
+  farve: # eb459e; /* Pink rollefarve * /
 }
 
-.discord-time {
+.discord-tid {
   font-size: 0.75rem;
-  color: #949ba4;
+  farve: # 949ba4;
 }
 
 .discord-msg p {
-  color: #dbdee1;
+  farve: #dbdee1;
   font-size: 0.95rem;
-  line-height: 1.4;
-  margin: 0;
+  liniehøjde: 1,4
+  margin: 0
 }
 
-/* Animations for Discord Mockup */
-.start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
-.start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
-.start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
+/* Animationer til Discord Mockup */
+.start-anim .msg-anim-1 { animation: popIn 0.4s lethed fremad 0.2s; }
+.start-anim .msg-anim-2 { animation: popIn 0.4s lethed fremad 1.4s; }
+.start-anim .msg-anim-3 { animation: popIn 0.4s lethed fremad 2.6s; }
 
 @keyframes popIn {
-  to {
-    opacity: 1;
+  at {
+    ugennemsigtighed: 1
     transform: translateY(0);
   }
 }
 
-/* Mods Grid */
+/* Modifikationsgitter */
 .mods-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: gitter
+  gitter-skabeloner: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .mod-card {
-  background-color: var(--bg-card);
+  baggrundsfarve: var( -- bg- kort)
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  borderradius: 8px
   padding: 2rem 1rem;
   text-align: center;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  Overgang: al 0,2 lethed
+  display: flex
+  flexretning: kolonne
+  justeringspunkter: centrum;
   gap: 0.75rem;
 }
 
 .mod-avatar {
-  width: 80px;
-  height: 80px;
+  bredde: 80px
+  højde: 80px
   border-radius: 50%;
-  background-color: var(--bg-tertiary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  baggrundsfarve: var( -- bg-tertiary);
+  display: flex
+  justeringspunkter: centrum;
+  justify-indhold: center
   font-size: 2rem;
   font-weight: 600;
-  color: var(--text-muted);
+  farve: var( -- text-muted);
   overflow: hidden;
 }
 
 .mod-avatar img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  højde: 100 %
+  objektfit: dækning
 }
 
 .mod-name {
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--text-main);
+  farve: var( -- text- main)
 }
 
 .mod-username {
   font-size: 0.9rem;
-  color: var(--text-dim);
+  farve: var( -- text- dim);
 }
 
-/* Juxtaposition Carousel */
+/* Juxtaposition Karrusel */
 .juxt-carousel-wrapper {
   overflow: hidden;
-  position: relative;
+  position: relativ
   width: 100%;
   margin-top: 2rem;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  maske-image: lineær farveovergang (til højre, gennemsigtig, sort 10%, sort 90%, gennemsigtig)
+  -webkit-mask-image: lineær farveovergang (til højre, gennemsigtig, sort 10%, sort 90%, gennemsigtig)
 }
 
 .juxt-carousel {
-  display: flex;
-  width: fit-content;
-  animation: scrollCarousel 20s linear infinite;
+  display: flex
+  bredde: fit-content;
+  animation: scrollCarousel 20s lineær uendelig;
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  animation-play-state: paused;
+  animation-play-state: pause
 }
 
 .juxt-post {
-  background-color: var(--bg-card);
+  baggrundsfarve: var( -- bg- kort)
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  borderradius: 12px
   padding: 1.25rem;
-  width: 320px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  bredde: 320px
+  flex- krympe: 0
+  display: flex
+  flex-retning: række
+  justeringspunkter: centrum;
   gap: 1rem;
-  text-align: left;
+  tekstjustering: til venstre
 }
 
 .juxt-post img {
   width: 64px;
-  height: 64px;
-  border-radius: 8px;
-  object-fit: cover;
+  højde: 64px
+  borderradius: 8px
+  objektfit: dækning
 }
 
 .juxt-content strong {
-  display: block;
+  display: blokering
   font-size: 1.1rem;
-  color: var(--accent-cyan);
-  margin-bottom: 0.5rem;
+  farve: var( -- accent-cyan);
+  margin-bund: 0.5rem;
 }
 
 .juxt-content p {
   font-size: 0.95rem;
-  margin: 0;
+  margin: 0
 }
 
 @keyframes scrollCarousel {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - 0.75rem)); }
+  100% { transform: translateX(calc(-50% - 0,75rem)); }
 }
 
 @media (max-width: 900px) {
   .discord-ui-layout {
-    flex-direction: column;
+    flexretning: kolonne
   }
   .discord-ui-mockup {
     width: 100%;
@@ -1077,5 +1077,5 @@ a.btn-discord:hover {
 }
 
 .feature-logo {
-  margin-bottom: 1rem;
+  margin-bund: 1rest
 }
