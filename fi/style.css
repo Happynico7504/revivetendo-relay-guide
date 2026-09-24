@@ -1,13 +1,13 @@
 /* ==========================================================================
-   Revivetendo Relay Network — Clean Solid CSS Design System
+   Revivetendo Relay Network – Clean Solid CSS Design System
    ========================================================================== */
 
 :root {
-  /* Solid Color Palette - No Gradients or Glows */
+  /* Kiinteä väripaletti - Ei hehkulamppua tai hehkulamppua */
   --bg-primary: #0f1117;
-  --bg-secondary: #161821;
-  --bg-tertiary: #1e202b;
-  --bg-card: #181a24;
+  -bg-sekundaarinen: #161821;
+  --bg-tertiari: #1e202b;
+  -kortti: #181a24;
   --border-color: #2a2d3d;
   --border-hover: #3d4259;
 
@@ -19,468 +19,468 @@
   --accent-cyan-hover: #0369a1;
   --accent-light: #38bdf8;
   --accent-purple: #7c3aed;
-  --accent-green: #059669;
+  --aksent-vihreä: #059669;
 
-  /* Clean Typography */
+  /* Puhdas Typografia */
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+  rasian kokoaminen: rajanylitys;
+  marginaali: 0;
   padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+  vierityskäyttäytyminen: sileä;
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
-  color: var(--text-main);
+  taustaväri: var(--bg-primary);
+  väri: var(--text-main);
 }
 
 body {
-  line-height: 1.6;
+  radan korkeus: 1,6
 }
 
-.container {
-  max-width: 980px;
-  margin: 0 auto;
+.kontti {
+  enimmäisleveys: 980px;
+  marginaali: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* Links - High Contrast Bright Cyan */
+/* Linkit - Korkea Kontrasti Kirkas Syaani */
 a {
-  color: var(--accent-light);
-  text-decoration: underline;
+  väri: var(--accent-light);
+  tekstikoriste: alleviivaus
   text-underline-offset: 3px;
-  transition: color 0.15s ease;
+  siirtymä: väri 0,15s helposti;
 }
 
 a:hover {
-  color: #7dd3fc;
+  väri: #7dd3fc;
 }
 
 /* Navigation */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: var(--bg-secondary);
+  asento: tahmea;
+  ylä: 0;
+  z-indeksi: 100;
+  taustaväri: var(--bg-sekundaari);
   border-bottom: 1px solid var(--border-color);
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  max-width: 980px;
-  margin: 0 auto;
+.nav-kontti {
+  näyttö: joustava;
+  align-itemit: keskipiste;
+  perusteltava sisältö: välilyönti
+  korkeus: 64px;
+  enimmäisleveys: 980px;
+  marginaali: 0 auto;
   padding: 0 1.5rem;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
+  näyttö: joustava;
+  align-itemit: keskipiste;
   gap: 0.75rem;
-  text-decoration: none !important;
+  teksti-koriste: ei !tärkeää;
 }
 
-.brand-icon {
+.brand-kuvake {
   width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  object-fit: contain;
+  korkeus: 34px;
+  rajasäde: 8px;
+  objekti: sisältää;
 }
 
 .brand-title {
   font-family: var(--font-main);
-  font-weight: 700;
+  kirjasinpaino: 700;
   font-size: 1.15rem;
-  color: var(--text-main);
+  väri: var(--text-main);
 }
 
-.nav-links {
-  display: flex;
+.nav-linkit {
+  näyttö: joustava;
   gap: 2rem;
 }
 
 .nav-link {
-  color: var(--text-muted);
-  text-decoration: none !important;
+  väri: var(--text-mykistetty);
+  teksti-koriste: ei !tärkeää;
   font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.15s ease;
+  kirjasinpaino: 500;
+  siirtymä: väri 0,15s helposti;
 }
 
-.nav-link:hover {
-  color: var(--text-main);
+.nav-linkki:hover {
+  väri: var(--text-main);
 }
 
-/* Page Header */
+/* Sivun Otsikko */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 3rem;
+  marginaaliala: 3rem;
 }
 
 .page-header h1 {
   font-family: var(--font-main);
   font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.8rem;
+  kirjasinpaino: 700;
+  väri: var(--text-main);
+  marginaliala: 0.8rem;
 }
 
-.page-description {
+.sivu-kuvaus {
   font-size: 1.05rem;
-  color: var(--text-muted);
-  max-width: 780px;
-  line-height: 1.65;
+  väri: var(--text-mykistetty);
+  enimmäisleveys: 780px;
+  radan korkeus: 1,65;
 }
 
-/* Section Shared Styles */
-.guide-section,
+/* Jaetut Jaetut Tyylit */
+.opas-osio
 .content-section {
-  margin-bottom: 4rem;
+  marginaliala: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
 }
 
-.guide-section h2,
+.ohjausjakso h2,
 .content-section h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  kirjasinpaino: 700;
+  väri: var(--text-main);
+  marginaliala: 0,4rem;
 }
 
 .section-lead {
   font-size: 1rem;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
+  väri: var(--text-mykistetty);
+  marginaaliala: 2rem;
 }
 
-/* Step Cards */
+/* Vaihe Kortit */
 .steps-list {
-  display: flex;
-  flex-direction: column;
+  näyttö: joustava;
+  taipumissuunta: sarake;
   gap: 2rem;
 }
 
-.step-card {
-  display: grid;
-  grid-template-columns: 85px 1fr;
+.askelkortti {
+  näyttö: ruudukko
+  ruudukon lomakesarakkeet: 85px 1fr;
   gap: 1.8rem;
-  background-color: var(--bg-card);
+  taustaväri: var(--bg-kortti)
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  position: relative;
+  positiivisuus: sukulainen,
   overflow: hidden;
 }
 
-.step-number {
+.porrasnumero {
   font-family: var(--font-main);
   font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--accent-light);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  kirjasinpaino: 700;
+  väri: var(--accent-light);
+  tekstinmuunnos: isot kirjaimet;
+  kirjainväli: 0,05em;
   padding-top: 0.1rem;
 }
 
 .step-content h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  kirjasinpaino: 700;
+  väri: var(--text-main);
+  marginalialainen: 0,6 jäännös
 }
 
 .step-content p {
-  color: var(--text-main);
+  väri: var(--text-main);
   font-size: 0.98rem;
-  margin-bottom: 1.25rem;
+  marginaaliala: 1,25rem;
 }
 
 .step-note {
-  font-size: 0.9rem !important;
-  color: var(--text-muted) !important;
-  margin-top: 1rem;
-  margin-bottom: 0 !important;
+  kirjasinkoko: 0.9rem !important;
+  väri: var(--text-muted) !important;
+  marginaalin yläosa: 1jäännös;
+  marginaaliala: 0 !important;
 }
 
-/* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
+/* Opas Referenssikuvat - Natural Aspect Ratio, No Black Areas */
 .guide-image-container {
-  margin: 1.5rem 0;
+  marginaali: 1,5rem 0;
   width: 100%;
 }
 
 .guide-image {
   width: 100%;
-  max-width: 580px;
-  height: auto;
-  display: block;
+  enimmäisleveys: 580px;
+  korkeus: autom.
+  näyttö: lohko;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  rajasäde: 8px;
+  ruutuvarjo: 0 4px 14px rgba(0, 0, 0, 0,35);
 }
 
 .image-caption {
   font-size: 0.82rem;
-  color: var(--text-dim);
-  margin-top: 0.5rem;
-  display: block;
+  väri: var(--text-dim);
+  marginaalinylitys: 0,5 jäännös
+  näyttö: lohko;
 }
 
-/* Clean Boxes inside steps */
+/* Puhdista laatikot askeleen sisällä */
 .info-box {
-  background-color: var(--bg-tertiary);
+  taustaväri: var(--bg-tertiari);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  rajasäde: 8px;
   padding: 1.25rem 1.4rem;
-  margin-bottom: 1.5rem;
+  marginaliala: 1,5jäännös
 }
 
 .info-box h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  kirjasinpaino: 700;
+  väri: var(--text-main);
+  marginaliala: 0,4rem;
 }
 
 .info-box p {
-  font-size: 0.92rem !important;
-  color: var(--text-muted) !important;
-  margin: 0 !important;
+  fontin koko: 0.92rem !tärkeää;
+  väri: var(--text-muted) !important;
+  marginaali: 0 !tärkeää;
 }
 
 .requirements-list {
-  background-color: var(--bg-tertiary);
+  taustaväri: var(--bg-tertiari);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  rajasäde: 8px;
   padding: 1.25rem 1.4rem;
 }
 
 .requirements-list h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  kirjasinpaino: 700;
+  väri: var(--text-main);
+  marginalialainen: 0,6 jäännös
 }
 
 .requirements-list ul {
-  list-style-type: disc;
-  margin-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
+  luettelon tyyli: levy;
+  marginaaligreeni: 1,25rem;
+  näyttö: joustava;
+  taipumissuunta: sarake;
   gap: 0.5rem;
 }
 
 .requirements-list li {
   font-size: 0.92rem;
-  color: var(--text-main);
+  väri: var(--text-main);
 }
 
-/* Action Box */
-.action-box {
-  background-color: var(--bg-tertiary);
+/* Toimintalaatikko */
+.toimintalaatikko {
+  taustaväri: var(--bg-tertiari);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  rajasäde: 8px;
   padding: 1.25rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  näyttö: joustava;
+  align-itemit: keskipiste;
+  perusteltava sisältö: välilyönti
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  marginaliala: 1,5jäännös
   flex-wrap: wrap;
 }
 
-.action-box h4 {
+.toimintalaatikko h4 {
   font-size: 1.05rem;
-  color: var(--text-main);
-  font-weight: 700;
-  margin-bottom: 0.15rem;
+  väri: var(--text-main);
+  kirjasinpaino: 700;
+  marginalialainen: 0,15rem;
 }
 
-.text-muted {
-  color: var(--text-muted);
+.teksti-mykistetty {
+  väri: var(--text-mykistetty);
   font-size: 0.85rem;
 }
 
-/* Buttons - Pure White Text on Cyan Background */
+/* Painikkeet - Puhdas valkoinen teksti syaanitaustalla */
 .btn,
 a.btn,
 .feature-card a.btn,
-.action-box a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+.toimintalaatikko a.btn {
+  näyttö: inline-flex;
+  align-itemit: keskipiste;
+  perusteltava sisältö: keskellä;
   gap: 0.5rem;
-  padding: 0.65rem 1.3rem;
-  border-radius: 6px;
+  pehmuste: 0,65rem 1,3rem;
+  rajasäde: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  text-decoration: none !important;
-  border: none;
-  cursor: pointer;
-  background-color: var(--accent-cyan);
-  color: #ffffff !important;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  teksti-koriste: ei !tärkeää;
+  raja: ei mitään
+  kohdistin: osoitin;
+  taustaväri: var(--accent-cyan);
+  väri: #ffffffff !tärkeää;
+  siirtyminen: tausta-väri 0.15s helposti, raja-väri 0.15s helposti;
 }
 
 .lucide {
-  flex-shrink: 0;
-  vertical-align: middle;
+  flex-kutistuminen: 0;
+  pystysuunta: keski;
 }
 
 .btn:hover,
 a.btn:hover,
 .feature-card a.btn:hover,
 .action-box a.btn:hover {
-  background-color: var(--accent-cyan-hover);
-  color: #ffffff !important;
+  taustaväri: var(--accent-cyan-hover);
+  väri: #ffffffff !tärkeää;
 }
 
 .btn-secondary,
-a.btn-secondary {
-  background-color: var(--bg-tertiary) !important;
+a.btn-sekundaarinen {
+  taustaväri: var(--bg-tertiary) !important;
   border: 1px solid var(--border-color) !important;
-  color: var(--text-main) !important;
+  väri: var(--text-main) !important;
 }
 
-.btn-secondary:hover,
+.btn-sekunti:hover,
 a.btn-secondary:hover {
-  background-color: #262938 !important;
+  taustaväri: #262938 !important;
   border-color: var(--border-hover) !important;
-  color: #ffffff !important;
+  väri: #ffffffff !tärkeää;
 }
 
 .btn-discord,
 a.btn-discord {
-  background-color: #5865f2 !important;
-  color: #ffffff !important;
+  taustaväri: #5865f2 !important;
+  väri: #ffffffff !tärkeää;
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
-  background-color: #4752c4 !important;
-  color: #ffffff !important;
+  taustaväri: #4752c4 !important;
+  väri: #ffffffff !tärkeää;
 }
 
-/* Landing Page Hero Section */
-.hero-section {
+/* Sankari Osa */
+.hero-osio {
   padding: 5rem 0 3rem;
-  border-bottom: none !important;
-  margin-bottom: 3rem;
+  raja alhaalta: ei !tärkeää;
+  marginaaliala: 3rem;
   text-align: center;
-  position: relative;
-  overflow: visible !important;
+  positiivisuus: sukulainen,
+  ylivuoto: näkyvä !tärkeys;
 }
 
-.hero-icon {
-  width: 90px;
-  height: 90px;
+.sankari-kuvake {
+  leveys: 90px;
+  korkeus: 90px;
   border-radius: 22px;
-  margin: 0 auto 1.5rem;
-  display: block;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  marginaali: 0 auto 1.5rem;
+  näyttö: lohko;
+  ruutuvarjo: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
+/* Animaatio: Pudota yksi kerrallaan ylhäältä ILMAN häivytystä (läpinäkyvyys pysyy 100%) */
 @keyframes dropFromTop {
   0% {
-    transform: translateY(-45px);
-    visibility: hidden;
+    transformulointi: translateY(-45px);
+    näkyvyys: piilotettu;
   }
   1% {
-    visibility: visible;
+    näkyvyys: näkyvä;
   }
   100% {
-    transform: translateY(0);
-    visibility: visible;
+    transformointi: translateY(0);
+    näkyvyys: näkyvä;
   }
 }
 
 .animated-title {
-  display: inline-flex;
+  näyttö: inline-flex;
   gap: 0.3em;
   flex-wrap: wrap;
-  justify-content: center;
+  perusteltava sisältö: keskellä;
   font-family: var(--font-main);
   font-size: 3.2rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 1.1rem;
-  letter-spacing: -0.02em;
+  kirjasinpaino: 700;
+  väri: var(--text-main);
+  marginaliala: 1,1 jäännös
+  kirjainväli: -0.02em;
 }
 
 .animated-title .word {
-  display: inline-block;
-  visibility: hidden;
-  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
-  animation-delay: calc(var(--animation-order) * 0.25s);
+  näyttö: inline-block;
+  näkyvyys: piilotettu;
+  animaatio: dropFromTop 0,32s cubic-bezier(0.2, 0,85, 0,35, 1.1) eteenpäin
+  animaation viivästyminen: calc(var(--animation-order) * 0,25s);
 }
 
-/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
+/* Porrastettu sisäänkäynti kaikkeen sisältöön, joka näkyy otsikon jälkeen sana pudotus valmistuu (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacity: 0;
-    transform: translateY(22px);
-    visibility: hidden;
+    samentuma: 0;
+    transformulointi: translateY(22px);
+    näkyvyys: piilotettu;
   }
   1% {
-    visibility: visible;
+    näkyvyys: näkyvä;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
+    läpinäkyvyys: 1;
+    transformointi: translateY(0);
+    näkyvyys: näkyvä;
   }
 }
 
 .stagger-in {
-  opacity: 0;
-  visibility: hidden;
-  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: 1.08s;
+  samentuma: 0;
+  näkyvyys: piilotettu;
+  animaatio: staggerFadeUp 0,45s cubic-bezier (0,16, 1, 0,3, 1) eteenpäin
+  animaation viivästyminen: 1,08;
 }
 
-.hero-description {
+.sankarikuvaus {
   font-size: 1.2rem;
-  color: var(--text-muted);
-  max-width: 680px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.65;
+  väri: var(--text-mykistetty);
+  enimmäisleveys: 680px;
+  marginaali: 0 auto 2.5rem;
+  radan korkeus: 1,65;
 }
 
-.hero-buttons {
-  display: flex;
+.hero-painikkeet {
+  näyttö: joustava;
   gap: 1.25rem;
-  justify-content: center;
+  perusteltava sisältö: keskellä;
   flex-wrap: wrap;
 }
 
-/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
-.content-section,
-.feature-grid,
-.feature-card,
-.step-card,
-.info-box,
+/* Mii Merkkejä Sijoitettu Tyhjien Laatikoiden Alueisiin Ja Mitään Rajoja */
+.sisältöosio
+.feature-grid
+.feature-card
+.askelkortti,
+.info-laatikko
 .requirements-list {
-  position: relative;
-  overflow: visible !important;
+  positiivisuus: sukulainen,
+  ylivuoto: näkyvä !tärkeys;
 }
 
-/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
+/* Ominaisuus kortit ulompi kulma Miis: Varaa 90px oikea pehmustus BOTH otsikko ja kappale, joten teksti wraps puhtaan ja nolla sanat on estetty */
 .feature-card.has-mii {
-  position: relative;
-  overflow: visible !important;
+  positiivisuus: sukulainen,
+  ylivuoto: näkyvä !tärkeys;
 }
 
 .feature-card.has-mii h3,
@@ -489,120 +489,120 @@ a.btn-discord:hover {
 }
 
 .feature-card.has-mii h3 {
-  margin-bottom: 0.85rem;
+  marginaaliala: 0,85rem;
 }
 
-.mii-card-corner {
-  position: absolute;
+.mii-kortti-kulma {
+  sijainti: absoluuttinen
   right: -24px;
   top: -42px;
-  height: 165px;
+  korkeus: 165px;
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  z-indeksi: 10;
+  suodatin: varjo(0 10px 24px rgba(0, 0, 0, 0,65));
+  oireiden: ei ole;
 }
 
-.mii-card-corner-lounging {
-  position: absolute;
-  right: -18px;
+.mii-kortti-nurkka-lounging {
+  sijainti: absoluuttinen
+  oikea: –18px;
   top: -50px;
-  height: 140px;
+  korkeus: 140px;
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  z-indeksi: 10;
+  suodatin: varjo(0 10px 24px rgba(0, 0, 0, 0,65));
+  oireiden: ei ole;
 }
 
-/* Hero section bottom-right overlapping Mii */
+/* Hero osio alareunassa päällekkäin Mii */
 .mii-overlap-hero {
-  position: absolute;
+  sijainti: absoluuttinen
   right: -25px;
-  bottom: -45px;
-  height: 260px;
+  alhaalta: -45px;
+  korkeus: 260px;
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
-  transform: rotate(4deg);
-  pointer-events: none;
+  z-indeksi: 10;
+  suodatin: varjo(0 16px 36px rgba(0, 0, 0, 0.7));
+  muunnos: rotate(4deg);
+  oireiden: ei ole;
 }
 
 @media (max-width: 900px) {
   .mii-overlap-hero {
-    height: 180px;
-    right: -10px;
+    korkeus: 180px;
+    oikea: -10px;
     bottom: -30px;
   }
 }
 
 @media (max-width: 600px) {
   .feature-card.has-mii h3 {
-    padding-right: 0;
+    pehmusteoikea: 0;
   }
-  .mii-card-corner,
+  .mii-kortin kulma,
   .mii-overlap-hero {
-    display: none;
+    näyttö: ei ole;
   }
 }
 
-/* Quick Start Banner */
+/* Nopea Käynnistys Banneri */
 .quick-start-banner {
-  background-color: var(--bg-card);
+  taustaväri: var(--bg-kortti)
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  rajasäde: 12px;
   padding: 3rem 2rem;
   text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
+  marginaliala: 4rem;
+  positiivisuus: sukulainen,
   overflow: hidden;
 }
 
 .quick-start-banner h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.75rem;
+  kirjasinpaino: 700;
+  väri: var(--text-main);
+  marginaaliala: 0,75rem;
 }
 
 .quick-start-banner p {
-  color: var(--text-muted);
+  väri: var(--text-mykistetty);
   font-size: 1.05rem;
-  margin-bottom: 1.75rem;
-  max-width: 580px;
-  margin-left: auto;
-  margin-right: auto;
+  marginaaliala: 1,75rem;
+  enimmäisleveys: 580px;
+  marginaali vasemmalla: auto;
+  marginaali oikealla: auto;
 }
 
-/* Code block / Directory tree */
+/* Koodilohko / hakemistopuu */
 .code-block {
-  background-color: var(--bg-tertiary);
+  taustaväri: var(--bg-tertiari);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  rajasäde: 8px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  marginaliala: 1,5jäännös
 }
 
-.code-header {
-  background-color: var(--bg-secondary);
+.koodinotsikko {
+  taustaväri: var(--bg-sekundaari);
   padding: 0.55rem 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  näyttö: joustava;
+  perusteltava sisältö: välilyönti
+  align-itemit: keskipiste;
   font-size: 0.82rem;
-  color: var(--text-muted);
+  väri: var(--text-mykistetty);
   border-bottom: 1px solid var(--border-color);
 }
 
 .btn-copy {
-  background-color: var(--border-color);
-  border: none;
-  color: var(--text-main);
+  taustaväri: var(--border-color);
+  raja: ei mitään
+  väri: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  cursor: pointer;
+  kohdistin: osoitin;
 }
 
 .btn-copy:hover {
@@ -613,203 +613,203 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  line-height: 1.5;
-  color: var(--text-main);
+  radan korkeus: 1,5
+  väri: var(--text-main);
   overflow-x: auto;
 }
 
-/* Ordered instructions */
+/* Tilatut ohjeet */
 .ordered-instructions {
-  margin-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
+  marginaaligreeni: 1.4rem;
+  näyttö: joustava;
+  taipumissuunta: sarake;
   gap: 0.85rem;
-  margin-bottom: 1.5rem;
+  marginaliala: 1,5jäännös
 }
 
 .ordered-instructions li {
   font-size: 0.95rem;
-  color: var(--text-main);
+  väri: var(--text-main);
   padding-left: 0.3rem;
 }
 
-/* Controller Physical Button Tokens */
+/* Ohjain Fyysinen Painikkeet */
 .controller-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  näyttö: inline-flex;
+  align-itemit: keskipiste;
+  perusteltava sisältö: keskellä;
   font-family: var(--font-main);
-  font-weight: 700;
-  color: #f8fafc;
-  background-color: #334155;
-  border: 1px solid #64748b;
-  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
-  user-select: none;
-  vertical-align: middle;
-  line-height: 1;
-  margin: 0 0.15rem;
+  kirjasinpaino: 700;
+  väri: #f8fafc;
+  taustaväri: #334155;
+  reunus: 1px solid #64748b;
+  ruutuvarjo: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
+  käyttäjävalinta: ei mitään;
+  pystysuunta: keski;
+  radan korkeus: 1;
+  marginaali: 0 0,15jäännös
 }
 
 .controller-btn.btn-round {
   width: 24px;
-  height: 24px;
+  korkeus: 24px;
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-shoulder {
-  padding: 0 0.55rem;
-  height: 24px;
-  border-radius: 6px;
+  pehmuste: 0 0,55rem;
+  korkeus: 24px;
+  rajasäde: 6px;
   font-size: 0.82rem;
 }
 
-.controller-btn.btn-pill {
-  padding: 0 0.65rem;
-  height: 24px;
-  border-radius: 12px;
+.controller-btn.btn-pilleri {
+  pehmuste: 0 0,65rem;
+  korkeus: 24px;
+  rajasäde: 12px;
   font-size: 0.74rem;
-  letter-spacing: 0.04em;
+  kirjainväli: 0,04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  height: 24px;
+  korkeus: 24px;
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  display: block;
+  näyttö: lohko;
 }
 
-/* Feature Grid */
+/* Ominaisuuden Ruudukko */
 .feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  näyttö: ruudukko
+  ruudukon sivupohja sarakkeet: toisto(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
 .feature-card {
-  background-color: var(--bg-card);
+  taustaväri: var(--bg-kortti)
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  rajasäde: 8px;
   padding: 1.6rem;
 }
 
 .feature-card h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
+  kirjasinpaino: 700;
+  väri: var(--text-main);
+  marginaaliala: 0,5 jäännös
 }
 
 .feature-card p {
-  color: var(--text-muted);
+  väri: var(--text-mykistetty);
   font-size: 0.92rem;
-  line-height: 1.6;
+  radan korkeus: 1,6
 }
 
 .feature-card a {
-  color: var(--accent-light);
+  väri: var(--accent-light);
 }
 
 .feature-card a:hover {
-  text-decoration: underline;
+  tekstikoriste: alleviivaus
 }
 
-/* FAQ List */
-.faq-list {
-  display: flex;
-  flex-direction: column;
+/* UKK Luettelo */
+.faq-lista {
+  näyttö: joustava;
+  taipumissuunta: sarake;
   gap: 0.85rem;
 }
 
 .faq-item {
-  background-color: var(--bg-card);
+  taustaväri: var(--bg-kortti)
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  rajasäde: 8px;
   overflow: hidden;
 }
 
 .faq-question {
   width: 100%;
-  background-color: transparent;
-  border: none;
+  taustaväri: läpinäkyvä
+  raja: ei mitään
   padding: 1.15rem 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
+  näyttö: joustava;
+  perusteltava sisältö: välilyönti
+  align-itemit: keskipiste;
+  tekstin tasaus: vasemmalla;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-main);
-  cursor: pointer;
+  väri: var(--text-main);
+  kohdistin: osoitin;
 }
 
-.faq-indicator {
+.faq-indikaattori {
   font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--accent-light);
+  kirjasinpaino: 400;
+  väri: var(--accent-light);
 }
 
-.faq-answer {
-  max-height: 0;
+.faq-vastaus {
+  enimmäiskorkeus: 0;
   overflow: hidden;
-  transition: max-height 0.25s ease;
+  siirtymä: max-korkeus 0,25 s
 }
 
 .faq-answer p {
-  padding: 0 1.4rem 1.3rem;
-  color: var(--text-muted);
+  pehmuste: 1,0 1,4rem 1,3rem;
+  väri: var(--text-mykistetty);
   font-size: 0.92rem;
-  line-height: 1.65;
+  radan korkeus: 1,65;
 }
 
-/* Footer */
-.footer {
+/* Alatunniste */
+.alatunnisteen {
   padding: 2.2rem 0;
-  background-color: var(--bg-secondary);
+  taustaväri: var(--bg-sekundaari);
   border-top: 1px solid var(--border-color);
 }
 
-.footer-content {
+.alaosan sisältö {
   text-align: center;
-  color: var(--text-dim);
+  väri: var(--text-dim);
   font-size: 0.82rem;
 }
 
-/* Responsive */
+/* Reagoiva */
 @media (max-width: 768px) {
-  .step-card {
-    grid-template-columns: 1fr;
+  .askelkortti {
+    ruudukon lomakesarakkeet: 1fr;
     gap: 0.6rem;
   }
 
-  .step-number {
+  .porrasnumero {
     padding-top: 0;
   }
 
-  .nav-links {
-    display: none;
+  .nav-linkit {
+    näyttö: ei ole;
   }
 
-  .page-header h1,
-  .hero-section h1,
+  .sivuotsikko h1,
+  .hero-osio h1,
   .animated-title {
     font-size: 2.2rem;
   }
 }
 
-/* Light Mode Support */
+/* Valotilatuki */
 @media (prefers-color-scheme: light) {
   :root {
     --bg-primary: #f8fafc;
-    --bg-secondary: #f1f5f9;
-    --bg-tertiary: #e2e8f0;
-    --bg-card: #ffffff;
+    -bg-sekundaari: #f1f5f9;
+    --bg-tertiari: #e2e8f0;
+    --bg-kortti: #ffffffff;
     --border-color: #cbd5e1;
     --border-hover: #94a3b8;
 
@@ -818,32 +818,32 @@ a.btn-discord:hover {
     --text-dim: #64748b;
   }
   
-  /* Adjust shadows for light mode */
-  .guide-image,
-  .hero-icon,
+  /* Säädä valotilan varjoja */
+  .opaskuva,
+  .hero-ikoni
   .discord-ui-mockup {
-    box-shadow: none;
+    laatikon varjo: ei ole;
   }
 
-  .mii-card-corner,
-  .mii-card-corner-lounging,
+  .mii-kortin kulma,
+  .mii-kortti-nurkka-lounging,
   .mii-overlap-hero {
-    filter: none;
+    suodatin: ei ole;
   }
 
   .controller-btn {
-    box-shadow: 0 2px 0 #0f172a;
+    laatikon varjo: 0 2px 0 #0f172a;
   }
 }
 
-/* Discord UI Mockup Section */
+/* Discord Ui Mockup -osio */
 .discord-ui-section {
   overflow: hidden;
 }
 
 .discord-ui-layout {
-  display: flex;
-  align-items: center;
+  näyttö: joustava;
+  align-itemit: keskipiste;
   gap: 3rem;
 }
 
@@ -853,63 +853,63 @@ a.btn-discord:hover {
 
 .discord-ui-text h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  marginaliala: 1rem;
 }
 
 .discord-ui-text .btn-fullwidth {
-  display: inline-flex;
+  näyttö: inline-flex;
   width: auto;
-  margin-top: 1rem;
+  marginaalin yläosa: 1jäännös;
 }
 
 .discord-ui-mockup {
   flex: 1;
-  background-color: #313338;
-  border-radius: 8px;
+  taustaväri: #313338;
+  rajasäde: 8px;
   overflow: hidden;
-  border: 1px solid #1e1f22;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  reunus: 1px solid #1e1f22;
+  ruutuvarjo: 0 8px 24px rgba(0, 0, 0, 0.4);
   font-family: var(--font-body);
-  color: #dbdee1;
+  väri: #dbdee1;
   min-width: 350px;
 }
 
 .discord-ui-header {
-  background-color: #2b2d31;
-  padding: 12px 16px;
+  taustaväri: #2b2d31;
+  pehmuste: 12px 16px;
   font-weight: 600;
-  border-bottom: 1px solid #1e1f22;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #f2f3f5;
+  reuna-ala: 1px solid #1e1f22;
+  näyttö: joustava;
+  align-itemit: keskipiste;
+  aukko: 8px;
+  väri: #f2f3f5;
 }
 
 .discord-ui-header .hashtag {
-  color: #80848e;
+  väri: #80848e;
   font-size: 1.2rem;
 }
 
 .discord-ui-messages {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  näyttö: joustava;
+  taipumissuunta: sarake;
   gap: 16px;
 }
 
 .discord-msg {
-  display: flex;
+  näyttö: joustava;
   gap: 16px;
-  opacity: 0;
-  transform: translateY(10px);
+  samentuma: 0;
+  transformointi: translateY(10px);
 }
 
 .discord-avatar {
-  width: 40px;
-  height: 40px;
+  leveys: 40px;
+  korkeus: 40px;
   border-radius: 50%;
-  object-fit: cover;
-  background-color: #2b2d31;
+  objekti: kanne;
+  taustaväri: #2b2d31;
 }
 
 .discord-msg-content {
@@ -917,159 +917,159 @@ a.btn-discord:hover {
 }
 
 .discord-msg-header {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin-bottom: 4px;
+  näyttö: joustava;
+  align-itemit: lähtötaso;
+  aukko: 8px;
+  marginaliala: 4px;
 }
 
 .discord-user {
-  font-weight: 500;
-  color: #f2f3f5;
+  kirjasinpaino: 500;
+  väri: #f2f3f5;
 }
 
 .discord-user.admin-user {
-  color: #eb459e; /* Pink role color */
+  väri: #eb459e; /* Vaaleanpunainen rooliväri */
 }
 
 .discord-time {
   font-size: 0.75rem;
-  color: #949ba4;
+  väri: #949ba4;
 }
 
 .discord-msg p {
-  color: #dbdee1;
+  väri: #dbdee1;
   font-size: 0.95rem;
-  line-height: 1.4;
-  margin: 0;
+  radan korkeus: 1.4;
+  marginaali: 0;
 }
 
-/* Animations for Discord Mockup */
-.start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
-.start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
-.start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
+/* Animaatiot Discord Mockup -ohjelmalle */
+.start-anim .msg-anim-1 { animation: popIn 0.4s helppous eteenpäin 0.2s; }
+.start-anim .msg-anim-2 { animaatio: popIn 0.4s helppous eteenpäin 1.4s; }
+.start-anim .msg-anim-3 { animation: popIn 0.4s helppous eteenpäin 2.6s; }
 
 @keyframes popIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  jotta {
+    läpinäkyvyys: 1;
+    transformointi: translateY(0);
   }
 }
 
-/* Mods Grid */
+/* Modien Ruudukko */
 .mods-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  näyttö: ruudukko
+  ruudukon mallisarakkeet: toisto(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  marginaalinylitys: 2rem;
 }
 
 .mod-card {
-  background-color: var(--bg-card);
+  taustaväri: var(--bg-kortti)
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  rajasäde: 8px;
   padding: 2rem 1rem;
   text-align: center;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  siirtymä: kaikki 0,2 s helposti;
+  näyttö: joustava;
+  taipumissuunta: sarake;
+  align-itemit: keskipiste;
   gap: 0.75rem;
 }
 
 .mod-avatar {
-  width: 80px;
-  height: 80px;
+  leveys: 80px;
+  korkeus: 80px;
   border-radius: 50%;
-  background-color: var(--bg-tertiary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  taustaväri: var(--bg-tertiari);
+  näyttö: joustava;
+  align-itemit: keskipiste;
+  perusteltava sisältö: keskellä;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--text-muted);
+  väri: var(--text-mykistetty);
   overflow: hidden;
 }
 
 .mod-avatar img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  korkeus: 100 %;
+  objekti: kanne;
 }
 
 .mod-name {
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--text-main);
+  väri: var(--text-main);
 }
 
 .mod-username {
   font-size: 0.9rem;
-  color: var(--text-dim);
+  väri: var(--text-dim);
 }
 
-/* Juxtaposition Carousel */
+/* Juxtaposition Karuselli */
 .juxt-carousel-wrapper {
   overflow: hidden;
-  position: relative;
+  positiivisuus: sukulainen,
   width: 100%;
-  margin-top: 2rem;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  marginaalinylitys: 2rem;
+  mask-image: lineaarinen-gradient(oikealle, läpinäkyvä, musta 10%, musta 90%, läpinäkyvä);
+  -webkit-mask-image: lineaarinen-gradient(oikealle, läpinäkyvä, musta 10%, musta 90%, läpinäkyvä);
 }
 
 .juxt-carousel {
-  display: flex;
-  width: fit-content;
-  animation: scrollCarousel 20s linear infinite;
+  näyttö: joustava;
+  leveys: fit-content;
+  animaatio: vierityskaruselli 20s lineaarinen ääretön
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  animation-play-state: paused;
+  animaatiotila: keskeytetty;
 }
 
 .juxt-post {
-  background-color: var(--bg-card);
+  taustaväri: var(--bg-kortti)
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  rajasäde: 12px;
   padding: 1.25rem;
-  width: 320px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  leveys: 320px;
+  flex-kutistuminen: 0;
+  näyttö: joustava;
+  taivutussuunta: rivi;
+  align-itemit: keskipiste;
   gap: 1rem;
-  text-align: left;
+  tekstin tasaus: vasemmalla;
 }
 
 .juxt-post img {
   width: 64px;
-  height: 64px;
-  border-radius: 8px;
-  object-fit: cover;
+  korkeus: 64px;
+  rajasäde: 8px;
+  objekti: kanne;
 }
 
 .juxt-content strong {
-  display: block;
+  näyttö: lohko;
   font-size: 1.1rem;
-  color: var(--accent-cyan);
-  margin-bottom: 0.5rem;
+  väri: var(--accent-cyan);
+  marginaaliala: 0,5 jäännös
 }
 
 .juxt-content p {
   font-size: 0.95rem;
-  margin: 0;
+  marginaali: 0;
 }
 
 @keyframes scrollCarousel {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - 0.75rem)); }
+  100% { transform: translateX(calc(-50% - 0,75rem)); }
 }
 
 @media (max-width: 900px) {
   .discord-ui-layout {
-    flex-direction: column;
+    taipumissuunta: sarake;
   }
   .discord-ui-mockup {
     width: 100%;
@@ -1077,5 +1077,5 @@ a.btn-discord:hover {
 }
 
 .feature-logo {
-  margin-bottom: 1rem;
+  marginaliala: 1rem;
 }
