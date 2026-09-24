@@ -33,9 +33,9 @@ function copyText(text, btnElement) {
   if (!navigator.clipboard) return;
   navigator.clipboard.writeText(text).then(() => {
     const originalText = btnElement.textContent;
-    btnElement.textContent = '¡Copiado!';
+    btnElement.textContent = 'Copied!';
     btnElement.style.backgroundColor = '#059669';
-    btnElement.style.color = '#ffff';
+    btnElement.style.color = '#ffffff';
     setTimeout(() => {
       btnElement.textContent = originalText;
       btnElement.style.backgroundColor = '';
@@ -83,9 +83,9 @@ function switchGuideTab(consoleId) {
 
   // Update content sections
   document.querySelectorAll('.guide-tab-content').forEach((section) => {
-    section.style.display = 'ninguno';
+    section.style.display = 'none';
   });
-  const activeSection = document.getElementById(`guía-${consoleId}`);
+  const activeSection = document.getElementById(`guide-${consoleId}`);
   if (activeSection) {
     activeSection.style.display = 'block';
   }
