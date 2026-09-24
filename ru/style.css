@@ -1,486 +1,486 @@
 /* ==========================================================================
-   Revivetendo Relay Network — Clean Solid CSS Design System
+   Реле Revivetendo — чистая система дизайна CSS
    ========================================================================== */
 
 :root {
-  /* Solid Color Palette - No Gradients or Glows */
-  --bg-primary: #0f1117;
-  --bg-secondary: #161821;
+  /* Постоянная цветовая палитра - без градиентов или свечения */
+  --bg-основная: #0f1117;
+  --bg-вторичный: #161821;
   --bg-tertiary: #1e202b;
-  --bg-card: #181a24;
-  --border-color: #2a2d3d;
+  --bg-карта: #181a24;
+  --border-цвет: #2d3d;
   --border-hover: #3d4259;
 
   --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
+  --текстовый: #94a3b8;
   --text-dim: #64748b;
 
-  --accent-cyan: #0284c7;
+  --accent-cyan: #0284 с7;
   --accent-cyan-hover: #0369a1;
   --accent-light: #38bdf8;
-  --accent-purple: #7c3aed;
+  --accent-фиолетовый: #7c3а;
   --accent-green: #059669;
 
-  /* Clean Typography */
-  --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Чистая типография */
+  --font-main: 'Выход', -апплет-система, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Плюс Санс Джакарта', -апплет-система, BlinkMacSystemFont, санс-засечка;
   --font-mono: 'Fira Code', monospace;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+  размер коробки: граница;
+  поля: 0;
   padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+  поведение прокрутки: гладко;
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
-  color: var(--text-main);
+  цвет фона: var(--bg-primary);
+  цвет: var(--text-main);
 }
 
 body {
-  line-height: 1.6;
+  высота линии: 1.6;
 }
 
 .container {
   max-width: 980px;
-  margin: 0 auto;
+  поля: 0 авто;
   padding: 0 1.5rem;
 }
 
-/* Links - High Contrast Bright Cyan */
+/* Ссылки - Высококонтрастный яркий синий */
 a {
-  color: var(--accent-light);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.15s ease;
+  цвет: var(--accent-light);
+  текстовое оформление: подчеркивание;
+  текстовое подчеркивание: 3px;
+  переход: цвет 0.15s легко;
 }
 
 a:hover {
-  color: #7dd3fc;
+  цвет: #7dd3fc;
 }
 
 /* Navigation */
 .navbar {
-  position: sticky;
-  top: 0;
+  позиция: лип;
+  верх: 0;
   z-index: 100;
-  background-color: var(--bg-secondary);
+  цвет фона: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
 }
 
 .nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
+  дисплей: flex;
+  выравнивание пунктов: центр;
+  justify-content: космическая между;
+  высота: 64px;
   max-width: 980px;
-  margin: 0 auto;
+  поля: 0 авто;
   padding: 0 1.5rem;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
+  дисплей: flex;
+  выравнивание пунктов: центр;
   gap: 0.75rem;
-  text-decoration: none !important;
+  текстовое оформление: никто не !important;
 }
 
 .brand-icon {
   width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  object-fit: contain;
+  высота: 34px;
+  радиус границы: 8px;
+  - объект: содержание;
 }
 
 .brand-title {
   font-family: var(--font-main);
-  font-weight: 700;
+  шрифт-вес: 700;
   font-size: 1.15rem;
-  color: var(--text-main);
+  цвет: var(--text-main);
 }
 
 .nav-links {
-  display: flex;
+  дисплей: flex;
   gap: 2rem;
 }
 
 .nav-link {
-  color: var(--text-muted);
-  text-decoration: none !important;
+  цвет: var(--text-muted);
+  текстовое оформление: никто не !important;
   font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.15s ease;
+  шрифт-вес: 500;
+  переход: цвет 0.15s легко;
 }
 
 .nav-link:hover {
-  color: var(--text-main);
+  цвет: var(--text-main);
 }
 
-/* Page Header */
+/* Заголовок страницы */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 3rem;
+  нижняя часть: 3rem;
 }
 
 .page-header h1 {
   font-family: var(--font-main);
   font-size: 2.3rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.8rem;
+  шрифт-вес: 700;
+  цвет: var(--text-main);
+  нижняя часть: 0.8rem;
 }
 
 .page-description {
   font-size: 1.05rem;
-  color: var(--text-muted);
+  цвет: var(--text-muted);
   max-width: 780px;
-  line-height: 1.65;
+  высота линии: 1.65;
 }
 
-/* Section Shared Styles */
-.guide-section,
+/* Общие стили раздела */
+.guide-раздел,
 .content-section {
-  margin-bottom: 4rem;
+  нижняя часть: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
 }
 
-.guide-section h2,
+.guide-раздел h2,
 .content-section h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  шрифт-вес: 700;
+  цвет: var(--text-main);
+  нижняя часть: 0,4rem;
 }
 
 .section-lead {
   font-size: 1rem;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
+  цвет: var(--text-muted);
+  нижняя часть: 2rem;
 }
 
-/* Step Cards */
+/* Карточки шага */
 .steps-list {
-  display: flex;
-  flex-direction: column;
+  дисплей: flex;
+  направление искривления: колонка;
   gap: 2rem;
 }
 
 .step-card {
-  display: grid;
-  grid-template-columns: 85px 1fr;
+  отображается: таблица;
+  колонки таблицы-шаблона: 85px 1fr;
   gap: 1.8rem;
-  background-color: var(--bg-card);
+  цвет фона: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  position: relative;
+  позиция: относительный;
   overflow: hidden;
 }
 
 .step-number {
   font-family: var(--font-main);
   font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--accent-light);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  шрифт-вес: 700;
+  цвет: var(--accent-light);
+  текстовое преобразование: верхний регистр;
+  bukva-space: 0.05em;
   padding-top: 0.1rem;
 }
 
 .step-content h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  шрифт-вес: 700;
+  цвет: var(--text-main);
+  нижняя часть: 0,6рем;
 }
 
 .step-content p {
-  color: var(--text-main);
+  цвет: var(--text-main);
   font-size: 0.98rem;
-  margin-bottom: 1.25rem;
+  нижняя часть: 1.25rem;
 }
 
 .step-note {
-  font-size: 0.9rem !important;
-  color: var(--text-muted) !important;
-  margin-top: 1rem;
-  margin-bottom: 0 !important;
+  размер шрифта: 0.9rem !important;
+  цвет: var(--text-muted) !important;
+  маржинальная сверху: 1rem;
+  поле снизу: 0 !важно;
 }
 
-/* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
+/* Справочник по справочным изображениям - соотношение сторон природы, черные зоны */
 .guide-image-container {
-  margin: 1.5rem 0;
+  поля: 1,5 см 0;
   width: 100%;
 }
 
 .guide-image {
   width: 100%;
   max-width: 580px;
-  height: auto;
-  display: block;
+  высота: авто;
+  дисп: блок;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  радиус границы: 8px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
 .image-caption {
   font-size: 0.82rem;
-  color: var(--text-dim);
-  margin-top: 0.5rem;
-  display: block;
+  цвет: var(--text-dim);
+  маржинальная сверху: 0.5rem;
+  дисп: блок;
 }
 
-/* Clean Boxes inside steps */
+/* Чистые коробки внутри шагов */
 .info-box {
-  background-color: var(--bg-tertiary);
+  цвет фона: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  радиус границы: 8px;
   padding: 1.25rem 1.4rem;
-  margin-bottom: 1.5rem;
+  нижняя часть: 1.5rem;
 }
 
 .info-box h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.4rem;
+  шрифт-вес: 700;
+  цвет: var(--text-main);
+  нижняя часть: 0,4rem;
 }
 
 .info-box p {
-  font-size: 0.92rem !important;
-  color: var(--text-muted) !important;
-  margin: 0 !important;
+  размер шрифта: 0.92rem !important;
+  цвет: var(--text-muted) !important;
+  поле: 0 !important;
 }
 
 .requirements-list {
-  background-color: var(--bg-tertiary);
+  цвет фона: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  радиус границы: 8px;
   padding: 1.25rem 1.4rem;
 }
 
 .requirements-list h4 {
   font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.6rem;
+  шрифт-вес: 700;
+  цвет: var(--text-main);
+  нижняя часть: 0,6рем;
 }
 
 .requirements-list ul {
   list-style-type: disc;
-  margin-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
+  левое поле: 1.25rem;
+  дисплей: flex;
+  направление искривления: колонка;
   gap: 0.5rem;
 }
 
 .requirements-list li {
   font-size: 0.92rem;
-  color: var(--text-main);
+  цвет: var(--text-main);
 }
 
-/* Action Box */
+/* Поле действий */
 .action-box {
-  background-color: var(--bg-tertiary);
+  цвет фона: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  радиус границы: 8px;
   padding: 1.25rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  дисплей: flex;
+  выравнивание пунктов: центр;
+  justify-content: космическая между;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+  нижняя часть: 1.5rem;
+  flex-wrap: обертка;
 }
 
 .action-box h4 {
   font-size: 1.05rem;
-  color: var(--text-main);
-  font-weight: 700;
-  margin-bottom: 0.15rem;
+  цвет: var(--text-main);
+  шрифт-вес: 700;
+  нижняя часть: 0,15rem;
 }
 
 .text-muted {
-  color: var(--text-muted);
+  цвет: var(--text-muted);
   font-size: 0.85rem;
 }
 
-/* Buttons - Pure White Text on Cyan Background */
+/* Кнопки - Чистый белый текст на синем фоне */
 .btn,
 a.btn,
 .feature-card a.btn,
 .action-box a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  отображение: inline-flex;
+  выравнивание пунктов: центр;
+  justify-content: центр;
   gap: 0.5rem;
-  padding: 0.65rem 1.3rem;
-  border-radius: 6px;
+  разгрузка: 0.65rem 1.3rem;
+  радиус границы: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  text-decoration: none !important;
-  border: none;
-  cursor: pointer;
-  background-color: var(--accent-cyan);
-  color: #ffffff !important;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  текстовое оформление: никто не !important;
+  граница: отсутствует;
+  курсор курсора: указатель;
+  фоновый цвет: var(--accent-cyan);
+  цвет: #ffffff !important;
+  переход: цвет фона 0.15s легкий, граничный цвет 0.15s легко;
 }
 
 .lucide {
-  flex-shrink: 0;
-  vertical-align: middle;
+  осветление: 0;
+  вертикальное выравнивание: середина;
 }
 
 .btn:hover,
 a.btn:hover,
 .feature-card a.btn:hover,
 .action-box a.btn:hover {
-  background-color: var(--accent-cyan-hover);
-  color: #ffffff !important;
+  фоновый цвет: var(--accent-cyan-hover);
+  цвет: #ffffff !important;
 }
 
-.btn-secondary,
+.btn-второй,
 a.btn-secondary {
-  background-color: var(--bg-tertiary) !important;
+  цвет фона: var(--bg-tertiary) !important;
   border: 1px solid var(--border-color) !important;
-  color: var(--text-main) !important;
+  цвет: var(--text-main) !important;
 }
 
-.btn-secondary:hover,
+.btn-секунда:hover,
 a.btn-secondary:hover {
-  background-color: #262938 !important;
+  цвет фона: #262938 !important;
   border-color: var(--border-hover) !important;
-  color: #ffffff !important;
+  цвет: #ffffff !important;
 }
 
 .btn-discord,
 a.btn-discord {
-  background-color: #5865f2 !important;
-  color: #ffffff !important;
+  цвет фона: #5865f2 !important;
+  цвет: #ffffff !important;
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
-  background-color: #4752c4 !important;
-  color: #ffffff !important;
+  цвет фона: #4752c4 !important;
+  цвет: #ffffff !important;
 }
 
-/* Landing Page Hero Section */
+/* Герой целевой страницы */
 .hero-section {
   padding: 5rem 0 3rem;
-  border-bottom: none !important;
-  margin-bottom: 3rem;
+  граница снизу: никто не !important;
+  нижняя часть: 3rem;
   text-align: center;
-  position: relative;
-  overflow: visible !important;
+  позиция: относительный;
+  переполнение: видимые !important;
 }
 
 .hero-icon {
   width: 90px;
-  height: 90px;
+  высота: 90px;
   border-radius: 22px;
-  margin: 0 auto 1.5rem;
-  display: block;
+  маржи: 0 auto 1.5rem;
+  дисп: блок;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
+/* Анимация: Сбрасывайте один из двух сверху БЕЗ затухания (непрозрачность остается 100%) */
 @keyframes dropFromTop {
   0% {
-    transform: translateY(-45px);
-    visibility: hidden;
+    преобразование: translateY(-45px);
+    видимость: скрыт;
   }
   1% {
-    visibility: visible;
+    видимость: видимый;
   }
   100% {
-    transform: translateY(0);
-    visibility: visible;
+    преобразование: translateY(0);
+    видимость: видимый;
   }
 }
 
 .animated-title {
-  display: inline-flex;
+  отображение: inline-flex;
   gap: 0.3em;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: обертка;
+  justify-content: центр;
   font-family: var(--font-main);
   font-size: 3.2rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 1.1rem;
-  letter-spacing: -0.02em;
+  шрифт-вес: 700;
+  цвет: var(--text-main);
+  нижняя часть: 1.1rem;
+  bukva-sping: -0.02em;
 }
 
 .animated-title .word {
-  display: inline-block;
-  visibility: hidden;
-  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
-  animation-delay: calc(var(--animation-order) * 0.25s);
+  отображение: встроенный блок;
+  видимость: скрыт;
+  анимация: dropmTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) вперед;
+  задержка: calc(var(--animation-order) * 0.25s);
 }
 
-/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
+/* Одиночный вход для всего содержимого, появляющегося после перепадения названия слова (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacity: 0;
-    transform: translateY(22px);
-    visibility: hidden;
+    непрозрачность: 0;
+    преобразование: translateY(22px);
+    видимость: скрыт;
   }
   1% {
-    visibility: visible;
+    видимость: видимый;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
+    непрозрачность: 1;
+    преобразование: translateY(0);
+    видимость: видимый;
   }
 }
 
 .stagger-in {
-  opacity: 0;
-  visibility: hidden;
-  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: 1.08s;
+  непрозрачность: 0;
+  видимость: скрыт;
+  анимация: оглушениеFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) вперед;
+  задержка анимации: 1.08;
 }
 
 .hero-description {
   font-size: 1.2rem;
-  color: var(--text-muted);
+  цвет: var(--text-muted);
   max-width: 680px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.65;
+  маржи: 0 auto 2.5rem;
+  высота линии: 1.65;
 }
 
 .hero-buttons {
-  display: flex;
+  дисплей: flex;
   gap: 1.25rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: центр;
+  flex-wrap: обертка;
 }
 
-/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
-.content-section,
+/* Мирные символы размещены в зонах с пустыми ящиками и всплывающие окна */
+.content-раздел,
 .feature-grid,
 .feature-card,
 .step-card,
 .info-box,
 .requirements-list {
-  position: relative;
-  overflow: visible !important;
+  позиция: относительный;
+  переполнение: видимые !important;
 }
 
-/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
+/* Карточки свойств с внешним углом: зарезервируйте правый отступ на заголовок BOTH и параграф таким образом, завернутые в чистых и нулевые слова заблокированы */
 .feature-card.has-mii {
-  position: relative;
-  overflow: visible !important;
+  позиция: относительный;
+  переполнение: видимые !important;
 }
 
 .feature-card.has-mii h3,
@@ -489,120 +489,120 @@ a.btn-discord:hover {
 }
 
 .feature-card.has-mii h3 {
-  margin-bottom: 0.85rem;
+  нижняя часть: 0,85rem;
 }
 
 .mii-card-corner {
-  position: absolute;
+  позиция: абсолютный;
   right: -24px;
   top: -42px;
-  height: 165px;
+  высота: 165px;
   width: auto;
   z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
+  фильтр: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
   pointer-events: none;
 }
 
 .mii-card-corner-lounging {
-  position: absolute;
-  right: -18px;
+  позиция: абсолютный;
+  справа: -18px;
   top: -50px;
-  height: 140px;
+  высота: 140px;
   width: auto;
   z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
+  фильтр: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
   pointer-events: none;
 }
 
-/* Hero section bottom-right overlapping Mii */
+/* Секция героев снизу справа накладывается на Мий */
 .mii-overlap-hero {
-  position: absolute;
+  позиция: абсолютный;
   right: -25px;
-  bottom: -45px;
-  height: 260px;
+  снизу: -45px;
+  высота: 260px;
   width: auto;
   z-index: 10;
-  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
-  transform: rotate(4deg);
+  фильтр: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
+  преобразование: вращение (4deg);
   pointer-events: none;
 }
 
 @media (max-width: 900px) {
   .mii-overlap-hero {
-    height: 180px;
-    right: -10px;
+    высота: 180пикс;
+    справа: -10px;
     bottom: -30px;
   }
 }
 
 @media (max-width: 600px) {
   .feature-card.has-mii h3 {
-    padding-right: 0;
+    правый штемпель: 0;
   }
-  .mii-card-corner,
+  .mii-card-угол,
   .mii-overlap-hero {
-    display: none;
+    отображается: ничего;
   }
 }
 
-/* Quick Start Banner */
+/* Быстрое стартовое знамя */
 .quick-start-banner {
-  background-color: var(--bg-card);
+  цвет фона: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  радиус границы: 12px;
   padding: 3rem 2rem;
   text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
+  нижняя часть: 4rem;
+  позиция: относительный;
   overflow: hidden;
 }
 
 .quick-start-banner h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.75rem;
+  шрифт-вес: 700;
+  цвет: var(--text-main);
+  нижняя часть: 0.75rem;
 }
 
 .quick-start-banner p {
-  color: var(--text-muted);
+  цвет: var(--text-muted);
   font-size: 1.05rem;
-  margin-bottom: 1.75rem;
+  нижняя часть: 1,75rem;
   max-width: 580px;
-  margin-left: auto;
-  margin-right: auto;
+  левое поле: авто;
+  правое поле: авто;
 }
 
-/* Code block / Directory tree */
+/* Блок кода / Дерево каталогов */
 .code-block {
-  background-color: var(--bg-tertiary);
+  цвет фона: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  радиус границы: 8px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  нижняя часть: 1.5rem;
 }
 
 .code-header {
-  background-color: var(--bg-secondary);
+  цвет фона: var(--bg-secondary);
   padding: 0.55rem 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  дисплей: flex;
+  justify-content: космическая между;
+  выравнивание пунктов: центр;
   font-size: 0.82rem;
-  color: var(--text-muted);
+  цвет: var(--text-muted);
   border-bottom: 1px solid var(--border-color);
 }
 
 .btn-copy {
-  background-color: var(--border-color);
-  border: none;
-  color: var(--text-main);
+  цвет фона: var(--border-color);
+  граница: отсутствует;
+  цвет: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  cursor: pointer;
+  курсор курсора: указатель;
 }
 
 .btn-copy:hover {
@@ -613,178 +613,178 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  line-height: 1.5;
-  color: var(--text-main);
+  высота линии: 1,5;
+  цвет: var(--text-main);
   overflow-x: auto;
 }
 
-/* Ordered instructions */
+/* Упорядоченные инструкции */
 .ordered-instructions {
-  margin-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
+  левое поле: 1.4rem;
+  дисплей: flex;
+  направление искривления: колонка;
   gap: 0.85rem;
-  margin-bottom: 1.5rem;
+  нижняя часть: 1.5rem;
 }
 
 .ordered-instructions li {
   font-size: 0.95rem;
-  color: var(--text-main);
+  цвет: var(--text-main);
   padding-left: 0.3rem;
 }
 
-/* Controller Physical Button Tokens */
+/* Маркеры физической кнопки контроллера */
 .controller-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  отображение: inline-flex;
+  выравнивание пунктов: центр;
+  justify-content: центр;
   font-family: var(--font-main);
-  font-weight: 700;
-  color: #f8fafc;
-  background-color: #334155;
-  border: 1px solid #64748b;
-  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
+  шрифт-вес: 700;
+  цвет: #f8fafc;
+  цвет фона: #334155;
+  граница: 1px твердый #64748b;
+  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0.3);
   user-select: none;
-  vertical-align: middle;
-  line-height: 1;
-  margin: 0 0.15rem;
+  вертикальное выравнивание: середина;
+  высота линии: 1;
+  поля: 0 0.15rem;
 }
 
 .controller-btn.btn-round {
   width: 24px;
-  height: 24px;
+  высота: 24px;
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-shoulder {
-  padding: 0 0.55rem;
-  height: 24px;
-  border-radius: 6px;
+  разгрузка: 0 0.55rem;
+  высота: 24px;
+  радиус границы: 6px;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-pill {
-  padding: 0 0.65rem;
-  height: 24px;
-  border-radius: 12px;
+  разгрузка: 0 0.65rem;
+  высота: 24px;
+  радиус границы: 12px;
   font-size: 0.74rem;
-  letter-spacing: 0.04em;
+  bukva-space: 0.04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  height: 24px;
+  высота: 24px;
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  display: block;
+  дисп: блок;
 }
 
-/* Feature Grid */
+/* Функциональная сетка */
 .feature-grid {
-  display: grid;
+  отображается: таблица;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
 .feature-card {
-  background-color: var(--bg-card);
+  цвет фона: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  радиус границы: 8px;
   padding: 1.6rem;
 }
 
 .feature-card h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
+  шрифт-вес: 700;
+  цвет: var(--text-main);
+  нижняя часть: 0,5rem;
 }
 
 .feature-card p {
-  color: var(--text-muted);
+  цвет: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.6;
+  высота линии: 1.6;
 }
 
 .feature-card a {
-  color: var(--accent-light);
+  цвет: var(--accent-light);
 }
 
 .feature-card a:hover {
-  text-decoration: underline;
+  текстовое оформление: подчеркивание;
 }
 
-/* FAQ List */
+/* Список ЧаВо */
 .faq-list {
-  display: flex;
-  flex-direction: column;
+  дисплей: flex;
+  направление искривления: колонка;
   gap: 0.85rem;
 }
 
 .faq-item {
-  background-color: var(--bg-card);
+  цвет фона: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  радиус границы: 8px;
   overflow: hidden;
 }
 
 .faq-question {
   width: 100%;
-  background-color: transparent;
-  border: none;
+  фоновый цвет: прозрачный;
+  граница: отсутствует;
   padding: 1.15rem 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
+  дисплей: flex;
+  justify-content: космическая между;
+  выравнивание пунктов: центр;
+  выравнивание текста: влево;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-main);
-  cursor: pointer;
+  цвет: var(--text-main);
+  курсор курсора: указатель;
 }
 
 .faq-indicator {
   font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--accent-light);
+  шрифт-вес: 400;
+  цвет: var(--accent-light);
 }
 
 .faq-answer {
-  max-height: 0;
+  max-высота: 0;
   overflow: hidden;
-  transition: max-height 0.25s ease;
+  переход: простая максимальная высота 0.25;
 }
 
 .faq-answer p {
-  padding: 0 1.4rem 1.3rem;
-  color: var(--text-muted);
+  разгрузка: 0 1.4rem 1.3rem;
+  цвет: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.65;
+  высота линии: 1.65;
 }
 
-/* Footer */
+/* Нижний колонтитул */
 .footer {
   padding: 2.2rem 0;
-  background-color: var(--bg-secondary);
+  цвет фона: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
   text-align: center;
-  color: var(--text-dim);
+  цвет: var(--text-dim);
   font-size: 0.82rem;
 }
 
-/* Responsive */
+/* Адаптивный */
 @media (max-width: 768px) {
   .step-card {
-    grid-template-columns: 1fr;
+    столбцы таблицы-шаблона: 1fr;
     gap: 0.6rem;
   }
 
@@ -793,42 +793,42 @@ a.btn-discord:hover {
   }
 
   .nav-links {
-    display: none;
+    отображается: ничего;
   }
 
-  .page-header h1,
-  .hero-section h1,
+  .page-заголовок h1,
+  .hero-сечение h1,
   .animated-title {
     font-size: 2.2rem;
   }
 }
 
-/* Light Mode Support */
+/* Поддержка легкого режима */
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-primary: #f8fafc;
-    --bg-secondary: #f1f5f9;
+    --bg-главный: #f8fafc;
+    --bg-вторичный: #f1f5f9;
     --bg-tertiary: #e2e8f0;
-    --bg-card: #ffffff;
+    --bg-карта: #ffffff;
     --border-color: #cbd5e1;
     --border-hover: #94a3b8;
 
     --text-main: #0f172a;
-    --text-muted: #334155;
+    --text-мут: #334155;
     --text-dim: #64748b;
   }
   
-  /* Adjust shadows for light mode */
-  .guide-image,
-  .hero-icon,
+  /* Регулировка теней для светлого режима */
+  .guide-изображение,
+  икона героя,
   .discord-ui-mockup {
     box-shadow: none;
   }
 
-  .mii-card-corner,
-  .mii-card-corner-lounging,
+  .mii-card-угол,
+  .mii-карт-угловой гостиной,
   .mii-overlap-hero {
-    filter: none;
+    фильтр: отсутствует;
   }
 
   .controller-btn {
@@ -836,230 +836,230 @@ a.btn-discord:hover {
   }
 }
 
-/* Discord UI Mockup Section */
+/* Установка UI в Discord UI раздел */
 .discord-ui-section {
   overflow: hidden;
 }
 
 .discord-ui-layout {
-  display: flex;
-  align-items: center;
+  дисплей: flex;
+  выравнивание пунктов: центр;
   gap: 3rem;
 }
 
 .discord-ui-text {
-  flex: 1;
+  искривление: 1;
 }
 
 .discord-ui-text h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  нижняя часть: 1rem;
 }
 
 .discord-ui-text .btn-fullwidth {
-  display: inline-flex;
+  отображение: inline-flex;
   width: auto;
-  margin-top: 1rem;
+  маржинальная сверху: 1rem;
 }
 
 .discord-ui-mockup {
-  flex: 1;
-  background-color: #313338;
-  border-radius: 8px;
+  искривление: 1;
+  цвет фона: #313338;
+  радиус границы: 8px;
   overflow: hidden;
-  border: 1px solid #1e1f22;
+  граница: 1px твердый #1e1f22;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   font-family: var(--font-body);
-  color: #dbdee1;
+  цвет: #dbdee1;
   min-width: 350px;
 }
 
 .discord-ui-header {
-  background-color: #2b2d31;
-  padding: 12px 16px;
+  цвет фона: #2b2d31;
+  добавление: 12px 16px;
   font-weight: 600;
-  border-bottom: 1px solid #1e1f22;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #f2f3f5;
+  граница-снизу: 1px твердый #1e1f22;
+  дисплей: flex;
+  выравнивание пунктов: центр;
+  разрыва: 8px;
+  цвет: #f2f3f5;
 }
 
 .discord-ui-header .hashtag {
-  color: #80848e;
+  цвет: #80848;
   font-size: 1.2rem;
 }
 
 .discord-ui-messages {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  дисплей: flex;
+  направление искривления: колонка;
   gap: 16px;
 }
 
 .discord-msg {
-  display: flex;
+  дисплей: flex;
   gap: 16px;
-  opacity: 0;
-  transform: translateY(10px);
+  непрозрачность: 0;
+  преобразование: translateY(10px);
 }
 
 .discord-avatar {
   width: 40px;
-  height: 40px;
+  высота: 40px;
   border-radius: 50%;
-  object-fit: cover;
-  background-color: #2b2d31;
+  - объект: обложка;
+  цвет фона: #2b2d31;
 }
 
 .discord-msg-content {
-  flex: 1;
+  искривление: 1;
 }
 
 .discord-msg-header {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin-bottom: 4px;
+  дисплей: flex;
+  выравнивание элементов: базовая линия;
+  разрыва: 8px;
+  поле снизу: 4px;
 }
 
 .discord-user {
-  font-weight: 500;
-  color: #f2f3f5;
+  шрифт-вес: 500;
+  цвет: #f2f3f5;
 }
 
 .discord-user.admin-user {
-  color: #eb459e; /* Pink role color */
+  цвет: #eb459e; /* Розовый цвет */
 }
 
 .discord-time {
   font-size: 0.75rem;
-  color: #949ba4;
+  цвет: #949ba4;
 }
 
 .discord-msg p {
-  color: #dbdee1;
+  цвет: #dbdee1;
   font-size: 0.95rem;
-  line-height: 1.4;
-  margin: 0;
+  высота линии: 1.4;
+  поля: 0;
 }
 
-/* Animations for Discord Mockup */
+/* Анимация для Discord Mockup */
 .start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
 .start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
 .start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
 
 @keyframes popIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  в {
+    непрозрачность: 1;
+    преобразование: translateY(0);
   }
 }
 
-/* Mods Grid */
+/* Сетка модов */
 .mods-grid {
-  display: grid;
+  отображается: таблица;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  маржинальная сверху: 2rem;
 }
 
 .mod-card {
-  background-color: var(--bg-card);
+  цвет фона: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  радиус границы: 8px;
   padding: 2rem 1rem;
   text-align: center;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  переход: все 0,2 легко;
+  дисплей: flex;
+  направление искривления: колонка;
+  выравнивание пунктов: центр;
   gap: 0.75rem;
 }
 
 .mod-avatar {
   width: 80px;
-  height: 80px;
+  высота: 80px;
   border-radius: 50%;
-  background-color: var(--bg-tertiary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  цвет фона: var(--bg-tertiary);
+  дисплей: flex;
+  выравнивание пунктов: центр;
+  justify-content: центр;
   font-size: 2rem;
   font-weight: 600;
-  color: var(--text-muted);
+  цвет: var(--text-muted);
   overflow: hidden;
 }
 
 .mod-avatar img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  высота: 100%;
+  - объект: обложка;
 }
 
 .mod-name {
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--text-main);
+  цвет: var(--text-main);
 }
 
 .mod-username {
   font-size: 0.9rem;
-  color: var(--text-dim);
+  цвет: var(--text-dim);
 }
 
-/* Juxtaposition Carousel */
+/* Карусель Juxtaposition */
 .juxt-carousel-wrapper {
   overflow: hidden;
-  position: relative;
+  позиция: относительный;
   width: 100%;
-  margin-top: 2rem;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  маржинальная сверху: 2rem;
+  маска изображения: линейный градиент (справа прозрачный, черный 10%, черный 90%, прозрачность);
+  -webkit-mask-image: linear-gradient(направо, прозрачный, черный 10%, черный 90%, прозрачность);
 }
 
 .juxt-carousel {
-  display: flex;
+  дисплей: flex;
   width: fit-content;
-  animation: scrollCarousel 20s linear infinite;
+  анимация: scrollCarousel 20s линейный бесконечный;
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  animation-play-state: paused;
+  анимационное воспроизведение: приостановлено;
 }
 
 .juxt-post {
-  background-color: var(--bg-card);
+  цвет фона: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  радиус границы: 12px;
   padding: 1.25rem;
   width: 320px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  осветление: 0;
+  дисплей: flex;
+  направление искривления: ряд;
+  выравнивание пунктов: центр;
   gap: 1rem;
-  text-align: left;
+  выравнивание текста: влево;
 }
 
 .juxt-post img {
   width: 64px;
-  height: 64px;
-  border-radius: 8px;
-  object-fit: cover;
+  высота: 64px;
+  радиус границы: 8px;
+  - объект: обложка;
 }
 
-.juxt-content strong {
-  display: block;
+.juxt-content сильная {
+  дисп: блок;
   font-size: 1.1rem;
-  color: var(--accent-cyan);
-  margin-bottom: 0.5rem;
+  цвет: var(--accent-cyan);
+  нижняя часть: 0,5rem;
 }
 
 .juxt-content p {
   font-size: 0.95rem;
-  margin: 0;
+  поля: 0;
 }
 
 @keyframes scrollCarousel {
@@ -1069,7 +1069,7 @@ a.btn-discord:hover {
 
 @media (max-width: 900px) {
   .discord-ui-layout {
-    flex-direction: column;
+    направление искривления: колонка;
   }
   .discord-ui-mockup {
     width: 100%;
@@ -1077,5 +1077,5 @@ a.btn-discord:hover {
 }
 
 .feature-logo {
-  margin-bottom: 1rem;
+  нижняя часть: 1rem;
 }
