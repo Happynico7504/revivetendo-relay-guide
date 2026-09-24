@@ -1,150 +1,150 @@
 /* ==========================================================================
-   شبكة Revivetendo Relay - نظام تصميم CSS صلب نظيف
+   Revivetendo Relay Network — Clean Solid CSS Design System
    ========================================================================== */
 
 :root {
-  /* لوحة ألوان صلبة - لا يوجد تردد أو تدفقات */
-  --bg-اساسي: #0f1117;
-  --bg-second: #161821;
-  --bg-terti: #1e202b;
+  /* Solid Color Palette - No Gradients or Glows */
+  --bg-primary: #0f1117;
+  --bg-secondary: #161821;
+  --bg-tertiary: #1e202b;
   --bg-card: #181a24;
-  --لون الحدود: #2a2d3d;
+  --border-color: #2a2d3d;
   --border-hover: #3d4259;
 
-  --النص الرئيسي: #f1f5f9;
-  --كتم النص: #94a3b8;
-  --دينام: #64748b;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
 
-  ---cyan: #0284c7;
+  --accent-cyan: #0284c7;
   --accent-cyan-hover: #0369a1;
-  --ضوء: #38bdf8;
-  --البنفسجي: #7c3a;
-  --أكسنت-أخضر: #059669;
+  --accent-light: #38bdf8;
+  --accent-purple: #7c3aed;
+  --accent-green: #059669;
 
-  /* تصوير نظيف */
-  --الخط الرئيسي: 'Outfit', -apple-system، BlinkMacSystemFont, sans-serif;
-  --خط الخط: 'Plus Jakarta Sans', -apple-system، BlinkMacSystemFont, sans-serif;
+  /* Clean Typography */
+  --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
 
 * {
-  حجم الصندوق: صندوق الحدود؛
-  الهامش: 0؛
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
 }
 
 html {
-  تمرير السلوك: سلس؛
+  scroll-behavior: smooth;
   font-family: var(--font-body);
-  الخلفية-اللون: var(--bg-بدائية)؛
-  اللون: var(--text-main)؛
+  background-color: var(--bg-primary);
+  color: var(--text-main);
 }
 
-الجسم {
-  طول الخط: 1.6؛
+body {
+  line-height: 1.6;
 }
 
-حاوية {
-  العرض الأقصى: 980px;
-  الهامش: صفر تلقائيا؛
+.container {
+  max-width: 980px;
+  margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* الروابط - سماوي سماوي عالي التباين */
-محرر:
-  اللون: var(--أكسنت)؛
-  زخرفة النص: تحديد؛
-  خط النص: 3px؛
-  انتقال: لون 0.15s سهل;
+/* Links - High Contrast Bright Cyan */
+a {
+  color: var(--accent-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
 }
 
 a:hover {
-  اللون: #7dd3fc;
+  color: #7dd3fc;
 }
 
 /* Navigation */
 .navbar {
-  المنصب: مثبت؛
-  الأعلى: 0؛
-  z-index: 100؛
-  الخلفية-اللون: var(--bg-secondary)؛
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
 }
 
 .nav-container {
-  العرض: مربع؛
-  موازنة: المركز؛
-  التبرير المحتوى: الفضاء بين؛
-  الطول: 64 بكسل؛
-  العرض الأقصى: 980px;
-  الهامش: صفر تلقائيا؛
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  max-width: 980px;
+  margin: 0 auto;
   padding: 0 1.5rem;
 }
 
 .brand {
-  العرض: مربع؛
-  موازنة: المركز؛
+  display: flex;
+  align-items: center;
   gap: 0.75rem;
-  زينة النص: لا شيء مهم؛
+  text-decoration: none !important;
 }
 
 .brand-icon {
   width: 34px;
-  الطول: 34 بكسل؛
-  نصف قطر الحدود: 8px؛
-  تناسب الكائن: يحتوي
+  height: 34px;
+  border-radius: 8px;
+  object-fit: contain;
 }
 
 .brand-title {
   font-family: var(--font-main);
-  وزن الخط: 700؛
+  font-weight: 700;
   font-size: 1.15rem;
-  اللون: var(--text-main)؛
+  color: var(--text-main);
 }
 
-روابط .nav-{
-  العرض: مربع؛
+.nav-links {
+  display: flex;
   gap: 2rem;
 }
 
 .nav-link {
-  اللون: var(--كتم النص)؛
-  زينة النص: لا شيء مهم؛
+  color: var(--text-muted);
+  text-decoration: none !important;
   font-size: 0.95rem;
-  وزن الخط: 500؛
-  انتقال: لون 0.15s سهل;
+  font-weight: 500;
+  transition: color 0.15s ease;
 }
 
 .nav-link:hover {
-  اللون: var(--text-main)؛
+  color: var(--text-main);
 }
 
-/* رأس الصفحة */
-.page-hehead{
+/* Page Header */
+.page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
-  أسفل الهامش: 3rem;
+  margin-bottom: 3rem;
 }
 
-.page-H1 {
+.page-header h1 {
   font-family: var(--font-main);
   font-size: 2.3rem;
-  وزن الخط: 700؛
-  اللون: var(--text-main)؛
-  أسفل الهامش: 0.8 مليون؛
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.8rem;
 }
 
 .page-description {
   font-size: 1.05rem;
-  اللون: var(--كتم النص)؛
-  العرض الأقصى: 780px;
-  طول الخط: 1.65؛
+  color: var(--text-muted);
+  max-width: 780px;
+  line-height: 1.65;
 }
 
-/* أنماط القسم المشتركة */
-.guide-sect،
+/* Section Shared Styles */
+.guide-section,
 .content-section {
-  أسفل الهامش: 4rem؛
+  margin-bottom: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
 }
@@ -153,334 +153,334 @@ a:hover {
 .content-section h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
-  وزن الخط: 700؛
-  اللون: var(--text-main)؛
-  أسفل الهامش: 0.4rem؛
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.4rem;
 }
 
 .section-lead {
   font-size: 1rem;
-  اللون: var(--كتم النص)؛
-  أسفل الهامش: 2rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
 }
 
-/* بطاقات الخطوات */
+/* Step Cards */
 .steps-list {
-  العرض: مربع؛
-  الاتجاه المربع: العمود؛
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
 .step-card {
-  العرض: شبكة؛
-  أعمدة شبكة-قالب: 85px 1fr؛
+  display: grid;
+  grid-template-columns: 85px 1fr;
   gap: 1.8rem;
-  الخلفية-اللون: var(--bg-card)؛
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  المنصب النسبي؛
+  position: relative;
   overflow: hidden;
 }
 
 .step-number {
   font-family: var(--font-main);
   font-size: 1.05rem;
-  وزن الخط: 700؛
-  اللون: var(--أكسنت)؛
-  تحويل النص: الارتفاع؛
-  المباعدة بين الرسائل: 0.05 مم؛
+  font-weight: 700;
+  color: var(--accent-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   padding-top: 0.1rem;
 }
 
 .step-content h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
-  وزن الخط: 700؛
-  اللون: var(--text-main)؛
-  أسفل الهامش: 0.6 ريف؛
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
 }
 
 .step-content p {
-  اللون: var(--text-main)؛
+  color: var(--text-main);
   font-size: 0.98rem;
-  أسفل الهامش: 1.25ر;
+  margin-bottom: 1.25rem;
 }
 
 .step-note {
-  حجم الخط: 0.9عام!هام؛
-  اللون: var(--كتم النص) !هام؛
-  أعلى الهامش: 1rem;
-  أسفل الهامش: 0 مهم;
+  font-size: 0.9rem !important;
+  color: var(--text-muted) !important;
+  margin-top: 1rem;
+  margin-bottom: 0 !important;
 }
 
-/* دليل الصور المرجعية - نسبة الجوانب الطبيعية، لا مناطق سوداء */
+/* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
 .guide-image-container {
-  الهامش: 1.5عام صفر؛
+  margin: 1.5rem 0;
   width: 100%;
 }
 
 .guide-image {
   width: 100%;
-  العرض الأقصى: 580px;
-  الطول: التلقائي؛
-  العرض: الكتلة؛
+  max-width: 580px;
+  height: auto;
+  display: block;
   border: 1px solid var(--border-color);
-  نصف قطر الحدود: 8px؛
-  صندوق الظل: 0 4 px 14 px rgba(0, 0, 0, 0.35)؛
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
-.image-Comtion {
+.image-caption {
   font-size: 0.82rem;
-  اللون: var(--text-dim)؛
-  أعلى الهامش: 0.5 ريف؛
-  العرض: الكتلة؛
+  color: var(--text-dim);
+  margin-top: 0.5rem;
+  display: block;
 }
 
-/* نظيف الصناديق داخل الخطوات */
+/* Clean Boxes inside steps */
 .info-box {
-  الخلفية-اللون: var(--bg-tertiary)؛
+  background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  نصف قطر الحدود: 8px؛
+  border-radius: 8px;
   padding: 1.25rem 1.4rem;
-  أسفل الهامش: 1.5rem؛
+  margin-bottom: 1.5rem;
 }
 
 .info-box h4 {
   font-size: 0.95rem;
-  وزن الخط: 700؛
-  اللون: var(--text-main)؛
-  أسفل الهامش: 0.4rem؛
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.4rem;
 }
 
 .info-box p {
-  حجم الخط: 0.92 ريم !هام؛
-  اللون: var(--كتم النص) !هام؛
-  الهامش: 0 !هام؛
+  font-size: 0.92rem !important;
+  color: var(--text-muted) !important;
+  margin: 0 !important;
 }
 
 .requirements-list {
-  الخلفية-اللون: var(--bg-tertiary)؛
+  background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  نصف قطر الحدود: 8px؛
+  border-radius: 8px;
   padding: 1.25rem 1.4rem;
 }
 
 .requirements-list h4 {
   font-size: 0.95rem;
-  وزن الخط: 700؛
-  اللون: var(--text-main)؛
-  أسفل الهامش: 0.6 ريف؛
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
 }
 
 .requirements-list ul {
-  نوع القائمة: قرص
-  الهامش يسارا: 1.25ر؛
-  العرض: مربع؛
-  الاتجاه المربع: العمود؛
+  list-style-type: disc;
+  margin-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
 .requirements-list li {
   font-size: 0.92rem;
-  اللون: var(--text-main)؛
+  color: var(--text-main);
 }
 
-/* صندوق العمل */
+/* Action Box */
 .action-box {
-  الخلفية-اللون: var(--bg-tertiary)؛
+  background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  نصف قطر الحدود: 8px؛
+  border-radius: 8px;
   padding: 1.25rem 1.4rem;
-  العرض: مربع؛
-  موازنة: المركز؛
-  التبرير المحتوى: الفضاء بين؛
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 1.5rem;
-  أسفل الهامش: 1.5rem؛
-  مغلفة مرنة: تغلف؛
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .action-box h4 {
   font-size: 1.05rem;
-  اللون: var(--text-main)؛
-  وزن الخط: 700؛
-  أسفل الهامش: 0.15rem؛
+  color: var(--text-main);
+  font-weight: 700;
+  margin-bottom: 0.15rem;
 }
 
 .text-muted {
-  اللون: var(--كتم النص)؛
+  color: var(--text-muted);
   font-size: 0.85rem;
 }
 
-/* الأزرار - النص الأبيض البحتة على الخلفية السماوية */
+/* Buttons - Pure White Text on Cyan Background */
 .btn,
 a.btn,
 .feature-card a.btn,
 .action-box a.btn {
-  العرض: Inline-flex؛
-  موازنة: المركز؛
-  المبررات: المركز؛
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  الحشود: 0.65عام 1.3رم؛
-  نصف قطر الحدود: 6 بكسل؛
+  padding: 0.65rem 1.3rem;
+  border-radius: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  زينة النص: لا شيء مهم؛
-  الحدود: لا شيء؛
-  المؤشر: مؤشر؛
-  الخلفية-اللون: var(--أكسنت-سيان)؛
-  اللون: #ffffff !مهم;
-  الانتقال: سهل الخلفية - لون 0.15 ثانية؛ سهل اللون الحدودي 0.15 ثانية؛
+  text-decoration: none !important;
+  border: none;
+  cursor: pointer;
+  background-color: var(--accent-cyan);
+  color: #ffffff !important;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .lucide {
-  انكماش مربع: صفر؛
-  المحاذاة الرأسية: الوسط؛
+  flex-shrink: 0;
+  vertical-align: middle;
 }
 
 .btn:hover,
 a.btn:hover,
-.feature-card a.btn:hover
+.feature-card a.btn:hover,
 .action-box a.btn:hover {
-  الخلفية-اللون: var(--أكسنت-سيان-هوفر)؛
-  اللون: #ffffff !مهم;
+  background-color: var(--accent-cyan-hover);
+  color: #ffffff !important;
 }
 
-.btn-ثانوي،
+.btn-secondary,
 a.btn-secondary {
-  الخلفية-اللون: var(--bg-tertiary) !مهم؛
+  background-color: var(--bg-tertiary) !important;
   border: 1px solid var(--border-color) !important;
-  اللون: var(--text-main) !مهم;
+  color: var(--text-main) !important;
 }
 
-.btn-secondary:hover
+.btn-secondary:hover,
 a.btn-secondary:hover {
-  لون الخلفية-الخلفية:#262938 مهم;
+  background-color: #262938 !important;
   border-color: var(--border-hover) !important;
-  اللون: #ffffff !مهم;
+  color: #ffffff !important;
 }
 
 .btn-discord,
 a.btn-discord {
-  لون الخلفية: #5865f2 مهم;
-  اللون: #ffffff !مهم;
+  background-color: #5865f2 !important;
+  color: #ffffff !important;
 }
 
-.btn-discord:hover
+.btn-discord:hover,
 a.btn-discord:hover {
-  لون الخلفية-الخلفية: #4752c4 !هام؛
-  اللون: #ffffff !مهم;
+  background-color: #4752c4 !important;
+  color: #ffffff !important;
 }
 
-/* قسم بطل صفحة النزول */
+/* Landing Page Hero Section */
 .hero-section {
   padding: 5rem 0 3rem;
-  أسفل الحدود: لا شيء مهم؛
-  أسفل الهامش: 3rem;
+  border-bottom: none !important;
+  margin-bottom: 3rem;
   text-align: center;
-  المنصب النسبي؛
-  في: مهم! مرئي؛
+  position: relative;
+  overflow: visible !important;
 }
 
-.hero-أيقونة {
-  العرض: 90px؛
-  الطول: 90 بكسل؛
+.hero-icon {
+  width: 90px;
+  height: 90px;
   border-radius: 22px;
-  الهامش: صفر تلقائي 1.5 رمل؛
-  العرض: الكتلة؛
-  صندوق الظل: 0 8px 24px rgba(0, 0, 0, 0.4)؛
+  margin: 0 auto 1.5rem;
+  display: block;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* الرسوم المتحركة: إسقاط واحد تلو الآخر من أعلى WITHOT (بقاء التعتيم 100%) */
+/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
 @keyframes dropFromTop {
   0% {
-    التحويل: ترجمة Y(-45px)؛
-    بروز: مخفي؛
+    transform: translateY(-45px);
+    visibility: hidden;
   }
   1% {
-    بروز: مرئي؛
+    visibility: visible;
   }
   100% {
-    التحويل: ترجمة Y(0)؛
-    بروز: مرئي؛
+    transform: translateY(0);
+    visibility: visible;
   }
 }
 
 .animated-title {
-  العرض: Inline-flex؛
+  display: inline-flex;
   gap: 0.3em;
-  مغلفة مرنة: تغلف؛
-  المبررات: المركز؛
+  flex-wrap: wrap;
+  justify-content: center;
   font-family: var(--font-main);
   font-size: 3.2rem;
-  وزن الخط: 700؛
-  اللون: var(--text-main)؛
-  أسفل الهامش: 1.1rem؛
-  المباعدة بين الرسائل: -0.02em؛
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 1.1rem;
+  letter-spacing: -0.02em;
 }
 
 .animated-title .word {
-  عرض: كتلة Inline-block؛
-  بروز: مخفي؛
-  الرسوم المتحركة: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) إلى الأمام؛
-  تأخير الرسوم المتحركة: calc(var(--الرسوم المتحركة) * 0.25)؛
+  display: inline-block;
+  visibility: hidden;
+  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
+  animation-delay: calc(var(--animation-order) * 0.25s);
 }
 
-/* مدخل متدرج لجميع المحتويات التي تظهر أسفل كلمة العنوان (~1.08s) */
+/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    التعميم: 0؛
-    التحويل: ترجمة Y(22px)؛
-    بروز: مخفي؛
+    opacity: 0;
+    transform: translateY(22px);
+    visibility: hidden;
   }
   1% {
-    بروز: مرئي؛
+    visibility: visible;
   }
   100% {
-    التعميم: 1؛
-    التحويل: ترجمة Y(0)؛
-    بروز: مرئي؛
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
   }
 }
 
 .stagger-in {
-  التعميم: 0؛
-  بروز: مخفي؛
-  الرسوم المتحركة: ggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) إلى الأمام؛
-  تأخير الرسوم المتحركة: 1.08؛
+  opacity: 0;
+  visibility: hidden;
+  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 1.08s;
 }
 
 .hero-description {
   font-size: 1.2rem;
-  اللون: var(--كتم النص)؛
-  العرض الأقصى: 680px;
-  الهامش: صفر تلقائي 2.5rem؛
-  طول الخط: 1.65؛
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.65;
 }
 
 .hero-buttons {
-  العرض: مربع؛
+  display: flex;
   gap: 1.25rem;
-  المبررات: المركز؛
-  مغلفة مرنة: تغلف؛
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* أحرف Mii وضعت داخل مناطق صندوق فارغ و منبثقة خارج حدود */
-.content-sect،
-.feature-net،
+/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
+.content-section,
+.feature-grid,
 .feature-card,
 .step-card,
-.info-box،
+.info-box,
 .requirements-list {
-  المنصب النسبي؛
-  في: مهم! مرئي؛
+  position: relative;
+  overflow: visible !important;
 }
 
-/* بطاقات الميزات مع الزاوية الخارجية مييس: احتياطي 90px يمين الحشوة على عنوان BOTH والفقرة بحيث يتم حجب ألواح النص نظيفة و صفر الكلمات */
+/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
 .feature-card.has-mii {
-  المنصب النسبي؛
-  في: مهم! مرئي؛
+  position: relative;
+  overflow: visible !important;
 }
 
 .feature-card.has-mii h3,
@@ -489,120 +489,120 @@ a.btn-discord:hover {
 }
 
 .feature-card.has-mii h3 {
-  أسفل الهامش: 0.85 ريف؛
+  margin-bottom: 0.85rem;
 }
 
-.mii-card-زاوية {
-  المنصب: مطلقة؛
+.mii-card-corner {
+  position: absolute;
   right: -24px;
   top: -42px;
-  الطول: 165 بكسل؛
+  height: 165px;
   width: auto;
-  z-index: 10؛
-  فلتر: الظل المسقط (0 10 بكسل 24px rgba(0, 0, 0, 0.65))؛
-  الأحداث: لا شيء؛
+  z-index: 10;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
+  pointer-events: none;
 }
 
-.mii-card-زاوية صفحة{
-  المنصب: مطلقة؛
-  اليمين: -18px;
+.mii-card-corner-lounging {
+  position: absolute;
+  right: -18px;
   top: -50px;
-  الطول: 140px;
+  height: 140px;
   width: auto;
-  z-index: 10؛
-  فلتر: الظل المسقط (0 10 بكسل 24px rgba(0, 0, 0, 0.65))؛
-  الأحداث: لا شيء؛
+  z-index: 10;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
+  pointer-events: none;
 }
 
-/* قسم البطل متداخل من أسفل اليمين
-.mii-overlap-بطل {
-  المنصب: مطلقة؛
+/* Hero section bottom-right overlapping Mii */
+.mii-overlap-hero {
+  position: absolute;
   right: -25px;
-  الأسفل: -45 بكسل؛
-  الطول: 260px؛
+  bottom: -45px;
+  height: 260px;
   width: auto;
-  z-index: 10؛
-  الفلتر : اسقاط الظل (0 16px 36 px rgba(0, 0, 0, 0.7))؛
-  التحويل: التناوب (4deg)؛
-  الأحداث: لا شيء؛
+  z-index: 10;
+  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
+  transform: rotate(4deg);
+  pointer-events: none;
 }
 
 @media (max-width: 900px) {
-  .mii-overlap-بطل {
-    الطول: 180 بكسل؛
-    حق: -10px؛
+  .mii-overlap-hero {
+    height: 180px;
+    right: -10px;
     bottom: -30px;
   }
 }
 
 @media (max-width: 600px) {
   .feature-card.has-mii h3 {
-    اليمين: 0;
+    padding-right: 0;
   }
-  .mii-card-زاوية
-  .mii-overlap-بطل {
-    العرض: لا شيء؛
+  .mii-card-corner,
+  .mii-overlap-hero {
+    display: none;
   }
 }
 
-/* راية البدء السريع */
+/* Quick Start Banner */
 .quick-start-banner {
-  الخلفية-اللون: var(--bg-card)؛
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  نصف قطر الحدود: 12px؛
+  border-radius: 12px;
   padding: 3rem 2rem;
   text-align: center;
-  أسفل الهامش: 4rem؛
-  المنصب النسبي؛
+  margin-bottom: 4rem;
+  position: relative;
   overflow: hidden;
 }
 
 .quick-start-banner h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
-  وزن الخط: 700؛
-  اللون: var(--text-main)؛
-  أسفل الهامش: 0.75 ريف؛
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
 }
 
 .quick-start-banner p {
-  اللون: var(--كتم النص)؛
+  color: var(--text-muted);
   font-size: 1.05rem;
-  أسفل الهامش: 1.75 ريف؛
-  العرض الأقصى: 580px;
-  الهامش اليسار: تلقائياً؛
-  هامش اليمين: تلقائي;
+  margin-bottom: 1.75rem;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* الكتلة البرمجية / شجرة الدليل */
+/* Code block / Directory tree */
 .code-block {
-  الخلفية-اللون: var(--bg-tertiary)؛
+  background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  نصف قطر الحدود: 8px؛
+  border-radius: 8px;
   overflow: hidden;
-  أسفل الهامش: 1.5rem؛
+  margin-bottom: 1.5rem;
 }
 
-ترويسة .code-{
-  الخلفية-اللون: var(--bg-secondary)؛
+.code-header {
+  background-color: var(--bg-secondary);
   padding: 0.55rem 1.2rem;
-  العرض: مربع؛
-  التبرير المحتوى: الفضاء بين؛
-  موازنة: المركز؛
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 0.82rem;
-  اللون: var(--كتم النص)؛
+  color: var(--text-muted);
   border-bottom: 1px solid var(--border-color);
 }
 
-.btn-نسخة {
-  الخلفية-اللون: فار(--لون الحدود)؛
-  الحدود: لا شيء؛
-  اللون: var(--text-main)؛
+.btn-copy {
+  background-color: var(--border-color);
+  border: none;
+  color: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  المؤشر: مؤشر؛
+  cursor: pointer;
 }
 
 .btn-copy:hover {
@@ -613,178 +613,178 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  طول الخط: 1.5؛
-  اللون: var(--text-main)؛
+  line-height: 1.5;
+  color: var(--text-main);
   overflow-x: auto;
 }
 
-/* التعليمات المطلوبة */
-.ordered-instruction {
-  الهامش يسارا: 1.4 رمل؛
-  العرض: مربع؛
-  الاتجاه المربع: العمود؛
+/* Ordered instructions */
+.ordered-instructions {
+  margin-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
   gap: 0.85rem;
-  أسفل الهامش: 1.5rem؛
+  margin-bottom: 1.5rem;
 }
 
-.ordered-instruction li {
+.ordered-instructions li {
   font-size: 0.95rem;
-  اللون: var(--text-main)؛
+  color: var(--text-main);
   padding-left: 0.3rem;
 }
 
-/* رمز الزر المادي للسيطرة */
+/* Controller Physical Button Tokens */
 .controller-btn {
-  العرض: Inline-flex؛
-  موازنة: المركز؛
-  المبررات: المركز؛
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-main);
-  وزن الخط: 700؛
-  اللون: #f8fafc؛
-  الخلفية-اللون: #334155;
-  الحدود: 1px صلب #64748b؛
-  ظلال الصندوق: 0 2px 0 #0f172a، 0 3px 3 px rgba(0، 0، 0، 0.3)؛
-  اختيار المستخدم: لا شيء؛
-  المحاذاة الرأسية: الوسط؛
-  طول الخط: 1؛
-  الهامش: 0 0.15 ريم؛
+  font-weight: 700;
+  color: #f8fafc;
+  background-color: #334155;
+  border: 1px solid #64748b;
+  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  vertical-align: middle;
+  line-height: 1;
+  margin: 0 0.15rem;
 }
 
-.controller-btn.btn-round{
+.controller-btn.btn-round {
   width: 24px;
-  الطول: 24 بكسل؛
+  height: 24px;
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-shoulder {
-  الحشود: 0.55 ملم؛
-  الطول: 24 بكسل؛
-  نصف قطر الحدود: 6 بكسل؛
+  padding: 0 0.55rem;
+  height: 24px;
+  border-radius: 6px;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-pill {
-  الحشد: 0.65 ملم؛
-  الطول: 24 بكسل؛
-  نصف قطر الحدود: 12px؛
+  padding: 0 0.65rem;
+  height: 24px;
+  border-radius: 12px;
   font-size: 0.74rem;
-  المباعدة بين الرسائل: 0.04 مم؛
+  letter-spacing: 0.04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  الطول: 24 بكسل؛
+  height: 24px;
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  العرض: الكتلة؛
+  display: block;
 }
 
-/* شبكة الميزات */
-.feature-gnet{
-  العرض: شبكة؛
-  أعمدة شبكة-قالب التكرار: التكرار (التلائم التلقائي، minmax(280px, 1fr))؛
+/* Feature Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
 .feature-card {
-  الخلفية-اللون: var(--bg-card)؛
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  نصف قطر الحدود: 8px؛
+  border-radius: 8px;
   padding: 1.6rem;
 }
 
 .feature-card h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
-  وزن الخط: 700؛
-  اللون: var(--text-main)؛
-  أسفل الهامش: 0.5 ريف؛
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
 }
 
 .feature-card p {
-  اللون: var(--كتم النص)؛
+  color: var(--text-muted);
   font-size: 0.92rem;
-  طول الخط: 1.6؛
+  line-height: 1.6;
 }
 
-.feature-card {
-  اللون: var(--أكسنت)؛
+.feature-card a {
+  color: var(--accent-light);
 }
 
 .feature-card a:hover {
-  زخرفة النص: تحديد؛
+  text-decoration: underline;
 }
 
-/* قائمة الأسئلة المتكررة */
+/* FAQ List */
 .faq-list {
-  العرض: مربع؛
-  الاتجاه المربع: العمود؛
+  display: flex;
+  flex-direction: column;
   gap: 0.85rem;
 }
 
 .faq-item {
-  الخلفية-اللون: var(--bg-card)؛
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  نصف قطر الحدود: 8px؛
+  border-radius: 8px;
   overflow: hidden;
 }
 
 .faq-question {
   width: 100%;
-  لون الخلفية: شفافية؛
-  الحدود: لا شيء؛
+  background-color: transparent;
+  border: none;
   padding: 1.15rem 1.4rem;
-  العرض: مربع؛
-  التبرير المحتوى: الفضاء بين؛
-  موازنة: المركز؛
-  محاذاة النص: يسار؛
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
-  اللون: var(--text-main)؛
-  المؤشر: مؤشر؛
+  color: var(--text-main);
+  cursor: pointer;
 }
 
-.faq-Indic{
+.faq-indicator {
   font-size: 1.25rem;
-  وزن الخط: 400؛
-  اللون: var(--أكسنت)؛
+  font-weight: 400;
+  color: var(--accent-light);
 }
 
-إجابة.faq-answer {
-  الطول الأقصى: 0;
+.faq-answer {
+  max-height: 0;
   overflow: hidden;
-  الانتقال: الطول الأقصى 0.25 ثانية؛
+  transition: max-height 0.25s ease;
 }
 
 .faq-answer p {
-  حشود: 0 1.4ررم 1.3رم؛
-  اللون: var(--كتم النص)؛
+  padding: 0 1.4rem 1.3rem;
+  color: var(--text-muted);
   font-size: 0.92rem;
-  طول الخط: 1.65؛
+  line-height: 1.65;
 }
 
-/* تذييل الصفحة */
+/* Footer */
 .footer {
   padding: 2.2rem 0;
-  الخلفية-اللون: var(--bg-secondary)؛
+  background-color: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
   text-align: center;
-  اللون: var(--text-dim)؛
+  color: var(--text-dim);
   font-size: 0.82rem;
 }
 
-/* استجابة */
+/* Responsive */
 @media (max-width: 768px) {
   .step-card {
-    أعمدة قالب الشبكة: 1fr؛
+    grid-template-columns: 1fr;
     gap: 0.6rem;
   }
 
@@ -792,284 +792,284 @@ a.btn-discord:hover {
     padding-top: 0;
   }
 
-  روابط .nav-{
-    العرض: لا شيء؛
+  .nav-links {
+    display: none;
   }
 
-  .page-الترويسة h1,
+  .page-header h1,
   .hero-section h1,
   .animated-title {
     font-size: 2.2rem;
   }
 }
 
-/* دعم الوضع الخفيف */
-@media (تفضل-color-scheme: light) {
+/* Light Mode Support */
+@media (prefers-color-scheme: light) {
   :root {
-    --bg-preary: #f8fafc;
-    --bg-second: #f1f5f9;
+    --bg-primary: #f8fafc;
+    --bg-secondary: #f1f5f9;
     --bg-tertiary: #e2e8f0;
     --bg-card: #ffffff;
     --border-color: #cbd5e1;
     --border-hover: #94a3b8;
 
-    --النص الرئيسي: #0f172a;
-    --كتم النص: #334155;
-    --دينام: #64748b;
+    --text-main: #0f172a;
+    --text-muted: #334155;
+    --text-dim: #64748b;
   }
   
-  /* ضبط الظلال لوضع الضوء */
-  .guide-image،
-  أيقونة البطار,
+  /* Adjust shadows for light mode */
+  .guide-image,
+  .hero-icon,
   .discord-ui-mockup {
-    ظل المربع: لا شيء؛
+    box-shadow: none;
   }
 
-  .mii-card-زاوية
-  صاعقة .mii-card-زاوية
-  .mii-overlap-بطل {
-    فلتر: لا شيء؛
+  .mii-card-corner,
+  .mii-card-corner-lounging,
+  .mii-overlap-hero {
+    filter: none;
   }
 
   .controller-btn {
-    صندوق الظل: 0 2px 0 #0f172a؛
+    box-shadow: 0 2px 0 #0f172a;
   }
 }
 
-* قسم نموذج واجهة المستخدم في ديسكورد*/
-.discord-ui-Sec{
+/* Discord UI Mockup Section */
+.discord-ui-section {
   overflow: hidden;
 }
 
-.discord-ui-تخطيط {
-  العرض: مربع؛
-  موازنة: المركز؛
+.discord-ui-layout {
+  display: flex;
+  align-items: center;
   gap: 3rem;
 }
 
 .discord-ui-text {
-  المربعة: 1؛
+  flex: 1;
 }
 
 .discord-ui-text h2 {
   font-size: 2rem;
-  أسفل الهامش: 1rem;
+  margin-bottom: 1rem;
 }
 
-.discord-ui-text .btn-fullth Id.
-  العرض: Inline-flex؛
+.discord-ui-text .btn-fullwidth {
+  display: inline-flex;
   width: auto;
-  أعلى الهامش: 1rem;
+  margin-top: 1rem;
 }
 
 .discord-ui-mockup {
-  المربعة: 1؛
-  الخلفية-اللون: #313338;
-  نصف قطر الحدود: 8px؛
+  flex: 1;
+  background-color: #313338;
+  border-radius: 8px;
   overflow: hidden;
-  الحدود: 1px صلب #1e1f22;
-  صندوق الظل: 0 8px 24px rgba(0, 0, 0, 0.4)؛
+  border: 1px solid #1e1f22;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   font-family: var(--font-body);
-  اللون: #dbdee1;
+  color: #dbdee1;
   min-width: 350px;
 }
 
-.discord-ui-hehead{
-  لون الخلفية: #2b2d31;
-  الحشوة: 12px 16 px؛
+.discord-ui-header {
+  background-color: #2b2d31;
+  padding: 12px 16px;
   font-weight: 600;
-  القاعدة الحدودية: 1px صلب #1e1f22;
-  العرض: مربع؛
-  موازنة: المركز؛
-  الثغرة: 8px؛
-  اللون: #f2f3f5;
+  border-bottom: 1px solid #1e1f22;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #f2f3f5;
 }
 
-.discord-ui-hehead.hashtag {
-  اللون: #80848;
+.discord-ui-header .hashtag {
+  color: #80848e;
   font-size: 1.2rem;
 }
 
-.discord-ui-message {
+.discord-ui-messages {
   padding: 16px;
-  العرض: مربع؛
-  الاتجاه المربع: العمود؛
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
 .discord-msg {
-  العرض: مربع؛
+  display: flex;
   gap: 16px;
-  التعميم: 0؛
-  التحويل: ترجمة Y(10px)؛
+  opacity: 0;
+  transform: translateY(10px);
 }
 
-.discord-Imatar {
-  العرض: 40 بكسل؛
-  الطول: 40 بكسل؛
+.discord-avatar {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  تناسب الكائن: غلاف
-  لون الخلفية: #2b2d31;
+  object-fit: cover;
+  background-color: #2b2d31;
 }
 
 .discord-msg-content {
-  المربعة: 1؛
+  flex: 1;
 }
 
-.discord-msg-hehead{
-  العرض: مربع؛
-  بنود المواءمة: خط الأساس؛
-  الثغرة: 8px؛
-  أسفل الهامش: 4px؛
+.discord-msg-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 4px;
 }
 
 .discord-user {
-  وزن الخط: 500؛
-  اللون: #f2f3f5;
+  font-weight: 500;
+  color: #f2f3f5;
 }
 
 .discord-user.admin-user {
-  اللون: #eb459e; /* لون الدور الوردي */
+  color: #eb459e; /* Pink role color */
 }
 
-.discordtime{
+.discord-time {
   font-size: 0.75rem;
-  اللون: #949ba4;
+  color: #949ba4;
 }
 
 .discord-msg p {
-  اللون: #dbdee1;
+  color: #dbdee1;
   font-size: 0.95rem;
-  طول الخط: 1.4؛
-  الهامش: 0؛
+  line-height: 1.4;
+  margin: 0;
 }
 
-/* الرسوم المتحركة لمثال ديسكورد */
-.start-anim .msg-anim-1 { الرسوم المتحركة: popin 0.4s تسهل إلى الأمام 0.2; }
-.start-anim .msg-anim-2 { الرسوم المتحركة: popin 0.4s تسهل إلى الأمام 1.4; }
-.start-anim .msg-anim-3 { الرسوم المتحركة: popin 0.4 s تسهل إلى الأمام 2.6; }
+/* Animations for Discord Mockup */
+.start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
+.start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
+.start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
 
 @keyframes popIn {
-  إلى {
-    التعميم: 1؛
-    التحويل: ترجمة Y(0)؛
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* شبكة الأطعمة */
+/* Mods Grid */
 .mods-grid {
-  العرض: شبكة؛
-  أعمدة شبكة-قالب التكرار: التكرار (التلائم التلقائي، minmax(200px, 1fr))؛
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  أعلى الهامش: 2rem؛
+  margin-top: 2rem;
 }
 
 .mod-card {
-  الخلفية-اللون: var(--bg-card)؛
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  نصف قطر الحدود: 8px؛
+  border-radius: 8px;
   padding: 2rem 1rem;
   text-align: center;
-  انتقال: كل 0.2 ثانية سهلة؛
-  العرض: مربع؛
-  الاتجاه المربع: العمود؛
-  موازنة: المركز؛
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 0.75rem;
 }
 
 .mod-avatar {
-  العرض: 80 بكسل؛
-  الطول: 80 بكسل؛
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  الخلفية-اللون: var(--bg-tertiary)؛
-  العرض: مربع؛
-  موازنة: المركز؛
-  المبررات: المركز؛
+  background-color: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2rem;
   font-weight: 600;
-  اللون: var(--كتم النص)؛
+  color: var(--text-muted);
   overflow: hidden;
 }
 
 .mod-avatar img {
   width: 100%;
-  الطول: 100%؛
-  تناسب الكائن: غلاف
+  height: 100%;
+  object-fit: cover;
 }
 
 .mod-name {
   font-weight: 600;
   font-size: 1.1rem;
-  اللون: var(--text-main)؛
+  color: var(--text-main);
 }
 
 .mod-username {
   font-size: 0.9rem;
-  اللون: var(--text-dim)؛
+  color: var(--text-dim);
 }
 
-/* كاروسي يوكستاوس */
+/* Juxtaposition Carousel */
 .juxt-carousel-wrapper {
   overflow: hidden;
-  المنصب النسبي؛
+  position: relative;
   width: 100%;
-  أعلى الهامش: 2rem؛
-  قناع صورة: درجة خطية (لليمين، شفافة، أسود 10%، أسود 90%، شفافة)؛
-  -webkit-mask-imagage: linear-gradient(لليمين، الشفافة، الأسود 10%, الأسود 90%, شفافة)؛
+  margin-top: 2rem;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .juxt-carousel {
-  العرض: مربع؛
-  العرض: محتوى مناسب؛
-  الرسوم المتحركة: تمرير كاروسل 20s خطياً غير نهائي؛
+  display: flex;
+  width: fit-content;
+  animation: scrollCarousel 20s linear infinite;
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  حالة الرسوم المتحركة: متوقفة؛
+  animation-play-state: paused;
 }
 
 .juxt-post {
-  الخلفية-اللون: var(--bg-card)؛
+  background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  نصف قطر الحدود: 12px؛
+  border-radius: 12px;
   padding: 1.25rem;
-  العرض: 320px؛
-  انكماش مربع: صفر؛
-  العرض: مربع؛
-  الاتجاه المربع: الصف؛
-  موازنة: المركز؛
+  width: 320px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 1rem;
-  محاذاة النص: يسار؛
+  text-align: left;
 }
 
 .juxt-post img {
   width: 64px;
-  الطول: 64 بكسل؛
-  نصف قطر الحدود: 8px؛
-  تناسب الكائن: غلاف
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
-محتوى.juxt-content قوي {
-  العرض: الكتلة؛
+.juxt-content strong {
+  display: block;
   font-size: 1.1rem;
-  اللون: var(--أكسنت-سيان)؛
-  أسفل الهامش: 0.5 ريف؛
+  color: var(--accent-cyan);
+  margin-bottom: 0.5rem;
 }
 
 .juxt-content p {
   font-size: 0.95rem;
-  الهامش: 0؛
+  margin: 0;
 }
 
 @keyframes scrollCarousel {
-  0% { تحول: ترجمة X(0)؛ }
-  100% { تحول: ترجمة (-50% - 0.75rem))؛ }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 0.75rem)); }
 }
 
 @media (max-width: 900px) {
-  .discord-ui-تخطيط {
-    الاتجاه المربع: العمود؛
+  .discord-ui-layout {
+    flex-direction: column;
   }
   .discord-ui-mockup {
     width: 100%;
@@ -1077,5 +1077,5 @@ a.btn-discord:hover {
 }
 
 .feature-logo {
-  أسفل الهامش: 1rem;
+  margin-bottom: 1rem;
 }
