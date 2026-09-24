@@ -1,283 +1,283 @@
 /* ==========================================================================
-   Revivetendo Relay Network — Clean Solid CSS Design System
+   Ревіветендо мережі станції — система дизайну Clean Solid CSS
    ========================================================================== */
 
 :root {
-  /* Solid Color Palette - No Gradients or Glows */
+  /* Суцільна палітра кольорів - без градієнтів або ударів */
   --bg-primary: #0f1117;
-  --bg-secondary: #161821;
-  --bg-tertiary: #1e202b;
-  --bg-card: #181a24;
-  --border-color: #2a2d3d;
+  --bg-другий: #161821;
+  --bg-тертіарій: #1e202b;
+  --bg-карта: #181a24;
+  --border-color: #2a2d3;
   --border-hover: #3d4259;
 
   --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
+  --text-заглушено: #94a3b8;
   --text-dim: #64748b;
 
   --accent-cyan: #0284c7;
   --accent-cyan-hover: #0369a1;
   --accent-light: #38bdf8;
-  --accent-purple: #7c3aed;
+  --accent-фіолетовий: #7c3a;
   --accent-green: #059669;
 
-  /* Clean Typography */
+  /* Очищати Типографію */
   --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Джакарта Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', monospace;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
+  box-розмір: прикордонна рамка;
+  маржа: 0;
   padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+  прокрутка: згладжений;
   font-family: var(--font-body);
-  background-color: var(--bg-primary);
+  фоновий колір: var(--bg-primary);
   color: var(--text-main);
 }
 
-body {
-  line-height: 1.6;
+основа {
+  лінія-висота: 1.6;
 }
 
-.container {
-  max-width: 980px;
-  margin: 0 auto;
+.контейнер {
+  макс. ширина: 980 пікселів;
+  відмітка: 0 авто;
   padding: 0 1.5rem;
 }
 
-/* Links - High Contrast Bright Cyan */
-a {
-  color: var(--accent-light);
-  text-decoration: underline;
+/* Посилання - Високий контрастний Біркан */
+на {
+  колір: var(--accent-light);
+  текстова декорація: підкреслення;
   text-underline-offset: 3px;
-  transition: color 0.15s ease;
+  перехід: колір 0,15 секунд;
 }
 
 a:hover {
-  color: #7dd3fc;
+  колір: #7dd3fc;
 }
 
 /* Navigation */
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: var(--bg-secondary);
+  позиція: приліпка;
+  зверху: 0;
+  z-індекс: 100;
+  фоновий колір: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
 }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  max-width: 980px;
-  margin: 0 auto;
+.навігаційний контейнер {
+  дисплей: flex;
+  вирівня: по центру;
+  контент право: пробіл між;
+  висота блоку: 64 пікселі;
+  макс. ширина: 980 пікселів;
+  відмітка: 0 авто;
   padding: 0 1.5rem;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
+.бренд {
+  дисплей: flex;
+  вирівня: по центру;
   gap: 0.75rem;
-  text-decoration: none !important;
+  текстова декорація: ні за що!important;
 }
 
 .brand-icon {
   width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  object-fit: contain;
+  висота блоку: 34пікселів;
+  рамковий радіус: 8 пікселів;
+  об'єкт містить;
 }
 
 .brand-title {
   font-family: var(--font-main);
-  font-weight: 700;
+  шрифтна вага: 700;
   font-size: 1.15rem;
   color: var(--text-main);
 }
 
-.nav-links {
-  display: flex;
+.nav-link {
+  дисплей: flex;
   gap: 2rem;
 }
 
 .nav-link {
   color: var(--text-muted);
-  text-decoration: none !important;
+  текстова декорація: ні за що!important;
   font-size: 0.95rem;
-  font-weight: 500;
-  transition: color 0.15s ease;
+  шрифт/вага: 500;
+  перехід: колір 0,15 секунд;
 }
 
 .nav-link:hover {
   color: var(--text-main);
 }
 
-/* Page Header */
+/* Заголовок сторінки */
 .page-header {
   padding: 3rem 0 2rem;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 3rem;
+  нижня межа: 3rem;
 }
 
 .page-header h1 {
   font-family: var(--font-main);
   font-size: 2.3rem;
-  font-weight: 700;
+  шрифтна вага: 700;
   color: var(--text-main);
-  margin-bottom: 0.8rem;
+  нижня межа: 0.8rem;
 }
 
 .page-description {
   font-size: 1.05rem;
   color: var(--text-muted);
-  max-width: 780px;
-  line-height: 1.65;
+  макс. ширина: 780 пікселів;
+  лінійно-висота: 1.65;
 }
 
-/* Section Shared Styles */
-.guide-section,
+/* Розділ колективні стилі */
+.guide-секція,
 .content-section {
-  margin-bottom: 4rem;
+  нижнє положення: 4rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--border-color);
 }
 
-.guide-section h2,
+.гайд-секція h2,
 .content-section h2 {
   font-family: var(--font-main);
   font-size: 1.75rem;
-  font-weight: 700;
+  шрифтна вага: 700;
   color: var(--text-main);
-  margin-bottom: 0.4rem;
+  нижня межа: 0.4rem;
 }
 
 .section-lead {
   font-size: 1rem;
   color: var(--text-muted);
-  margin-bottom: 2rem;
+  нижня межа: 2rem;
 }
 
-/* Step Cards */
+/* Крок карток */
 .steps-list {
-  display: flex;
-  flex-direction: column;
+  дисплей: flex;
+  вираз напрямку: стовпець;
   gap: 2rem;
 }
 
-.step-card {
-  display: grid;
-  grid-template-columns: 85px 1fr;
+.крок-картка {
+  дисплей: сітка;
+  колонки grid-template: 85px 1fr;
   gap: 1.8rem;
-  background-color: var(--bg-card);
+  фоновий колір: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 2rem;
-  position: relative;
+  позиція: relative;
   overflow: hidden;
 }
 
 .step-number {
   font-family: var(--font-main);
   font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--accent-light);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  шрифтна вага: 700;
+  колір: var(--accent-light);
+  текстові перетворення: верхній регістр;
+  інтервал: 0.05em;
   padding-top: 0.1rem;
 }
 
 .step-content h3 {
   font-family: var(--font-main);
   font-size: 1.35rem;
-  font-weight: 700;
+  шрифтна вага: 700;
   color: var(--text-main);
-  margin-bottom: 0.6rem;
+  нижня межа: 0.6rem;
 }
 
 .step-content p {
   color: var(--text-main);
   font-size: 0.98rem;
-  margin-bottom: 1.25rem;
+  нижнє положення: 1.25rem;
 }
 
-.step-note {
-  font-size: 0.9rem !important;
-  color: var(--text-muted) !important;
-  margin-top: 1rem;
-  margin-bottom: 0 !important;
+.крок-нота {
+  розмір шрифту: 0.9rem !important;
+  колір: var(--text-muted) !important;
+  верх маржі: 1rem;
+  нижня межа: 0 !important;
 }
 
-/* Guide Reference Images - Natural Aspect Ratio, No Black Areas */
-.guide-image-container {
-  margin: 1.5rem 0;
+/* Путівкові Опорні зображення - Природні Розділи, Немає Чорних областей */
+.guide-контейнер зображення {
+  відступу: 1.5rem 0;
   width: 100%;
 }
 
 .guide-image {
   width: 100%;
-  max-width: 580px;
-  height: auto;
-  display: block;
+  макс. ширина: 580 пікселів;
+  висота: авто;
+  дисплей: блок;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  рамковий радіус: 8 пікселів;
+  box-тінь: 0 4px 14px rgba(0, 0, 0.35);
 }
 
-.image-caption {
+.image-підпис {
   font-size: 0.82rem;
   color: var(--text-dim);
-  margin-top: 0.5rem;
-  display: block;
+  верх маржі: 0.5rem;
+  дисплей: блок;
 }
 
-/* Clean Boxes inside steps */
+/* Очищувати ящики в кроках */
 .info-box {
-  background-color: var(--bg-tertiary);
+  фоновий колір: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  рамковий радіус: 8 пікселів;
   padding: 1.25rem 1.4rem;
-  margin-bottom: 1.5rem;
+  нижня межа: 1.5rem;
 }
 
 .info-box h4 {
   font-size: 0.95rem;
-  font-weight: 700;
+  шрифтна вага: 700;
   color: var(--text-main);
-  margin-bottom: 0.4rem;
+  нижня межа: 0.4rem;
 }
 
 .info-box p {
-  font-size: 0.92rem !important;
-  color: var(--text-muted) !important;
-  margin: 0 !important;
+  розмір шрифту: 0.92rem !important;
+  колір: var(--text-muted) !important;
+  відмітка: 0 !important;
 }
 
 .requirements-list {
-  background-color: var(--bg-tertiary);
+  фоновий колір: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  рамковий радіус: 8 пікселів;
   padding: 1.25rem 1.4rem;
 }
 
 .requirements-list h4 {
   font-size: 0.95rem;
-  font-weight: 700;
+  шрифтна вага: 700;
   color: var(--text-main);
-  margin-bottom: 0.6rem;
+  нижня межа: 0.6rem;
 }
 
 .requirements-list ul {
-  list-style-type: disc;
-  margin-left: 1.25rem;
-  display: flex;
-  flex-direction: column;
+  list-style-type: диск;
+  залишилося маржі: 1.25rem;
+  дисплей: flex;
+  вираз напрямку: стовпець;
   gap: 0.5rem;
 }
 
@@ -286,251 +286,251 @@ a:hover {
   color: var(--text-main);
 }
 
-/* Action Box */
+/* блок дій */
 .action-box {
-  background-color: var(--bg-tertiary);
+  фоновий колір: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  рамковий радіус: 8 пікселів;
   padding: 1.25rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  дисплей: flex;
+  вирівня: по центру;
+  контент право: пробіл між;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+  нижня межа: 1.5rem;
+  wrap: wrap;
 }
 
 .action-box h4 {
   font-size: 1.05rem;
   color: var(--text-main);
-  font-weight: 700;
-  margin-bottom: 0.15rem;
+  шрифтна вага: 700;
+  нижня межа: 0.15rem;
 }
 
-.text-muted {
+.text-заглушений {
   color: var(--text-muted);
   font-size: 0.85rem;
 }
 
-/* Buttons - Pure White Text on Cyan Background */
+/* Кнопки - чистий текст на Біржому тлі */
 .btn,
 a.btn,
-.feature-card a.btn,
+.виділена картка btn,
 .action-box a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  дисплей: inline-flex;
+  вирівня: по центру;
+  контекст справедливості: центр;
   gap: 0.5rem;
-  padding: 0.65rem 1.3rem;
-  border-radius: 6px;
+  внесення: 0.65rem 1.3rem;
+  рамковий радіус: 6px;
   font-family: var(--font-main);
   font-weight: 600;
   font-size: 0.92rem;
-  text-decoration: none !important;
-  border: none;
-  cursor: pointer;
-  background-color: var(--accent-cyan);
-  color: #ffffff !important;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  текстова декорація: ні за що!important;
+  рамка: немає;
+  курсор: вказівник;
+  фоновий колір: var(--accent-cyan);
+  колір: #ffff !important
+  перехід: фоновий колір 0.15 легкий, колір кордону 0.15 сек;
 }
 
-.lucide {
-  flex-shrink: 0;
-  vertical-align: middle;
+.Lucide {
+  повільне стискання: 0;
+  вертикально: середній;
 }
 
 .btn:hover,
 a.btn:hover,
-.feature-card a.btn:hover,
+.feature-card датується btn:hover,
 .action-box a.btn:hover {
-  background-color: var(--accent-cyan-hover);
-  color: #ffffff !important;
+  фоновий колір: var(--accent-cyan-hover);
+  колір: #ffff !important
 }
 
-.btn-secondary,
-a.btn-secondary {
-  background-color: var(--bg-tertiary) !important;
+.btn-другий (секунда),
+гімалайська втора {
+  фоновий колір: var(--bg-tertiary) !important;
   border: 1px solid var(--border-color) !important;
-  color: var(--text-main) !important;
+  колір: var(--text-main) !important;
 }
 
-.btn-secondary:hover,
+.btn-вторинний:ховер,
 a.btn-secondary:hover {
-  background-color: #262938 !important;
+  фоновий колір: #262938 !important;
   border-color: var(--border-hover) !important;
-  color: #ffffff !important;
+  колір: #ffff !important
 }
 
-.btn-discord,
+.btn-знижка,
 a.btn-discord {
-  background-color: #5865f2 !important;
-  color: #ffffff !important;
+  фоновий колір: #5865f2 !важливо;
+  колір: #ffff !important
 }
 
 .btn-discord:hover,
 a.btn-discord:hover {
-  background-color: #4752c4 !important;
-  color: #ffffff !important;
+  фоновий колір: #4752c4 !important;
+  колір: #ffff !important
 }
 
-/* Landing Page Hero Section */
-.hero-section {
+/* Розділ Героя Сторінки */
+.герой {
   padding: 5rem 0 3rem;
-  border-bottom: none !important;
-  margin-bottom: 3rem;
+  нижня межа: нічого !important;
+  нижня межа: 3rem;
   text-align: center;
-  position: relative;
-  overflow: visible !important;
+  позиція: relative;
+  перекриття: видимий !important;
 }
 
-.hero-icon {
-  width: 90px;
-  height: 90px;
+.героїні {
+  ширина: 90 пікселів;
+  висота блоку: 90 пікселів;
   border-radius: 22px;
-  margin: 0 auto 1.5rem;
-  display: block;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  маржа: 0 автоматично 1.5rem;
+  дисплей: блок;
+  box-тінь: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Animation: Drop in one by one from top WITHOUT fade (opacity stays 100%) */
+/* Анімація: Перемістіть один за одним з топ затухання WITHOUT (непрозорість залишається 100%) */
 @keyframes dropFromTop {
   0% {
-    transform: translateY(-45px);
-    visibility: hidden;
+    перетворення: translateY(-45px);
+    видимість: приховано;
   }
   1% {
-    visibility: visible;
+    видимість: видима;
   }
   100% {
-    transform: translateY(0);
-    visibility: visible;
+    перетворення: translateY(0);
+    видимість: видима;
   }
 }
 
-.animated-title {
-  display: inline-flex;
+.анімована назва {
+  дисплей: inline-flex;
   gap: 0.3em;
-  flex-wrap: wrap;
-  justify-content: center;
+  wrap: wrap;
+  контекст справедливості: центр;
   font-family: var(--font-main);
   font-size: 3.2rem;
-  font-weight: 700;
+  шрифтна вага: 700;
   color: var(--text-main);
-  margin-bottom: 1.1rem;
-  letter-spacing: -0.02em;
+  нижня межа: 1.1rem;
+  інтервал: -0.02em;
 }
 
 .animated-title .word {
-  display: inline-block;
-  visibility: hidden;
-  animation: dropFromTop 0.32s cubic-bezier(0.2, 0.85, 0.35, 1.1) forwards;
-  animation-delay: calc(var(--animation-order) * 0.25s);
+  дисплей: вбудований блок;
+  видимість: приховано;
+  анімація: dropFromTop 0.32s кубічна(0,2, 0.85, 0.35, 1.1) вперед;
+  затримка анімації: calc(var(--animation-order) * 0.25s);
 }
 
-/* Staggered entrance for all content appearing AFTER title word drop completes (~1.08s) */
+/* Дівийнятий (~1.08)*/ * Дізнятий вхід для всього вмісту, як вивід назви AFTER в заголовку (~1.08s) */
 @keyframes staggerFadeUp {
   0% {
-    opacity: 0;
-    transform: translateY(22px);
-    visibility: hidden;
+    прозорості: 0;
+    перетворення: translateY(22px);
+    видимість: приховано;
   }
   1% {
-    visibility: visible;
+    видимість: видима;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
+    непрозорість: 1;
+    перетворення: translateY(0);
+    видимість: видима;
   }
 }
 
-.stagger-in {
-  opacity: 0;
-  visibility: hidden;
-  animation: staggerFadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  animation-delay: 1.08s;
+.stagger-в {
+  прозорості: 0;
+  видимість: приховано;
+  анімація: staggerFadeUp 0,45s cubic-bezier(0.16, 1, 0.3, 1) вперед;
+  затримка анімації: 1.08;
 }
 
-.hero-description {
+.герой опис {
   font-size: 1.2rem;
   color: var(--text-muted);
-  max-width: 680px;
-  margin: 0 auto 2.5rem;
-  line-height: 1.65;
+  макс. ширина: 680 пікселів;
+  маржа: 0 авто 2.5rem;
+  лінійно-висота: 1.65;
 }
 
-.hero-buttons {
-  display: flex;
+.герої кнопки {
+  дисплей: flex;
   gap: 1.25rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  контекст справедливості: центр;
+  wrap: wrap;
 }
 
-/* Mii Characters Placed Inside Blank Box Areas & Popping Out-of-Bounds */
-.content-section,
-.feature-grid,
-.feature-card,
-.step-card,
-.info-box,
+/* Символи Mii розташовані всередині порожніх коробок і виринаюча поза межами */
+Частина вмісту
+.виділена сітка,
+.виділена карта,
+.крок-картка,
+.інфо-скринька
 .requirements-list {
-  position: relative;
-  overflow: visible !important;
+  позиція: relative;
+  перекриття: видимий !important;
 }
 
-/* Feature cards with outer corner Miis: reserve 90px right padding on BOTH title and paragraph so text wraps cleanly and zero words are blocked */
+/* Карти модифікацій з зовнішнім кутовим маятом: резервуйте 90px праворуч на заголовку BOTH і параграф, тому текстове обгортання чисте і нуль слів блокуються */
 .feature-card.has-mii {
-  position: relative;
-  overflow: visible !important;
+  позиція: relative;
+  перекриття: видимий !important;
 }
 
 .feature-card.has-mii h3,
-.feature-card.has-mii p {
+.feature-card.has-mii {
   padding-right: 90px;
 }
 
 .feature-card.has-mii h3 {
-  margin-bottom: 0.85rem;
+  нижня межа: 0.85rem;
 }
 
-.mii-card-corner {
-  position: absolute;
+.mii-card-куточок {
+  розміщення: absolute;
   right: -24px;
   top: -42px;
-  height: 165px;
+  висота блоку: 165 пікселів;
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  z-індекс: 10;
+  фільтр: розкриваюча тінь(0 10px 24px rgba(0, 0, 0, 0.65));
+  вказівник події: нічого;
 }
 
-.mii-card-corner-lounging {
-  position: absolute;
-  right: -18px;
+.mii-card-кутник-маркер {
+  розміщення: absolute;
+  праворуч: -18 пікселів;
   top: -50px;
-  height: 140px;
+  висота блоку: 140px;
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.65));
-  pointer-events: none;
+  z-індекс: 10;
+  фільтр: розкриваюча тінь(0 10px 24px rgba(0, 0, 0, 0.65));
+  вказівник події: нічого;
 }
 
-/* Hero section bottom-right overlapping Mii */
-.mii-overlap-hero {
-  position: absolute;
+/* Розділ Героя в нижньому правому куті перекриття Mii */
+.mii-overlap-герой {
+  розміщення: absolute;
   right: -25px;
-  bottom: -45px;
-  height: 260px;
+  знизу: -45 пікселів;
+  висота блоку: 260 пікселів;
   width: auto;
-  z-index: 10;
-  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.7));
-  transform: rotate(4deg);
-  pointer-events: none;
+  z-індекс: 10;
+  фільтр: розкриваюча тінь(0 16px 36px rgba(0, 0, 0.7));
+  перетворення: rotate(4deg);
+  вказівник події: нічого;
 }
 
 @media (max-width: 900px) {
-  .mii-overlap-hero {
-    height: 180px;
-    right: -10px;
+  .mii-overlap-герой {
+    висота блоку: 180px;
+    праворуч: -10 пікселів;
     bottom: -30px;
   }
 }
@@ -539,70 +539,70 @@ a.btn-discord:hover {
   .feature-card.has-mii h3 {
     padding-right: 0;
   }
-  .mii-card-corner,
-  .mii-overlap-hero {
-    display: none;
+  .мій-карт-кутник,
+  .mii-overlap-герой {
+    дисплей: немає;
   }
 }
 
-/* Quick Start Banner */
-.quick-start-banner {
-  background-color: var(--bg-card);
+/* Швидкий стартовий стяг */
+.Швидкий старт-банер {
+  фоновий колір: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  рамковий радіус: 12 пікселів;
   padding: 3rem 2rem;
   text-align: center;
-  margin-bottom: 4rem;
-  position: relative;
+  нижнє положення: 4rem;
+  позиція: relative;
   overflow: hidden;
 }
 
-.quick-start-banner h2 {
+.quick-start-банер h2 {
   font-family: var(--font-main);
   font-size: 1.8rem;
-  font-weight: 700;
+  шрифтна вага: 700;
   color: var(--text-main);
-  margin-bottom: 0.75rem;
+  нижня межа: 0.75rem;
 }
 
-.quick-start-banner p {
+.quick-старт-банер p {
   color: var(--text-muted);
   font-size: 1.05rem;
-  margin-bottom: 1.75rem;
-  max-width: 580px;
-  margin-left: auto;
-  margin-right: auto;
+  нижнє положення: 1.75rem;
+  макс. ширина: 580 пікселів;
+  margin-left: автоматично;
+  margin-right: автоматично;
 }
 
-/* Code block / Directory tree */
-.code-block {
-  background-color: var(--bg-tertiary);
+/* Блок / дерево каталогів */
+.code-блок {
+  фоновий колір: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  рамковий радіус: 8 пікселів;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  нижня межа: 1.5rem;
 }
 
-.code-header {
-  background-color: var(--bg-secondary);
+.code-заголовок {
+  фоновий колір: var(--bg-secondary);
   padding: 0.55rem 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  дисплей: flex;
+  контент право: пробіл між;
+  вирівня: по центру;
   font-size: 0.82rem;
   color: var(--text-muted);
   border-bottom: 1px solid var(--border-color);
 }
 
 .btn-copy {
-  background-color: var(--border-color);
-  border: none;
+  фоновий колір: var(--border-color);
+  рамка: немає;
   color: var(--text-main);
   padding: 0.28rem 0.7rem;
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 600;
-  cursor: pointer;
+  курсор: вказівник;
 }
 
 .btn-copy:hover {
@@ -613,165 +613,165 @@ a.btn-discord:hover {
   padding: 1.1rem 1.4rem;
   font-family: var(--font-mono);
   font-size: 0.86rem;
-  line-height: 1.5;
+  лінійно-висота: 1.5;
   color: var(--text-main);
   overflow-x: auto;
 }
 
-/* Ordered instructions */
-.ordered-instructions {
-  margin-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
+/* Впорядковані інструкції */
+.замовлений-інструкції {
+  зліва: 1.4rem;
+  дисплей: flex;
+  вираз напрямку: стовпець;
   gap: 0.85rem;
-  margin-bottom: 1.5rem;
+  нижня межа: 1.5rem;
 }
 
-.ordered-instructions li {
+.впорядкованих інструкцій li {
   font-size: 0.95rem;
   color: var(--text-main);
   padding-left: 0.3rem;
 }
 
-/* Controller Physical Button Tokens */
+/* Кнопки Фізичної кнопки Контролера */
 .controller-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  дисплей: inline-flex;
+  вирівня: по центру;
+  контекст справедливості: центр;
   font-family: var(--font-main);
-  font-weight: 700;
-  color: #f8fafc;
-  background-color: #334155;
-  border: 1px solid #64748b;
-  box-shadow: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0, 0.3);
-  user-select: none;
-  vertical-align: middle;
-  line-height: 1;
-  margin: 0 0.15rem;
+  шрифтна вага: 700;
+  колір: #f8fafc;
+  фоновий колір: #334155;
+  рамка: solid #64748b;
+  box-тінь: 0 2px 0 #0f172a, 0 3px 3px rgba(0, 0, 0.3);
+  вибір користувача: ніколи;
+  вертикально: середній;
+  лінія-висота: 1;
+  маржа: 0 0.15rem;
 }
 
 .controller-btn.btn-round {
   width: 24px;
-  height: 24px;
+  висота блоку: 24 пікселі;
   border-radius: 50%;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-shoulder {
-  padding: 0 0.55rem;
-  height: 24px;
-  border-radius: 6px;
+  підкладка: 0 0.55rem;
+  висота блоку: 24 пікселі;
+  рамковий радіус: 6px;
   font-size: 0.82rem;
 }
 
 .controller-btn.btn-pill {
-  padding: 0 0.65rem;
-  height: 24px;
-  border-radius: 12px;
+  підкладка: 0 0.65rem;
+  висота блоку: 24 пікселі;
+  рамковий радіус: 12 пікселів;
   font-size: 0.74rem;
-  letter-spacing: 0.04em;
+  інтервал: 0.04em;
 }
 
 .controller-btn.btn-dpad {
   width: 24px;
-  height: 24px;
+  висота блоку: 24 пікселі;
   border-radius: 4px;
   padding: 2px;
 }
 
 .controller-btn svg {
-  display: block;
+  дисплей: блок;
 }
 
-/* Feature Grid */
-.feature-grid {
-  display: grid;
+/* сітка модифікацій */
+.виділена сітка {
+  дисплей: сітка;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
-.feature-card {
-  background-color: var(--bg-card);
+.виділена картка {
+  фоновий колір: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  рамковий радіус: 8 пікселів;
   padding: 1.6rem;
 }
 
-.feature-card h3 {
+.виділена картка h3 {
   font-family: var(--font-main);
   font-size: 1.15rem;
-  font-weight: 700;
+  шрифтна вага: 700;
   color: var(--text-main);
-  margin-bottom: 0.5rem;
+  нижня межа: 0.5rem;
 }
 
-.feature-card p {
+.виділена картка p {
   color: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.6;
+  лінія-висота: 1.6;
 }
 
-.feature-card a {
-  color: var(--accent-light);
+.виділена картка {
+  колір: var(--accent-light);
 }
 
 .feature-card a:hover {
-  text-decoration: underline;
+  текстова декорація: підкреслення;
 }
 
-/* FAQ List */
-.faq-list {
-  display: flex;
-  flex-direction: column;
+/* Список ЧАП */
+.faq-список {
+  дисплей: flex;
+  вираз напрямку: стовпець;
   gap: 0.85rem;
 }
 
-.faq-item {
-  background-color: var(--bg-card);
+.faq-елемент {
+  фоновий колір: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  рамковий радіус: 8 пікселів;
   overflow: hidden;
 }
 
 .faq-question {
   width: 100%;
-  background-color: transparent;
-  border: none;
+  фоновий колір: прозорий;
+  рамка: немає;
   padding: 1.15rem 1.4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
+  дисплей: flex;
+  контент право: пробіл між;
+  вирівня: по центру;
+  вирівнювання тексту: ліворуч;
   font-family: var(--font-main);
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-main);
-  cursor: pointer;
+  курсор: вказівник;
 }
 
-.faq-indicator {
+.faq-індикатор {
   font-size: 1.25rem;
-  font-weight: 400;
-  color: var(--accent-light);
+  шрифтна вага: 400;
+  колір: var(--accent-light);
 }
 
-.faq-answer {
-  max-height: 0;
+.faq-відповідь {
+  макс. висота: 0;
   overflow: hidden;
-  transition: max-height 0.25s ease;
+  перехід: макс. висота 0,25;
 }
 
 .faq-answer p {
-  padding: 0 1.4rem 1.3rem;
+  підкладка: 0 1.4rem 1.3rem;
   color: var(--text-muted);
   font-size: 0.92rem;
-  line-height: 1.65;
+  лінійно-висота: 1.65;
 }
 
-/* Footer */
+/* Нижній колонтитул */
 .footer {
   padding: 2.2rem 0;
-  background-color: var(--bg-secondary);
+  фоновий колір: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
 }
 
@@ -781,10 +781,10 @@ a.btn-discord:hover {
   font-size: 0.82rem;
 }
 
-/* Responsive */
+/* Адаптивний */
 @media (max-width: 768px) {
-  .step-card {
-    grid-template-columns: 1fr;
+  .крок-картка {
+    grid-template-стовпці: 1fr;
     gap: 0.6rem;
   }
 
@@ -792,199 +792,199 @@ a.btn-discord:hover {
     padding-top: 0;
   }
 
-  .nav-links {
-    display: none;
+  .nav-link {
+    дисплей: немає;
   }
 
   .page-header h1,
-  .hero-section h1,
-  .animated-title {
+  .герой-переріз, h1,
+  .анімована назва {
     font-size: 2.2rem;
   }
 }
 
-/* Light Mode Support */
+/* Легка підтримка */
 @media (prefers-color-scheme: light) {
   :root {
     --bg-primary: #f8fafc;
-    --bg-secondary: #f1f5f9;
+    --bg-друга: #f1f5f9;
     --bg-tertiary: #e2e8f0;
-    --bg-card: #ffffff;
+    --bg-карта: #ffff;
     --border-color: #cbd5e1;
     --border-hover: #94a3b8;
 
-    --text-main: #0f172a;
-    --text-muted: #334155;
+    --text-main: #0f172;
+    --text-mutmuted: #334155;
     --text-dim: #64748b;
   }
   
-  /* Adjust shadows for light mode */
-  .guide-image,
-  .hero-icon,
+  /* Регулювання тіней для світлового режиму */
+  .guide-зображення,
+  .героїчна іконка,
   .discord-ui-mockup {
-    box-shadow: none;
+    box-тінь: немає;
   }
 
-  .mii-card-corner,
-  .mii-card-corner-lounging,
-  .mii-overlap-hero {
-    filter: none;
+  .мій-карт-кутник,
+  .мій-карт-кут-кутовий відзнак,
+  .mii-overlap-герой {
+    фільтр: немає;
   }
 
   .controller-btn {
-    box-shadow: 0 2px 0 #0f172a;
+    box-тінь: 0 2px 0 #0f172;
   }
 }
 
-/* Discord UI Mockup Section */
-.discord-ui-section {
+/* Розділ інтерфейсу Discord */
+.розпорох ui-section {
   overflow: hidden;
 }
 
-.discord-ui-layout {
-  display: flex;
-  align-items: center;
+.розшарування ui-layout {
+  дисплей: flex;
+  вирівня: по центру;
   gap: 3rem;
 }
 
 .discord-ui-text {
-  flex: 1;
+  флект: 1;
 }
 
 .discord-ui-text h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  нижня межа: 1rem;
 }
 
 .discord-ui-text .btn-fullwidth {
-  display: inline-flex;
+  дисплей: inline-flex;
   width: auto;
-  margin-top: 1rem;
+  верх маржі: 1rem;
 }
 
 .discord-ui-mockup {
-  flex: 1;
-  background-color: #313338;
-  border-radius: 8px;
+  флект: 1;
+  фоновий колір: #313338;
+  рамковий радіус: 8 пікселів;
   overflow: hidden;
-  border: 1px solid #1e1f22;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  рамка: solid #1e1f22;
+  box-тінь: 0 8px 24px rgba(0, 0, 0, 0.4);
   font-family: var(--font-body);
-  color: #dbdee1;
+  колір: #dbdee1;
   min-width: 350px;
 }
 
 .discord-ui-header {
-  background-color: #2b2d31;
-  padding: 12px 16px;
+  фоновий колір: #2b2d31;
+  поля: 12 пікселів 16 пікселів;
   font-weight: 600;
-  border-bottom: 1px solid #1e1f22;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #f2f3f5;
+  нижня рамка: solid #1e1f22;
+  дисплей: flex;
+  вирівня: по центру;
+  gap: 8 пікселів;
+  колір: #f2f3f5;
 }
 
 .discord-ui-header .hashtag {
-  color: #80848e;
+  колір: #80848e;
   font-size: 1.2rem;
 }
 
-.discord-ui-messages {
+.discord-ui-message {
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  дисплей: flex;
+  вираз напрямку: стовпець;
   gap: 16px;
 }
 
 .discord-msg {
-  display: flex;
+  дисплей: flex;
   gap: 16px;
-  opacity: 0;
-  transform: translateY(10px);
+  прозорості: 0;
+  перетворення: translateY(10px);
 }
 
 .discord-avatar {
-  width: 40px;
-  height: 40px;
+  ширина блоку: 40 пікселів;
+  висота: 40 пікселів;
   border-radius: 50%;
-  object-fit: cover;
-  background-color: #2b2d31;
+  прямий об'єкт: прихований;
+  фоновий колір: #2b2d31;
 }
 
 .discord-msg-content {
-  flex: 1;
+  флект: 1;
 }
 
 .discord-msg-header {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin-bottom: 4px;
+  дисплей: flex;
+  вирівнювання: базовий об'єкт;
+  gap: 8 пікселів;
+  нижня межа: 4px;
 }
 
 .discord-user {
-  font-weight: 500;
-  color: #f2f3f5;
+  шрифт/вага: 500;
+  колір: #f2f3f5;
 }
 
 .discord-user.admin-user {
-  color: #eb459e; /* Pink role color */
+  колір: #eb459e; /* Рожевий колір ролі */
 }
 
 .discord-time {
   font-size: 0.75rem;
-  color: #949ba4;
+  колір: #949ba4;
 }
 
 .discord-msg p {
-  color: #dbdee1;
+  колір: #dbdee1;
   font-size: 0.95rem;
-  line-height: 1.4;
-  margin: 0;
+  лінійно-висота: 1.4;
+  маржа: 0;
 }
 
-/* Animations for Discord Mockup */
-.start-anim .msg-anim-1 { animation: popIn 0.4s ease forwards 0.2s; }
-.start-anim .msg-anim-2 { animation: popIn 0.4s ease forwards 1.4s; }
-.start-anim .msg-anim-3 { animation: popIn 0.4s ease forwards 2.6s; }
+/* Анімації для прошивки Discord */
+.start-anim .msg-anim-1 {анімація: popin 0.4 s полегшує пересилання 0,2; }
+.start-anim .msg-anim-2 {анімація: popIn 0.4 s полегшує пересилання на 1.4; }
+.start-anim .msg-anim-3 { анімація: popIn 0.4 s полегшує пересилання на 2.6; }
 
 @keyframes popIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  до {
+    непрозорість: 1;
+    перетворення: translateY(0);
   }
 }
 
-/* Mods Grid */
+/* Сітка модифікацій */
 .mods-grid {
-  display: grid;
+  дисплей: сітка;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  верх маржі: 2rem;
 }
 
 .mod-card {
-  background-color: var(--bg-card);
+  фоновий колір: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  рамковий радіус: 8 пікселів;
   padding: 2rem 1rem;
   text-align: center;
-  transition: all 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  перехід: всі 0.2 секунди;
+  дисплей: flex;
+  вираз напрямку: стовпець;
+  вирівня: по центру;
   gap: 0.75rem;
 }
 
 .mod-avatar {
-  width: 80px;
-  height: 80px;
+  ширина блоку: 80 пікселів;
+  висота: 80 пікселів;
   border-radius: 50%;
-  background-color: var(--bg-tertiary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  фоновий колір: var(--bg-tertiary);
+  дисплей: flex;
+  вирівня: по центру;
+  контекст справедливості: центр;
   font-size: 2rem;
   font-weight: 600;
   color: var(--text-muted);
@@ -993,8 +993,8 @@ a.btn-discord:hover {
 
 .mod-avatar img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  висота блоку: 100%;
+  прямий об'єкт: прихований;
 }
 
 .mod-name {
@@ -1008,58 +1008,58 @@ a.btn-discord:hover {
   color: var(--text-dim);
 }
 
-/* Juxtaposition Carousel */
+/* Карусель Juxtaposition */
 .juxt-carousel-wrapper {
   overflow: hidden;
-  position: relative;
+  позиція: relative;
   width: 100%;
-  margin-top: 2rem;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  верх маржі: 2rem;
+  маскування зображення: лінійний градієнт (правильно, прозорий, чорний 10%, чорний 90%, прозорість);
+  -webkit-mask-imag: лінійний градієнт (так, прозорий, чорний 10%, чорний 90%, прозорість);
 }
 
 .juxt-carousel {
-  display: flex;
-  width: fit-content;
-  animation: scrollCarousel 20s linear infinite;
+  дисплей: flex;
+  ширина: фікс-контент;
+  анімація: прокрутка 20-х лінійна нескінченність;
   gap: 1.5rem;
 }
 
 .juxt-carousel:hover {
-  animation-play-state: paused;
+  статус анімації відтворення: призупинено;
 }
 
-.juxt-post {
-  background-color: var(--bg-card);
+.juxt-пост {
+  фоновий колір: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
+  рамковий радіус: 12 пікселів;
   padding: 1.25rem;
-  width: 320px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  ширина: 320 пікселів;
+  повільне стискання: 0;
+  дисплей: flex;
+  вираз напрямку: рядок;
+  вирівня: по центру;
   gap: 1rem;
-  text-align: left;
+  вирівнювання тексту: ліворуч;
 }
 
 .juxt-post img {
   width: 64px;
-  height: 64px;
-  border-radius: 8px;
-  object-fit: cover;
+  висота блоку: 64 пікселі;
+  рамковий радіус: 8 пікселів;
+  прямий об'єкт: прихований;
 }
 
 .juxt-content strong {
-  display: block;
+  дисплей: блок;
   font-size: 1.1rem;
   color: var(--accent-cyan);
-  margin-bottom: 0.5rem;
+  нижня межа: 0.5rem;
 }
 
 .juxt-content p {
   font-size: 0.95rem;
-  margin: 0;
+  маржа: 0;
 }
 
 @keyframes scrollCarousel {
@@ -1068,8 +1068,8 @@ a.btn-discord:hover {
 }
 
 @media (max-width: 900px) {
-  .discord-ui-layout {
-    flex-direction: column;
+  .розшарування ui-layout {
+    вираз напрямку: стовпець;
   }
   .discord-ui-mockup {
     width: 100%;
@@ -1077,5 +1077,5 @@ a.btn-discord:hover {
 }
 
 .feature-logo {
-  margin-bottom: 1rem;
+  нижня межа: 1rem;
 }
