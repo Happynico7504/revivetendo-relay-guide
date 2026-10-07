@@ -16,8 +16,6 @@ function initObserver() {
 
 function init() {
   initObserver();
-  loadModAvatars();
-  loadMockupAvatars();
 }
 
 if (document.readyState === "loading") {
