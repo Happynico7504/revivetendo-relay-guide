@@ -75,7 +75,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  min-height: 64px;
   max-width: 980px;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -104,7 +104,10 @@ a:hover {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap; /* longer translations wrap onto a second row instead of overflowing */
+  justify-content: flex-end;
+  gap: 0.35rem 1.25rem;
+  padding: 0.5rem 0;
 }
 
 .nav-link {
@@ -1078,4 +1081,28 @@ a.btn-discord:hover {
 
 .feature-logo {
   margin-bottom: 1rem;
+}
+
+/* Language: hide the page until i18n.js has applied the translations */
+.i18n-loading body {
+  visibility: hidden;
+}
+
+.lang-select {
+  flex-shrink: 0;
+  margin-left: 1.25rem;
+  padding: 0.35rem 0.6rem;
+  background: var(--bg-tertiary);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-family: var(--font-main);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.lang-select:hover,
+.lang-select:focus {
+  border-color: var(--border-hover);
+  outline: none;
 }

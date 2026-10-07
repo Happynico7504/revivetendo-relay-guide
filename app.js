@@ -32,7 +32,7 @@ function copyText(text, btnElement) {
   
   navigator.clipboard.writeText(text).then(() => {
     const originalText = btnElement.textContent;
-    btnElement.textContent = "Copied!";
+    btnElement.textContent = window.I18N ? I18N.t("js.copied", "Copied!") : "Copied!";
     btnElement.style.backgroundColor = "#059669";
     btnElement.style.color = "#ffffff";
     
