@@ -148,5 +148,22 @@ I18N.register("ja", {
  "privacy.022": "ネットワークの仕組みについてほかに質問があれば、お気軽に<a href=\"https://discord.gg/PVaXnYuQfy\" target=\"_blank\" rel=\"noopener noreferrer\">Discordサーバー</a>でお問い合わせください。",
  "title.guide": "Revivetendo Relay Network — セットアップガイド",
  "title.index": "Revivetendo Relay Network — ホーム",
- "title.privacy": "Revivetendo Relay Network — プライバシーポリシー"
+ "title.privacy": "Revivetendo Relay Network — プライバシーポリシー",
+ "title.webpw": "Revivetendo Relay Network — Webパスワード",
+ "webpw.001": "Webパスワード",
+ "webpw.002": "PNIDとWebパスワードを使って、ブラウザーからRevivetendoにサインインできます。",
+ "webpw.003": "Webパスワードとは？",
+ "webpw.004": "どのブラウザーからでも<a href=\"https://olv-web.nicochristmann.net/\" target=\"_blank\" rel=\"noopener noreferrer\">Juxtaposition（Revivetendo）</a>と<a href=\"https://revivetendo-dashboard.nicochristmann.net/\" target=\"_blank\" rel=\"noopener noreferrer\">ダッシュボード</a>にサインインするためのパスワードです。PNIDのパスワードとは別のもので、PNIDのパスワードが本体の外に送られることはありません。",
+ "webpw.005": "Webパスワードの設定方法",
+ "webpw.006": "Wii Uまたは3DSを一度以上Revivetendoに接続してください（<a href=\"guide.html\">ガイド</a>を参照）。",
+ "webpw.007": "本体で<strong>Miiverse</strong>（Juxtaposition）を開きます。",
+ "webpw.008": "自分のプロフィールを開き、<strong>Settings</strong>を選びます。",
+ "webpw.009": "<strong>Web Access</strong>を選び、新しいWebパスワードを入力して保存します。",
+ "webpw.010": "サインイン",
+ "webpw.011": "ユーザー名には<strong>PNID</strong>を、パスワードには<strong>Webパスワード</strong>を入力します。パスワードは本体の同じ場所からいつでも変更できます。",
+ "webpw.012": "忘れた・ロックされた場合",
+ "webpw.013": "5分以内に3回パスワードを間違えると、そのアカウントのWebサインインは15分間ロックされます。",
+ "webpw.014": "PNIDがDiscordと連携済みなら（<a href=\"https://discord.gg/PVaXnYuQfy\" target=\"_blank\" rel=\"noopener noreferrer\">Discordサーバー</a>で<code>/link_pnid</code>）、<code>/unlock_web_login</code>ですぐにロックを解除できます。",
+ "webpw.015": "<code>/reset_web_password</code>で新しいWebパスワードを受け取れます。本体の<strong>Settings</strong> &rarr; <strong>Web Access</strong>から新しく設定することもできます。",
+ "webpw.016": "Webパスワードの設定方法"
 });

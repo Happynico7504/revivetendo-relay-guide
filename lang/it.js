@@ -144,5 +144,22 @@ I18N.register("it", {
  "privacy.022": "Se hai altre domande sul funzionamento della rete, scrivici pure sul nostro <a href=\"https://discord.gg/PVaXnYuQfy\" target=\"_blank\" rel=\"noopener noreferrer\">server Discord</a>.",
  "title.guide": "Revivetendo Relay Network — Guida all’installazione",
  "title.index": "Revivetendo Relay Network — Home",
- "title.privacy": "Revivetendo Relay Network — Informativa sulla privacy"
+ "title.privacy": "Revivetendo Relay Network — Informativa sulla privacy",
+ "title.webpw": "Revivetendo Relay Network — Password web",
+ "webpw.001": "Password web",
+ "webpw.002": "Accedi a Revivetendo da un browser con il tuo PNID e una password web.",
+ "webpw.003": "A cosa serve la password web?",
+ "webpw.004": "Ti permette di accedere a <a href=\"https://olv-web.nicochristmann.net/\" target=\"_blank\" rel=\"noopener noreferrer\">Juxtaposition (Revivetendo)</a> e alla <a href=\"https://revivetendo-dashboard.nicochristmann.net/\" target=\"_blank\" rel=\"noopener noreferrer\">dashboard</a> da qualsiasi browser. È separata dalla password del tuo PNID, che non lascia mai la tua console.",
+ "webpw.005": "Come impostare la password web",
+ "webpw.006": "Collega la tua Wii U o il tuo 3DS a Revivetendo almeno una volta (vedi la <a href=\"guide.html\">guida</a>).",
+ "webpw.007": "Sulla console, apri <strong>Miiverse</strong> (Juxtaposition).",
+ "webpw.008": "Apri il tuo profilo e seleziona <strong>Settings</strong>.",
+ "webpw.009": "Seleziona <strong>Web Access</strong>, inserisci la nuova password web e salvala.",
+ "webpw.010": "Accesso",
+ "webpw.011": "Usa il tuo <strong>PNID</strong> come nome utente e la <strong>password web</strong> come password. Puoi cambiarla in qualsiasi momento dallo stesso punto sulla console.",
+ "webpw.012": "Dimenticata o bloccata?",
+ "webpw.013": "Dopo 3 password errate in 5 minuti, l'accesso web al tuo account viene bloccato per 15 minuti.",
+ "webpw.014": "Se il tuo PNID è collegato a Discord (<code>/link_pnid</code> sul nostro <a href=\"https://discord.gg/PVaXnYuQfy\" target=\"_blank\" rel=\"noopener noreferrer\">server Discord</a>), <code>/unlock_web_login</code> lo sblocca subito.",
+ "webpw.015": "<code>/reset_web_password</code> ti dà una nuova password web; in alternativa impostane una nuova sulla console in <strong>Settings</strong> &rarr; <strong>Web Access</strong>.",
+ "webpw.016": "Come impostare la password web"
 });

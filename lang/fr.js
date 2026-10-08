@@ -145,5 +145,22 @@ I18N.register("fr", {
  "privacy.022": "Si tu as d’autres questions sur le fonctionnement du réseau, n’hésite pas à nous écrire sur notre <a href=\"https://discord.gg/PVaXnYuQfy\" target=\"_blank\" rel=\"noopener noreferrer\">serveur Discord</a>.",
  "title.guide": "Revivetendo Relay Network — Guide d’installation",
  "title.index": "Revivetendo Relay Network — Accueil",
- "title.privacy": "Revivetendo Relay Network — Politique de confidentialité"
+ "title.privacy": "Revivetendo Relay Network — Politique de confidentialité",
+ "title.webpw": "Revivetendo Relay Network — Mot de passe web",
+ "webpw.001": "Mot de passe web",
+ "webpw.002": "Connecte-toi à Revivetendo dans un navigateur avec ton PNID et un mot de passe web.",
+ "webpw.003": "À quoi sert le mot de passe web ?",
+ "webpw.004": "Il te permet de te connecter à <a href=\"https://olv-web.nicochristmann.net/\" target=\"_blank\" rel=\"noopener noreferrer\">Juxtaposition (Revivetendo)</a> et au <a href=\"https://revivetendo-dashboard.nicochristmann.net/\" target=\"_blank\" rel=\"noopener noreferrer\">tableau de bord</a> depuis n'importe quel navigateur. Il est distinct du mot de passe de ton PNID, qui ne quitte jamais ta console.",
+ "webpw.005": "Définir ton mot de passe web",
+ "webpw.006": "Connecte ta Wii U ou ta 3DS à Revivetendo au moins une fois (voir le <a href=\"guide.html\">guide</a>).",
+ "webpw.007": "Sur la console, ouvre <strong>Miiverse</strong> (Juxtaposition).",
+ "webpw.008": "Ouvre ton propre profil et choisis <strong>Settings</strong>.",
+ "webpw.009": "Choisis <strong>Web Access</strong>, saisis ton nouveau mot de passe web et enregistre-le.",
+ "webpw.010": "Se connecter",
+ "webpw.011": "Utilise ton <strong>PNID</strong> comme nom d'utilisateur et ton <strong>mot de passe web</strong> comme mot de passe. Tu peux le changer à tout moment au même endroit sur ta console.",
+ "webpw.012": "Oublié ou bloqué ?",
+ "webpw.013": "Après 3 mots de passe incorrects en 5 minutes, la connexion web de ton compte est bloquée pendant 15 minutes.",
+ "webpw.014": "Si ton PNID est lié à Discord (<code>/link_pnid</code> sur notre <a href=\"https://discord.gg/PVaXnYuQfy\" target=\"_blank\" rel=\"noopener noreferrer\">serveur Discord</a>), <code>/unlock_web_login</code> la débloque immédiatement.",
+ "webpw.015": "<code>/reset_web_password</code> te donne un nouveau mot de passe web ; tu peux aussi en définir un nouveau sur ta console dans <strong>Settings</strong> &rarr; <strong>Web Access</strong>.",
+ "webpw.016": "Définir ton mot de passe web"
 });

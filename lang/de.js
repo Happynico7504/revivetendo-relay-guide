@@ -145,5 +145,22 @@ I18N.register("de", {
  "privacy.022": "Wenn du weitere Fragen zur Funktionsweise des Netzwerks hast, melde dich gern auf unserem <a href=\"https://discord.gg/PVaXnYuQfy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord-Server</a>.",
  "title.guide": "Revivetendo Relay Network — Einrichtungsanleitung",
  "title.index": "Revivetendo Relay Network — Startseite",
- "title.privacy": "Revivetendo Relay Network — Datenschutz"
+ "title.privacy": "Revivetendo Relay Network — Datenschutz",
+ "title.webpw": "Revivetendo Relay Network — Web-Passwort",
+ "webpw.001": "Web-Passwort",
+ "webpw.002": "Melde dich im Browser mit deiner PNID und einem Web-Passwort bei Revivetendo an.",
+ "webpw.003": "Wofür ist das Web-Passwort?",
+ "webpw.004": "Damit meldest du dich in jedem Browser bei <a href=\"https://olv-web.nicochristmann.net/\" target=\"_blank\" rel=\"noopener noreferrer\">Juxtaposition (Revivetendo)</a> und im <a href=\"https://revivetendo-dashboard.nicochristmann.net/\" target=\"_blank\" rel=\"noopener noreferrer\">Dashboard</a> an. Es ist unabhängig von deinem PNID-Passwort, das deine Konsole nie verlässt.",
+ "webpw.005": "So legst du dein Web-Passwort fest",
+ "webpw.006": "Verbinde deine Wii U oder deinen 3DS mindestens einmal mit Revivetendo (siehe <a href=\"guide.html\">Anleitung</a>).",
+ "webpw.007": "Öffne auf der Konsole <strong>Miiverse</strong> (Juxtaposition).",
+ "webpw.008": "Öffne dein eigenes Profil und wähle <strong>Settings</strong>.",
+ "webpw.009": "Wähle <strong>Web Access</strong>, gib dein neues Web-Passwort ein und speichere es.",
+ "webpw.010": "Anmelden",
+ "webpw.011": "Nutze deine <strong>PNID</strong> als Benutzernamen und dein <strong>Web-Passwort</strong> als Passwort. Du kannst das Passwort jederzeit an derselben Stelle auf deiner Konsole ändern.",
+ "webpw.012": "Vergessen oder gesperrt?",
+ "webpw.013": "Nach 3 falschen Passwörtern innerhalb von 5 Minuten wird die Web-Anmeldung für dein Konto 15 Minuten lang gesperrt.",
+ "webpw.014": "Wenn deine PNID mit Discord verknüpft ist (<code>/link_pnid</code> auf unserem <a href=\"https://discord.gg/PVaXnYuQfy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord-Server</a>), hebt <code>/unlock_web_login</code> die Sperre sofort auf.",
+ "webpw.015": "<code>/reset_web_password</code> gibt dir ein neues Web-Passwort, oder du legst auf deiner Konsole unter <strong>Settings</strong> &rarr; <strong>Web Access</strong> ein neues fest.",
+ "webpw.016": "So legst du dein Web-Passwort fest"
 });
