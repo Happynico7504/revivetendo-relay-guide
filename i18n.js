@@ -5,7 +5,15 @@
 // browser languages), and for other languages the page stays hidden until
 // the strings are applied, so English never flashes.
 (function () {
-  var LANGS = { en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', it: 'Italiano', ja: '日本語' };
+  var LANGS = {
+    en: 'English', ar: 'العربية', cs: 'Čeština', de: 'Deutsch', el: 'Ελληνικά', es: 'Español',
+    fa: 'فارسی', fr: 'Français', hi: 'हिन्दी', hu: 'Magyar', id: 'Bahasa Indonesia', it: 'Italiano',
+    ja: '日本語', ko: '한국어', nl: 'Nederlands', pl: 'Polski', pt: 'Português', ro: 'Română',
+    ru: 'Русский', sv: 'Svenska', th: 'ไทย', tr: 'Türkçe', uk: 'Українська', vi: 'Tiếng Việt',
+    zh: '中文（简体）'
+  };
+  // Right-to-left languages: the page direction flips for these.
+  var RTL = { ar: true, fa: true };
   var STORAGE_KEY = 'revivetendo-lang';
 
   var I18N = window.I18N = {
@@ -42,6 +50,7 @@
   I18N.lang = pick();
   var root = document.documentElement;
   root.lang = I18N.lang;
+  if (RTL[I18N.lang]) root.dir = 'rtl';
 
   if (I18N.lang !== 'en') {
     // Hidden until the strings are applied; shown anyway after 3 s if the

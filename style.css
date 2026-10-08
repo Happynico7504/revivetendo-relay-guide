@@ -1106,3 +1106,10 @@ a.btn-discord:hover {
   border-color: var(--border-hover);
   outline: none;
 }
+
+/* Right-to-left languages (ar, fa): code, paths and URLs stay left-to-right. */
+[dir="rtl"] code,
+[dir="rtl"] pre {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
