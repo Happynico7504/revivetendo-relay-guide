@@ -149,6 +149,8 @@ I18N.register("cs", {
  "privacy.026": "<strong>Identifikátory:</strong> tvůj kód přítele a náhodné ID vytvořené ve tvé konzoli. RvtA neposílá tvoje sériové číslo.",
  "privacy.027": "<strong>Jak se data odesílají:</strong> ukládají se na SD kartu do <code>/3ds/revivetendo-analytics/</code> a každých 15 minut, když jsi online, se nahrávají na náš server. Kopie na SD kartě se po úspěšném nahrání smaže. Slouží jen k řešení problémů a nikdy se neprodávají ani nesdílejí.",
  "privacy.028": "<strong>Vypnutí:</strong> v Nimbusu přepni na patche Pretendo nebo Roseverse. RvtA je součástí jen patchů Revivetendo.",
+ "privacy.029": "<strong>Záznamy o pádu:</strong> když hra nebo systémový modul spadne a Luma uloží záznam o pádu, RvtA nejnovější z nich jednou nahraje. Obsahuje registry procesoru a malou část paměti programu z okamžiku pádu.",
+ "privacy.030": "<strong>Výpisy paměti:</strong> jen když stiskneš <strong>L + START + SELECT</strong>, RvtA uloží paměť běžící hry nebo aplikace (nebo HOME menu) a nahraje ji; kontrolka oznámení přitom svítí bíle. Výpis paměti může obsahovat cokoli, co má hra v paměti, třeba uložené pozice nebo jména, takže kombinaci mačkej jen tehdy, když tě o to požádáme při řešení problému.",
  "webpw.001": "Webové heslo",
  "webpw.002": "Přihlas se do Revivetendo v prohlížeči pomocí PNID a webového hesla.",
  "webpw.003": "K čemu je webové heslo?",

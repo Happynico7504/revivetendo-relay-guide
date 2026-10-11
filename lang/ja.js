@@ -152,6 +152,8 @@ I18N.register("ja", {
  "privacy.026": "<strong>識別情報：</strong>あなたのフレンドコードと、本体で作られるランダムなID。RvtAはシリアル番号を送信しません。",
  "privacy.027": "<strong>送信方法：</strong>データはSDカードの<code>/3ds/revivetendo-analytics/</code>に保存され、オンライン中は15分ごとに当サーバーへアップロードされます。アップロードに成功すると、SDカード上のコピーは削除されます。データはトラブルシューティングにのみ使用し、販売や共有は一切しません。",
  "privacy.028": "<strong>オフにするには：</strong>NimbusでPretendoまたはRoseverseのパッチに切り替えてください。RvtAはRevivetendoパッチにのみ含まれています。",
+ "privacy.029": "<strong>クラッシュレポート：</strong>ゲームやシステムモジュールがクラッシュしてLumaがクラッシュレポートを保存すると、RvtAは最新のものを1回だけアップロードします。クラッシュ時のプロセッサのレジスタと、プログラムのメモリのごく一部が含まれます。",
+ "privacy.030": "<strong>メモリダンプ：</strong><strong>L + START + SELECT</strong>を押したときだけ、RvtAは起動中のゲームやアプリ（またはHOMEメニュー）のメモリを保存してアップロードします。保存中はお知らせランプが白く光ります。メモリダンプには、セーブデータや名前など、そのゲームがメモリ上に持っているあらゆる情報が含まれる可能性があるため、問題の解決をお手伝いする際にこちらからお願いしたときだけ押してください。",
  "title.guide": "Revivetendo Relay Network — セットアップガイド",
  "title.index": "Revivetendo Relay Network — ホーム",
  "title.privacy": "Revivetendo Relay Network — プライバシーポリシー",

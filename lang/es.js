@@ -150,6 +150,8 @@ I18N.register("es", {
  "privacy.026": "<strong>Identificadores:</strong> tu código de amigo y un ID aleatorio creado en tu consola. RvtA no envía tu número de serie.",
  "privacy.027": "<strong>Cómo se envía:</strong> los datos se guardan en tu tarjeta SD en <code>/3ds/revivetendo-analytics/</code> y se suben a nuestro servidor cada 15 minutos mientras estás en línea. La copia de tu tarjeta SD se borra cuando la subida se completa. Solo se usan para solucionar problemas y nunca se venden ni se comparten.",
  "privacy.028": "<strong>Desactivarlo:</strong> en Nimbus, cambia a los parches de Pretendo o Roseverse. RvtA solo forma parte de los parches de Revivetendo.",
+ "privacy.029": "<strong>Informes de fallos:</strong> cuando un juego o módulo del sistema falla y Luma guarda un informe, RvtA sube el más reciente una sola vez. Contiene los registros del procesador y una pequeña parte de la memoria del programa en el momento del fallo.",
+ "privacy.030": "<strong>Volcados de memoria:</strong> solo cuando pulsas <strong>L + START + SELECT</strong>, RvtA guarda la memoria del juego o la aplicación en uso (o del menú HOME) y la sube; el indicador de notificaciones se ilumina en blanco mientras guarda. Un volcado de memoria puede contener todo lo que el juego tiene en memoria, como partidas guardadas o nombres, así que púlsalo solo cuando te lo pidamos para ayudarte con un problema.",
  "title.guide": "Revivetendo Relay Network — Guía de configuración",
  "title.index": "Revivetendo Relay Network — Inicio",
  "title.privacy": "Revivetendo Relay Network — Política de privacidad",

@@ -149,6 +149,8 @@ I18N.register("ko", {
  "privacy.026": "<strong>식별 정보:</strong> 친구 코드와 본체에서 생성되는 무작위 ID입니다. RvtA는 시리얼 번호를 보내지 않습니다.",
  "privacy.027": "<strong>전송 방식:</strong> 데이터는 SD 카드의 <code>/3ds/revivetendo-analytics/</code>에 저장되며, 온라인 상태일 때 15분마다 저희 서버로 업로드됩니다. 업로드에 성공하면 SD 카드의 사본은 삭제됩니다. 문제 해결에만 사용되며 절대 판매하거나 공유하지 않습니다.",
  "privacy.028": "<strong>끄는 방법:</strong> Nimbus에서 Pretendo 또는 Roseverse 패치로 전환하세요. RvtA는 Revivetendo 패치에만 포함되어 있습니다.",
+ "privacy.029": "<strong>충돌 보고서:</strong> 게임이나 시스템 모듈이 충돌하고 Luma가 충돌 보고서를 저장하면 RvtA가 가장 최근 보고서를 한 번 업로드합니다. 충돌 순간의 프로세서 레지스터와 프로그램 메모리의 작은 일부가 들어 있습니다.",
+ "privacy.030": "<strong>메모리 덤프:</strong> <strong>L + START + SELECT</strong>를 눌렀을 때만 RvtA가 실행 중인 게임이나 앱(또는 HOME 메뉴)의 메모리를 저장해 업로드합니다. 저장하는 동안 알림 램프가 흰색으로 켜집니다. 메모리 덤프에는 세이브 데이터나 이름 등 게임이 메모리에 가지고 있는 모든 정보가 들어 있을 수 있으므로, 문제 해결을 도와드리는 중에 저희가 요청할 때만 눌러 주세요.",
  "webpw.001": "웹 비밀번호",
  "webpw.002": "PNID와 웹 비밀번호로 브라우저에서 Revivetendo에 로그인하세요.",
  "webpw.003": "웹 비밀번호는 무엇에 쓰나요?",

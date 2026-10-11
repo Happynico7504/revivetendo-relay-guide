@@ -149,6 +149,8 @@ I18N.register("nl", {
  "privacy.026": "<strong>Kenmerken:</strong> je vriendcode en een willekeurige ID die op je console wordt aangemaakt. RvtA verstuurt je serienummer niet.",
  "privacy.027": "<strong>Hoe het wordt verstuurd:</strong> de gegevens worden op je SD-kaart opgeslagen in <code>/3ds/revivetendo-analytics/</code> en elke 15 minuten naar onze server geüpload zolang je online bent. De kopie op je SD-kaart wordt verwijderd zodra de upload gelukt is. Ze worden alleen gebruikt om problemen op te lossen en worden nooit verkocht of gedeeld.",
  "privacy.028": "<strong>Uitzetten:</strong> kies in Nimbus de Pretendo- of Roseverse-patches. RvtA hoort alleen bij de Revivetendo-patches.",
+ "privacy.029": "<strong>Crashrapporten:</strong> als een spel of systeemmodule crasht en Luma een crashrapport opslaat, uploadt RvtA het nieuwste één keer. Het bevat de processorregisters en een klein deel van het geheugen van het programma op het moment van de crash.",
+ "privacy.030": "<strong>Geheugendumps:</strong> alleen als je op <strong>L + START + SELECT</strong> drukt, slaat RvtA het geheugen van het actieve spel of de app (of van het HOME-menu) op en uploadt het; het meldingslampje brandt dan wit. Een geheugendump kan alles bevatten wat dat spel in het geheugen heeft, zoals opslagbestanden of namen, dus druk er alleen op als wij je daarom vragen bij het oplossen van een probleem.",
  "webpw.001": "Webwachtwoord",
  "webpw.002": "Log in een browser in bij Revivetendo met je PNID en een webwachtwoord.",
  "webpw.003": "Waar is het webwachtwoord voor?",

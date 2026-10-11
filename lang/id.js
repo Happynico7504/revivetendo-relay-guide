@@ -149,6 +149,8 @@ I18N.register("id", {
  "privacy.026": "<strong>Pengenal:</strong> kode temanmu dan ID acak yang dibuat di konsolmu. RvtA tidak mengirim nomor serimu.",
  "privacy.027": "<strong>Cara pengirimannya:</strong> data disimpan di kartu SD-mu di <code>/3ds/revivetendo-analytics/</code> dan diunggah ke server kami setiap 15 menit selama kamu online. Salinan di kartu SD dihapus setelah unggahan berhasil. Data ini hanya dipakai untuk memecahkan masalah dan tidak pernah dijual atau dibagikan.",
  "privacy.028": "<strong>Mematikannya:</strong> di Nimbus, beralih ke patch Pretendo atau Roseverse. RvtA hanya bagian dari patch Revivetendo.",
+ "privacy.029": "<strong>Laporan crash:</strong> saat game atau modul sistem crash dan Luma menyimpan laporan crash, RvtA mengunggah yang terbaru satu kali. Laporan ini berisi register prosesor dan sebagian kecil memori program saat crash terjadi.",
+ "privacy.030": "<strong>Dump memori:</strong> hanya saat kamu menekan <strong>L + START + SELECT</strong>, RvtA menyimpan memori game atau aplikasi yang sedang berjalan (atau Menu HOME) lalu mengunggahnya; lampu notifikasi menyala putih selama penyimpanan. Dump memori bisa berisi apa saja yang ada di memori game itu, seperti data simpanan atau nama, jadi tekan kombinasi ini hanya jika kami memintanya saat membantumu mengatasi masalah.",
  "webpw.001": "Kata Sandi Web",
  "webpw.002": "Masuk ke Revivetendo di browser dengan PNID dan kata sandi web.",
  "webpw.003": "Untuk apa kata sandi web?",

@@ -149,6 +149,8 @@ I18N.register("zh", {
  "privacy.026": "<strong>标识信息：</strong>你的好友代码，以及在你的主机上生成的随机 ID。RvtA 不会发送你的序列号。",
  "privacy.027": "<strong>发送方式：</strong>数据保存在 SD 卡的 <code>/3ds/revivetendo-analytics/</code> 中，联网时每 15 分钟上传到我们的服务器一次。上传成功后，SD 卡上的副本会被删除。这些数据只用于排查问题，绝不出售或分享。",
  "privacy.028": "<strong>关闭方法：</strong>在 Nimbus 中切换到 Pretendo 或 Roseverse 补丁。RvtA 只包含在 Revivetendo 补丁中。",
+ "privacy.029": "<strong>崩溃报告：</strong>当游戏或系统模块崩溃且 Luma 保存了崩溃报告时，RvtA 会上传最新的一份，且只上传一次。报告包含处理器寄存器以及崩溃时程序内存的一小部分。",
+ "privacy.030": "<strong>内存转储：</strong>只有在你按下 <strong>L + START + SELECT</strong> 时，RvtA 才会保存正在运行的游戏或应用（或 HOME 菜单）的内存并上传；保存期间通知灯会亮白色。内存转储可能包含游戏内存中的任何内容，例如存档或名字，所以请只在我们帮你排查问题并提出请求时才按。",
  "webpw.001": "网页密码",
  "webpw.002": "使用你的 PNID 和网页密码在浏览器中登录 Revivetendo。",
  "webpw.003": "网页密码有什么用？",

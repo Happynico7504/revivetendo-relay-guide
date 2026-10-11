@@ -149,6 +149,8 @@ I18N.register("tr", {
  "privacy.026": "<strong>Tanımlayıcılar:</strong> arkadaş kodun ve konsolunda oluşturulan rastgele bir kimlik. RvtA seri numaranı göndermez.",
  "privacy.027": "<strong>Nasıl gönderilir:</strong> veriler SD kartında <code>/3ds/revivetendo-analytics/</code> konumuna kaydedilir ve çevrimiçi olduğun sürece her 15 dakikada bir sunucumuza yüklenir. SD karttaki kopya, yükleme başarılı olunca silinir. Yalnızca sorun gidermek için kullanılır ve asla satılmaz veya paylaşılmaz.",
  "privacy.028": "<strong>Kapatmak için:</strong> Nimbus'ta Pretendo veya Roseverse yamalarına geç. RvtA yalnızca Revivetendo yamalarının bir parçasıdır.",
+ "privacy.029": "<strong>Çökme raporları:</strong> bir oyun veya sistem modülü çöktüğünde ve Luma bir çökme raporu kaydettiğinde, RvtA en yenisini bir kez yükler. Bu rapor, işlemci yazmaçlarını ve çökme anındaki program belleğinin küçük bir kısmını içerir.",
+ "privacy.030": "<strong>Bellek dökümleri:</strong> yalnızca <strong>L + START + SELECT</strong> tuşlarına bastığında RvtA çalışan oyunun veya uygulamanın (ya da HOME Menüsü'nün) belleğini kaydeder ve yükler; kaydederken bildirim ışığı beyaz yanar. Bir bellek dökümü, oyunun bellekte tuttuğu her şeyi, örneğin kayıt verilerini veya isimleri içerebilir; bu yüzden yalnızca bir sorunda sana yardım ederken senden istediğimizde bas.",
  "webpw.001": "Web Şifresi",
  "webpw.002": "PNID'in ve bir web şifresiyle tarayıcıdan Revivetendo'ya giriş yap.",
  "webpw.003": "Web şifresi ne işe yarar?",

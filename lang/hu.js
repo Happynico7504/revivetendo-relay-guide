@@ -149,6 +149,8 @@ I18N.register("hu", {
  "privacy.026": "<strong>Azonosítók:</strong> a barátkódod és egy, a konzolodon létrehozott véletlenszerű azonosító. Az RvtA nem küldi el a sorozatszámodat.",
  "privacy.027": "<strong>Hogyan küldi:</strong> az adatok az SD-kártyádon a <code>/3ds/revivetendo-analytics/</code> mappába kerülnek, és amíg online vagy, 15 percenként feltöltődnek a szerverünkre. Az SD-kártyán lévő másolat a sikeres feltöltés után törlődik. Csak hibakeresésre használjuk őket, és soha nem adjuk el vagy osztjuk meg.",
  "privacy.028": "<strong>Kikapcsolás:</strong> a Nimbusban válts a Pretendo vagy a Roseverse patchekre. Az RvtA csak a Revivetendo patchek része.",
+ "privacy.029": "<strong>Összeomlási jelentések:</strong> ha egy játék vagy rendszermodul összeomlik, és a Luma jelentést ment, az RvtA a legújabbat egyszer feltölti. Ez tartalmazza a processzor regisztereit és a program memóriájának egy kis részét az összeomlás pillanatából.",
+ "privacy.030": "<strong>Memóriaképek:</strong> csak ha megnyomod a <strong>L + START + SELECT</strong> kombinációt, az RvtA elmenti a futó játék vagy alkalmazás (vagy a HOME menü) memóriáját, és feltölti; közben az értesítési LED fehéren világít. Egy memóriakép bármit tartalmazhat, ami a játék memóriájában van, például mentéseket vagy neveket, ezért csak akkor nyomd meg, ha mi kérjük, amikor egy problémában segítünk.",
  "webpw.001": "Webes jelszó",
  "webpw.002": "Jelentkezz be a Revivetendóba böngészőből a PNID-ddel és egy webes jelszóval.",
  "webpw.003": "Mire jó a webes jelszó?",

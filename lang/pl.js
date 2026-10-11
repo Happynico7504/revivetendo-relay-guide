@@ -149,6 +149,8 @@ I18N.register("pl", {
  "privacy.026": "<strong>Identyfikatory:</strong> twój kod znajomego i losowy identyfikator utworzony na twojej konsoli. RvtA nie wysyła twojego numeru seryjnego.",
  "privacy.027": "<strong>Jak to jest wysyłane:</strong> dane są zapisywane na karcie SD w <code>/3ds/revivetendo-analytics/</code> i wysyłane na nasz serwer co 15 minut, gdy jesteś online. Kopia na karcie SD jest usuwana po udanym wysłaniu. Służą wyłącznie do rozwiązywania problemów i nigdy nie są sprzedawane ani udostępniane.",
  "privacy.028": "<strong>Wyłączanie:</strong> w Nimbus przełącz na łatki Pretendo lub Roseverse. RvtA jest częścią tylko łatek Revivetendo.",
+ "privacy.029": "<strong>Raporty awarii:</strong> gdy gra lub moduł systemu ulegnie awarii, a Luma zapisze raport, RvtA wysyła najnowszy jeden raz. Zawiera on rejestry procesora i niewielką część pamięci programu z chwili awarii.",
+ "privacy.030": "<strong>Zrzuty pamięci:</strong> tylko gdy naciśniesz <strong>L + START + SELECT</strong>, RvtA zapisuje pamięć uruchomionej gry lub aplikacji (albo menu HOME) i ją wysyła; dioda powiadomień świeci wtedy na biało. Zrzut pamięci może zawierać wszystko, co gra ma w pamięci, np. zapisy gry lub imiona, więc naciskaj tę kombinację tylko wtedy, gdy poprosimy cię o to przy rozwiązywaniu problemu.",
  "webpw.001": "Hasło internetowe",
  "webpw.002": "Loguj się do Revivetendo w przeglądarce za pomocą PNID i hasła internetowego.",
  "webpw.003": "Do czego służy hasło internetowe?",

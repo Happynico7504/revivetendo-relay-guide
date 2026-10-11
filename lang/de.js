@@ -149,6 +149,8 @@ I18N.register("de", {
  "privacy.026": "<strong>Kennungen:</strong> dein Freundescode und eine zufällige ID, die auf deiner Konsole erzeugt wird. RvtA sendet nicht deine Seriennummer.",
  "privacy.027": "<strong>Wie es gesendet wird:</strong> Die Daten werden auf deiner SD-Karte in <code>/3ds/revivetendo-analytics/</code> gespeichert und, solange du online bist, alle 15 Minuten an unseren Server hochgeladen. Die Kopie auf deiner SD-Karte wird gelöscht, sobald der Upload geklappt hat. Sie dienen nur der Fehlersuche und werden nie verkauft oder weitergegeben.",
  "privacy.028": "<strong>Abschalten:</strong> Wechsle in Nimbus zu den Pretendo- oder Roseverse-Patches. RvtA gehört nur zu den Revivetendo-Patches.",
+ "privacy.029": "<strong>Absturzberichte:</strong> Stürzt ein Spiel oder Systemmodul ab und Luma speichert einen Absturzbericht, lädt RvtA den neuesten einmal hoch. Er enthält die Prozessorregister und einen kleinen Teil des Programmspeichers zum Zeitpunkt des Absturzes.",
+ "privacy.030": "<strong>Speicherabbilder:</strong> Nur wenn du <strong>L + START + SELECT</strong> drückst, speichert RvtA den Speicher des laufenden Spiels oder der App (oder des HOME-Menüs) und lädt ihn hoch; die Benachrichtigungs-LED leuchtet währenddessen weiß. Ein Speicherabbild kann alles enthalten, was das Spiel gerade im Speicher hat, etwa Spielstände oder Namen. Drück die Kombination also nur, wenn wir dich bei der Fehlersuche darum bitten.",
  "title.guide": "Revivetendo Relay Network — Einrichtungsanleitung",
  "title.index": "Revivetendo Relay Network — Startseite",
  "title.privacy": "Revivetendo Relay Network — Datenschutz",

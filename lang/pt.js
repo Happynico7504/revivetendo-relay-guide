@@ -149,6 +149,8 @@ I18N.register("pt", {
  "privacy.026": "<strong>Identificadores:</strong> seu código de amigo e um ID aleatório criado no seu console. O RvtA não envia o seu número de série.",
  "privacy.027": "<strong>Como é enviado:</strong> os dados são salvos no seu cartão SD em <code>/3ds/revivetendo-analytics/</code> e enviados ao nosso servidor a cada 15 minutos enquanto você está online. A cópia no cartão SD é apagada quando o envio dá certo. Eles são usados apenas para resolver problemas e nunca são vendidos nem compartilhados.",
  "privacy.028": "<strong>Desativar:</strong> no Nimbus, troque para os patches do Pretendo ou do Roseverse. O RvtA faz parte apenas dos patches do Revivetendo.",
+ "privacy.029": "<strong>Relatórios de falha:</strong> quando um jogo ou módulo do sistema trava e o Luma salva um relatório, o RvtA envia o mais recente uma única vez. Ele contém os registradores do processador e uma pequena parte da memória do programa no momento da falha.",
+ "privacy.030": "<strong>Cópias da memória:</strong> somente quando você aperta <strong>L + START + SELECT</strong>, o RvtA salva a memória do jogo ou aplicativo em execução (ou do menu HOME) e a envia; a luz de notificação fica branca enquanto salva. Uma cópia da memória pode conter tudo o que o jogo tem na memória, como jogos salvos ou nomes, então só aperte quando pedirmos para ajudar você com um problema.",
  "webpw.001": "Senha web",
  "webpw.002": "Entre na Revivetendo pelo navegador com sua PNID e uma senha web.",
  "webpw.003": "Para que serve a senha web?",

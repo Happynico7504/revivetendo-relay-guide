@@ -149,6 +149,8 @@ I18N.register("sv", {
  "privacy.026": "<strong>Identifierare:</strong> din vänkod och ett slumpmässigt ID som skapas på din konsol. RvtA skickar inte ditt serienummer.",
  "privacy.027": "<strong>Hur det skickas:</strong> datan sparas på ditt SD-kort i <code>/3ds/revivetendo-analytics/</code> och laddas upp till vår server var 15:e minut medan du är online. Kopian på SD-kortet raderas när uppladdningen har lyckats. Den används bara för felsökning och säljs eller delas aldrig.",
  "privacy.028": "<strong>Stänga av:</strong> byt till Pretendo- eller Roseverse-patcharna i Nimbus. RvtA ingår bara i Revivetendo-patcharna.",
+ "privacy.029": "<strong>Kraschrapporter:</strong> när ett spel eller en systemmodul kraschar och Luma sparar en kraschrapport laddar RvtA upp den senaste en gång. Den innehåller processorns register och en liten del av programmets minne vid kraschen.",
+ "privacy.030": "<strong>Minnesdumpar:</strong> bara när du trycker på <strong>L + START + SELECT</strong> sparar RvtA minnet för det spel eller den app som körs (eller för HOME-menyn) och laddar upp det; aviseringslampan lyser vitt under tiden. En minnesdump kan innehålla allt som spelet har i minnet, till exempel sparfiler eller namn, så tryck bara på den när vi ber dig om det för att hjälpa dig med ett problem.",
  "webpw.001": "Webblösenord",
  "webpw.002": "Logga in på Revivetendo i en webbläsare med ditt PNID och ett webblösenord.",
  "webpw.003": "Vad är webblösenordet till för?",

@@ -149,6 +149,8 @@ I18N.register("vi", {
  "privacy.026": "<strong>Định danh:</strong> mã bạn bè của bạn và một ID ngẫu nhiên được tạo trên máy của bạn. RvtA không gửi số sê-ri của bạn.",
  "privacy.027": "<strong>Cách gửi:</strong> dữ liệu được lưu trên thẻ SD tại <code>/3ds/revivetendo-analytics/</code> và được tải lên máy chủ của chúng tôi mỗi 15 phút khi bạn trực tuyến. Bản sao trên thẻ SD sẽ bị xóa khi tải lên thành công. Dữ liệu chỉ được dùng để khắc phục sự cố và không bao giờ bị bán hay chia sẻ.",
  "privacy.028": "<strong>Tắt tính năng này:</strong> trong Nimbus, chuyển sang bản vá Pretendo hoặc Roseverse. RvtA chỉ là một phần của bản vá Revivetendo.",
+ "privacy.029": "<strong>Báo cáo sự cố:</strong> khi một trò chơi hoặc mô-đun hệ thống bị sập và Luma lưu báo cáo sự cố, RvtA sẽ tải lên báo cáo mới nhất một lần. Báo cáo chứa các thanh ghi của bộ xử lý và một phần nhỏ bộ nhớ của chương trình tại thời điểm xảy ra sự cố.",
+ "privacy.030": "<strong>Bản sao bộ nhớ:</strong> chỉ khi bạn nhấn <strong>L + START + SELECT</strong>, RvtA mới lưu bộ nhớ của trò chơi hoặc ứng dụng đang chạy (hoặc của Menu HOME) và tải lên; đèn thông báo sáng màu trắng trong lúc lưu. Bản sao bộ nhớ có thể chứa mọi thứ mà trò chơi đang giữ trong bộ nhớ, như dữ liệu lưu hoặc tên, vì vậy chỉ nhấn khi chúng tôi yêu cầu trong lúc giúp bạn xử lý sự cố.",
  "webpw.001": "Mật khẩu web",
  "webpw.002": "Đăng nhập Revivetendo trên trình duyệt bằng PNID và mật khẩu web.",
  "webpw.003": "Mật khẩu web dùng để làm gì?",

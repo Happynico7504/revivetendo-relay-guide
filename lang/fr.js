@@ -149,6 +149,8 @@ I18N.register("fr", {
  "privacy.026": "<strong>Identifiants :</strong> ton code ami et un identifiant aléatoire créé sur ta console. RvtA n'envoie pas ton numéro de série.",
  "privacy.027": "<strong>Comment c'est envoyé :</strong> les données sont enregistrées sur ta carte SD dans <code>/3ds/revivetendo-analytics/</code> et envoyées à notre serveur toutes les 15 minutes quand tu es en ligne. La copie sur ta carte SD est supprimée une fois l'envoi réussi. Elles servent uniquement au dépannage et ne sont jamais vendues ni partagées.",
  "privacy.028": "<strong>Désactiver :</strong> dans Nimbus, passe aux patchs Pretendo ou Roseverse. RvtA fait seulement partie des patchs Revivetendo.",
+ "privacy.029": "<strong>Rapports de plantage :</strong> quand un jeu ou un module système plante et que Luma enregistre un rapport, RvtA envoie le plus récent une seule fois. Il contient les registres du processeur et une petite partie de la mémoire du programme au moment du plantage.",
+ "privacy.030": "<strong>Copies de la mémoire :</strong> uniquement quand tu appuies sur <strong>L + START + SELECT</strong>, RvtA enregistre la mémoire du jeu ou de l'application en cours (ou du menu HOME) et l'envoie ; le témoin de notification s'allume en blanc pendant l'enregistrement. Une copie de la mémoire peut contenir tout ce que le jeu a en mémoire, comme des sauvegardes ou des noms : n'appuie donc que si nous te le demandons pour t'aider à résoudre un problème.",
  "title.guide": "Revivetendo Relay Network — Guide d’installation",
  "title.index": "Revivetendo Relay Network — Accueil",
  "title.privacy": "Revivetendo Relay Network — Politique de confidentialité",

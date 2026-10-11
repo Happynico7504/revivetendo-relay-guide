@@ -149,6 +149,8 @@ I18N.register("ro", {
  "privacy.026": "<strong>Identificatori:</strong> codul tău de prieten și un ID aleatoriu creat pe consola ta. RvtA nu trimite numărul tău de serie.",
  "privacy.027": "<strong>Cum sunt trimise:</strong> datele sunt salvate pe cardul SD în <code>/3ds/revivetendo-analytics/</code> și încărcate pe serverul nostru la fiecare 15 minute cât timp ești online. Copia de pe cardul SD este ștearsă după ce încărcarea reușește. Sunt folosite doar pentru depanare și nu sunt niciodată vândute sau partajate.",
  "privacy.028": "<strong>Dezactivare:</strong> în Nimbus, treci la patch-urile Pretendo sau Roseverse. RvtA face parte doar din patch-urile Revivetendo.",
+ "privacy.029": "<strong>Rapoarte de blocare:</strong> când un joc sau un modul de sistem se blochează și Luma salvează un raport, RvtA îl încarcă o singură dată pe cel mai recent. Conține registrele procesorului și o mică parte din memoria programului din momentul blocării.",
+ "privacy.030": "<strong>Copii ale memoriei:</strong> doar când apeși <strong>L + START + SELECT</strong>, RvtA salvează memoria jocului sau aplicației care rulează (sau a meniului HOME) și o încarcă; ledul de notificare luminează alb cât timp salvează. O copie a memoriei poate conține orice are jocul în memorie, cum ar fi salvări sau nume, așa că apasă combinația doar când îți cerem noi, ca să te ajutăm cu o problemă.",
  "webpw.001": "Parolă web",
  "webpw.002": "Conectează-te la Revivetendo dintr-un browser cu PNID-ul tău și o parolă web.",
  "webpw.003": "La ce folosește parola web?",

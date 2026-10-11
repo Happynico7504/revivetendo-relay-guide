@@ -148,6 +148,8 @@ I18N.register("it", {
  "privacy.026": "<strong>Identificativi:</strong> il tuo codice amico e un ID casuale creato sulla tua console. RvtA non invia il tuo numero di serie.",
  "privacy.027": "<strong>Come viene inviato:</strong> i dati vengono salvati sulla scheda SD in <code>/3ds/revivetendo-analytics/</code> e caricati sul nostro server ogni 15 minuti quando sei online. La copia sulla scheda SD viene eliminata quando il caricamento è riuscito. Servono solo per risolvere problemi e non vengono mai venduti né condivisi.",
  "privacy.028": "<strong>Disattivarlo:</strong> in Nimbus, passa alle patch Pretendo o Roseverse. RvtA fa parte solo delle patch di Revivetendo.",
+ "privacy.029": "<strong>Rapporti di crash:</strong> quando un gioco o un modulo di sistema si blocca e Luma salva un rapporto, RvtA carica il più recente una sola volta. Contiene i registri del processore e una piccola parte della memoria del programma al momento del crash.",
+ "privacy.030": "<strong>Dump della memoria:</strong> solo quando premi <strong>L + START + SELECT</strong>, RvtA salva la memoria del gioco o dell'app in esecuzione (o del menu HOME) e la carica; la spia delle notifiche si accende di bianco durante il salvataggio. Un dump della memoria può contenere tutto ciò che il gioco ha in memoria, come salvataggi o nomi, quindi premi la combinazione solo quando te lo chiediamo per aiutarti con un problema.",
  "title.guide": "Revivetendo Relay Network — Guida all’installazione",
  "title.index": "Revivetendo Relay Network — Home",
  "title.privacy": "Revivetendo Relay Network — Informativa sulla privacy",
