@@ -170,5 +170,18 @@ I18N.register("de", {
  "webpw.013": "Nach 3 falschen Passwörtern innerhalb von 5 Minuten wird die Web-Anmeldung für dein Konto 15 Minuten lang gesperrt.",
  "webpw.014": "Wenn deine PNID mit Discord verknüpft ist (<code>/link_pnid</code> auf unserem <a href=\"https://discord.gg/PVaXnYuQfy\" target=\"_blank\" rel=\"noopener noreferrer\">Discord-Server</a>), hebt <code>/unlock_web_login</code> die Sperre sofort auf.",
  "webpw.015": "<code>/reset_web_password</code> gibt dir ein neues Web-Passwort, oder du legst auf deiner Konsole unter <strong>Settings</strong> &rarr; <strong>Web Access</strong> ein neues fest.",
- "webpw.016": "So legst du dein Web-Passwort fest"
+ "webpw.016": "So legst du dein Web-Passwort fest",
+ "index.038": "Wii Karaoke U",
+ "index.039": "Sing mit einem wachsenden Community-Songkatalog mit. Nur für die europäische (EUR) Version &mdash; Details in der Anleitung.",
+ "guide.120": "Wii Karaoke U",
+ "guide.121": "Wir hosten einen Community-Songkatalog für Wii Karaoke U by JOYSOUND, aktuell gehalten durch eine kleine Installer-App.",
+ "guide.122": "Nur für die europäische (EUR) Version",
+ "guide.123": "Wii Karaoke U ist nie in Nordamerika erschienen, und die japanische Version spricht mit einem komplett anderen, nicht unterstützten Backend. Auf NA-Hardware brauchst du einen Regions-Patch (ein regionsfreies Plugin reicht, keine Dateibearbeitung nötig), um zuerst die <strong>europäische</strong> Version zu installieren und zu starten &mdash; ohne sie gibt es nichts zu singen.",
+ "guide.124": "Katalog-Installer (.wuhb)",
+ "guide.125": "Wii-U-Aroma-Anwendung",
+ "guide.126": "Installer herunterladen (.wuhb)",
+ "guide.127": "Kopiere <code>wiikaraoke_installer.wuhb</code> auf deine SD-Karte in das Verzeichnis <code>/wiiu/apps/</code> und starte dann <strong>Wii Karaoke U - Catalog Installer</strong> über den Homebrew Launcher (oder das HOME-Menü bei aktiviertem Aroma Coldboot).",
+ "guide.128": "Bevor du ihn startest",
+ "guide.129": "Starte Wii Karaoke U (EUR) mindestens einmal, damit das Spiel seinen eigenen Spielstand anlegt. Der Installer schreibt in diesen Spielstand &mdash; er legt ihn nicht selbst an.",
+ "guide.130": "Die App prüft auf einen neuen Katalog, lädt ihn direkt in den Spielstand des Spiels herunter und kehrt danach zum Menü zurück. Starte sie jederzeit erneut, um neue Songs zu erhalten."
 });
