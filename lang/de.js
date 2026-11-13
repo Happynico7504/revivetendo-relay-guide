@@ -183,5 +183,7 @@ I18N.register("de", {
  "guide.127": "Kopiere <code>wiikaraoke_installer.wuhb</code> auf deine SD-Karte in das Verzeichnis <code>/wiiu/apps/</code> und starte dann <strong>Revivetendo WKU Launcher</strong> über das Wii-U-Menü (via Aromas Homebrew on Menu) oder den Homebrew Launcher.",
  "guide.128": "Bevor du ihn startest",
  "guide.129": "Starte Wii Karaoke U (EUR) mindestens einmal, damit das Spiel seinen eigenen Spielstand anlegt. Der Installer schreibt in diesen Spielstand &mdash; er legt ihn nicht selbst an.",
- "guide.130": "Die App prüft auf einen neuen Katalog, lädt ihn direkt in den Spielstand des Spiels herunter und startet Wii Karaoke U danach automatisch. Falls etwas schiefgeht, zeigt sie den Fehler auf dem Bildschirm an, bevor sie neu startet. Starte sie jederzeit erneut, um neue Songs zu erhalten."
+ "guide.130": "Die App prüft auf einen neuen Katalog, lädt ihn direkt in den Spielstand des Spiels herunter und startet Wii Karaoke U danach automatisch. Falls etwas schiefgeht, zeigt sie den Fehler auf dem Bildschirm an, bevor sie neu startet. Starte sie jederzeit erneut, um neue Songs zu erhalten.",
+ "guide.131": "Das kann ein paar Minuten dauern",
+ "guide.132": "Der Launcher lädt den Katalog im Hintergrund herunter, ohne Fortschrittsanzeige auf dem Bildschirm &mdash; dadurch wirkt es wie ein normaler (nur etwas langsamerer) Start statt wie ein laufender Installer. Gib ihm ein paar Minuten, bevor du annimmst, dass er hängt &mdash; er startet Wii Karaoke U von selbst, sobald er fertig ist."
 });
