@@ -177,11 +177,11 @@ I18N.register("de", {
  "guide.121": "Wir hosten einen Community-Songkatalog für Wii Karaoke U by JOYSOUND, aktuell gehalten durch eine kleine Installer-App.",
  "guide.122": "Nur für die europäische (EUR) Version",
  "guide.123": "Wii Karaoke U ist nie in Nordamerika erschienen, und die japanische Version spricht mit einem komplett anderen, nicht unterstützten Backend. Auf NA-Hardware brauchst du einen Regions-Patch (ein regionsfreies Plugin reicht, keine Dateibearbeitung nötig), um zuerst die <strong>europäische</strong> Version zu installieren und zu starten &mdash; ohne sie gibt es nichts zu singen.",
- "guide.124": "Katalog-Installer (.wuhb)",
+ "guide.124": "Revivetendo WKU Launcher (.wuhb)",
  "guide.125": "Wii-U-Aroma-Anwendung",
  "guide.126": "Installer herunterladen (.wuhb)",
- "guide.127": "Kopiere <code>wiikaraoke_installer.wuhb</code> auf deine SD-Karte in das Verzeichnis <code>/wiiu/apps/</code> und starte dann <strong>Wii Karaoke U - Catalog Installer</strong> über den Homebrew Launcher (oder das HOME-Menü bei aktiviertem Aroma Coldboot).",
+ "guide.127": "Kopiere <code>wiikaraoke_installer.wuhb</code> auf deine SD-Karte in das Verzeichnis <code>/wiiu/apps/</code> und starte dann <strong>Revivetendo WKU Launcher</strong> über das Wii-U-Menü (via Aromas Homebrew on Menu) oder den Homebrew Launcher.",
  "guide.128": "Bevor du ihn startest",
  "guide.129": "Starte Wii Karaoke U (EUR) mindestens einmal, damit das Spiel seinen eigenen Spielstand anlegt. Der Installer schreibt in diesen Spielstand &mdash; er legt ihn nicht selbst an.",
- "guide.130": "Die App prüft auf einen neuen Katalog, lädt ihn direkt in den Spielstand des Spiels herunter und kehrt danach zum Menü zurück. Starte sie jederzeit erneut, um neue Songs zu erhalten."
+ "guide.130": "Die App prüft auf einen neuen Katalog, lädt ihn direkt in den Spielstand des Spiels herunter und startet Wii Karaoke U danach automatisch. Falls etwas schiefgeht, zeigt sie den Fehler auf dem Bildschirm an, bevor sie neu startet. Starte sie jederzeit erneut, um neue Songs zu erhalten."
 });
